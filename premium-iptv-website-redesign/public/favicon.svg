@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<rect width="120" height="120" rx="28" fill="#000000"/>
+
+  <!-- IPTVUS24 approved mark: angular U + P monogram with broadcast arcs -->
+  <!-- U (deep brand blue) — opening right with diagonal notch -->
+  <path d="M12 22 H44 V34 L30 46 L44 58 V70 H12 Z" fill="#0A5CFF"/>
+  <!-- P (brand cyan) -->
+  <path d="M70 102 V50 H84 A13 13 0 0 1 84 76 H70" fill="none" stroke="#00C2FF" stroke-width="12" stroke-linejoin="round"/>
+  <!-- Broadcast arcs (brand cyan) -->
+  <g fill="none" stroke="#00C2FF" stroke-width="8" stroke-linecap="round">
+    <path d="M67 42 A13 13 0 0 1 80 29"/>
+    <path d="M56 42 A24 24 0 0 1 80 18"/>
+    <path d="M45 42 A35 35 0 0 1 80 7"/>
+  </g>
+
+
+</svg>

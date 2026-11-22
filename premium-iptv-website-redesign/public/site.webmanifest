@@ -1,0 +1,13 @@
+{
+  "name": "IPTVUS24 — Premium IPTV",
+  "short_name": "IPTVUS24",
+  "description": "Premium IPTV for the US, Canada and UK. 25,000+ live channels, 150,000+ movies & series in 4K.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8FBFF",
+  "theme_color": "#0A84FF",
+  "icons": [
+    { "src": "/brand/mark-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/brand/mark-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
