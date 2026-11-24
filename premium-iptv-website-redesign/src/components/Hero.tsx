@@ -3,6 +3,7 @@ import { Icon, Counter, Reveal, Avatar, Stars } from "./ui";
 import { useLiveViewers } from "./SocialProof";
 import { tickerItems, type IconName } from "../data";
 import { heroTv } from "../assets";
+import { WHATSAPP_NUMBER, WhatsAppButton, WhatsAppIcon } from "./WhatsApp";
 
 const heroStats: { icon: IconName; render: ReactNode; label: string }[] = [
   { icon: "tv", render: <Counter to={25000} suffix="+" />, label: "Live Channels" },
@@ -114,6 +115,23 @@ export default function Hero() {
                   <Icon name="play" className="h-4 w-4 text-brand" />
                   View Plans
                 </a>
+              </div>
+            </Reveal>
+
+            <Reveal delay={600}>
+              <div className="mt-5 flex flex-col gap-4 rounded-2xl border border-[#bce9cb] bg-gradient-to-r from-[#edfff2] to-white p-4 shadow-[0_10px_30px_rgba(37,211,102,0.12)] sm:flex-row sm:items-center sm:justify-between sm:p-5">
+                <div>
+                  <p className="flex items-center gap-2 text-sm font-extrabold text-[#075e54]">
+                    <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#25d366] text-white">
+                      <WhatsAppIcon className="h-5 w-5" />
+                    </span>
+                    Need help choosing a plan?
+                  </p>
+                  <p className="mt-1 pl-11 text-sm font-bold text-slate-soft">{WHATSAPP_NUMBER} · 24/7 support</p>
+                </div>
+                <div className="sm:w-52">
+                  <WhatsAppButton>Chat with us</WhatsAppButton>
+                </div>
               </div>
             </Reveal>
 

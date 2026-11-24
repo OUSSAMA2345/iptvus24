@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { cn } from "../utils/cn";
 import { Icon } from "./ui";
 import LogoMark from "./LogoMark";
+import { WHATSAPP_NUMBER, WHATSAPP_URL, WhatsAppIcon } from "./WhatsApp";
 
 const links = [
   { label: "Features", href: "#features" },
@@ -116,12 +117,31 @@ export default function Navbar() {
             ))}
           </div>
           <div className="flex items-center gap-3">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden items-center gap-2 rounded-xl bg-[#e8f9ee] px-3.5 py-2.5 text-sm font-extrabold text-[#075e54] transition-colors hover:bg-[#d5f4df] sm:inline-flex"
+            >
+              <WhatsAppIcon className="h-4.5 w-4.5 text-[#25d366]" />
+              <span className="hidden xl:inline">{WHATSAPP_NUMBER}</span>
+              <span className="xl:hidden">WhatsApp</span>
+            </a>
             <a href="#plans" className="hidden text-[15px] font-bold text-brand transition-colors hover:text-brand-deep sm:block">
               Sign in
             </a>
             <a href="#plans" className="btn-primary !px-5 !py-2.5 !text-sm">
               Start Now
               <Icon name="arrow" className="h-4 w-4" strokeWidth={2.2} />
+            </a>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`WhatsApp ${WHATSAPP_NUMBER}`}
+              className="grid h-10 w-10 place-items-center rounded-xl bg-[#25d366] text-white shadow-sm sm:hidden"
+            >
+              <WhatsAppIcon className="h-5 w-5" />
             </a>
             <button
               type="button"
@@ -151,6 +171,15 @@ export default function Navbar() {
                   {l.label}
                 </a>
               ))}
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 flex items-center gap-2 rounded-xl bg-[#e8f9ee] px-4 py-3 font-extrabold text-[#075e54]"
+              >
+                <WhatsAppIcon className="h-5 w-5 text-[#25d366]" />
+                WhatsApp: {WHATSAPP_NUMBER}
+              </a>
               <p className="px-4 pt-2 text-xs font-medium text-slate-soft">Instant activation • 24/7 support • 7-day free trial</p>
             </div>
           </div>

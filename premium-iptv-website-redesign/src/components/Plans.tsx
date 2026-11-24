@@ -1,6 +1,7 @@
 import { Icon, Reveal, SectionHead } from "./ui";
 import { plans } from "../data";
 import { cn } from "../utils/cn";
+import { WHATSAPP_NUMBER, WhatsAppButton } from "./WhatsApp";
 
 const trustRow = [
   { icon: "lock" as const, title: "256-bit SSL", note: "Encrypted, PCI-compliant checkout" },
@@ -97,17 +98,24 @@ export default function Plans() {
                     ))}
                   </ul>
 
-                  <a
-                    href="#top"
-                    aria-label={`${p.cta} — ${p.price} ${p.per}`}
-                    className={cn(
-                      "mt-7 w-full text-[14.5px]",
-                      p.best ? "btn-primary" : "btn-ghost",
-                    )}
-                  >
-                    {p.cta}
-                    <Icon name="arrow" className="h-4 w-4" strokeWidth={2.4} />
-                  </a>
+                  <ul className="mt-4 space-y-2 border-t border-line pt-4 text-[12px] font-bold text-slate-soft">
+                    <li className="flex items-center gap-2 text-[#075e54]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#25d366]" />
+                      WhatsApp: {WHATSAPP_NUMBER}
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#25d366]" />
+                      Instant Activation
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#25d366]" />
+                      24/7 Support
+                    </li>
+                  </ul>
+
+                  <div className="mt-7">
+                    <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
+                  </div>
 
                   {p.trial && (
                     <p className="mt-3 flex items-center justify-center gap-1.5 rounded-xl bg-[#eef7ff] px-3 py-2 text-[11px] font-extrabold text-brand ring-1 ring-[#cfe6ff]">
