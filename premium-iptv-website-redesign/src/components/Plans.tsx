@@ -113,17 +113,9 @@ export default function Plans() {
                     </li>
                   </ul>
 
-                  <a
-                    href="#top"
-                    aria-label={`${p.cta} — ${p.price} ${p.per}`}
-                    className={cn(
-                      "mt-7 w-full text-[14.5px]",
-                      p.best ? "btn-primary" : "btn-ghost",
-                    )}
-                  >
-                    {p.cta}
-                    <Icon name="arrow" className="h-4 w-4" strokeWidth={2.4} />
-                  </a>
+                  <div className="mt-7">
+                    <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
+                  </div>
 
                   {p.trial && (
                     <p className="mt-3 flex items-center justify-center gap-1.5 rounded-xl bg-[#eef7ff] px-3 py-2 text-[11px] font-extrabold text-brand ring-1 ring-[#cfe6ff]">
@@ -137,9 +129,6 @@ export default function Plans() {
                       Only 47 launch-price slots left
                     </p>
                   )}
-                  <div className="mt-auto pt-4">
-                    <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
-                  </div>
                 </div>
               </article>
             </Reveal>
