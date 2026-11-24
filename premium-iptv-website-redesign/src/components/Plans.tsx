@@ -1,6 +1,7 @@
 import { Icon, Reveal, SectionHead } from "./ui";
 import { plans } from "../data";
 import { cn } from "../utils/cn";
+import { WHATSAPP_NUMBER, WhatsAppButton } from "./WhatsApp";
 
 const trustRow = [
   { icon: "lock" as const, title: "256-bit SSL", note: "Encrypted, PCI-compliant checkout" },
@@ -97,6 +98,21 @@ export default function Plans() {
                     ))}
                   </ul>
 
+                  <ul className="mt-4 space-y-2 border-t border-line pt-4 text-[12px] font-bold text-slate-soft">
+                    <li className="flex items-center gap-2 text-[#075e54]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#25d366]" />
+                      WhatsApp: {WHATSAPP_NUMBER}
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#25d366]" />
+                      Instant Activation
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#25d366]" />
+                      24/7 Support
+                    </li>
+                  </ul>
+
                   <a
                     href="#top"
                     aria-label={`${p.cta} — ${p.price} ${p.per}`}
@@ -121,6 +137,9 @@ export default function Plans() {
                       Only 47 launch-price slots left
                     </p>
                   )}
+                  <div className="mt-auto pt-4">
+                    <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
+                  </div>
                 </div>
               </article>
             </Reveal>

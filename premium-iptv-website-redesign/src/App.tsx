@@ -9,6 +9,7 @@ import Compare from "./components/Compare";
 import Reviews from "./components/Reviews";
 import Faq from "./components/Faq";
 import { FinalCta, Footer, StickyCta } from "./components/Closing";
+import { FloatingWhatsAppButton, WhatsAppContactSection } from "./components/WhatsApp";
 
 export default function App() {
   return (
@@ -25,9 +26,11 @@ export default function App() {
         <Reviews />
         <Faq />
         <FinalCta />
+        <WhatsAppContactSection />
       </main>
       <Footer />
       <StickyCta />
+      <FloatingWhatsAppButton />
       <SocialProof />
     </div>
   );
