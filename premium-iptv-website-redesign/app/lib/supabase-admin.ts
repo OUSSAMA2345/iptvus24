@@ -9,6 +9,8 @@ type SupabaseConfiguration = {
 } | null;
 
 let validatedConfiguration: SupabaseConfiguration | undefined;
+let configurationStatus: "ready" | "missing" | "invalid" | undefined;
+let configurationIssues: Array<{ variable: "SUPABASE_URL" | "SUPABASE_SERVICE_ROLE_KEY"; reason: "missing" | "invalid_format" }> = [];
 
 function getValidatedConfiguration(): SupabaseConfiguration {
   if (validatedConfiguration !== undefined) return validatedConfiguration;
@@ -24,11 +26,15 @@ function getValidatedConfiguration(): SupabaseConfiguration {
     });
   }
   if (!result.config) {
+    configurationIssues = result.issues;
     console.error("Supabase environment validation failed.", { issues: result.issues });
+    configurationStatus = result.issues.some((issue) => issue.reason === "missing") ? "missing" : "invalid";
     validatedConfiguration = null;
     return validatedConfiguration;
   }
 
+  configurationStatus = "ready";
+  configurationIssues = [];
   console.info("Supabase environment validated.", {
     host: new URL(result.config.url).host,
     serviceRoleKeyFormat: result.config.serviceRoleKeyFormat,
@@ -38,6 +44,16 @@ function getValidatedConfiguration(): SupabaseConfiguration {
     serviceRoleKey: result.config.serviceRoleKey,
   };
   return validatedConfiguration;
+}
+
+export function getSupabaseConfigurationStatus() {
+  getValidatedConfiguration();
+  return configurationStatus ?? "invalid";
+}
+
+export function getSupabaseConfigurationIssues() {
+  getValidatedConfiguration();
+  return configurationIssues;
 }
 
 export function getSupabaseServiceRoleKey() {

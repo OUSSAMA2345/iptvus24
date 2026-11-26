@@ -1,5 +1,5 @@
 import type { NextRequest } from "next/server";
-import { getSupabaseAdmin } from "../../lib/supabase-admin";
+import { getSupabaseAdmin, getSupabaseConfigurationStatus } from "../../lib/supabase-admin";
 import { checkFormRateLimit, jsonError } from "../../lib/rate-limit";
 
 export const runtime = "nodejs";
@@ -58,7 +58,10 @@ export async function POST(request: NextRequest) {
 
   const supabase = getSupabaseAdmin();
   if (!supabase) {
-    return jsonError("The contact form is not configured yet. Please email support@iptvus24.com or contact us on WhatsApp.", 503);
+    const message = getSupabaseConfigurationStatus() === "missing"
+      ? "The contact form is not configured yet. Please email support@iptvus24.com or contact us on WhatsApp."
+      : "The contact form has an invalid Supabase configuration. Please email support@iptvus24.com or contact us on WhatsApp.";
+    return jsonError(message, 503);
   }
 
   const rateAllowed = await checkFormRateLimit(request, supabase, "contact", 5);
