@@ -1,8 +1,7 @@
-export type BlogCategory =
-  | "Buying guides"
-  | "Devices & setup"
-  | "Streaming basics"
-  | "Privacy & safety";
+import { additionalBlogPosts } from "./additional-posts";
+import type { BlogCategory } from "./categories";
+
+export { blogCategories, type BlogCategory } from "./categories";
 
 export type BlogSection = {
   heading: string;
@@ -25,7 +24,7 @@ export type BlogPostSummary = Pick<
   "slug" | "title" | "excerpt" | "category" | "publishedAt" | "keywords"
 >;
 
-export const blogPosts: BlogPost[] = [
+const originalBlogPosts: BlogPost[] = [
   {
     slug: "choose-an-internet-tv-service",
     title: "How to evaluate an internet TV service before subscribing",
@@ -240,7 +239,11 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-export const blogCategories = Array.from(new Set(blogPosts.map((post) => post.category)));
+export const blogPosts: BlogPost[] = [...originalBlogPosts, ...additionalBlogPosts];
+
+if (new Set(blogPosts.map((post) => post.slug)).size !== blogPosts.length) {
+  throw new Error("Blog post slugs must be unique.");
+}
 
 export function getBlogPost(slug: string) {
   return blogPosts.find((post) => post.slug === slug);

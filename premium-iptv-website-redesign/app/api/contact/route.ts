@@ -29,7 +29,11 @@ export async function POST(request: NextRequest) {
 
   let body: Record<string, unknown>;
   try {
-    const parsed: unknown = await request.json();
+    const rawBody = await request.text();
+    if (new TextEncoder().encode(rawBody).byteLength > 12_000) {
+      return jsonError("The submitted message is too large.", 413);
+    }
+    const parsed: unknown = JSON.parse(rawBody);
     if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
       return jsonError("Please submit a valid form.", 400);
     }

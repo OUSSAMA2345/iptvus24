@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { heroTv } from "../assets";
 import { WhatsAppButton } from "./WhatsApp";
 
@@ -28,13 +29,14 @@ export default function Hero() {
         </div>
 
         <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-[0_24px_70px_rgba(0,0,0,0.3)]">
-          <img
+          <Image
             src={heroTv}
             alt="A television in a contemporary living room"
             width={1200}
             height={860}
-            fetchPriority="high"
-            decoding="async"
+            priority
+            quality={82}
+            sizes="(max-width: 1023px) 100vw, 50vw"
             className="aspect-[4/3] w-full object-cover"
           />
         </div>

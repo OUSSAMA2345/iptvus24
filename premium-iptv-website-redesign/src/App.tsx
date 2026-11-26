@@ -10,6 +10,7 @@ import Faq from "./components/Faq";
 import { Footer } from "./components/Closing";
 import { WhatsAppContactSection } from "./components/WhatsApp";
 import SetupGuide from "./components/SetupGuide";
+import Reveal from "./components/Reveal";
 
 export default function App() {
   return (
@@ -17,15 +18,15 @@ export default function App() {
       <Navbar />
       <main id="main-content">
         <Hero />
-        <TrustBar />
-        <Devices />
-        <Features />
+        <Reveal><TrustBar /></Reveal>
+        <Reveal><Devices /></Reveal>
+        <Reveal><Features /></Reveal>
         <Plans />
-        <Compare />
-        <SetupGuide />
-        <Reviews />
-        <Faq />
-        <WhatsAppContactSection />
+        <Reveal><Compare /></Reveal>
+        <Reveal><SetupGuide /></Reveal>
+        <Reveal><Reviews /></Reveal>
+        <Reveal><Faq /></Reveal>
+        <Reveal><WhatsAppContactSection /></Reveal>
       </main>
       <Footer />
     </div>

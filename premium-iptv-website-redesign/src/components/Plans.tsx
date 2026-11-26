@@ -2,6 +2,7 @@ import { Icon, SectionHead } from "./ui";
 import { plans } from "../data";
 import { cn } from "../utils/cn";
 import { WhatsAppButton } from "./WhatsApp";
+import Reveal from "./Reveal";
 
 export default function Plans() {
   return (
@@ -13,9 +14,9 @@ export default function Plans() {
           sub="Compare the total price and duration. Confirm availability, payment details, and service terms with support before ordering."
         />
         <div className="mt-10 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {plans.map((plan) => (
+          {plans.map((plan, index) => (
+            <Reveal key={plan.name} delay={index * 0.06} className="h-full">
             <article
-              key={plan.name}
               className={cn(
                 "relative flex h-full flex-col rounded-2xl border bg-white p-5 shadow-card sm:p-6",
                 plan.best ? "border-brand ring-1 ring-brand/20" : "border-line",
@@ -45,6 +46,7 @@ export default function Plans() {
                   <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
                 </div>
             </article>
+            </Reveal>
           ))}
         </div>
         <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-relaxed text-slate-soft">
