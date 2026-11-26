@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import SocialProof from "./components/SocialProof";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
 import Devices from "./components/Devices";
@@ -8,30 +7,27 @@ import Plans from "./components/Plans";
 import Compare from "./components/Compare";
 import Reviews from "./components/Reviews";
 import Faq from "./components/Faq";
-import { FinalCta, Footer, StickyCta } from "./components/Closing";
-import { FloatingWhatsAppButton, WhatsAppContactSection } from "./components/WhatsApp";
+import { Footer } from "./components/Closing";
+import { WhatsAppContactSection } from "./components/WhatsApp";
+import SetupGuide from "./components/SetupGuide";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-mist font-body text-ink antialiased">
-      <div className="noise-layer" aria-hidden="true" />
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <TrustBar />
         <Devices />
         <Features />
         <Plans />
         <Compare />
+        <SetupGuide />
         <Reviews />
         <Faq />
-        <FinalCta />
         <WhatsAppContactSection />
       </main>
       <Footer />
-      <StickyCta />
-      <FloatingWhatsAppButton />
-      <SocialProof />
     </div>
   );
 }
