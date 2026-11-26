@@ -8,19 +8,21 @@
 
 The site has a Next.js App Router foundation, responsive pricing and device sections, legal/support routes, moderated reviews, a sitemap, structured article data, and a no-fabricated-testimonials policy. The source branch adds 30 original educational articles alongside the six existing guides, consent-gated Google analytics support, Search Console verification configuration, accessible scroll reveals, and hero image optimization.
 
-The final production crawl found valid robots and sitemap responses, working canonicals and metadata on every sitemap URL, and valid `BlogPosting` structured data on all live articles. Google Search Console ownership and sitemap submission are reported complete by the site owner. The production sitemap currently lists only six articles while the open source branch contains 36; after deploying that branch, submit the refreshed sitemap and monitor coverage. The review API also returned 200 for GET and 201 for a QA-only POST after Supabase setup; the pending test is not publicly visible.
+The final SEO crawl before PR #3 was merged found valid robots and sitemap responses, working canonicals and metadata on every sitemap URL, and valid `BlogPosting` structured data on all live articles. Google Search Console ownership and sitemap submission are reported complete by the site owner. The review API also returned 200 for GET and 201 for a QA-only POST after Supabase setup; the pending test was not publicly visible.
+
+After PR #3 was deployed, both public hostnames began returning a redirect loop. The cause was conflicting rules: Vercel redirects the apex host to `www`, while the application redirected `www` back to the apex. There is no `middleware.ts` or `next.config.js`; the application rule was in `next.config.ts`. The fix removes that application redirect and sets `SITE_URL` to Vercel's canonical `www` hostname so metadata and sitemap URLs agree with platform routing.
 
 ## Final SEO verification
 
 | Check | Production result |
 | --- | --- |
-| `robots.txt` | HTTP 200; allows `/`, disallows `/api/`, and references the canonical apex sitemap. |
-| `sitemap.xml` | HTTP 200 and valid XML; 16 URLs total (9 static pages, the blog index, and 6 article pages). Every listed URL returned HTTP 200. |
-| Canonical URLs | Every sitemap page declares its matching `https://iptvus24.com` canonical. The `www` host also returned HTTP 200 rather than redirecting, so this release adds a permanent `www`-to-apex redirect. |
+| `robots.txt` | Before PR #3 deployment, HTTP 200; allowed `/`, disallowed `/api/`, and referenced the apex sitemap. The updated source references `https://www.iptvus24.com/sitemap.xml`; current production retrieval is blocked by the redirect loop. |
+| `sitemap.xml` | Before PR #3 deployment, HTTP 200 and valid XML with 16 URLs (9 static pages, the blog index, and 6 articles). After PR #3 deployment, the host redirect loop prevents current sitemap verification; the merged source includes 36 articles. |
+| Canonical URLs | Vercel's configured host behavior redirects apex to `www`; application canonicals and sitemap now use `https://www.iptvus24.com`. The conflicting application redirect has been removed. |
 | Metadata and Open Graph | All 16 pages have a title and description; all have Open Graph title, description, URL, and image tags. Article pages use `og:type=article` and Twitter large-image cards. |
 | Article structured data | All 6 live article pages include valid `BlogPosting` JSON-LD; the blog index includes `Blog` JSON-LD. |
 | Indexability | No `noindex` directives were found on sitemap pages; robots rules do not block public content. |
-| Blog links | The production blog index links to all 6 live articles. The source has 36 unique article slugs; the previous related-article selection left 20 without links from another article. The updated rotating same-category links give every source article inbound and outbound related links. |
+| Blog links | The pre-merge production blog index linked to all 6 live articles. The merged source has 36 unique article slugs, all with inbound and outbound related links through the rotating same-category selection. |
 
 These are crawl and source checks, not a Lighthouse/Core Web Vitals certification or a report from Google’s indexing systems.
 
@@ -28,8 +30,8 @@ These are crawl and source checks, not a Lighthouse/Core Web Vitals certificatio
 
 | Priority | Area | Finding | Action/status |
 | --- | --- | --- | --- |
-| **P1 — release / index coverage** | SEO / blog | Production sitemap lists six articles, while the open source branch contains 36. | Deploy the open PR and resubmit the refreshed sitemap in Search Console; check the 30 additional article URLs for discovery and indexing. |
-| **P1 — canonicalization** | SEO / host | Apex and `www` production URLs both returned HTTP 200, although canonicals and sitemap use the apex host. | Added a permanent `www`-to-apex redirect so duplicate host URLs consolidate at the preferred hostname. |
+| **P0 — production availability** | SEO / host routing | After PR #3, apex redirects to `www` at Vercel while application config redirects `www` to apex, causing an infinite 308 loop. | Removed the application host redirect and aligned `SITE_URL` with Vercel's `www` canonical host; verify after deployment. |
+| **P1 — index coverage** | SEO / blog | The pre-merge production sitemap listed six articles; the merged source contains 36. | After the host fix is deployed, resubmit `/sitemap.xml` in Search Console and inspect all 36 article URLs. |
 | **P1 — internal linking** | SEO / blog | The previous related-article selection left 20 of 36 source articles without inbound links from another article. | Related links now rotate through same-category articles; every source article is linked from other articles as well as the blog index. |
 | **P1 — owner action** | Legal / trust | Repository text cannot establish the seller’s legal identity, jurisdiction, or rights to distribute each item of content. | Do not invent these facts. Publish the correct legal entity, address/jurisdiction, and substantiated content-rights information before presenting the service as licensed or legally authorized. |
 | **P1 — measurement** | Google tooling | Search Console and sitemap submission are confirmed by the owner; GA4/GTM property configuration and real-user metrics are not verified in this repository audit. | Continue Search Console coverage monitoring. Add GA4 or analytics-only GTM IDs in Vercel only if desired, and validate consent behavior before relying on analytics. |
@@ -104,7 +106,7 @@ Articles are grouped around search intent rather than keyword variants. Each art
 
 ## Release roadmap
 
-1. **Publish the expanded library:** merge and deploy the open PR, then resubmit `/sitemap.xml` in Search Console and inspect discovery/indexing for all 36 article URLs.
+1. **Verify indexing after recovery:** deploy the host-routing fix, resubmit `/sitemap.xml` in Search Console, and inspect discovery/indexing for all 36 article URLs.
 2. **Monitor Search Console coverage:** review excluded, crawled-not-indexed, duplicate-canonical, and soft-404 reports; fix issues based on actual URL inspection rather than assumptions.
 3. **Measure real-user performance:** collect mobile Core Web Vitals and run Lighthouse on representative landing, blog, and article routes; prioritize any measured LCP, INP, CLS, or accessibility regressions.
 4. **Improve article differentiation:** add original, relevant article imagery and clearer author/editorial review details where factual ownership can be established; do not use generic stock imagery or unverifiable expertise claims.
