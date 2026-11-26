@@ -3,14 +3,8 @@
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { CONSENT_STORAGE_KEY, trackAnalyticsEvent } from "../lib/analytics";
 
-declare global {
-  interface Window {
-    gtag?: (...arguments_: unknown[]) => void;
-  }
-}
-
-const CONSENT_STORAGE_KEY = "iptvus24-cookie-choice-v2";
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const configuredGtmId = process.env.NEXT_PUBLIC_GTM_ID;
 const GTM_CONTAINER_ID = configuredGtmId === undefined ? "GTM-MHW925PF" : configuredGtmId.trim();
@@ -74,6 +68,34 @@ export default function GoogleTags() {
       ad_user_data: "denied",
       ad_personalization: "denied",
     });
+  }, [analyticsConsent]);
+
+  useEffect(() => {
+    if (!analyticsConsent) return;
+
+    const trackWhatsAppClick = (event: MouseEvent) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const link = target.closest<HTMLAnchorElement>('a[href^="https://wa.me/"]');
+      if (!link) return;
+
+      const ctaLocation = link.closest("#plans")
+        ? "pricing"
+        : link.closest("header")
+          ? "header"
+          : link.closest("footer")
+            ? "footer"
+            : "content";
+
+      trackAnalyticsEvent("whatsapp_click", {
+        page_path: window.location.pathname,
+        cta_location: ctaLocation,
+      });
+    };
+
+    document.addEventListener("click", trackWhatsAppClick, true);
+    return () => document.removeEventListener("click", trackWhatsAppClick, true);
   }, [analyticsConsent]);
 
   if (!hasLoadedWithConsent || (!validGtmId && !validGaId)) return null;

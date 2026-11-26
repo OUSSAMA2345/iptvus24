@@ -23,3 +23,5 @@ These settings are optional and are read during the Next.js build. Add them in V
 - `NEXT_PUBLIC_GTM_ID`: a Google Tag Manager container ID. The site defaults to `GTM-MHW925PF`; set this variable to override it, or set it to an empty value to disable GTM.
 
 The official `GoogleTagManager` component from `@next/third-parties/google` is mounted globally through the root layout. Analytics scripts are loaded only after a visitor grants analytics consent through the cookie banner. Advertising consent remains denied. Configure GTM tags for analytics only unless the consent controls and privacy disclosures are extended for additional purposes. Direct GA4 is used only when GTM is disabled and a GA measurement ID is configured.
+
+After analytics consent, the site sends `whatsapp_click` events with the page path and CTA location, and `generate_lead` after a contact request is saved. Contact details and message contents are never sent as analytics event parameters. Mark `generate_lead` as a key event in GA4 if it should be reported as a conversion; paid-order attribution still requires recording or importing completed sales.
