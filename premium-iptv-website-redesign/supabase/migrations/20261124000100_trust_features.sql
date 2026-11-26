@@ -2,7 +2,10 @@ create table if not exists public.reviews (
   id uuid primary key default gen_random_uuid(),
   display_name text not null check (char_length(display_name) between 2 and 60),
   rating smallint not null check (rating between 1 and 5),
-  review_text text not null check (char_length(review_text) between 20 and 1500),
+  review_text text not null check (
+    char_length(review_text) between 5 and 1500
+    or lower(btrim(review_text)) in ('good', 'nice')
+  ),
   status text not null default 'pending' check (status in ('pending', 'approved', 'rejected')),
   created_at timestamptz not null default now(),
   moderated_at timestamptz

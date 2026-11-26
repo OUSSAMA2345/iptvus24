@@ -1,6 +1,7 @@
 import type { NextRequest } from "next/server";
 import { getSupabaseAdmin } from "../../lib/supabase-admin";
 import { checkFormRateLimit, jsonError } from "../../lib/rate-limit";
+import { isReviewTextLengthValid } from "@/lib/review-validation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -77,15 +78,14 @@ export async function POST(request: NextRequest) {
   if (
     displayName.length < 2 ||
     displayName.length > 60 ||
-    reviewText.length < 20 ||
-    reviewText.length > 1500 ||
+    !isReviewTextLengthValid(reviewText) ||
     typeof rating !== "number" ||
     !Number.isInteger(rating) ||
     rating < 1 ||
     rating > 5 ||
     body.consent !== true
   ) {
-    return jsonError("Enter a display name, a review of at least 20 characters, a 1–5 star rating, and agree to publication if approved.", 400);
+    return jsonError("Enter a display name, a review with at least 5 characters (or “Good” or “Nice”), a 1–5 star rating, and agree to publication if approved.", 400);
   }
 
   const supabase = getSupabaseAdmin();
