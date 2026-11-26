@@ -19,7 +19,7 @@ function getValidatedConfiguration(): SupabaseConfiguration {
     process.env.NODE_ENV !== "production",
   );
   if (result.sanitizedVariables.length > 0) {
-    console.warn("Trimmed whitespace or removed invisible characters from Supabase environment variables.", {
+    console.warn("Trimmed whitespace or stripped non-ASCII/control characters from Supabase environment variables.", {
       variables: result.sanitizedVariables,
     });
   }

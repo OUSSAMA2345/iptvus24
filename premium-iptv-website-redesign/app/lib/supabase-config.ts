@@ -20,9 +20,10 @@ type SupabaseEnvironmentResult = {
 
 const hiddenCharacters = /[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/gu;
 
-function normalizeEnvironmentValue(raw: string | undefined) {
+function normalizeEnvironmentValue(raw: string | undefined, stripNonAscii = false) {
   if (raw === undefined) return { value: "", changed: false };
-  const value = raw.replace(hiddenCharacters, "").trim();
+  const cleaned = raw.replace(hiddenCharacters, "").trim();
+  const value = stripNonAscii ? cleaned.replace(/[^\x00-\x7F]/g, "") : cleaned;
   return { value, changed: value !== raw };
 }
 
@@ -80,7 +81,7 @@ export function validateSupabaseEnvironment(
   allowLocalHttp = false,
 ): SupabaseEnvironmentResult {
   const normalizedUrl = normalizeEnvironmentValue(rawUrl);
-  const normalizedKey = normalizeEnvironmentValue(rawServiceRoleKey);
+  const normalizedKey = normalizeEnvironmentValue(rawServiceRoleKey, true);
   const sanitizedVariables: SupabaseEnvironmentVariable[] = [];
   const issues: SupabaseEnvironmentIssue[] = [];
 
