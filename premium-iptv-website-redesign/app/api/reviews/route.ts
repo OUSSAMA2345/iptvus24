@@ -5,13 +5,12 @@ import { checkFormRateLimit, jsonError } from "../../lib/rate-limit";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-function cleanText(value: unknown, maxLength: number) {
+function cleanText(value: unknown) {
   if (typeof value !== "string") return "";
   return value
     .replace(/\r\n?/g, "\n")
     .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
-    .trim()
-    .slice(0, maxLength);
+    .trim();
 }
 
 export async function GET() {
@@ -48,10 +47,18 @@ export async function GET() {
 export async function POST(request: NextRequest) {
   const contentLength = Number(request.headers.get("content-length") || 0);
   if (contentLength > 5_000) return jsonError("The submitted review is too large.", 413);
+  const contentType = request.headers.get("content-type")?.split(";")[0].trim().toLowerCase();
+  if (contentType !== "application/json") {
+    return jsonError("Please submit the review using the provided form.", 415);
+  }
 
   let body: Record<string, unknown>;
   try {
-    const parsed: unknown = await request.json();
+    const rawBody = await request.text();
+    if (new TextEncoder().encode(rawBody).byteLength > 5_000) {
+      return jsonError("The submitted review is too large.", 413);
+    }
+    const parsed: unknown = JSON.parse(rawBody);
     if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
       return jsonError("Please submit a valid review.", 400);
     }
@@ -60,16 +67,19 @@ export async function POST(request: NextRequest) {
     return jsonError("Please submit a valid review.", 400);
   }
 
-  if (cleanText(body.website, 200)) {
+  if (cleanText(body.website)) {
     return Response.json({ message: "Thanks. Your review was received and is awaiting moderation." }, { status: 202 });
   }
 
-  const displayName = cleanText(body.displayName, 60);
-  const reviewText = cleanText(body.reviewText, 1500);
-  const rating = Number(body.rating);
+  const displayName = cleanText(body.displayName);
+  const reviewText = cleanText(body.reviewText);
+  const rating = body.rating;
   if (
     displayName.length < 2 ||
+    displayName.length > 60 ||
     reviewText.length < 20 ||
+    reviewText.length > 1500 ||
+    typeof rating !== "number" ||
     !Number.isInteger(rating) ||
     rating < 1 ||
     rating > 5 ||

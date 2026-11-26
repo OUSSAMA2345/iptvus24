@@ -24,6 +24,7 @@ begin
 end;
 $$;
 
+drop trigger if exists reviews_set_moderated_at on public.reviews;
 create trigger reviews_set_moderated_at
 before update of status on public.reviews
 for each row execute function public.set_review_moderated_at();

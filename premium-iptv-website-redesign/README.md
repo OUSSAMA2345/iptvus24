@@ -4,6 +4,8 @@ The site uses Next.js App Router and requires Node.js 20.9 or newer. Start local
 
 ## Supabase setup
 
+The review feature requires a provisioned Supabase project and its migration; this repository cannot create an external project or obtain credentials on your behalf. Follow these steps before testing review submissions.
+
 1. Copy `.env.example` to `.env.local` and set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` from the Supabase project. Keep the service-role key server-side; never expose it with a `NEXT_PUBLIC_` prefix.
 2. Apply `supabase/migrations/20261124000100_trust_features.sql` to the project. It creates private contact, moderation, rate-limit, and service-status tables. The migration uses Supabase's `pg_cron` extension to run the documented retention cleanup daily.
 3. Contact requests are saved to `contact_messages`; the application does not send email notifications. Monitor this table or connect an operator-controlled notification workflow before advertising the form as a monitored inbox.

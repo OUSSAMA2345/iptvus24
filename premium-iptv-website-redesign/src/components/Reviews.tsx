@@ -23,6 +23,7 @@ export default function Reviews() {
   const [rating, setRating] = useState(0);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState<"success" | "error">("success");
 
   async function loadReviews() {
     try {
@@ -45,8 +46,10 @@ export default function Reviews() {
 
   async function submitReview(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submitting) return;
     setMessage("");
     if (rating === 0) {
+      setMessageType("error");
       setMessage("Please choose a rating from 1 to 5 stars.");
       return;
     }
@@ -71,10 +74,18 @@ export default function Reviews() {
 
       form.reset();
       setRating(0);
+      setMessageType("success");
       setMessage(result.message || "Thanks. Your review was received and is awaiting moderation.");
       await loadReviews();
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Your review could not be submitted. Please try again.");
+      setMessageType("error");
+      setMessage(
+        error instanceof TypeError
+          ? "We couldn't connect to the review service. Check your connection and try again. If the problem continues, contact support."
+          : error instanceof Error
+            ? error.message
+            : "Your review could not be submitted. Please try again.",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -175,7 +186,19 @@ export default function Reviews() {
               <input name="website" tabIndex={-1} autoComplete="off" />
             </label>
 
-            {message && <p role="status" aria-live="polite" className="rounded-xl bg-haze p-3 text-sm font-semibold text-ink">{message}</p>}
+            {message && (
+              <p
+                role={messageType === "error" ? "alert" : "status"}
+                aria-live={messageType === "error" ? "assertive" : "polite"}
+                className={`rounded-xl border p-3 text-sm font-semibold ${
+                  messageType === "error"
+                    ? "border-rose-200 bg-rose-50 text-rose-800"
+                    : "border-emerald-200 bg-emerald-50 text-emerald-800"
+                }`}
+              >
+                {message}
+              </p>
+            )}
             <button type="submit" disabled={submitting} className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-60">
               {submitting ? "Submitting…" : "Submit review"}
             </button>
