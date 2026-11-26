@@ -6,17 +6,33 @@
 
 ## Executive summary
 
-The site already has a Next.js App Router foundation, responsive pricing and device sections, legal/support routes, moderated reviews, a sitemap, structured article data, and a clear no-fabricated-testimonials policy. This release adds 30 original educational articles alongside the six existing guides, consent-gated Google analytics support, Search Console verification configuration, accessible scroll reveals, and hero image optimization.
+The site has a Next.js App Router foundation, responsive pricing and device sections, legal/support routes, moderated reviews, a sitemap, structured article data, and a no-fabricated-testimonials policy. The source branch adds 30 original educational articles alongside the six existing guides, consent-gated Google analytics support, Search Console verification configuration, accessible scroll reveals, and hero image optimization.
 
-The most important unresolved production issue is external configuration: Vercel production logs identify `SUPABASE_SERVICE_ROLE_KEY` as malformed after whitespace/invisible-character normalization. The database client cannot initialize, so review reads/submissions return 503. The repository cannot verify the database table or migration until the owner replaces that credential with a valid Supabase secret/service-role key. No production test review was created.
+The final production crawl found valid robots and sitemap responses, working canonicals and metadata on every sitemap URL, and valid `BlogPosting` structured data on all live articles. Google Search Console ownership and sitemap submission are reported complete by the site owner. The production sitemap currently lists only six articles while the open source branch contains 36; after deploying that branch, submit the refreshed sitemap and monitor coverage. The review API also returned 200 for GET and 201 for a QA-only POST after Supabase setup; the pending test is not publicly visible.
+
+## Final SEO verification
+
+| Check | Production result |
+| --- | --- |
+| `robots.txt` | HTTP 200; allows `/`, disallows `/api/`, and references the canonical apex sitemap. |
+| `sitemap.xml` | HTTP 200 and valid XML; 16 URLs total (9 static pages, the blog index, and 6 article pages). Every listed URL returned HTTP 200. |
+| Canonical URLs | Every sitemap page declares its matching `https://iptvus24.com` canonical. The `www` host also returned HTTP 200 rather than redirecting, so this release adds a permanent `www`-to-apex redirect. |
+| Metadata and Open Graph | All 16 pages have a title and description; all have Open Graph title, description, URL, and image tags. Article pages use `og:type=article` and Twitter large-image cards. |
+| Article structured data | All 6 live article pages include valid `BlogPosting` JSON-LD; the blog index includes `Blog` JSON-LD. |
+| Indexability | No `noindex` directives were found on sitemap pages; robots rules do not block public content. |
+| Blog links | The production blog index links to all 6 live articles. The source has 36 unique article slugs; the previous related-article selection left 20 without links from another article. The updated rotating same-category links give every source article inbound and outbound related links. |
+
+These are crawl and source checks, not a Lighthouse/Core Web Vitals certification or a report from Google’s indexing systems.
 
 ## Findings and priority
 
 | Priority | Area | Finding | Action/status |
 | --- | --- | --- | --- |
-| **P0 — release blocker** | Reviews / Supabase | Production runtime rejects `SUPABASE_SERVICE_ROLE_KEY` as `invalid_format`; GET and POST cannot reach Supabase. | Code now sanitizes and validates both server variables, shares the normalized key with rate limiting, and reports the exact invalid variable. The owner must replace the Vercel Production secret and redeploy; database persistence remains unverified. |
+| **P1 — release / index coverage** | SEO / blog | Production sitemap lists six articles, while the open source branch contains 36. | Deploy the open PR and resubmit the refreshed sitemap in Search Console; check the 30 additional article URLs for discovery and indexing. |
+| **P1 — canonicalization** | SEO / host | Apex and `www` production URLs both returned HTTP 200, although canonicals and sitemap use the apex host. | Added a permanent `www`-to-apex redirect so duplicate host URLs consolidate at the preferred hostname. |
+| **P1 — internal linking** | SEO / blog | The previous related-article selection left 20 of 36 source articles without inbound links from another article. | Related links now rotate through same-category articles; every source article is linked from other articles as well as the blog index. |
 | **P1 — owner action** | Legal / trust | Repository text cannot establish the seller’s legal identity, jurisdiction, or rights to distribute each item of content. | Do not invent these facts. Publish the correct legal entity, address/jurisdiction, and substantiated content-rights information before presenting the service as licensed or legally authorized. |
-| **P1 — owner action** | Google tooling | Search Console ownership, GA4 property, and GTM container belong to the site operator; no IDs are stored in the repository. | Optional environment-based Search Console verification and consent-gated GA4/GTM support are now implemented. Add the real IDs in Vercel and verify the domain in the respective Google accounts. |
+| **P1 — measurement** | Google tooling | Search Console and sitemap submission are confirmed by the owner; GA4/GTM property configuration and real-user metrics are not verified in this repository audit. | Continue Search Console coverage monitoring. Add GA4 or analytics-only GTM IDs in Vercel only if desired, and validate consent behavior before relying on analytics. |
 | **P1 — SEO content** | Blog | The repository had six guides and no broad topic coverage for requested device/setup searches. | Added 30 original guides in four topic clusters (36 total). All posts are statically generated, searchable, categorized, linked to related articles, and included in BlogPosting data and the sitemap. Review and update articles as device software and service terms change. |
 | **P2 — performance** | Images | The homepage hero used a raw `<img>`, bypassing Next.js image sizing/format optimization. | Replaced with `next/image`, priority loading, responsive sizes, and controlled quality. |
 | **P2 — motion/accessibility** | Accessibility | Scroll animation can hide content if applied before hydration or for visitors requesting reduced motion. | Reveal component keeps server-rendered content visible, animates only after hydration, and disables movement when reduced motion is requested. |
@@ -88,11 +104,11 @@ Articles are grouped around search intent rather than keyword variants. Each art
 
 ## Release roadmap
 
-1. **Unblock reviews:** replace the malformed `SUPABASE_SERVICE_ROLE_KEY` in Vercel Production with the key copied directly from Supabase Project Settings → API Keys, redeploy, then verify `GET /api/reviews`, a test `POST`, the pending row, moderation, and approved public display. Do not send the secret through chat.
-2. **Confirm legal facts:** provide the actual seller identity, governing jurisdiction, and evidence for the service’s distribution rights; update site and policies only from verified facts.
-3. **Configure Google:** add the Search Console verification token and GA4 or analytics-only GTM ID to Vercel. Verify consent behavior, the sitemap in Search Console, and real-time analytics after accepting optional analytics.
-4. **Measure production:** run Lighthouse and field data checks on representative mobile/desktop routes, then prioritize any measured Core Web Vitals or accessibility regressions. No score is claimed in this audit.
-5. **Maintain the editorial library:** recheck device instructions, app availability, rights terminology, and refund/payment terms whenever providers or platform software change.
+1. **Publish the expanded library:** merge and deploy the open PR, then resubmit `/sitemap.xml` in Search Console and inspect discovery/indexing for all 36 article URLs.
+2. **Monitor Search Console coverage:** review excluded, crawled-not-indexed, duplicate-canonical, and soft-404 reports; fix issues based on actual URL inspection rather than assumptions.
+3. **Measure real-user performance:** collect mobile Core Web Vitals and run Lighthouse on representative landing, blog, and article routes; prioritize any measured LCP, INP, CLS, or accessibility regressions.
+4. **Improve article differentiation:** add original, relevant article imagery and clearer author/editorial review details where factual ownership can be established; do not use generic stock imagery or unverifiable expertise claims.
+5. **Maintain editorial accuracy:** periodically recheck device instructions, app availability, rights terminology, and refund/payment terms, and update article dates only when content is meaningfully revised.
 
 ## Google configuration
 
@@ -102,4 +118,4 @@ See the repository README and `.env.example` for these optional build-time value
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`: GA4 measurement ID (`G-...`).
 - `NEXT_PUBLIC_GTM_ID`: GTM container ID (`GTM-...`); when set, it takes precedence over direct GA4. Configure this container for analytics only unless the consent interface and privacy notices are updated to separately authorize other categories.
 
-These values are intentionally empty by default. Search Console verification, analytics collection, indexing, and real-user metrics cannot be asserted until the owner configures the correct properties and verifies the live domain.
+These values are intentionally empty by default. The site owner reports Search Console verification and sitemap submission are complete. This repository audit does not have access to the Search Console account, GA4/GTM properties, or their indexing and analytics reports.

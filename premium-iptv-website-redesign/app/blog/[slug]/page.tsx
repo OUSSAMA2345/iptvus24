@@ -62,10 +62,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  const relatedPosts = [
-    ...blogPosts.filter((item) => item.slug !== post.slug && item.category === post.category),
-    ...blogPosts.filter((item) => item.slug !== post.slug && item.category !== post.category),
-  ].slice(0, 3);
+  const categoryPosts = blogPosts.filter((item) => item.category === post.category);
+  const currentCategoryIndex = categoryPosts.findIndex((item) => item.slug === post.slug);
+  const relatedPosts = Array.from(
+    { length: Math.min(3, categoryPosts.length - 1) },
+    (_, index) => categoryPosts[(currentCategoryIndex + index + 1) % categoryPosts.length],
+  );
 
   const structuredData = {
     "@context": "https://schema.org",
