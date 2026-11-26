@@ -32,11 +32,11 @@ export default function PrivacyPage() {
           <li>To record your optional cookie preference so we can respect your choice.</li>
           <li>To meet legal obligations and establish or defend legal claims where required.</li>
         </ul>
-        <p>IPTVUS24 does not currently load third-party analytics or advertising scripts on this website, and does not sell personal information or share it for cross-context behavioural advertising.</p>
+        <p>Google analytics scripts, if configured by the site operator, load only after optional analytics consent. Advertising scripts are not enabled. IPTVUS24 does not sell personal information or share it for cross-context behavioural advertising.</p>
       </section>
       <section>
         <h2>4. Cookies, local storage, and analytics</h2>
-        <p>The site uses browser local storage—not an analytics or advertising cookie—to remember your cookie choice. No optional analytics or marketing technologies are active on the site at this time. If you follow an external link such as WhatsApp, that service may use its own technologies and privacy policy. See our <a className="font-bold text-brand underline" href="/cookies">Cookie Policy</a>.</p>
+        <p>The site uses browser local storage to remember your cookie choice. If Google Analytics 4 or an analytics-only Google Tag Manager container is configured, it runs only after optional analytics consent. Advertising storage stays disabled. If you follow an external link such as WhatsApp, that service may use its own technologies and privacy policy. See our <a className="font-bold text-brand underline" href="/cookies">Cookie Policy</a>.</p>
       </section>
       <section>
         <h2>5. Service providers and international transfers</h2>

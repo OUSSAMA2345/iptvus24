@@ -223,7 +223,6 @@ export function Icon({
     </svg>
   );
 }
-
 /* ---------------- Stars ---------------- */
 export function Stars({ n = 5, className = "w-4 h-4" }: { n?: number; className?: string }) {
   return (
@@ -264,36 +263,5 @@ export function SectionHead({
         </p>
       )}
     </div>
-  );
-}
-
-/* ---------------- Monogram avatar ---------------- */
-const avatarHues = [
-  "from-[#0A84FF] to-[#00C2FF]",
-  "from-[#00A2FF] to-[#7FD9FF]",
-  "from-[#2F6BFF] to-[#0A84FF]",
-  "from-[#00B4FF] to-[#4FE3C1]",
-  "from-[#0A6CF5] to-[#00C2FF]",
-  "from-[#3B82F6] to-[#00A8FF]",
-];
-
-export function Avatar({ name, i = 0, className = "h-11 w-11 text-sm" }: { name: string; i?: number; className?: string }) {
-  const initials = name
-    .split(" ")
-    .map((w) => w[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-  return (
-    <span
-      className={cn(
-        "inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br font-extrabold text-white ring-2 ring-white shadow-md",
-        avatarHues[i % avatarHues.length],
-        className,
-      )}
-      aria-hidden="true"
-    >
-      {initials}
-    </span>
   );
 }

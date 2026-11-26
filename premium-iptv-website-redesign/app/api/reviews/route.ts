@@ -1,9 +1,25 @@
 import type { NextRequest } from "next/server";
-import { getSupabaseAdmin } from "../../lib/supabase-admin";
+import {
+  getSupabaseAdmin,
+  getSupabaseConfigurationIssues,
+  getSupabaseConfigurationStatus,
+} from "../../lib/supabase-admin";
 import { checkFormRateLimit, jsonError } from "../../lib/rate-limit";
+import { isReviewTextLengthValid } from "@/lib/review-validation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+function configurationErrorMessage() {
+  if (getSupabaseConfigurationStatus() === "missing") {
+    return "Review submissions are not configured yet. Please contact support if you need help.";
+  }
+
+  const invalidVariables = getSupabaseConfigurationIssues()
+    .map(({ variable }) => variable)
+    .join(", ");
+  return `The review service has an invalid Supabase configuration (${invalidVariables}). Correct these Vercel Production variables and redeploy.`;
+}
 
 function cleanText(value: unknown) {
   if (typeof value !== "string") return "";
@@ -15,7 +31,7 @@ function cleanText(value: unknown) {
 
 export async function GET() {
   const supabase = getSupabaseAdmin();
-  if (!supabase) return jsonError("Published reviews are not configured yet.", 503);
+  if (!supabase) return jsonError(configurationErrorMessage(), 503);
 
   const [{ data: statsData, error: statsError }, { data: reviews, error: reviewsError }] = await Promise.all([
     supabase.rpc("get_public_review_stats"),
@@ -77,20 +93,19 @@ export async function POST(request: NextRequest) {
   if (
     displayName.length < 2 ||
     displayName.length > 60 ||
-    reviewText.length < 20 ||
-    reviewText.length > 1500 ||
+    !isReviewTextLengthValid(reviewText) ||
     typeof rating !== "number" ||
     !Number.isInteger(rating) ||
     rating < 1 ||
     rating > 5 ||
     body.consent !== true
   ) {
-    return jsonError("Enter a display name, a review of at least 20 characters, a 1–5 star rating, and agree to publication if approved.", 400);
+    return jsonError("Enter a display name, a review with at least 5 characters (or “Good” or “Nice”), a 1–5 star rating, and agree to publication if approved.", 400);
   }
 
   const supabase = getSupabaseAdmin();
   if (!supabase) {
-    return jsonError("Review submissions are not configured yet. Please contact support if you need help.", 503);
+    return jsonError(configurationErrorMessage(), 503);
   }
 
   const rateAllowed = await checkFormRateLimit(request, supabase, "review", 3);

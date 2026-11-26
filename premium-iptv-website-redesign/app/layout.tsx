@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import { SITE_URL, SITE_NAME } from "./metadata";
 import CookieConsent from "./ui/CookieConsent";
+import GoogleTags from "./ui/GoogleTags";
 import { FloatingWhatsAppButton } from "../src/components/WhatsApp";
 
 export const metadata: Metadata = {
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
   alternates: { canonical: "/" },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
@@ -57,6 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         </a>
         {children}
         <CookieConsent />
+        <GoogleTags />
         <FloatingWhatsAppButton />
       </body>
     </html>

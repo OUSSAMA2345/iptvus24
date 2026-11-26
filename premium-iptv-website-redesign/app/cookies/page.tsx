@@ -9,15 +9,15 @@ export default function CookiesPage() {
     <SitePage title="Cookie Policy" description="Effective date: November 24, 2026. This policy describes cookies and similar technologies used on iptvus24.com.">
       <section>
         <h2>1. What we use</h2>
-        <p>At present, IPTVUS24 does not set analytics or advertising cookies and does not load analytics or advertising scripts on this website. The cookie banner stores your choice in browser local storage under a site-specific key; it is not sent to our servers. This storage is necessary to remember your preference.</p>
+        <p>The site stores your cookie preference in browser local storage; that preference is not sent to our servers. If a Google Analytics 4 measurement ID or Google Tag Manager container is configured, its analytics tags load only after you accept optional analytics. No advertising tags are enabled by this implementation.</p>
       </section>
       <section>
         <h2>2. Optional categories</h2>
-        <p>The consent interface includes optional analytics and marketing categories so your preference can be recorded if these features are introduced. They are not active now. Accepting optional categories does not cause this version of the website to load third-party tracking.</p>
+        <p>Rejecting optional cookies prevents Google analytics scripts from loading. You can reopen Cookie settings in the footer and change your choice. Analytics identifiers are configured by the site operator; without a valid identifier, no Google analytics script loads.</p>
         <ul>
           <li><b>Essential:</b> remembers the privacy choice and supports basic site operation.</li>
-          <li><b>Analytics:</b> currently not used.</li>
-          <li><b>Marketing:</b> currently not used.</li>
+          <li><b>Analytics:</b> Google Analytics 4 or an analytics-only Google Tag Manager container, if configured and accepted.</li>
+          <li><b>Marketing:</b> disabled; advertising storage and advertising consent remain denied.</li>
         </ul>
       </section>
       <section>
@@ -26,7 +26,7 @@ export default function CookiesPage() {
       </section>
       <section>
         <h2>4. Change or withdraw your choice</h2>
-        <p>Use “Cookie settings” in the website footer to reopen the preference banner. You can also clear local site data in your browser. Blocking all browser storage may prevent the site from remembering your choice. Because no optional trackers are currently active, there is no analytics or marketing cookie to withdraw from at this time.</p>
+        <p>Use “Cookie settings” in the website footer to reopen the preference banner. Withdrawing analytics consent updates Google Consent Mode to denied; you can also clear local site data in your browser. Blocking all browser storage may prevent the site from remembering your choice. Google services may process data under Google’s own terms and privacy notice.</p>
       </section>
       <section>
         <h2>5. Contact</h2>

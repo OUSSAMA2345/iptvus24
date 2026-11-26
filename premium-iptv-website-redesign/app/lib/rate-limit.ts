@@ -3,6 +3,7 @@ import "server-only";
 import { createHmac } from "node:crypto";
 import type { NextRequest } from "next/server";
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { getSupabaseServiceRoleKey } from "./supabase-admin";
 
 export async function checkFormRateLimit(
   request: NextRequest,
@@ -10,7 +11,7 @@ export async function checkFormRateLimit(
   action: "contact" | "review",
   limit: number,
 ) {
-  const secret = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const secret = getSupabaseServiceRoleKey();
   if (!secret) return null;
 
   const address =

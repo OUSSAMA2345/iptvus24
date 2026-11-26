@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 import { SectionHead } from "./ui";
+import { isReviewTextLengthValid } from "@/lib/review-validation";
 
 type Review = {
   id: string;
@@ -63,6 +64,12 @@ export default function Reviews() {
     }
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const reviewText = formData.get("reviewText");
+    if (typeof reviewText !== "string" || !isReviewTextLengthValid(reviewText)) {
+      setMessageType("error");
+      setMessage("Enter at least 5 characters. Short reviews like “Good” and “Nice” are also accepted.");
+      return;
+    }
     setSubmitting(true);
 
     try {
@@ -186,7 +193,10 @@ export default function Reviews() {
 
             <label className="block text-sm font-bold text-ink">
               Your review
-              <textarea name="reviewText" required minLength={20} maxLength={1500} rows={5} className="mt-2 w-full resize-y rounded-xl border border-line px-4 py-3 font-medium outline-none focus:border-brand" />
+              <textarea name="reviewText" required maxLength={1500} rows={5} aria-describedby="review-length-help" className="mt-2 w-full resize-y rounded-xl border border-line px-4 py-3 font-medium outline-none focus:border-brand" />
+              <span id="review-length-help" className="mt-2 block text-xs font-medium text-slate-soft">
+                At least 5 characters; “Good” and “Nice” are accepted as short reviews.
+              </span>
             </label>
 
             <label className="flex items-start gap-3 text-sm font-medium leading-relaxed text-slate-soft">

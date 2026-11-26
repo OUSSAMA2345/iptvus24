@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { blogCategories, type BlogCategory, type BlogPostSummary } from "./posts";
+import { blogCategories, type BlogCategory } from "./categories";
+import type { BlogPostSummary } from "./posts";
 
 function formatDate(value: string) {
   return new Date(`${value}T00:00:00Z`).toLocaleDateString("en", {
@@ -39,7 +40,7 @@ export default function BlogListing({ posts }: { posts: BlogPostSummary[] }) {
         className="mt-2 min-h-12 w-full rounded-xl border border-line bg-white px-4 text-sm text-ink outline-none transition-colors placeholder:text-slate-soft/70 focus:border-brand sm:max-w-xl"
       />
 
-      <nav aria-label="Filter articles by category" className="mt-5 flex flex-wrap gap-2">
+      <div role="group" aria-label="Filter articles by category" className="mt-5 flex flex-wrap gap-2">
         {(["All", ...blogCategories] as const).map((item) => {
           const selected = category === item;
           return (
@@ -58,7 +59,7 @@ export default function BlogListing({ posts }: { posts: BlogPostSummary[] }) {
             </button>
           );
         })}
-      </nav>
+      </div>
 
       <p className="mt-6 text-sm text-slate-soft" role="status" aria-live="polite">
         {visiblePosts.length} {visiblePosts.length === 1 ? "article" : "articles"}
