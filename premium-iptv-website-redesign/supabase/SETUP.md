@@ -59,6 +59,8 @@ In the Supabase dashboard, open the project:
 
 The environment variable name `SUPABASE_SERVICE_ROLE_KEY` is what this app expects; its value should be the Supabase secret/service-role key. Do not use the publishable/`anon` key for this variable. Secret keys bypass RLS and must never be committed, pasted into chat, added to client-side code, or given a `NEXT_PUBLIC_` prefix.
 
+At runtime, the server trims surrounding whitespace and strips invisible Unicode control/format characters before validation. It accepts an HTTPS Supabase project URL and either an ASCII `sb_secret_` key or a legacy JWT whose role is `service_role`; local HTTP URLs are allowed only outside production. Visible non-ASCII characters and malformed values are rejected, and logs identify the variable and issue without printing the value.
+
 Official references: [Supabase API keys](https://supabase.com/docs/guides/getting-started/api-keys) and [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security).
 
 ## 4. Add the values to Vercel
