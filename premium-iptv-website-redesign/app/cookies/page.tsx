@@ -9,14 +9,14 @@ export default function CookiesPage() {
     <SitePage title="Cookie Policy" description="Effective date: November 24, 2026. This policy describes cookies and similar technologies used on iptvus24.com.">
       <section>
         <h2>1. What we use</h2>
-        <p>The site stores your cookie preference in browser local storage; that preference is not sent to our servers. If a Google Analytics 4 measurement ID or Google Tag Manager container is configured, its analytics tags load only after you accept optional analytics. No advertising tags are enabled by this implementation.</p>
+        <p>The site stores your cookie preference in browser local storage; that preference is not sent to our servers. Google Tag Manager container GTM-MHW925PF (or a valid environment override) loads only after you accept optional analytics. No advertising tags are enabled by this implementation.</p>
       </section>
       <section>
         <h2>2. Optional categories</h2>
-        <p>Rejecting optional cookies prevents Google analytics scripts from loading. You can reopen Cookie settings in the footer and change your choice. Analytics identifiers are configured by the site operator; without a valid identifier, no Google analytics script loads.</p>
+        <p>Rejecting optional cookies prevents Google Tag Manager and Google analytics scripts from loading. You can reopen Cookie settings in the footer and change your choice. If the configured container ID is invalid or explicitly disabled, no Google Tag Manager script loads.</p>
         <ul>
           <li><b>Essential:</b> remembers the privacy choice and supports basic site operation.</li>
-          <li><b>Analytics:</b> Google Analytics 4 or an analytics-only Google Tag Manager container, if configured and accepted.</li>
+          <li><b>Analytics:</b> The configured Google Tag Manager container, or direct Google Analytics 4 if Tag Manager is disabled, only after consent.</li>
           <li><b>Marketing:</b> disabled; advertising storage and advertising consent remain denied.</li>
         </ul>
       </section>
