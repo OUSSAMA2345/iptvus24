@@ -17,43 +17,26 @@ export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) 
 }
 
 export function WhatsAppContactSection() {
-  const benefits = ["Instant activation", "24/7 support"];
-
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-20" aria-labelledby="whatsapp-contact-title">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#075e54] via-[#128c7e] to-[#25d366] p-7 text-white shadow-[0_24px_64px_rgba(18,140,126,0.24)] sm:p-10 lg:p-12">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -right-20 -top-28 h-80 w-80 rounded-full border-[36px] border-white/10"
-          />
-          <div className="relative flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
-            <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-[0.16em] ring-1 ring-white/25">
-                <WhatsAppIcon className="h-4 w-4" />
-                We’re here to help
-              </span>
-              <h2 id="whatsapp-contact-title" className="font-display mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Talk to us on WhatsApp
-              </h2>
-              <p className="mt-3 text-lg font-bold text-white/95">{WHATSAPP_NUMBER}</p>
-              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-white/85">
-                {benefits.map((benefit) => (
-                  <span key={benefit} className="inline-flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-white" />
-                    {benefit}
-                  </span>
-                ))}
-              </div>
-            </div>
+        <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-line bg-mist p-6 sm:flex-row sm:items-center sm:p-8">
+          <div className="max-w-xl">
+            <p className="text-sm font-bold text-brand">Questions before you order?</p>
+            <h2 id="whatsapp-contact-title" className="font-display mt-2 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+              Get a clear answer from support.
+            </h2>
+            <p className="mt-2 text-sm text-slate-soft">{WHATSAPP_NUMBER} · WhatsApp support</p>
+          </div>
+          <div className="w-full sm:w-auto sm:min-w-52">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-2.5 rounded-2xl bg-white px-7 py-4 text-base font-extrabold text-[#075e54] shadow-lg transition-transform hover:-translate-y-0.5 focus-visible:outline-white"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-5 py-3 text-sm font-extrabold text-white transition-colors hover:bg-[#20bd5a] focus-visible:outline-[#075e54] sm:w-auto"
             >
               <WhatsAppIcon className="h-5 w-5" />
-              Chat on WhatsApp
+              Ask on WhatsApp
             </a>
           </div>
         </div>

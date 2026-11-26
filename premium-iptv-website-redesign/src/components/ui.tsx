@@ -1,112 +1,6 @@
-import { useEffect, useRef, useState, type ReactNode, type CSSProperties } from "react";
+import type { ReactNode } from "react";
 import { cn } from "../utils/cn";
 import type { IconName } from "../data";
-
-/* ---------------- Reduced motion helper ---------------- */
-export function prefersReducedMotion() {
-  return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-}
-
-/* ---------------- Scroll reveal ---------------- */
-export function Reveal({
-  children,
-  delay = 0,
-  className = "",
-  as = "div",
-}: {
-  children: ReactNode;
-  delay?: number;
-  className?: string;
-  as?: "div" | "section" | "li" | "span";
-}) {
-  const ref = useRef<HTMLElement | null>(null);
-  const [inView, setInView] = useState(false);
-  const Tag = as as any;
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (prefersReducedMotion()) {
-      setInView(true);
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            setInView(true);
-            io.disconnect();
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -36px 0px" },
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  const style: CSSProperties = { transitionDelay: `${delay}ms` };
-  return (
-    <Tag ref={ref} style={style} className={cn("reveal", inView && "is-in", className)}>
-      {children}
-    </Tag>
-  );
-}
-
-/* ---------------- Count-up number ---------------- */
-export function Counter({
-  to,
-  suffix = "",
-  prefix = "",
-  duration = 1400,
-  className = "",
-}: {
-  to: number;
-  suffix?: string;
-  prefix?: string;
-  duration?: number;
-  className?: string;
-}) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const [val, setVal] = useState(0);
-  const started = useRef(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (prefersReducedMotion()) {
-      setVal(to);
-      return;
-    }
-    const io = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting && !started.current) {
-          started.current = true;
-          const t0 = performance.now();
-          const tick = (t: number) => {
-            const p = Math.min(1, (t - t0) / duration);
-            const eased = 1 - Math.pow(1 - p, 3);
-            setVal(Math.round(to * eased));
-            if (p < 1) requestAnimationFrame(tick);
-          };
-          requestAnimationFrame(tick);
-          io.disconnect();
-        }
-      },
-      { threshold: 0.4 },
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, [to, duration]);
-
-  return (
-    <span ref={ref} className={className}>
-      {prefix}
-      {val.toLocaleString("en-US")}
-      {suffix}
-    </span>
-  );
-}
 
 /* ---------------- Custom icon set (hand-drawn strokes) ---------------- */
 const paths: Record<IconName, ReactNode> = {
@@ -357,23 +251,17 @@ export function SectionHead({
 }) {
   return (
     <div className={cn("max-w-3xl", align === "center" ? "mx-auto text-center" : "text-left")}>
-      <Reveal>
-        <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-brand shadow-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand to-cyan" />
-          {eyebrow}
-        </span>
-      </Reveal>
-      <Reveal delay={90}>
-        <h2 className="font-display mt-5 text-3xl font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
-          {title}
-        </h2>
-      </Reveal>
+      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-brand shadow-sm">
+        <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand to-cyan" />
+        {eyebrow}
+      </span>
+      <h2 className="font-display mt-5 text-3xl font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
+        {title}
+      </h2>
       {sub && (
-        <Reveal delay={170}>
-          <p className={cn("mt-4 text-base leading-relaxed text-slate-soft sm:text-lg", align === "center" && "mx-auto")}>
-            {sub}
-          </p>
-        </Reveal>
+        <p className={cn("mt-4 text-base leading-relaxed text-slate-soft sm:text-lg", align === "center" && "mx-auto")}>
+          {sub}
+        </p>
       )}
     </div>
   );

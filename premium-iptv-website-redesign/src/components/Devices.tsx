@@ -1,7 +1,6 @@
 import { cn } from "../utils/cn";
-import { Icon, Reveal, SectionHead } from "./ui";
+import { SectionHead } from "./ui";
 import { devices } from "../data";
-import { devicesLineup } from "../assets";
 
 /* Consistent, premium flat-gradient device renders */
 function DeviceArt({ id }: { id: string }) {
@@ -110,77 +109,38 @@ export default function Devices() {
     <section id="devices" className="scroll-mt-28 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHead
-          eyebrow="Every Screen. One Account."
+          eyebrow="Device compatibility"
           title={
             <>
-              Watch on <span className="text-brand">every device</span> you own
+              Check your device <span className="text-brand">before ordering.</span>
             </>
           }
-          sub="One subscription follows you from the big screen to your pocket. Guided, free setup for each device — no technical skills required."
+          sub="Common device types are listed below. Availability depends on your model, software, player app, and region; ask support to confirm compatibility."
         />
 
-        {/* Lineup banner */}
-        <Reveal delay={150} className="mt-14">
-          <div className="group relative overflow-hidden rounded-[28px] border border-line shadow-card">
-            <img
-              src={devicesLineup}
-              alt="Lineup of compatible streaming devices — smart TV, media box, stick, tablet and phone"
-              width={1600}
-              height={700}
-              loading="lazy"
-              decoding="async"
-              className="kenburns h-[260px] w-full object-cover sm:h-[340px] lg:h-[420px]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#07203f]/55 via-transparent to-transparent" />
-            <div className="absolute bottom-5 left-5 max-w-sm rounded-2xl bg-white/90 p-5 shadow-lg backdrop-blur sm:bottom-8 sm:left-8">
-              <p className="font-display text-lg font-extrabold text-ink">Plug in. Log in. Enjoy.</p>
-              <p className="mt-1 text-sm font-medium leading-relaxed text-slate-soft">
-                8 device families supported out of the box — we handle the app, the login and the tweaks.
-              </p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {["2 taps install", "Free setup", "4K ready"].map((t) => (
-                  <span key={t} className="rounded-full bg-haze px-3 py-1 text-[11px] font-extrabold uppercase tracking-wide text-brand">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
         {/* Device cards */}
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
-          {devices.map((d, i) => (
-            <Reveal key={d.id} delay={(i % 4) * 90}>
-              <article className="lift group h-full rounded-3xl border border-line bg-white p-5 shadow-card hover:border-[#b7d8ff] hover:shadow-[0_18px_44px_rgba(10,132,255,0.16)] sm:p-6">
-                <div className="relative flex h-32 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-b from-mist to-haze/60">
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 opacity-60 transition-opacity duration-500 group-hover:opacity-100"
-                    style={{ background: "radial-gradient(90px 60px at 50% 62%, rgba(0,194,255,0.16), transparent 70%)" }}
-                  />
+        <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+          {devices.map((d) => (
+            <li key={d.id}>
+              <article className="flex h-full items-center gap-4 rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-5">
+                <div className="grid h-16 w-20 shrink-0 place-items-center rounded-xl bg-mist">
                   <DeviceArt id={d.id} />
-                  <span className="absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-white px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wide text-brand shadow-sm ring-1 ring-line">
-                    <Icon name="bolt" className="h-3 w-3" strokeWidth={2.4} />
-                    Instant
-                  </span>
                 </div>
-                <h3 className="font-display mt-4 text-[17px] font-extrabold text-ink">{d.name}</h3>
-                <p className="mt-1.5 text-[13px] font-medium leading-relaxed text-slate-soft">{d.note}</p>
+                <div>
+                  <h3 className="font-display text-sm font-extrabold text-ink">{d.name}</h3>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-soft">{d.note}</p>
+                </div>
               </article>
-            </Reveal>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <Reveal delay={120}>
-          <p className="mt-10 text-center text-sm font-semibold text-slate-soft">
-            Using a MAG box, Enigma2 or a lesser-known device?{" "}
-            <a href="#faq" className="font-bold text-brand underline decoration-cyan/50 underline-offset-4 hover:text-brand-deep">
-              Ask our 24/7 team — most devices work
+          <p className="mt-6 text-center text-sm font-semibold text-slate-soft">
+            Need help checking a specific model?{" "}
+            <a href="/contact" className="font-bold text-brand underline decoration-cyan/50 underline-offset-4 hover:text-brand-deep">
+              Contact support before ordering
             </a>
-            .
           </p>
-        </Reveal>
       </div>
     </section>
   );
