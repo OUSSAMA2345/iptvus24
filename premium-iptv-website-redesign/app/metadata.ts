@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://iptvus24.com";
+export const SITE_URL = "https://www.iptvus24.com";
 export const SITE_NAME = "IPTVUS24";
 
 export function pageMetadata(title: string, description: string, path: string): Metadata {
