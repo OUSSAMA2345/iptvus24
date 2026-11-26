@@ -40,7 +40,7 @@ export default function CookieConsent() {
     <aside role="dialog" aria-modal="false" aria-labelledby="cookie-title" className="fixed inset-x-3 bottom-3 z-[80] mx-auto max-w-3xl rounded-2xl border border-line bg-white p-4 shadow-[0_20px_70px_rgba(10,48,102,0.2)] sm:inset-x-6 sm:p-5">
       <h2 id="cookie-title" className="font-display text-base font-extrabold text-ink">Your privacy choices</h2>
       <p className="mt-1 text-xs leading-relaxed text-slate-soft">
-        Essential storage remembers your choice. Optional Google analytics loads only after you accept and only when configured. Advertising trackers remain disabled.
+        Essential storage remembers your choice. Optional Google analytics through Tag Manager loads only after you accept. Advertising trackers remain disabled.
         <a href="/cookies" className="ml-1 font-bold text-brand underline">Read the Cookie Policy</a>.
       </p>
       <div className="mt-3 flex flex-wrap gap-2">

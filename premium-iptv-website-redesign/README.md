@@ -20,6 +20,6 @@ These settings are optional and are read during the Next.js build. Add them in V
 
 - `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`: the verification token shown by Search Console when choosing the HTML tag method. The token is added to the page metadata; complete verification in Search Console after deployment.
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`: a GA4 measurement ID such as `G-XXXXXXXXXX`.
-- `NEXT_PUBLIC_GTM_ID`: a Google Tag Manager container ID such as `GTM-XXXXXXX`. If configured, GTM takes precedence over the direct GA4 setting.
+- `NEXT_PUBLIC_GTM_ID`: a Google Tag Manager container ID. The site defaults to `GTM-MHW925PF`; set this variable to override it, or set it to an empty value to disable GTM.
 
-Analytics scripts are loaded only after a visitor grants analytics consent through the cookie banner. Advertising consent remains denied. If using GTM, configure its tags for analytics only unless the consent controls and privacy disclosures are extended for additional purposes. Leave the IDs empty to disable the integrations.
+The official `GoogleTagManager` component from `@next/third-parties/google` is mounted globally through the root layout. Analytics scripts are loaded only after a visitor grants analytics consent through the cookie banner. Advertising consent remains denied. Configure GTM tags for analytics only unless the consent controls and privacy disclosures are extended for additional purposes. Direct GA4 is used only when GTM is disabled and a GA measurement ID is configured.
