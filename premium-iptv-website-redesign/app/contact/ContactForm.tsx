@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { trackAnalyticsEvent } from "../lib/analytics";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -28,6 +29,9 @@ export default function ContactForm() {
       });
       const result = (await response.json()) as { message?: string };
       if (!response.ok) throw new Error(result.message || "Your message could not be sent.");
+      if (response.status === 201) {
+        trackAnalyticsEvent("generate_lead", { method: "contact_form" });
+      }
       setStatus("success");
       setMessage(result.message || "Your message has been saved. For a direct response, please email or message us on WhatsApp.");
       form.reset();

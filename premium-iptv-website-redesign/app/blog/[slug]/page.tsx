@@ -71,38 +71,60 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${SITE_URL}/blog/${post.slug}`,
-    },
-    headline: post.title,
-    description: post.excerpt,
-    image: `${SITE_URL}/images/og-image.png`,
-    datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
-    author: {
-      "@type": "Organization",
-      name: `${SITE_NAME} Editorial`,
-      url: `${SITE_URL}/about`,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${SITE_URL}/brand/icon-1024.png`,
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `${SITE_URL}/blog/${post.slug}`,
+        },
+        headline: post.title,
+        description: post.excerpt,
+        image: `${SITE_URL}/images/og-image.png`,
+        datePublished: post.publishedAt,
+        dateModified: post.publishedAt,
+        author: {
+          "@type": "Organization",
+          name: `${SITE_NAME} Editorial`,
+          url: `${SITE_URL}/about`,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: SITE_URL,
+          logo: {
+            "@type": "ImageObject",
+            url: `${SITE_URL}/brand/icon-1024.png`,
+          },
+        },
+        articleSection: post.category,
+        keywords: post.keywords.join(", "),
       },
-    },
-    articleSection: post.category,
-    keywords: post.keywords.join(", "),
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Guides", item: `${SITE_URL}/blog` },
+          { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` },
+        ],
+      },
+    ],
   };
 
   return (
     <>
       <SitePage title={post.title} description={post.excerpt}>
         <article>
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-soft">
+              <li><Link href="/" className="hover:text-brand">Home</Link></li>
+              <li aria-hidden="true">/</li>
+              <li><Link href="/blog" className="hover:text-brand">Guides</Link></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" className="break-words font-semibold text-ink">{post.title}</li>
+            </ol>
+          </nav>
+
           <div className="flex flex-wrap items-center justify-between gap-3 border-y border-line py-4">
             <span className="rounded-full bg-haze px-3 py-1 text-xs font-bold text-brand">{post.category}</span>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-soft">
