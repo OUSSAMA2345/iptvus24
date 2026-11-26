@@ -15,14 +15,14 @@ export default function AboutPage() {
         <h2>Why customers choose us</h2>
         <ul>
           <li>Plan information and advertised prices are available before you contact us.</li>
-          <li>Support is reachable by email and WhatsApp, including for setup questions.</li>
+          <li>WhatsApp is the primary way to contact support, including for setup questions.</li>
           <li>Customers can review device compatibility before selecting a plan.</li>
           <li>The site publishes service, refund, privacy, and cookie information in one place.</li>
         </ul>
       </section>
       <section>
         <h2>Support commitment</h2>
-        <p>Our team can help with plan questions, basic setup, and troubleshooting. Contact <a className="font-bold text-brand underline" href="mailto:support@iptvus24.com">support@iptvus24.com</a> or message us on <a className="font-bold text-brand underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">WhatsApp</a>. Response times can vary with request volume. Never send passwords or card details in a support message.</p>
+        <p>Our team can help with plan questions, basic setup, and troubleshooting. Message us on <a className="font-bold text-brand underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">WhatsApp</a>. Response times can vary with request volume. Never send passwords or card details in a support message.</p>
       </section>
       <section>
         <h2>Device compatibility</h2>

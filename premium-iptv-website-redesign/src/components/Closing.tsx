@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import { footerCols } from "../data";
 import { CookieSettingsButton } from "../../app/ui/CookieConsent";
+import { WHATSAPP_NUMBER, WhatsAppButton } from "./WhatsApp";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -12,11 +13,12 @@ export function Footer() {
           <div>
             <Logo tagline />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-soft">
-              Clear plan information, device guidance, and direct support for IPTVUS24 visitors.
+              Clear plan information, device guidance, and WhatsApp-first support for IPTVUS24 visitors.
             </p>
-            <a href="mailto:support@iptvus24.com" className="mt-4 inline-block text-sm font-bold text-brand hover:underline">
-              support@iptvus24.com
-            </a>
+            <div className="mt-4 max-w-xs">
+              <WhatsAppButton>Chat on WhatsApp</WhatsAppButton>
+            </div>
+            <p className="mt-2 text-xs text-slate-soft">{WHATSAPP_NUMBER} · Response times may vary</p>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
             {footerCols.map((column) => (

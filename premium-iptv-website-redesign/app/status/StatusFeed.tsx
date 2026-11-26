@@ -52,7 +52,7 @@ export default function StatusFeed() {
         <h2>Current service status</h2>
         {unavailable ? (
           <p role="status" className="mt-3 rounded-xl bg-amber-50 p-4 font-semibold text-amber-900">
-            {unavailable} Please contact <a className="underline" href="mailto:support@iptvus24.com">support@iptvus24.com</a> for current service information.
+            {unavailable} For current service information, message us on <a className="underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">WhatsApp at +44 7473 970663</a>.
           </p>
         ) : current ? (
           <div className="mt-3 rounded-xl bg-mist p-4">

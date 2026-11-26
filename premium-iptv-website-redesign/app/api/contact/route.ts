@@ -12,7 +12,7 @@ const allowedSubjects = new Set([
   "Privacy request",
   "Other",
 ]);
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const whatsappPattern = /^\+?[0-9][0-9\s().-]{6,30}$/;
 
 function cleanText(value: unknown, maxLength: number) {
   if (typeof value !== "string") return "";
@@ -47,12 +47,12 @@ export async function POST(request: NextRequest) {
   }
 
   const name = cleanText(body.name, 100);
-  const email = cleanText(body.email, 254).toLowerCase();
+  const whatsappNumber = cleanText(body.whatsappNumber, 32);
   const subject = cleanText(body.subject, 120);
   const message = cleanText(body.message, 5000);
   if (
     name.length < 2 ||
-    !emailPattern.test(email) ||
+    !whatsappPattern.test(whatsappNumber) ||
     !allowedSubjects.has(subject) ||
     message.length < 10 ||
     body.consent !== true
@@ -63,13 +63,13 @@ export async function POST(request: NextRequest) {
   const supabase = getSupabaseAdmin();
   if (!supabase) {
     const message = getSupabaseConfigurationStatus() === "missing"
-      ? "The contact form is not configured yet. Please email support@iptvus24.com or contact us on WhatsApp."
-      : "The contact form has an invalid Supabase configuration. Please email support@iptvus24.com or contact us on WhatsApp.";
+      ? "The contact form is temporarily unavailable. Please contact us on WhatsApp at +44 7473 970663."
+      : "The contact form has an invalid Supabase configuration. Please contact us on WhatsApp at +44 7473 970663.";
     return jsonError(message, 503);
   }
 
   const rateAllowed = await checkFormRateLimit(request, supabase, "contact", 5);
-  if (rateAllowed === null) return jsonError("We could not verify this request. Please contact support directly.", 503);
+  if (rateAllowed === null) return jsonError("We could not verify this request. Please contact us on WhatsApp at +44 7473 970663.", 503);
   if (!rateAllowed) return jsonError("Too many messages were submitted. Please try again in about an hour.", 429);
 
   const { error: retentionError } = await supabase
@@ -78,14 +78,16 @@ export async function POST(request: NextRequest) {
     .lt("created_at", new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString());
   if (retentionError) {
     console.error("Could not apply contact-message retention:", retentionError.message);
-    return jsonError("We could not process your message right now. Please email support@iptvus24.com.", 503);
+    return jsonError("We could not process your request right now. Please contact us on WhatsApp at +44 7473 970663.", 503);
   }
 
-  const { error } = await supabase.from("contact_messages").insert({ name, email, subject, message });
+  const { error } = await supabase
+    .from("contact_messages")
+    .insert({ name, whatsapp_number: whatsappNumber, subject, message });
   if (error) {
     console.error("Could not save contact request:", error.message);
-    return jsonError("We could not save your message. Please email support@iptvus24.com or try again later.", 503);
+    return jsonError("We could not save your request. Please contact us on WhatsApp at +44 7473 970663 or try again later.", 503);
   }
 
-  return Response.json({ message: "Your message has been saved. For a direct response, email support@iptvus24.com or contact us on WhatsApp." }, { status: 201 });
+  return Response.json({ message: "Your request has been saved. We will respond via WhatsApp; response times may vary." }, { status: 201 });
 }

@@ -49,7 +49,7 @@ export default function TermsPage() {
       </section>
       <section>
         <h2>8. Changes and contact</h2>
-        <p>We may update these terms for legal, operational, or security reasons. Material changes will be posted here with a revised effective date. Questions can be sent to <a className="font-bold text-brand underline" href="mailto:support@iptvus24.com">support@iptvus24.com</a> or by WhatsApp at <a className="font-bold text-brand underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">+44 7473 970663</a>.</p>
+        <p>We may update these terms for legal, operational, or security reasons. Material changes will be posted here with a revised effective date. Questions can be sent through the <a className="font-bold text-brand underline" href="/contact">Contact page</a> or by WhatsApp at <a className="font-bold text-brand underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">+44 7473 970663</a>.</p>
       </section>
     </SitePage>
   );

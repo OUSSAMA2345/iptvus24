@@ -20,7 +20,7 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: values.get("name"),
-          email: values.get("email"),
+          whatsappNumber: values.get("whatsappNumber"),
           subject: values.get("subject"),
           message: values.get("message"),
           website: values.get("website"),
@@ -33,11 +33,11 @@ export default function ContactForm() {
         trackAnalyticsEvent("generate_lead", { method: "contact_form" });
       }
       setStatus("success");
-      setMessage(result.message || "Your message has been saved. For a direct response, please email or message us on WhatsApp.");
+      setMessage(result.message || "Your request has been saved. We will respond via WhatsApp; response times may vary.");
       form.reset();
     } catch (error) {
       setStatus("error");
-      setMessage(error instanceof Error ? error.message : "Your message could not be sent. Please try again.");
+      setMessage(error instanceof Error ? error.message : "Your request could not be saved. Please try again or contact us on WhatsApp.");
     }
   }
 
@@ -48,8 +48,8 @@ export default function ContactForm() {
         <input name="name" required minLength={2} maxLength={100} autoComplete="name" className="mt-2 w-full rounded-xl border border-line px-4 py-3 font-medium outline-none focus:border-brand" />
       </label>
       <label className="block text-sm font-bold text-ink">
-        Email
-        <input name="email" type="email" required maxLength={254} autoComplete="email" className="mt-2 w-full rounded-xl border border-line px-4 py-3 font-medium outline-none focus:border-brand" />
+        WhatsApp number
+        <input name="whatsappNumber" type="tel" required minLength={7} maxLength={32} autoComplete="tel" placeholder="+44 7473 970663" pattern="\+?[0-9][0-9\s().-]{6,30}" className="mt-2 w-full rounded-xl border border-line px-4 py-3 font-medium outline-none focus:border-brand" />
       </label>
       <label className="block text-sm font-bold text-ink">
         Subject
@@ -68,7 +68,7 @@ export default function ContactForm() {
       </label>
       <label className="flex items-start gap-3 text-sm font-medium leading-relaxed text-slate-soft">
         <input name="consent" type="checkbox" required className="mt-1 accent-[#0a84ff]" />
-        I understand that my information will be used to respond to this request as explained in the <a href="/privacy" className="font-bold text-brand underline">Privacy Policy</a>.
+        I agree that my WhatsApp number and message may be stored in Supabase and used to respond to this request, as explained in the <a href="/privacy" className="font-bold text-brand underline">Privacy Policy</a>.
       </label>
       <label aria-hidden="true" className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden">
         Leave this field empty
@@ -80,7 +80,7 @@ export default function ContactForm() {
         </p>
       )}
       <button type="submit" disabled={status === "sending"} className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-60">
-        {status === "sending" ? "Sending…" : "Send message"}
+        {status === "sending" ? "Saving…" : "Send contact request"}
       </button>
     </form>
   );

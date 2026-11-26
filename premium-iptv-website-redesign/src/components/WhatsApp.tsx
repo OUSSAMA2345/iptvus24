@@ -20,24 +20,38 @@ export function WhatsAppContactSection() {
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-20" aria-labelledby="whatsapp-contact-title">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-line bg-mist p-6 sm:flex-row sm:items-center sm:p-8">
-          <div className="max-w-xl">
-            <p className="text-sm font-bold text-brand">Questions before you order?</p>
-            <h2 id="whatsapp-contact-title" className="font-display mt-2 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-              Get a clear answer from support.
-            </h2>
-            <p className="mt-2 text-sm text-slate-soft">{WHATSAPP_NUMBER} · WhatsApp support</p>
+        <div className="grid gap-5 lg:grid-cols-[1fr_0.85fr]">
+          <div className="flex flex-col items-start justify-center gap-6 rounded-2xl border border-line bg-mist p-6 sm:p-8">
+            <div className="max-w-xl">
+              <p className="text-sm font-bold text-brand">Questions before you order?</p>
+              <h2 id="whatsapp-contact-title" className="font-display mt-2 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+                Get the details directly on WhatsApp.
+              </h2>
+              <p className="mt-2 text-sm text-slate-soft">
+                {WHATSAPP_NUMBER} · WhatsApp support · Response times may vary
+              </p>
+            </div>
+            <div className="w-full sm:w-auto sm:min-w-52">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-5 py-3 text-sm font-extrabold text-white transition-colors hover:bg-[#20bd5a] focus-visible:outline-[#075e54] sm:w-auto"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+                Ask on WhatsApp
+              </a>
+            </div>
           </div>
-          <div className="w-full sm:w-auto sm:min-w-52">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-5 py-3 text-sm font-extrabold text-white transition-colors hover:bg-[#20bd5a] focus-visible:outline-[#075e54] sm:w-auto"
-            >
-              <WhatsAppIcon className="h-5 w-5" />
-              Ask on WhatsApp
-            </a>
+          <div className="rounded-2xl border border-line bg-white p-5 sm:p-6">
+            <p className="text-sm font-extrabold text-ink">Before you pay</p>
+            <p className="mt-2 text-sm leading-relaxed text-slate-soft">
+              Confirm the seller, payment options, current activation estimate, and trial availability with us on WhatsApp. Your order should state its term and renewal conditions; the first-plan refund policy and exclusions are in the published policy.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm font-bold">
+              <a href="/terms" className="text-brand underline underline-offset-4">Read service terms</a>
+              <a href="/refund" className="text-brand underline underline-offset-4">Read refund policy</a>
+            </div>
           </div>
         </div>
       </div>
