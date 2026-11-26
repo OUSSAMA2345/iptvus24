@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <section>
         <h2>2. Information we collect</h2>
         <ul>
-          <li><b>Contact requests:</b> name, email address, subject, and the message you submit through the contact form.</li>
+          <li><b>Contact requests:</b> name, WhatsApp number, subject, and the message you submit through the contact form. The contact form does not ask for an email address.</li>
           <li><b>Reviews:</b> display name, 1–5 star rating, review text, submission time, and moderation state. Review submissions do not ask for an email address.</li>
           <li><b>Technical and security data:</b> limited request and diagnostic information handled by the hosting provider. Form anti-abuse controls may use a keyed, non-reversible hash of a network address for rate limiting; the raw address is not stored in the application form record.</li>
           <li><b>Cookie choice:</b> a local browser-storage preference recording whether optional categories were accepted or rejected.</li>

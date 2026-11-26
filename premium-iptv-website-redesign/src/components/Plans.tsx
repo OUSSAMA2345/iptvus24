@@ -3,6 +3,7 @@ import { plans } from "../data";
 import { cn } from "../utils/cn";
 import { WhatsAppButton } from "./WhatsApp";
 import Reveal from "./Reveal";
+import { PricingTrustDetails } from "./TrustDetails";
 
 export default function Plans() {
   return (
@@ -49,6 +50,7 @@ export default function Plans() {
             </Reveal>
           ))}
         </div>
+        <PricingTrustDetails />
         <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-relaxed text-slate-soft">
           Refunds are subject to eligibility and exclusions in our{" "}
           <a href="/refund" className="font-bold text-brand underline underline-offset-4">30-day refund policy</a>.

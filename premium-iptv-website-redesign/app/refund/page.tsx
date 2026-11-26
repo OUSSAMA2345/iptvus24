@@ -22,8 +22,8 @@ export default function RefundPage() {
       </section>
       <section>
         <h2>3. How to request a refund</h2>
-        <p>Email <a className="font-bold text-brand underline" href="mailto:support@iptvus24.com?subject=Refund%20request">support@iptvus24.com</a> with “Refund request” in the subject, or send us a WhatsApp message at <a className="font-bold text-brand underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">+44 7473 970663</a>. Include the name on the order, order reference, purchase date, and the email used at purchase. Do not send card numbers, security codes, or passwords.</p>
-        <p>You may also use the <a className="font-bold text-brand underline" href="/contact">contact form</a>. We will confirm receipt and may contact you if we need reasonable information to locate the order.</p>
+        <p>Send us a WhatsApp message at <a className="font-bold text-brand underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">+44 7473 970663</a> or use the <a className="font-bold text-brand underline" href="/contact">contact form</a>. Include the name on the order, order reference, and purchase date. Do not send card numbers, security codes, or passwords.</p>
+        <p>We will confirm receipt and may contact you via WhatsApp if we need reasonable information to locate the order.</p>
       </section>
       <section>
         <h2>4. Decision and processing time</h2>

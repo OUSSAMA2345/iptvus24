@@ -104,13 +104,14 @@ Articles are grouped around search intent rather than keyword variants. Each art
 | Hero image used a browser-native `<img>`. | Next.js optimized image component requests responsive image sizes and prioritizes the LCP candidate. |
 | Invalid production key was easily confused with missing setup. | Production API response distinguishes absent configuration from an invalid named variable; logs do not reveal secret values. |
 
-## Release roadmap
+## Updated conversion and content roadmap
 
-1. **Verify indexing after recovery:** deploy the host-routing fix, resubmit `/sitemap.xml` in Search Console, and inspect discovery/indexing for all 36 article URLs.
-2. **Monitor Search Console coverage:** review excluded, crawled-not-indexed, duplicate-canonical, and soft-404 reports; fix issues based on actual URL inspection rather than assumptions.
-3. **Measure real-user performance:** collect mobile Core Web Vitals and run Lighthouse on representative landing, blog, and article routes; prioritize any measured LCP, INP, CLS, or accessibility regressions.
-4. **Improve article differentiation:** add original, relevant article imagery and clearer author/editorial review details where factual ownership can be established; do not use generic stock imagery or unverifiable expertise claims.
-5. **Maintain editorial accuracy:** periodically recheck device instructions, app availability, rights terminology, and refund/payment terms, and update article dates only when content is meaningfully revised.
+1. **Deploy the WhatsApp-first contact flow:** apply `20261126193000_whatsapp_contact_leads.sql` before deployment, then verify a contact request is stored in Supabase with its WhatsApp number and that WhatsApp remains the direct support path.
+2. **Measure qualified actions:** after analytics consent, use the existing `whatsapp_click` and successful-submit `generate_lead` events to compare pricing, page, and CTA locations. Keep personal contact details and message text out of event parameters; connect completed orders to attribution only when real sales data is available.
+3. **Show purchase terms before payment:** disclose the contracting seller and only verified payment, renewal, refund, and support facts. Ask customers to confirm activation timing and trial availability on WhatsApp rather than implying a fixed activation time, 24/7 support, or an available trial.
+4. **Build genuine review volume:** invite actual customers to submit reviews, explain moderation and purchase verification accurately, and do not seed, embellish, or imply verification for unverified reviews.
+5. **Improve SEO content quality:** all 36 live articles currently share one publication date; their bodies range from 144–310 words (median 177) and contain no article-body images. Add useful, original device-specific steps, tested screenshots or diagrams, authoritative citations, and a real author/reviewer only when those details can be verified. Consolidate overlapping search intent and change publication dates only after meaningful updates.
+6. **Keep monitoring indexation and performance:** use Search Console for coverage and duplicate-canonical reports, and use field data or representative Lighthouse runs for Core Web Vitals. Prioritize only measured issues rather than inferring scores from the build.
 
 ## Google configuration
 

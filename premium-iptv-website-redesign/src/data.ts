@@ -160,12 +160,32 @@ export const faqs: { q: string; a: string; cat: FaqCategory }[] = [
   },
   {
     q: "Can I get a refund?",
-    a: "Some first plan purchases may qualify under the 30-day refund policy. Eligibility, exclusions, and processing details are explained on the Refund Policy page.",
+    a: "The first paid plan is covered by the 30-day refund policy. Eligibility, exclusions, and processing details are explained on the Refund Policy page.",
+    cat: "Billing",
+  },
+  {
+    q: "Which payment methods can I use?",
+    a: "Available payment methods, currency, and any applicable taxes are shown before you authorize an order. Ask support if you need clarification before paying.",
+    cat: "Billing",
+  },
+  {
+    q: "How soon will my plan be activated?",
+    a: "The plan pages do not promise a fixed activation time. Ask support for the current estimate before you place an order.",
+    cat: "Setup",
+  },
+  {
+    q: "Is a trial available?",
+    a: "A trial is not listed as a standard plan feature. Ask support whether a trial is currently available before paying.",
+    cat: "Billing",
+  },
+  {
+    q: "Will my plan renew automatically?",
+    a: "Unless your order expressly says otherwise, a plan ends at the end of its stated term and does not renew automatically. Any recurring renewal must be disclosed and authorized before payment.",
     cat: "Billing",
   },
   {
     q: "How can I contact support?",
-    a: "Contact support by email or WhatsApp. Response times may vary. Do not send passwords, account credentials, or payment-card details in a message.",
+    a: "WhatsApp is the primary contact method for pre-sale questions. Response times may vary. Do not send passwords, account credentials, or payment-card details in a message.",
     cat: "Support",
   },
 ];
