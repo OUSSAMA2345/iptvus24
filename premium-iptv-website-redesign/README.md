@@ -2,6 +2,10 @@
 
 The site uses Next.js App Router and requires Node.js 20.9 or newer. Start locally with `npm install` and `npm run dev`; run `npm run typecheck` and `npm run build` before deployment.
 
+## Deployment
+
+Deploy `premium-iptv-website-redesign` as a Next.js project on Vercel, not as a static Vite/export build. The review form depends on the `/api/reviews` server route. After deployment, `GET /api/reviews` should return JSON; a 404 means the deployed revision or project root does not include the Next.js app, while a JSON 503 points to Supabase configuration or database setup.
+
 ## Supabase setup
 
 The review feature requires a provisioned Supabase project and its migration; this repository cannot create an external project or obtain credentials on your behalf. Follow these steps before testing review submissions.

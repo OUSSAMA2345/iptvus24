@@ -17,6 +17,14 @@ type ReviewPayload = {
   reviewCount: number;
 };
 
+async function readApiMessage(response: Response) {
+  try {
+    return await response.json() as { message?: string };
+  } catch {
+    return null;
+  }
+}
+
 export default function Reviews() {
   const [data, setData] = useState<ReviewPayload | null>(null);
   const [loadError, setLoadError] = useState("");
@@ -29,8 +37,8 @@ export default function Reviews() {
     try {
       const response = await fetch("/api/reviews", { cache: "no-store" });
       if (!response.ok) {
-        const result = await response.json() as { message?: string };
-        throw new Error(result.message || "Published reviews are unavailable.");
+        const result = await readApiMessage(response);
+        throw new Error(result?.message || "Published reviews are unavailable.");
       }
       const payload = (await response.json()) as ReviewPayload;
       setData(payload);
@@ -69,8 +77,13 @@ export default function Reviews() {
           consent: formData.get("consent") === "on",
         }),
       });
-      const result = (await response.json()) as { message?: string };
-      if (!response.ok) throw new Error(result.message || "Your review could not be submitted.");
+      const result = await readApiMessage(response);
+      if (!response.ok) {
+        throw new Error(result?.message || "The review service is unavailable. Please try again later.");
+      }
+      if (!result) {
+        throw new Error("The review service returned an unexpected response. Please try again later.");
+      }
 
       form.reset();
       setRating(0);
