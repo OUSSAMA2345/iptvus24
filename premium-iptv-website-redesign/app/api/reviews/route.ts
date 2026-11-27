@@ -1,11 +1,20 @@
 import type { NextRequest } from "next/server";
 import {
   getSupabaseAdmin,
-  getSupabaseConfigurationIssues,
   getSupabaseConfigurationStatus,
 } from "../../lib/supabase-admin";
-import { checkFormRateLimit, jsonError } from "../../lib/rate-limit";
+import {
+  checkFormRateLimit,
+  isJsonContentType,
+  isSameOriginRequest,
+  jsonError,
+} from "../../lib/rate-limit";
 import { isReviewTextLengthValid } from "@/lib/review-validation";
+import {
+  cleanFormText,
+  isCodePointLengthBetween,
+  isDatabaseValidationError,
+} from "@/lib/form-validation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,18 +24,7 @@ function configurationErrorMessage() {
     return "Review submissions are not configured yet. Please contact support if you need help.";
   }
 
-  const invalidVariables = getSupabaseConfigurationIssues()
-    .map(({ variable }) => variable)
-    .join(", ");
-  return `The review service has an invalid Supabase configuration (${invalidVariables}). Correct these Vercel Production variables and redeploy.`;
-}
-
-function cleanText(value: unknown) {
-  if (typeof value !== "string") return "";
-  return value
-    .replace(/\r\n?/g, "\n")
-    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
-    .trim();
+  return "The review service is temporarily unavailable due to a server configuration issue. Please try again later.";
 }
 
 export async function GET() {
@@ -61,12 +59,15 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
-  const contentLength = Number(request.headers.get("content-length") || 0);
-  if (contentLength > 5_000) return jsonError("The submitted review is too large.", 413);
-  const contentType = request.headers.get("content-type")?.split(";")[0].trim().toLowerCase();
-  if (contentType !== "application/json") {
+  if (!isSameOriginRequest(request)) {
+    return jsonError("Cross-origin review submissions are not allowed.", 403);
+  }
+  if (!isJsonContentType(request)) {
     return jsonError("Please submit the review using the provided form.", 415);
   }
+
+  const contentLength = Number(request.headers.get("content-length") || 0);
+  if (contentLength > 5_000) return jsonError("The submitted review is too large.", 413);
 
   let body: Record<string, unknown>;
   try {
@@ -83,16 +84,15 @@ export async function POST(request: NextRequest) {
     return jsonError("Please submit a valid review.", 400);
   }
 
-  if (cleanText(body.website)) {
+  if (cleanFormText(body.website, 200)) {
     return Response.json({ message: "Thanks. Your review was received and is awaiting moderation." }, { status: 202 });
   }
 
-  const displayName = cleanText(body.displayName);
-  const reviewText = cleanText(body.reviewText);
+  const displayName = cleanFormText(body.displayName);
+  const reviewText = cleanFormText(body.reviewText);
   const rating = body.rating;
   if (
-    displayName.length < 2 ||
-    displayName.length > 60 ||
+    !isCodePointLengthBetween(displayName, 2, 60) ||
     !isReviewTextLengthValid(reviewText) ||
     typeof rating !== "number" ||
     !Number.isInteger(rating) ||
@@ -100,7 +100,10 @@ export async function POST(request: NextRequest) {
     rating > 5 ||
     body.consent !== true
   ) {
-    return jsonError("Enter a display name, a review with at least 5 characters (or “Good” or “Nice”), a 1–5 star rating, and agree to publication if approved.", 400);
+    return jsonError(
+      "Enter a display name (2–60 characters), a review with at least 5 characters (or “Good” or “Nice”), a 1–5 star rating, and agree to publication if approved.",
+      400,
+    );
   }
 
   const supabase = getSupabaseAdmin();
@@ -112,16 +115,6 @@ export async function POST(request: NextRequest) {
   if (rateAllowed === null) return jsonError("We could not verify this submission. Please try again later.", 503);
   if (!rateAllowed) return jsonError("Too many reviews were submitted. Please try again in about an hour.", 429);
 
-  const { error: retentionError } = await supabase
-    .from("reviews")
-    .delete()
-    .eq("status", "pending")
-    .lt("created_at", new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString());
-  if (retentionError) {
-    console.error("Could not apply pending-review retention:", retentionError.message);
-    return jsonError("We could not process your review right now. Please try again later.", 503);
-  }
-
   const { error } = await supabase.from("reviews").insert({
     display_name: displayName,
     rating,
@@ -129,6 +122,12 @@ export async function POST(request: NextRequest) {
     status: "pending",
   });
   if (error) {
+    if (isDatabaseValidationError(error)) {
+      return jsonError(
+        "Enter a display name (2–60 characters), a review with at least 5 characters (or “Good” or “Nice”), and a 1–5 star rating.",
+        400,
+      );
+    }
     console.error("Could not save review:", error.message);
     return jsonError("We could not save your review. Please try again later.", 503);
   }

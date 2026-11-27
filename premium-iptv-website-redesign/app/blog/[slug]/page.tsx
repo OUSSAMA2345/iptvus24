@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import SitePage from "../../ui/SitePage";
+import SitePage, { SiteProse } from "../../ui/SitePage";
 import { SITE_NAME, SITE_URL } from "../../metadata";
 import { blogPosts, getBlogPost } from "../posts";
 
@@ -117,9 +117,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <article>
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-soft">
-              <li><Link href="/" className="hover:text-brand">Home</Link></li>
+              <li><Link href="/" className="rounded hover:text-brand">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/blog" className="hover:text-brand">Guides</Link></li>
+              <li><Link href="/blog" className="rounded hover:text-brand">Guides</Link></li>
               <li aria-hidden="true">/</li>
               <li aria-current="page" className="break-words font-semibold text-ink">{post.title}</li>
             </ol>
@@ -133,7 +133,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
 
-          <div className="mt-8 space-y-8">
+          <SiteProse className="mt-8">
             {post.sections.map((section, index) => (
               <section key={section.heading} aria-labelledby={`article-section-${index + 1}`}>
                 <h2 id={`article-section-${index + 1}`}>{section.heading}</h2>
@@ -147,23 +147,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 )}
               </section>
             ))}
-          </div>
+          </SiteProse>
 
           <nav aria-label="Article navigation" className="mt-10 border-t border-line pt-5">
-            <Link href="/blog" className="inline-flex min-h-11 items-center gap-2 font-bold text-brand hover:text-brand-deep">
+            <Link href="/blog" className="inline-flex min-h-11 items-center gap-2 text-sm font-bold text-brand hover:text-brand-deep">
               <span aria-hidden="true">←</span> All articles
             </Link>
           </nav>
 
           {relatedPosts.length > 0 && (
             <section aria-labelledby="related-articles-heading" className="mt-10 border-t border-line pt-7">
-              <h2 id="related-articles-heading">Related articles</h2>
+              <h2 id="related-articles-heading" className="font-display text-xl font-extrabold leading-tight text-ink">
+                Related articles
+              </h2>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {relatedPosts.map((related) => (
                   <li key={related.slug} className="rounded-xl border border-line bg-mist p-4">
                     <span className="text-xs font-bold text-brand">{related.category}</span>
-                    <h3 className="mt-2 font-display font-bold text-ink">
-                      <Link href={`/blog/${related.slug}`} className="hover:text-brand">
+                    <h3 className="mt-2 font-display text-base font-bold text-ink">
+                      <Link href={`/blog/${related.slug}`} className="rounded hover:text-brand">
                         {related.title}
                       </Link>
                     </h3>

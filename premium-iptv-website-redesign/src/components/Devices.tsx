@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "../utils/cn";
 import { SectionHead } from "./ui";
 import { devices } from "../data";
@@ -137,9 +138,9 @@ export default function Devices() {
 
           <p className="mt-6 text-center text-sm font-semibold text-slate-soft">
             Need help checking a specific model?{" "}
-            <a href="/contact" className="font-bold text-brand underline decoration-cyan/50 underline-offset-4 hover:text-brand-deep">
+            <Link href="/contact" className="font-bold text-brand underline decoration-cyan/50 underline-offset-4 hover:text-brand-deep">
               Contact support before ordering
-            </a>
+            </Link>
           </p>
       </div>
     </section>

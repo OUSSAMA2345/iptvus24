@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon } from "./ui";
 
 const links = [
@@ -12,11 +13,19 @@ export default function TrustBar() {
       <ul className="mx-auto grid max-w-7xl grid-cols-1 gap-3 px-4 sm:grid-cols-3 sm:px-6">
         {links.map((link) => (
           <li key={link.title}>
-            <a href={link.href} className="flex min-h-12 items-center justify-center gap-2.5 rounded-xl px-3 py-2 text-sm font-bold text-ink transition-colors hover:bg-mist hover:text-brand">
-              <Icon name={link.icon} className="h-4 w-4 text-brand" />
-              {link.title}
-              <span aria-hidden="true" className="text-brand">→</span>
-            </a>
+            {link.href.startsWith("/") ? (
+              <Link href={link.href} className="flex min-h-12 items-center justify-center gap-2.5 rounded-xl px-3 py-2 text-sm font-bold text-ink transition-colors hover:bg-mist hover:text-brand">
+                <Icon name={link.icon} className="h-4 w-4 text-brand" />
+                {link.title}
+                <span aria-hidden="true" className="text-brand">→</span>
+              </Link>
+            ) : (
+              <a href={link.href} className="flex min-h-12 items-center justify-center gap-2.5 rounded-xl px-3 py-2 text-sm font-bold text-ink transition-colors hover:bg-mist hover:text-brand">
+                <Icon name={link.icon} className="h-4 w-4 text-brand" />
+                {link.title}
+                <span aria-hidden="true" className="text-brand">→</span>
+              </a>
+            )}
           </li>
         ))}
       </ul>

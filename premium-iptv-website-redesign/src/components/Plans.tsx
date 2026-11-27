@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon, SectionHead } from "./ui";
 import { plans } from "../data";
 import { cn } from "../utils/cn";
@@ -53,7 +54,7 @@ export default function Plans() {
         <PricingTrustDetails />
         <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-relaxed text-slate-soft">
           Refunds are subject to eligibility and exclusions in our{" "}
-          <a href="/refund" className="font-bold text-brand underline underline-offset-4">30-day refund policy</a>.
+          <Link href="/refund" className="font-bold text-brand underline underline-offset-4">30-day refund policy</Link>.
           Prices are shown in USD; confirm any applicable taxes and payment terms before purchase.
         </p>
       </div>

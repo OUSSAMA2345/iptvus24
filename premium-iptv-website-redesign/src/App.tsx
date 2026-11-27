@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-mist font-body text-ink antialiased">
       <Navbar />
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1} className="outline-none">
         <Hero />
         <Reveal><TrustBar /></Reveal>
         <Reveal><Devices /></Reveal>
