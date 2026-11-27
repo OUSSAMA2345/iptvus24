@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { DeviceDepthLayers } from "./SpatialScene";
 import { devicesEcosystem } from "../assets";
 import { cn } from "../utils/cn";
 import { SectionHead } from "./ui";
@@ -121,7 +122,7 @@ export default function Devices() {
           sub="Common device types are listed below. Availability depends on your model, software, player app, and region; ask support to confirm compatibility."
         />
 
-        <div className="device-stage mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl border border-line bg-[#081325] shadow-card">
+        <div className="device-stage mx-auto mt-10 max-w-4xl rounded-3xl border border-line bg-[#081325] shadow-card">
           <Image
             src={devicesEcosystem}
             alt="Unbranded smart TV, streaming media box, remote, tablet, and smartphone with abstract blue interfaces"
@@ -131,6 +132,7 @@ export default function Devices() {
             sizes="(max-width: 895px) 100vw, 896px"
             className="h-auto w-full"
           />
+          <DeviceDepthLayers />
         </div>
 
         {/* Device cards */}

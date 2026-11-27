@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Footer } from "../../src/components/Closing";
+import ThemeToggle from "../../src/components/ThemeToggle";
 import { WHATSAPP_NUMBER, WHATSAPP_URL, WhatsAppIcon } from "../../src/components/WhatsApp";
 import { cn } from "../../src/utils/cn";
 
@@ -33,13 +34,14 @@ export default function SitePage({
   children: ReactNode;
 }) {
   return (
-    <>
-      <header className="border-b border-line bg-white">
+    <div className="document-site">
+      <header className="document-header border-b border-line bg-surface">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
           <Link href="/" className="font-display text-xl font-extrabold tracking-tight text-ink">
             IPTV<span className="text-brand">US24</span>
           </Link>
           <nav aria-label="Main navigation" className="flex items-center gap-3 text-sm font-bold">
+            <ThemeToggle />
             <Link href="/" className="rounded px-1 py-0.5 text-slate-soft hover:text-brand">Home</Link>
             <Link href="/contact" className="rounded px-1 py-0.5 text-slate-soft hover:text-brand">Contact</Link>
             <a
@@ -57,7 +59,7 @@ export default function SitePage({
       </header>
       <main id="main-content" tabIndex={-1} className="min-h-[65vh] bg-mist outline-none">
         <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
-          <div className="rounded-3xl border border-line bg-white p-6 shadow-card sm:p-10">
+          <div className="rounded-3xl border border-line bg-surface p-6 shadow-card sm:p-10">
             <h1 className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">{title}</h1>
             <p className="mt-4 text-base leading-relaxed text-slate-soft">{description}</p>
             <div className="mt-8">{children}</div>
@@ -65,6 +67,6 @@ export default function SitePage({
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

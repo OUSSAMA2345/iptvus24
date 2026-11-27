@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
+import ThemeToggle from "./ThemeToggle";
 import { WHATSAPP_NUMBER, WHATSAPP_URL, WhatsAppIcon } from "./WhatsApp";
 
 const links = [
@@ -54,7 +55,8 @@ export default function Navbar() {
               ),
             )}
           </div>
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="nav-actions flex items-center gap-2 sm:gap-3">
+            <ThemeToggle />
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hidden min-h-11 items-center gap-2 rounded-xl bg-[#e8f9ee] px-3 py-2 text-sm font-bold text-[#075e54] hover:bg-[#d5f4df] sm:inline-flex">
               <WhatsAppIcon className="h-4 w-4 text-[#25d366]" />
               <span className="xl:hidden">WhatsApp</span>
