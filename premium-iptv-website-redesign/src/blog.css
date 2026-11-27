@@ -1,0 +1,21 @@
+/* Scoped article typography; native tables remain keyboard-scrollable on small screens. */
+.blog-markdown { min-width: 0; overflow-wrap: anywhere; font-size: 1rem; line-height: 1.85; }
+.blog-markdown > * + * { margin-top: 1.25rem; }
+.blog-markdown :is(h2,h3) { scroll-margin-top: 2rem; color: var(--color-ink); }
+.blog-markdown h2 { margin-top: 3rem; font-size: clamp(1.4rem,3vw,1.8rem); line-height: 1.35; }
+.blog-markdown h3 { margin-top: 2rem; font-size: 1.15rem; line-height: 1.5; }
+.blog-markdown a { color: var(--color-brand); text-decoration: underline; text-underline-offset: .2em; }
+.blog-markdown :is(ul,ol) { padding-left: 1.4rem; }
+.blog-markdown ul { list-style: disc; }
+.blog-markdown ol { list-style: decimal; }
+.blog-markdown li + li { margin-top: .6rem; }
+.blog-markdown strong { color: var(--color-ink); }
+.blog-markdown blockquote { border-left: 3px solid var(--color-brand); padding: .8rem 1.2rem; background: var(--color-mist); }
+.blog-markdown pre { overflow-x: auto; padding: 1rem; background: var(--color-mist); border: 1px solid var(--color-line); border-radius: .75rem; font-size: .85rem; line-height: 1.7; }
+.blog-markdown :not(pre) > code { border-radius: .2rem; padding: .1rem .3rem; background: var(--color-mist); font-size: .9em; }
+.blog-table-scroll { max-width: 100%; overflow-x: auto; border: 1px solid var(--color-line); border-radius: .75rem; }
+.blog-table-scroll:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 3px; }
+.blog-markdown table { width: 100%; min-width: 580px; border-collapse: collapse; font-size: .875rem; line-height: 1.7; }
+.blog-markdown :is(th,td) { padding: .9rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-line); }
+.blog-markdown th { background: var(--color-mist); color: var(--color-ink); }
+.blog-markdown tbody tr:last-child td { border-bottom: 0; }

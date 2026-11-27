@@ -13,7 +13,10 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "audit:content": "node scripts/audit-content.mjs",
+    "audit:content:complete": "node scripts/audit-content.mjs --complete",
+    "prebuild": "npm run audit:content"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "^5.3.0",
@@ -26,6 +29,8 @@
     "next": "^16.4.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "tailwind-merge": "3.4.0"
   },
   "devDependencies": {
