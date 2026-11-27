@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { WhatsAppButton } from "./WhatsApp";
 
 const orderDetails = [
@@ -56,8 +57,8 @@ export function PricingTrustDetails() {
           <WhatsAppButton>Confirm details on WhatsApp</WhatsAppButton>
         </div>
         <p className="text-center text-xs text-slate-soft">
-          Read the <a href="/terms" className="font-bold text-brand underline underline-offset-4">Terms</a> and{" "}
-          <a href="/refund" className="font-bold text-brand underline underline-offset-4">Refund Policy</a>.
+          Read the <Link href="/terms" className="font-bold text-brand underline underline-offset-4">Terms</Link> and{" "}
+          <Link href="/refund" className="font-bold text-brand underline underline-offset-4">Refund Policy</Link>.
         </p>
       </div>
     </section>

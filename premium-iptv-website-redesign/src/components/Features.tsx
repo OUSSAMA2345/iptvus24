@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon, SectionHead } from "./ui";
 import { features } from "../data";
 
@@ -23,7 +24,7 @@ export default function Features() {
         </div>
         <p className="mt-6 text-center text-sm text-slate-soft">
           Content availability and rights can vary by location.{" "}
-          <a href="/terms" className="font-bold text-brand underline underline-offset-4">Review the service terms.</a>
+          <Link href="/terms" className="font-bold text-brand underline underline-offset-4">Review the service terms.</Link>
         </p>
       </div>
     </section>

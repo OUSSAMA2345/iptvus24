@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata("Community Reviews", "Read modera
 export default function ReviewsPage() {
   return (
     <SitePage title="Community reviews" description="Read published visitor-submitted reviews or share your experience. Submissions are moderated; purchase status is not independently verified.">
-      <Reviews />
+      <Reviews embedded />
     </SitePage>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 import { footerCols } from "../data";
 import { CookieSettingsButton } from "../../app/ui/CookieConsent";
@@ -27,9 +28,20 @@ export function Footer() {
                 <ul className="mt-3 space-y-2.5">
                   {column.links.map((link) => (
                     <li key={link.href}>
-                      <a href={link.href} className="text-sm text-slate-soft hover:text-brand">
-                        {link.label}
-                      </a>
+                      {link.href.startsWith("http") ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded text-sm text-slate-soft hover:text-brand"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link href={link.href} className="rounded text-sm text-slate-soft hover:text-brand">
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>

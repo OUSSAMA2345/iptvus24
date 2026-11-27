@@ -5,8 +5,10 @@ export const SITE_NAME = "IPTVUS24";
 
 export function pageMetadata(title: string, description: string, path: string): Metadata {
   const canonical = path === "/" ? "/" : path;
+  const includesBrand = title.toLowerCase().includes(SITE_NAME.toLowerCase());
+
   return {
-    title,
+    title: includesBrand ? { absolute: title } : title,
     description,
     alternates: { canonical },
     openGraph: {

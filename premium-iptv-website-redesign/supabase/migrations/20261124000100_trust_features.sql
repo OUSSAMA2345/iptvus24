@@ -104,7 +104,6 @@ begin
   do update set hit_count = current_limit.hit_count + 1
   returning hit_count into hits;
 
-  delete from public.form_rate_limits where window_start < now() - interval '30 days';
   return hits <= p_limit;
 end;
 $$;
@@ -162,10 +161,27 @@ $$;
 revoke all on function public.purge_expired_form_data() from public, anon, authenticated;
 grant execute on function public.purge_expired_form_data() to service_role;
 
-create extension if not exists pg_cron;
+do $$
+begin
+  begin
+    create extension if not exists pg_cron;
+  exception
+    when others then
+      raise notice 'pg_cron could not be enabled automatically (%). Enable pg_cron in Database -> Extensions or run public.purge_expired_form_data() from an external scheduler.', sqlerrm;
+  end;
 
-select cron.schedule(
-  'iptvus24-purge-expired-form-data',
-  '17 3 * * *',
-  'select public.purge_expired_form_data()'
-);
+  if exists (select 1 from pg_extension where extname = 'pg_cron')
+     and to_regprocedure('cron.schedule(text,text,text)') is not null then
+    perform cron.schedule(
+      'iptvus24-purge-expired-form-data',
+      '17 3 * * *',
+      'select public.purge_expired_form_data()'
+    );
+  else
+    raise notice 'pg_cron is unavailable; skipped scheduling iptvus24-purge-expired-form-data. Enable pg_cron or schedule select public.purge_expired_form_data() externally.';
+  end if;
+exception
+  when others then
+    raise notice 'Could not schedule iptvus24-purge-expired-form-data via pg_cron (%).', sqlerrm;
+end;
+$$;

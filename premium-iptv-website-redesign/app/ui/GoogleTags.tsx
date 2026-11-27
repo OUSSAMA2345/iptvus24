@@ -1,132 +1,97 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Script from "next/script";
-import { GoogleTagManager } from "@next/third-parties/google";
-import { CONSENT_STORAGE_KEY, trackAnalyticsEvent } from "../lib/analytics";
+import {
+  getAnalyticsConfiguration,
+  hasAnalyticsConsent,
+  initializeConsentMode,
+  isProductionAnalyticsEnvironment,
+  resolveWhatsAppCtaLocation,
+  subscribeToConsentChanges,
+  trackAnalyticsEvent,
+} from "../lib/analytics";
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-const configuredGtmId = process.env.NEXT_PUBLIC_GTM_ID;
-const GTM_CONTAINER_ID = configuredGtmId === undefined ? "GTM-MHW925PF" : configuredGtmId.trim();
-const validGaId = GA_MEASUREMENT_ID && /^G-[A-Z0-9]+$/i.test(GA_MEASUREMENT_ID)
-  ? GA_MEASUREMENT_ID
-  : null;
-const validGtmId = GTM_CONTAINER_ID && /^GTM-[A-Z0-9]+$/i.test(GTM_CONTAINER_ID)
-  ? GTM_CONTAINER_ID
-  : null;
-
-function hasAnalyticsConsent() {
-  try {
-    const preference: unknown = JSON.parse(localStorage.getItem(CONSENT_STORAGE_KEY) || "null");
-    return Boolean(
-      preference &&
-      typeof preference === "object" &&
-      "analytics" in preference &&
-      preference.analytics === true,
-    );
-  } catch {
-    return false;
-  }
-}
-
-const consentBootstrap = `
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){window.dataLayer.push(arguments);};
-  window.gtag('consent', 'default', {
-    analytics_storage: 'granted',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied'
-  });
-  window.gtag('js', new Date());
-`;
+const getServerConsentSnapshot = () => false;
 
 export default function GoogleTags() {
-  const [analyticsConsent, setAnalyticsConsent] = useState(false);
-  const [hasLoadedWithConsent, setHasLoadedWithConsent] = useState(false);
+  const analyticsConsent = useSyncExternalStore(
+    subscribeToConsentChanges,
+    hasAnalyticsConsent,
+    getServerConsentSnapshot,
+  );
+  const [hasBootstrappedTag, setHasBootstrappedTag] = useState(false);
+  const bootstrappedRef = useRef(false);
+
+  const config = getAnalyticsConfiguration();
+  const allowedEnv = isProductionAnalyticsEnvironment();
 
   useEffect(() => {
-    const refreshConsent = () => {
-      const accepted = hasAnalyticsConsent();
-      setAnalyticsConsent(accepted);
-      if (accepted) setHasLoadedWithConsent(true);
-    };
+    if (!allowedEnv || config.mode === "none") return;
 
-    refreshConsent();
-    window.addEventListener("storage", refreshConsent);
-    window.addEventListener("iptvus24:consent-change", refreshConsent);
-    return () => {
-      window.removeEventListener("storage", refreshConsent);
-      window.removeEventListener("iptvus24:consent-change", refreshConsent);
-    };
-  }, []);
+    if (analyticsConsent && !bootstrappedRef.current) {
+      initializeConsentMode(true);
+
+      if (config.mode === "gtm") {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          "gtm.start": Date.now(),
+          event: "gtm.js",
+        });
+      } else {
+        window.gtag?.("js", new Date());
+        window.gtag?.("config", config.gaId, { send_page_view: true });
+      }
+
+      bootstrappedRef.current = true;
+      setHasBootstrappedTag(true);
+      return;
+    }
+
+    if (bootstrappedRef.current) {
+      initializeConsentMode(analyticsConsent);
+    }
+  }, [allowedEnv, analyticsConsent, config.gaId, config.gtmId, config.mode]);
 
   useEffect(() => {
-    window.gtag?.("consent", "update", {
-      analytics_storage: analyticsConsent ? "granted" : "denied",
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
-    });
-  }, [analyticsConsent]);
+    if (!allowedEnv || !analyticsConsent || config.mode === "none") return;
 
-  useEffect(() => {
-    if (!analyticsConsent) return;
-
-    const trackWhatsAppClick = (event: MouseEvent) => {
+    const handleDocumentClick = (event: MouseEvent) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
 
       const link = target.closest<HTMLAnchorElement>('a[href^="https://wa.me/"]');
       if (!link) return;
 
-      const ctaLocation = link.closest("#plans")
-        ? "pricing"
-        : link.closest("header")
-          ? "header"
-          : link.closest("footer")
-            ? "footer"
-            : "content";
-
       trackAnalyticsEvent("whatsapp_click", {
         page_path: window.location.pathname,
-        cta_location: ctaLocation,
+        cta_location: resolveWhatsAppCtaLocation(link),
       });
     };
 
-    document.addEventListener("click", trackWhatsAppClick, true);
-    return () => document.removeEventListener("click", trackWhatsAppClick, true);
-  }, [analyticsConsent]);
+    document.addEventListener("click", handleDocumentClick, true);
+    return () => document.removeEventListener("click", handleDocumentClick, true);
+  }, [allowedEnv, analyticsConsent, config.mode]);
 
-  if (!hasLoadedWithConsent || (!validGtmId && !validGaId)) return null;
+  if (!allowedEnv || !hasBootstrappedTag || config.mode === "none") {
+    return null;
+  }
 
-  if (validGtmId) {
+  if (config.mode === "gtm") {
     return (
-      <>
-        <Script
-          id="iptvus24-gtm-consent"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: consentBootstrap }}
-        />
-        <GoogleTagManager gtmId={validGtmId} />
-      </>
+      <Script
+        id="iptvus24-gtm"
+        src={`https://www.googletagmanager.com/gtm.js?id=${config.gtmId}`}
+        strategy="afterInteractive"
+      />
     );
   }
 
   return (
-    <>
-      <Script
-        id="iptvus24-ga-consent"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `${consentBootstrap}window.gtag('config', '${validGaId}', { send_page_view: true });`,
-        }}
-      />
-      <Script
-        id="iptvus24-ga"
-        src={`https://www.googletagmanager.com/gtag/js?id=${validGaId}`}
-        strategy="afterInteractive"
-      />
-    </>
+    <Script
+      id="iptvus24-ga"
+      src={`https://www.googletagmanager.com/gtag/js?id=${config.gaId}`}
+      strategy="afterInteractive"
+    />
   );
 }

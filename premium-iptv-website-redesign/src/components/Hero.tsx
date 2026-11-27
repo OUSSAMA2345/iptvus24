@@ -4,7 +4,7 @@ import { WhatsAppButton } from "./WhatsApp";
 
 export default function Hero() {
   return (
-    <section className="bg-hero-wash relative overflow-hidden pt-28 sm:pt-36">
+    <section data-cta-location="hero" className="bg-hero-wash relative overflow-hidden pt-28 sm:pt-36">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 sm:pb-20 lg:grid-cols-2 lg:gap-16 lg:pb-24">
         <div className="max-w-2xl">
           <p className="text-sm font-bold tracking-wide text-cyan">IPTVUS24 · Streaming service</p>
@@ -20,7 +20,7 @@ export default function Hero() {
               <span aria-hidden="true">→</span>
             </a>
             <div className="sm:w-56">
-              <WhatsAppButton>Ask us on WhatsApp</WhatsAppButton>
+              <WhatsAppButton ctaLocation="hero">Ask us on WhatsApp</WhatsAppButton>
             </div>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-white/60">

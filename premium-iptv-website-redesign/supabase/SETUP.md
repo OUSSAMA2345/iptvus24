@@ -1,6 +1,6 @@
 # IPTVUS24 Supabase setup
 
-The site uses a server-side Next.js API route to submit and read reviews. The database schema is created by the migrations in this directory; this guide explains how to provision the Supabase project and connect it to Vercel.
+The site uses server-side Next.js API routes to submit and read moderated reviews (`/api/reviews`), store WhatsApp contact leads (`/api/contact`), and serve operational status data (`/api/status`). The database schema is created by the migrations in this directory; this guide explains how to provision the Supabase project and connect it to Vercel.
 
 ## 1. Create a Supabase project
 
@@ -9,85 +9,116 @@ The site uses a server-side Next.js API route to submit and read reviews. The da
 3. Store the database password in a password manager. The website does not use this password; it is for database administration.
 4. Wait for project provisioning to finish before continuing.
 
-## 2. Create the database tables and policies
+## 2. Enable `pg_cron` (recommended for automatic data retention)
 
-In the new project's dashboard, open **SQL Editor**, create a query, and run these repository migrations in timestamp order:
+Retention cleanup (`public.purge_expired_form_data()`) deletes expired contact requests (> 365 days), unmoderated pending reviews (> 365 days), and expired rate-limit counters (> 30 days) on a daily schedule rather than during visitor form submissions.
 
-1. [`20261124000100_trust_features.sql`](migrations/20261124000100_trust_features.sql)
-2. [`20261126120000_reviews_approved_select_policy.sql`](migrations/20261126120000_reviews_approved_select_policy.sql)
-3. [`20261126125900_reviews_minimum_length.sql`](migrations/20261126125900_reviews_minimum_length.sql)
+1. In the Supabase Dashboard, open **Database → Extensions** (or **Integrations → Cron**).
+2. Search for `pg_cron` and enable it before running the migrations below.
 
-Run each migration's complete SQL, not just the `reviews` table statement. The first migration also creates the review-statistics function and rate-limit storage/function required by the API, plus the site's other backend tables. It enables RLS and revokes direct anonymous/authenticated writes. The second migration grants public read access only to rows whose status is `approved`. The third updates the review-length constraint for existing projects.
+If `pg_cron` is not available or cannot be enabled in a local/test PostgreSQL instance, the migrations **do not fail**; they emit a PostgreSQL `NOTICE` and skip `cron.schedule(...)`. In environments without `pg_cron`, either enable `pg_cron` later and re-run [`20261127120000_constraints_indexes_and_cron_hardening.sql`](migrations/20261127120000_constraints_indexes_and_cron_hardening.sql), or invoke `select public.purge_expired_form_data();` daily from an external scheduler.
+
+## 3. Apply all database migrations in order
+
+In the project's dashboard, open **SQL Editor**, create a query, and run **all five** repository migrations in exact timestamp order:
+
+1. [`20261124000100_trust_features.sql`](migrations/20261124000100_trust_features.sql) — creates `reviews`, `contact_messages`, `form_rate_limits`, `service_status`, `service_incidents`, `service_uptime_history`, RLS grants, RPC functions (`get_public_review_stats`, `consume_form_rate_limit`, `purge_expired_form_data`), and attempts `pg_cron` scheduling.
+2. [`20261126120000_reviews_approved_select_policy.sql`](migrations/20261126120000_reviews_approved_select_policy.sql) — grants `SELECT` on `public.reviews` to `anon` and `authenticated` restricted to rows where `status = 'approved'`.
+3. [`20261126125900_reviews_minimum_length.sql`](migrations/20261126125900_reviews_minimum_length.sql) — ensures `reviews.review_text` accepts 5–1,500 characters plus `"Good"` and `"Nice"`.
+4. [`20261126193000_whatsapp_contact_leads.sql`](migrations/20261126193000_whatsapp_contact_leads.sql) — makes `contact_messages.email` nullable and adds `whatsapp_number` (7–32 characters) for the WhatsApp-first contact form.
+5. [`20261127120000_constraints_indexes_and_cron_hardening.sql`](migrations/20261127120000_constraints_indexes_and_cron_hardening.sql) — adds `CHECK (email IS NOT NULL OR whatsapp_number IS NOT NULL)` on `contact_messages`, adds indexes for pending review moderation (`reviews_pending_created_idx`) and rate-limit retention (`form_rate_limits_window_start_idx`), removes synchronous cleanup from `consume_form_rate_limit`, and ensures graceful `pg_cron` scheduling.
+
+Run each migration's complete SQL in order. Omitting migration 4 or 5 will leave `contact_messages` out of sync with `POST /api/contact`.
+
+### Core schema summary
 
 The `public.reviews` table contains:
 
 | Column | Purpose |
 | --- | --- |
 | `id` | Generated review identifier |
-| `display_name` | Public name, 2–60 characters |
+| `display_name` | Public name, 2–60 Unicode characters |
 | `rating` | Integer rating from 1 to 5 |
-| `review_text` | Review text, at least 5 characters and up to 1,500; “Good” and “Nice” are also accepted |
+| `review_text` | Review text, 5–1,500 Unicode characters; `"Good"` and `"Nice"` are also accepted |
 | `status` | `pending`, `approved`, or `rejected`; defaults to `pending` |
 | `created_at` | Submission timestamp, generated by PostgreSQL |
-| `moderated_at` | Set automatically when moderation changes the status |
+| `moderated_at` | Set automatically when moderation changes `status` |
+
+The `public.contact_messages` table contains:
+
+| Column | Purpose |
+| --- | --- |
+| `id` | Generated message identifier |
+| `name` | Sender name, 2–100 Unicode characters |
+| `email` | Optional email address (`<= 254` characters) |
+| `whatsapp_number` | Optional WhatsApp number (`7–32` characters; normalized E.164 from `/api/contact`). At least one of `email` or `whatsapp_number` must be non-null |
+| `subject` | Topic, 1–120 Unicode characters |
+| `message` | Message body, 10–5,000 Unicode characters |
+| `status` | `new`, `in_progress`, `resolved`, or `spam`; defaults to `new` |
+| `created_at` | Submission timestamp, generated by PostgreSQL |
 
 ### Access control
 
-- RLS is enabled on `public.reviews`.
-- `anon` and `authenticated` can select only approved reviews. They have no insert, update, or delete privileges.
-- Review submissions go through the Next.js `/api/reviews` route. That server route uses the service key to insert rows as `pending`; never call Supabase with the service key from browser code.
-- The service key bypasses RLS. Keep it server-only and grant access only to trusted project administrators.
-- The API's public GET endpoint filters to approved reviews; pending and rejected content is not returned.
+- RLS is enabled on all application tables (`reviews`, `contact_messages`, `form_rate_limits`, `service_status`, `service_incidents`, `service_uptime_history`).
+- `anon` and `authenticated` can select only approved reviews (`status = 'approved'`). They have no insert, update, or delete privileges on any table, and no read access to `contact_messages` or `form_rate_limits`.
+- Form submissions go through Next.js `/api/reviews` and `/api/contact` server routes using the service-role/secret key; never expose the service key in browser code.
 
-You can confirm the table and policy were created in **Table Editor** and **Authentication → Policies**, or run this read-only query in SQL Editor:
+You can confirm policies, constraints, and scheduled jobs in **SQL Editor**:
 
 ```sql
 select policyname, cmd, roles, qual
 from pg_policies
 where schemaname = 'public'
   and tablename = 'reviews';
+
+select conname, pg_get_constraintdef(oid)
+from pg_constraint
+where conrelid = 'public.contact_messages'::regclass;
 ```
 
-The `reviews_read_approved` policy should show a `SELECT` policy for `anon` and `authenticated` with the condition `status = 'approved'`.
+If `pg_cron` is enabled, verify the daily retention job (`17 3 * * *`):
 
-## 3. Find the Supabase URL and secret key
+```sql
+select jobname, schedule, command, active
+from cron.job
+where jobname = 'iptvus24-purge-expired-form-data';
+```
+
+## 4. Find the Supabase URL and secret key
 
 In the Supabase dashboard, open the project:
 
-- **`SUPABASE_URL`**: open **Project Settings → API** and copy the **Project URL**. The project's **Connect** dialog also provides it.
-- **`SUPABASE_SERVICE_ROLE_KEY`**: open **Project Settings → API Keys** and copy or create a **Secret key** (the modern key begins with `sb_secret_`). If using the legacy keys view, use the `service_role` key, not the `anon` key.
+- **`SUPABASE_URL`**: open **Project Settings → API** and copy the **Project URL**.
+- **`SUPABASE_SERVICE_ROLE_KEY`**: open **Project Settings → API Keys** and copy or create a **Secret key** (begins with `sb_secret_`). If using legacy keys, use the `service_role` key, never the `anon` key.
 
-The environment variable name `SUPABASE_SERVICE_ROLE_KEY` is what this app expects; its value should be the Supabase secret/service-role key. Do not use the publishable/`anon` key for this variable. Secret keys bypass RLS and must never be committed, pasted into chat, added to client-side code, or given a `NEXT_PUBLIC_` prefix.
+Secret keys bypass RLS and must never be committed, pasted into chat, added to client-side code, or given a `NEXT_PUBLIC_` prefix.
 
-At runtime, the server trims surrounding whitespace and strips invisible Unicode control/format characters before validation. Since Supabase keys are ASCII-only, non-ASCII characters are also removed from the key before format validation; the URL must remain ASCII. It accepts an HTTPS Supabase project URL and either an `sb_secret_` key or a legacy JWT whose role is `service_role`; local HTTP URLs are allowed only outside production. Malformed values are rejected, and logs identify the variable and issue without printing the value.
+At runtime, the server trims surrounding whitespace and strips invisible Unicode control/format characters before validation. It accepts an HTTPS `*.supabase.co` project URL (or local HTTP localhost outside production) and either an `sb_secret_` key or a legacy JWT whose `role` is `service_role`. Malformed values are rejected; server logs identify the variable and reason without printing secret values or exposing variable names in public API responses.
 
 Official references: [Supabase API keys](https://supabase.com/docs/guides/getting-started/api-keys) and [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security).
 
-## 4. Add the values to Vercel
+## 5. Add the values to Vercel
 
-1. Open the **iptvus24** project in the [Vercel Dashboard](https://vercel.com/dashboard).
+1. Open the **iptvus24** project in the [Vercel Dashboard](https://vercel.com/dashboard) (ensure **Root Directory** is set to `premium-iptv-website-redesign`).
 2. Go to **Settings → Environment Variables** and choose **Add New**.
-3. Add `SUPABASE_URL` with the Project URL value. Select **Production** (and **Preview** if preview deployments should use the same project).
-4. Add `SUPABASE_SERVICE_ROLE_KEY` with the secret key value. Mark it **Sensitive/Secret** if prompted and select the required environments.
-5. Save both variables, then redeploy the latest production deployment. Vercel does not apply changed environment variables to deployments that already exist.
+3. Add `SUPABASE_URL` with the Project URL value for **Production** (and **Preview** if desired).
+4. Add `SUPABASE_SERVICE_ROLE_KEY` with the secret key value, marked **Sensitive/Secret**, for the required environments.
+5. Save both variables and redeploy the latest deployment.
 
-Do not add these values to `NEXT_PUBLIC_*` variables. For local development, copy `.env.example` to `.env.local`, fill the same two names, and restart the Next.js server. `.env.local` is ignored by Git.
+For local development, copy `premium-iptv-website-redesign/.env.example` to `premium-iptv-website-redesign/.env.local`, fill both variables, and restart `npm run dev`.
 
-## 5. Verify the review workflow
+## 6. Verify the review and contact workflows
 
 After the Vercel redeploy is **Ready**:
 
-1. Request `https://www.iptvus24.com/api/reviews`. It should return HTTP 200 JSON with `reviews`, `averageRating`, and `reviewCount` (an empty database returns an empty list and a null average).
-2. Submit a genuine review through `/reviews` or the homepage review form. A successful response is HTTP 201 with a message that the review is awaiting moderation.
-3. In Supabase **Table Editor → reviews**, confirm the row has the submitted name, rating, and text; a database-generated `created_at`; and `status = pending`.
-4. After moderation, change that row's `status` to `approved`. The database trigger sets `moderated_at`.
-5. Refresh the review page. The approved review should be visible, and the public count/average should include it. A row marked `rejected` must remain hidden.
-6. If you used a clearly labeled test review, delete it from Table Editor after verifying; do not leave a fabricated test review published.
+1. Request `https://www.iptvus24.com/api/reviews`. It should return HTTP 200 JSON with `reviews`, `averageRating`, and `reviewCount`.
+2. Submit a genuine review through `/reviews` or the homepage review form (`POST /api/reviews` returns HTTP 201). Confirm the row appears in **Table Editor → reviews** with `status = pending`, then set `status = approved` to verify `moderated_at` is populated and the review appears publicly. Delete any test row afterward.
+3. Submit a test message through `/contact` with a valid international WhatsApp number (`POST /api/contact` returns HTTP 201). Confirm the row appears in **Table Editor → contact_messages** with `whatsapp_number` populated, then delete the test row.
 
 ## Troubleshooting
 
-- **404 from `/api/reviews`**: the active Vercel deployment is not running this Next.js app. Confirm the Vercel framework is Next.js and the project root is `premium-iptv-website-redesign`.
-- **JSON 503 saying reviews are not configured**: check both variable names and their **Production** environment selection, then redeploy.
-- **JSON 503 saying reviews are unavailable**: check that both migrations succeeded, the `reviews` table and `get_public_review_stats` function exist, and Vercel's function logs for the Supabase error.
-- **Submission returns 400 or 429**: correct the form validation or wait for the review rate limit to expire.
-- **Submission returns 201 but the review is absent**: it is pending until a moderator changes its status to `approved`.
+- **404 from `/api/reviews` or `/api/contact`**: confirm Vercel's framework preset is **Next.js** and **Root Directory** is `premium-iptv-website-redesign`.
+- **JSON 503**: inspect Vercel Function Logs for `Supabase environment validation failed` or database RPC/table errors, verify all five migrations ran in order, and redeploy after fixing environment variables.
+- **Submission returns 403**: the request `Origin` did not match the site origin (same-origin browser requests are required).
+- **Submission returns 415**: `Content-Type: application/json` is required on `POST /api/contact` and `POST /api/reviews`.
+- **Submission returns 400 or 429**: correct field validation (for example, provide an E.164 WhatsApp number with 7–15 digits) or wait for the 1-hour rate-limit window to reset.

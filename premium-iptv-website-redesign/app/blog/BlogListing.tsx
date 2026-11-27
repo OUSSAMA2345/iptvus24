@@ -37,7 +37,7 @@ export default function BlogListing({ posts }: { posts: BlogPostSummary[] }) {
         value={query}
         onChange={(event) => setQuery(event.target.value)}
         placeholder="Search topics or keywords"
-        className="mt-2 min-h-12 w-full rounded-xl border border-line bg-white px-4 text-sm text-ink outline-none transition-colors placeholder:text-slate-soft/70 focus:border-brand sm:max-w-xl"
+        className="mt-2 min-h-12 w-full rounded-xl border border-line bg-white px-4 text-sm text-ink transition-colors placeholder:text-slate-soft/70 focus:border-brand focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-brand sm:max-w-xl"
       />
 
       <div role="group" aria-label="Filter articles by category" className="mt-5 flex flex-wrap gap-2">
@@ -74,7 +74,7 @@ export default function BlogListing({ posts }: { posts: BlogPostSummary[] }) {
                 <time dateTime={post.publishedAt} className="text-xs text-slate-soft">{formatDate(post.publishedAt)}</time>
               </div>
               <h2 className="font-display mt-4 text-xl font-extrabold leading-snug text-ink">
-                <Link href={`/blog/${post.slug}`} className="rounded-sm hover:text-brand focus-visible:outline">
+                <Link href={`/blog/${post.slug}`} className="rounded-sm hover:text-brand">
                   {post.title}
                 </Link>
               </h2>

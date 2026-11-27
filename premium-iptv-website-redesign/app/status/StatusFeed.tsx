@@ -47,9 +47,9 @@ export default function StatusFeed() {
 
   const current = snapshot?.current;
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 text-sm leading-7 text-slate-soft">
       <section>
-        <h2>Current service status</h2>
+        <h2 className="font-display text-xl font-extrabold leading-tight text-ink">Current service status</h2>
         {unavailable ? (
           <p role="status" className="mt-3 rounded-xl bg-amber-50 p-4 font-semibold text-amber-900">
             {unavailable} For current service information, message us on <a className="underline" href="https://wa.me/447473970663" target="_blank" rel="noopener noreferrer">WhatsApp at +44 7473 970663</a>.
@@ -79,7 +79,7 @@ export default function StatusFeed() {
       </section>
 
       <section>
-        <h2>Recent incidents and maintenance</h2>
+        <h2 className="font-display text-xl font-extrabold leading-tight text-ink">Recent incidents and maintenance</h2>
         {unavailable ? <p className="mt-3">Incident history is unavailable right now.</p> : !snapshot ? <p className="mt-3">Loading incident history…</p> : snapshot.incidents.length === 0 ? (
           <p className="mt-3">No incident records are currently published.</p>
         ) : (
@@ -97,13 +97,13 @@ export default function StatusFeed() {
       </section>
 
       <section>
-        <h2>Uptime history</h2>
+        <h2 className="font-display text-xl font-extrabold leading-tight text-ink">Uptime history</h2>
         {unavailable ? <p className="mt-3">Uptime history is unavailable right now.</p> : !snapshot ? <p className="mt-3">Loading history…</p> : snapshot.uptime.length === 0 ? (
           <p className="mt-3">No uptime measurements have been published. Historical percentages will appear here after monitoring data is connected.</p>
         ) : (
           <div className="mt-3 overflow-x-auto">
             <table className="w-full border-collapse text-left text-sm">
-              <thead><tr className="border-b border-line"><th scope="col" className="p-3">Date</th><th scope="col" className="p-3">Availability</th></tr></thead>
+              <thead><tr className="border-b border-line"><th scope="col" className="p-3 font-bold text-ink">Date</th><th scope="col" className="p-3 font-bold text-ink">Availability</th></tr></thead>
               <tbody>
                 {snapshot.uptime.map((day) => (
                   <tr key={day.day} className="border-b border-line">

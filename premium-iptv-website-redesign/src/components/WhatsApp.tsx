@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export const WHATSAPP_URL = "https://wa.me/447473970663";
@@ -18,7 +19,11 @@ export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) 
 
 export function WhatsAppContactSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 sm:py-20" aria-labelledby="whatsapp-contact-title">
+    <section
+      data-cta-location="whatsapp_section"
+      className="relative overflow-hidden bg-white py-16 sm:py-20"
+      aria-labelledby="whatsapp-contact-title"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid gap-5 lg:grid-cols-[1fr_0.85fr]">
           <div className="flex flex-col items-start justify-center gap-6 rounded-2xl border border-line bg-mist p-6 sm:p-8">
@@ -49,8 +54,8 @@ export function WhatsAppContactSection() {
               Confirm the seller, payment options, current activation estimate, and trial availability with us on WhatsApp. Your order should state its term and renewal conditions; the first-plan refund policy and exclusions are in the published policy.
             </p>
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm font-bold">
-              <a href="/terms" className="text-brand underline underline-offset-4">Read service terms</a>
-              <a href="/refund" className="text-brand underline underline-offset-4">Read refund policy</a>
+              <Link href="/terms" className="text-brand underline underline-offset-4">Read service terms</Link>
+              <Link href="/refund" className="text-brand underline underline-offset-4">Read refund policy</Link>
             </div>
           </div>
         </div>
@@ -65,20 +70,28 @@ export function FloatingWhatsAppButton() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      data-cta-location="floating"
       aria-label={`Contact us on WhatsApp at ${WHATSAPP_NUMBER}`}
-      className="fixed bottom-24 right-4 z-[60] inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-transform hover:scale-105 focus-visible:outline-white sm:right-6 lg:bottom-6"
+      className="fixed bottom-24 right-4 z-[60] inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-transform hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#075e54] sm:right-6 lg:bottom-6"
     >
       <WhatsAppIcon className="h-7 w-7" />
     </a>
   );
 }
 
-export function WhatsAppButton({ children }: { children: ReactNode }) {
+export function WhatsAppButton({
+  children,
+  ctaLocation,
+}: {
+  children: ReactNode;
+  ctaLocation?: string;
+}) {
   return (
     <a
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      data-cta-location={ctaLocation}
       className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-4 py-3 text-sm font-extrabold text-white shadow-[0_8px_20px_rgba(37,211,102,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#20bd5a] hover:shadow-[0_12px_24px_rgba(37,211,102,0.3)] focus-visible:outline-[#075e54]"
     >
       <WhatsAppIcon className="h-4.5 w-4.5" />
