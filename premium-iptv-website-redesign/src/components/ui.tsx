@@ -253,13 +253,13 @@ export function SectionHead({
   const isDark = tone === "dark";
 
   return (
-    <div className={cn("max-w-3xl", align === "center" ? "mx-auto text-center" : "text-left")}>
+    <div className={cn("section-heading max-w-3xl", align === "center" ? "mx-auto text-center" : "text-left")}>
       <span
         className={cn(
           "inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] shadow-sm",
           isDark
             ? "border-white/15 bg-white/10 text-cyan backdrop-blur-sm"
-            : "border-line bg-white text-brand",
+            : "border-line bg-surface text-brand",
         )}
       >
         <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand to-cyan" />

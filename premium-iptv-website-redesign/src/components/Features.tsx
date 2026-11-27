@@ -1,10 +1,11 @@
+import { MotionSurface } from "./PremiumMotion";
 import Link from "next/link";
 import { Icon, SectionHead } from "./ui";
 import { features } from "../data";
 
 export default function Features() {
   return (
-    <section id="features" className="scroll-mt-24 bg-white py-16 sm:py-20">
+    <section id="features" className="scroll-mt-24 bg-surface py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHead
           eyebrow="Service overview"
@@ -13,13 +14,15 @@ export default function Features() {
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {features.map((feature) => (
-            <article key={feature.title} className="rounded-2xl border border-line bg-mist/60 p-6">
-              <span className="grid h-11 w-11 place-items-center rounded-xl bg-white text-brand shadow-sm">
-                <Icon name={feature.icon} className="h-5 w-5" />
-              </span>
-              <h3 className="font-display mt-5 text-lg font-extrabold text-ink">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-soft">{feature.desc}</p>
-            </article>
+            <MotionSurface key={feature.title} tilt className="feature-surface">
+              <article className="feature-card rounded-2xl border border-line bg-mist/60 p-6">
+                <span className="grid h-11 w-11 place-items-center rounded-xl bg-surface text-brand shadow-sm">
+                  <Icon name={feature.icon} className="h-5 w-5" />
+                </span>
+                <h3 className="font-display mt-5 text-lg font-extrabold text-ink">{feature.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-soft">{feature.desc}</p>
+              </article>
+            </MotionSurface>
           ))}
         </div>
         <p className="mt-6 text-center text-sm text-slate-soft">

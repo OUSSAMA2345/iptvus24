@@ -33,7 +33,7 @@ export default function SetupGuide() {
         />
         <ol className="mt-10 grid gap-4 md:grid-cols-3">
           {steps.map((step) => (
-            <li key={step.number} className="rounded-2xl border border-line bg-white p-6 shadow-card">
+            <li key={step.number} className="rounded-2xl border border-line bg-surface p-6 shadow-card">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-extrabold tracking-[0.16em] text-brand">{step.number}</span>
                 <Icon name={step.icon} className="h-5 w-5 text-brand" />

@@ -9,7 +9,7 @@ const links = [
 
 export default function TrustBar() {
   return (
-    <section aria-label="Useful information" className="border-y border-line bg-white py-5">
+    <section aria-label="Useful information" className="border-y border-line bg-surface py-5">
       <ul className="mx-auto grid max-w-7xl grid-cols-1 gap-3 px-4 sm:grid-cols-3 sm:px-6">
         {links.map((link) => (
           <li key={link.title}>

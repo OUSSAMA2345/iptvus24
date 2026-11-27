@@ -27,7 +27,7 @@ export function WhatsAppContactSection() {
       aria-labelledby="whatsapp-contact-title"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="relative isolate overflow-hidden rounded-3xl border border-line bg-[#07111f] shadow-[0_28px_80px_rgba(7,17,31,0.28)]">
+        <div className="closing-cinema relative isolate overflow-hidden rounded-3xl border border-line bg-[#07111f] shadow-[0_28px_80px_rgba(7,17,31,0.28)]">
           <Image
             src={footerCtaCinema}
             alt="Luxury private home cinema room with dark wood acoustic walls and an abstract blue horizon on screen"
@@ -57,7 +57,7 @@ export function WhatsAppContactSection() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-6 py-3.5 text-sm font-extrabold text-white shadow-[0_10px_28px_rgba(37,211,102,0.35)] transition-colors hover:bg-[#20bd5a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
+                  className="whatsapp-cta inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-6 py-3.5 text-sm font-extrabold text-white shadow-[0_10px_28px_rgba(37,211,102,0.35)] transition-colors hover:bg-[#20bd5a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
                   Ask on WhatsApp
@@ -114,7 +114,7 @@ export function WhatsAppButton({
       target="_blank"
       rel="noopener noreferrer"
       data-cta-location={ctaLocation}
-      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-4 py-3 text-sm font-extrabold text-white shadow-[0_8px_20px_rgba(37,211,102,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#20bd5a] hover:shadow-[0_12px_24px_rgba(37,211,102,0.3)] focus-visible:outline-[#075e54]"
+      className="whatsapp-cta inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-4 py-3 text-sm font-extrabold text-white shadow-[0_8px_20px_rgba(37,211,102,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#20bd5a] hover:shadow-[0_12px_24px_rgba(37,211,102,0.3)] focus-visible:outline-[#075e54]"
     >
       <WhatsAppIcon className="h-4.5 w-4.5" />
       {children}

@@ -1,5 +1,8 @@
 "use client";
 
+import { useMotionPreference } from "./useMotionPreference";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
@@ -15,6 +18,7 @@ const links = [
 ];
 
 export default function Navbar() {
+  const reduced = useMotionPreference();
   const [open, setOpen] = useState(false);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -33,7 +37,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header id="top" className="fixed inset-x-0 top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+    <header id="top" className="premium-nav fixed inset-x-0 top-0 z-50 border-b border-line bg-surface/95 backdrop-blur">
       <nav aria-label="Main navigation" className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[72px] items-center justify-between gap-3">
           <Logo />
@@ -66,13 +70,13 @@ export default function Navbar() {
               aria-expanded={open}
               aria-controls="mobile-menu"
               onClick={() => setOpen((value) => !value)}
-              className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-white text-ink lg:hidden"
+              className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-surface text-ink lg:hidden"
             >
               <span className="text-xl" aria-hidden="true">{open ? "×" : "☰"}</span>
             </button>
           </div>
         </div>
-        <div id="mobile-menu" hidden={!open} className="border-t border-line pb-4 pt-2 lg:hidden">
+        <motion.div id="mobile-menu" hidden={!open} initial={false} animate={{ opacity: open ? 1 : 0, y: open ? 0 : -8 }} transition={{ duration: reduced ? 0 : .22 }} className="mobile-glass-menu border-t border-line pb-4 pt-2 lg:hidden">
           <div className="grid gap-1">
             {links.map((link) =>
               link.href.startsWith("/") ? (
@@ -93,7 +97,7 @@ export default function Navbar() {
               WhatsApp {WHATSAPP_NUMBER}
             </a>
           </div>
-        </div>
+        </motion.div>
       </nav>
     </header>
   );

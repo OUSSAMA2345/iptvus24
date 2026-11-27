@@ -121,7 +121,7 @@ export default function Devices() {
           sub="Common device types are listed below. Availability depends on your model, software, player app, and region; ask support to confirm compatibility."
         />
 
-        <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl border border-line bg-[#081325] shadow-card">
+        <div className="device-stage mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl border border-line bg-[#081325] shadow-card">
           <Image
             src={devicesEcosystem}
             alt="Unbranded smart TV, streaming media box, remote, tablet, and smartphone with abstract blue interfaces"
@@ -137,7 +137,7 @@ export default function Devices() {
         <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {devices.map((d) => (
             <li key={d.id}>
-              <article className="flex h-full items-center gap-4 rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-5">
+              <article className="device-card group flex h-full items-center gap-4 rounded-2xl border border-line bg-surface p-4 shadow-sm sm:p-5">
                 <div className="grid h-16 w-20 shrink-0 place-items-center rounded-xl bg-mist">
                   <DeviceArt id={d.id} />
                 </div>
