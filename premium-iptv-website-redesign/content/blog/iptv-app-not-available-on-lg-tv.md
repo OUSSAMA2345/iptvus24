@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "iptv app not available on lg tv",
-    "IPTV"
+    "LG Content Store IPTV app",
+    "webOS player compatibility"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "iptv app not available on lg tv, IPTV"
+    "keywords": "iptv app not available on lg tv, LG Content Store IPTV app, webOS player compatibility",
+    "url": "https://www.iptvus24.com/blog/iptv-app-not-available-on-lg-tv",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/iptv-app-not-available-on-lg-tv.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

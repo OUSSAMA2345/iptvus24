@@ -11,10 +11,9 @@
   "publishedAt": "2026-11-27",
   "reviewedAt": "2026-11-27",
   "keywords": [
-    "TiviMate",
-    "EPG",
-    "No information",
-    "XMLTV mapping"
+    "tivimate epg no information",
+    "TiviMate guide mapping",
+    "TiviMate blank EPG"
   ],
   "editorialMethod": "Documentation-based diagnostic guide; no hands-on device testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -52,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "TiviMate, EPG, No information, XMLTV mapping"
+    "keywords": "tivimate epg no information, TiviMate guide mapping, TiviMate blank EPG",
+    "url": "https://www.iptvus24.com/blog/tivimate-epg-no-information",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/tivimate-epg-no-information.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

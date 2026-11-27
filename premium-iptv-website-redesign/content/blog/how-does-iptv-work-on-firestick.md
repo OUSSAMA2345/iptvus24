@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "how does iptv work on firestick",
-    "IPTV"
+    "Fire TV IPTV explained",
+    "IPTV Fire OS Vega OS"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -51,7 +52,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "how does iptv work on firestick, IPTV"
+    "keywords": "how does iptv work on firestick, Fire TV IPTV explained, IPTV Fire OS Vega OS",
+    "url": "https://www.iptvus24.com/blog/how-does-iptv-work-on-firestick",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/how-does-iptv-work-on-firestick.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Streaming basics"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

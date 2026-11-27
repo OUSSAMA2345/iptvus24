@@ -1,0 +1,3619 @@
+{
+  "checkedAt": "2026-11-27",
+  "scope": "Local production-build crawl of all blog URLs; priority 1–20 assertions. Not Search Console, Google Rich Results Test, or field CWV.",
+  "crawled": 56,
+  "targetsChecked": 20,
+  "missing": [],
+  "duplicateMetadata": {
+    "titles": [],
+    "descriptions": [],
+    "canonicals": []
+  },
+  "content": [
+    {
+      "priority": 1,
+      "slug": "firestick-buffering-but-internet-is-fine",
+      "primaryKeyword": "firestick buffering but internet is fine",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-app-not-working-on-firestick",
+        "tivimate-playlist-is-processed-please-wait",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "streaming-buffering-but-internet-is-fine"
+      ],
+      "inboundPages": [
+        "iptv-app-not-working-on-firestick",
+        "tivimate-playlist-is-processed-please-wait",
+        "firestick-black-screen-after-logo",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "streaming-buffering-but-internet-is-fine",
+        "what-affects-streaming-quality",
+        "troubleshoot-buffering-step-by-step"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 2,
+      "slug": "iptv-epg-not-updating",
+      "primaryKeyword": "iptv epg not updating",
+      "shortSections": [],
+      "inboundBody": [
+        "tivimate-epg-no-information",
+        "iptv-channels-not-loading",
+        "what-is-xmltv-epg"
+      ],
+      "inboundPages": [
+        "tivimate-epg-no-information",
+        "iptv-channels-not-loading",
+        "what-is-xmltv-epg",
+        "electronic-program-guide-explained"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 3,
+      "slug": "iptv-app-not-working-on-firestick",
+      "primaryKeyword": "iptv app not working on firestick",
+      "shortSections": [],
+      "inboundBody": [
+        "firestick-buffering-but-internet-is-fine",
+        "firestick-black-screen-after-logo",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "how-does-iptv-work-on-firestick"
+      ],
+      "inboundPages": [
+        "firestick-buffering-but-internet-is-fine",
+        "iptv-app-keeps-crashing",
+        "firestick-black-screen-after-logo",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "how-does-iptv-work-on-firestick",
+        "fire-tv-streaming-setup-checklist",
+        "streaming-app-wont-open"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 4,
+      "slug": "tivimate-epg-no-information",
+      "primaryKeyword": "tivimate epg no information",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-epg-not-updating",
+        "tivimate-playlist-is-processed-please-wait",
+        "how-to-organize-iptv-channels"
+      ],
+      "inboundPages": [
+        "iptv-epg-not-updating",
+        "tivimate-playlist-is-processed-please-wait",
+        "how-to-organize-iptv-channels",
+        "what-is-xmltv-epg",
+        "electronic-program-guide-explained"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 5,
+      "slug": "tivimate-playlist-is-processed-please-wait",
+      "primaryKeyword": "tivimate playlist is processed please wait",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-app-not-working-on-firestick",
+        "tivimate-epg-no-information"
+      ],
+      "inboundPages": [
+        "iptv-app-not-working-on-firestick",
+        "tivimate-epg-no-information",
+        "android-tv-storage-space-running-out",
+        "streaming-device-storage-and-updates"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 6,
+      "slug": "mag-box-portal-not-loading",
+      "primaryKeyword": "mag box portal not loading",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-channels-not-loading"
+      ],
+      "inboundPages": [
+        "iptv-channels-not-loading",
+        "iptv-player-vs-iptv-service"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 7,
+      "slug": "iptv-channels-not-loading",
+      "primaryKeyword": "iptv channels not loading",
+      "shortSections": [],
+      "inboundBody": [
+        "mag-box-portal-not-loading",
+        "iptv-app-not-working-on-samsung-tv",
+        "iptv-player-vs-iptv-service"
+      ],
+      "inboundPages": [
+        "iptv-epg-not-updating",
+        "tivimate-playlist-is-processed-please-wait",
+        "mag-box-portal-not-loading",
+        "iptv-app-keeps-crashing",
+        "iptv-app-not-working-on-samsung-tv",
+        "iptv-player-vs-iptv-service",
+        "streaming-buffering-but-internet-is-fine",
+        "what-affects-streaming-quality"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 8,
+      "slug": "iptv-app-keeps-crashing",
+      "primaryKeyword": "iptv app keeps crashing",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-channels-not-loading",
+        "iptv-app-not-available-on-lg-tv",
+        "iptv-player-vs-iptv-service",
+        "android-tv-storage-space-running-out",
+        "streaming-buffering-but-internet-is-fine"
+      ],
+      "inboundPages": [
+        "iptv-app-not-working-on-firestick",
+        "iptv-channels-not-loading",
+        "iptv-app-not-available-on-lg-tv",
+        "iptv-player-vs-iptv-service",
+        "samsung-tv-apps-not-working-but-connected-to-internet",
+        "android-tv-storage-space-running-out",
+        "streaming-buffering-but-internet-is-fine",
+        "streaming-app-wont-open",
+        "streaming-device-storage-and-updates"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 9,
+      "slug": "iptv-app-not-working-on-samsung-tv",
+      "primaryKeyword": "iptv app not working on samsung tv",
+      "shortSections": [],
+      "inboundBody": [
+        "samsung-tv-apps-not-working-but-connected-to-internet"
+      ],
+      "inboundPages": [
+        "iptv-app-not-available-on-lg-tv",
+        "samsung-tv-apps-not-working-but-connected-to-internet",
+        "samsung-smart-tv-streaming-setup",
+        "streaming-app-wont-open"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 10,
+      "slug": "iptv-app-not-available-on-lg-tv",
+      "primaryKeyword": "iptv app not available on lg tv",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-app-not-working-on-samsung-tv"
+      ],
+      "inboundPages": [
+        "iptv-app-not-working-on-samsung-tv",
+        "tivimate-vs-iptv-smarters",
+        "samsung-smart-tv-streaming-setup",
+        "lg-webos-streaming-app-compatibility"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 11,
+      "slug": "firestick-black-screen-after-logo",
+      "primaryKeyword": "firestick black screen after logo",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-app-not-working-on-firestick"
+      ],
+      "inboundPages": [
+        "iptv-app-not-working-on-firestick",
+        "firestick-not-connecting-to-wifi-but-other-devices-will"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 12,
+      "slug": "how-to-organize-iptv-channels",
+      "primaryKeyword": "how to organize iptv channels",
+      "shortSections": [],
+      "inboundBody": [
+        "what-is-xmltv-epg",
+        "tivimate-vs-iptv-smarters",
+        "android-tv-storage-space-running-out"
+      ],
+      "inboundPages": [
+        "what-is-xmltv-epg",
+        "tivimate-vs-iptv-smarters",
+        "android-tv-storage-space-running-out"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 13,
+      "slug": "what-is-xmltv-epg",
+      "primaryKeyword": "what is xmltv epg",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-epg-not-updating",
+        "how-to-organize-iptv-channels",
+        "how-does-iptv-work-on-firestick"
+      ],
+      "inboundPages": [
+        "iptv-epg-not-updating",
+        "tivimate-epg-no-information",
+        "how-to-organize-iptv-channels",
+        "how-does-iptv-work-on-firestick",
+        "electronic-program-guide-explained"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 14,
+      "slug": "iptv-player-vs-iptv-service",
+      "primaryKeyword": "iptv player vs iptv service",
+      "shortSections": [],
+      "inboundBody": [
+        "mag-box-portal-not-loading",
+        "iptv-app-keeps-crashing",
+        "iptv-app-not-available-on-lg-tv",
+        "tivimate-vs-iptv-smarters",
+        "how-does-iptv-work-on-firestick"
+      ],
+      "inboundPages": [
+        "mag-box-portal-not-loading",
+        "iptv-app-keeps-crashing",
+        "iptv-app-not-available-on-lg-tv",
+        "how-to-organize-iptv-channels",
+        "tivimate-vs-iptv-smarters",
+        "how-does-iptv-work-on-firestick",
+        "lg-webos-streaming-app-compatibility"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 15,
+      "slug": "tivimate-vs-iptv-smarters",
+      "primaryKeyword": "tivimate vs iptv smarters",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-player-vs-iptv-service"
+      ],
+      "inboundPages": [
+        "iptv-app-not-available-on-lg-tv",
+        "how-to-organize-iptv-channels",
+        "iptv-player-vs-iptv-service",
+        "lg-webos-streaming-app-compatibility"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 16,
+      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "primaryKeyword": "firestick not connecting to wifi but other devices will",
+      "shortSections": [],
+      "inboundBody": [
+        "firestick-black-screen-after-logo"
+      ],
+      "inboundPages": [
+        "firestick-buffering-but-internet-is-fine",
+        "iptv-app-not-working-on-firestick",
+        "firestick-black-screen-after-logo",
+        "fire-tv-streaming-setup-checklist",
+        "troubleshoot-buffering-step-by-step"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 17,
+      "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "primaryKeyword": "samsung tv apps not working but connected to internet",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-app-not-working-on-samsung-tv"
+      ],
+      "inboundPages": [
+        "iptv-app-not-working-on-samsung-tv",
+        "streaming-buffering-but-internet-is-fine",
+        "samsung-smart-tv-streaming-setup"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 18,
+      "slug": "android-tv-storage-space-running-out",
+      "primaryKeyword": "android tv storage space running out",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-app-keeps-crashing"
+      ],
+      "inboundPages": [
+        "tivimate-playlist-is-processed-please-wait",
+        "iptv-app-keeps-crashing",
+        "check-device-compatibility",
+        "apple-tv-streaming-service-setup",
+        "android-tv-streaming-player-setup",
+        "google-tv-streaming-app-checklist",
+        "streaming-on-iphone-privacy-checklist",
+        "streaming-on-ipad-setup",
+        "streaming-on-windows-pc",
+        "streaming-on-mac-setup",
+        "captions-and-subtitles-on-streaming",
+        "streaming-device-storage-and-updates",
+        "streaming-device-remote-not-responding",
+        "streaming-accessibility-features"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 19,
+      "slug": "streaming-buffering-but-internet-is-fine",
+      "primaryKeyword": "streaming buffering but internet is fine",
+      "shortSections": [],
+      "inboundBody": [
+        "firestick-buffering-but-internet-is-fine",
+        "samsung-tv-apps-not-working-but-connected-to-internet"
+      ],
+      "inboundPages": [
+        "firestick-buffering-but-internet-is-fine",
+        "mag-box-portal-not-loading",
+        "samsung-tv-apps-not-working-but-connected-to-internet",
+        "what-affects-streaming-quality",
+        "troubleshoot-buffering-step-by-step"
+      ],
+      "linkedFromHub": true
+    },
+    {
+      "priority": 20,
+      "slug": "how-does-iptv-work-on-firestick",
+      "primaryKeyword": "how does iptv work on firestick",
+      "shortSections": [],
+      "inboundBody": [
+        "iptv-player-vs-iptv-service"
+      ],
+      "inboundPages": [
+        "iptv-player-vs-iptv-service",
+        "fire-tv-streaming-setup-checklist",
+        "ethernet-or-wifi-for-tv-streaming",
+        "home-network-bandwidth-for-streaming"
+      ],
+      "linkedFromHub": true
+    }
+  ],
+  "overlapCandidates": [
+    {
+      "a": "iptv-app-not-working-on-firestick",
+      "b": "iptv-app-not-working-on-samsung-tv",
+      "titleTermJaccard": 0.4
+    },
+    {
+      "a": "iptv-channels-not-loading",
+      "b": "mag-box-portal-not-loading",
+      "titleTermJaccard": 0.364
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "titleTermJaccard": 0.364
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick",
+      "b": "iptv-epg-not-updating",
+      "titleTermJaccard": 0.333
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv",
+      "b": "iptv-app-not-working-on-samsung-tv",
+      "titleTermJaccard": 0.333
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "titleTermJaccard": 0.3
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv",
+      "b": "iptv-app-not-working-on-firestick",
+      "titleTermJaccard": 0.273
+    },
+    {
+      "a": "home-network-bandwidth-for-streaming",
+      "b": "streaming-buffering-but-internet-is-fine",
+      "titleTermJaccard": 0.25
+    }
+  ],
+  "pages": [
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "firestick-buffering-but-internet-is-fine",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 114500,
+      "title": "Firestick Buffering? Find the Weak Link | IPTVUS24",
+      "description": "Diagnose Firestick buffering despite fast internet. Compare apps, Wi-Fi, stream quality and device behavior before clearing data or buying faster broadband.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-buffering-but-internet-is-fine",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Firestick Buffering? Find the Weak Link",
+        "og:description": "Diagnose Firestick buffering despite fast internet. Compare apps, Wi-Fi, stream quality and device behavior before clearing data or buying faster broadband.",
+        "og:url": "https://www.iptvus24.com/blog/firestick-buffering-but-internet-is-fine",
+        "og:image": "https://www.iptvus24.com/images/guides/firestick-buffering-but-internet-is-fine.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: find the fire tv playback bottleneck — Compare apps; Compare the local link; Check source and decoding.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Firestick Buffering? Find the Weak Link",
+        "twitter:description": "Diagnose Firestick buffering despite fast internet. Compare apps, Wi-Fi, stream quality and device behavior before clearing data or buying faster broadband.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/firestick-buffering-but-internet-is-fine.png",
+        "twitter:image:alt": "Conceptual diagram: find the fire tv playback bottleneck — Compare apps; Compare the local link; Check source and decoding."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/firestick-buffering-but-internet-is-fine.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/firestick-buffering-but-internet-is-fine#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/streaming-buffering-but-internet-is-fine",
+        "/blog/iptv-app-not-working-on-firestick",
+        "/blog/what-affects-streaming-quality",
+        "/blog/firestick-not-connecting-to-wifi-but-other-devices-will"
+      ],
+      "bodyLinks": [
+        "/blog/streaming-buffering-but-internet-is-fine",
+        "/blog/iptv-app-not-working-on-firestick",
+        "/blog/what-affects-streaming-quality"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-epg-not-updating",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 114832,
+      "title": "IPTV EPG Not Updating? Diagnose the Guide | IPTVUS24",
+      "description": "Fix a stale IPTV guide by checking source freshness, XMLTV dates, channel IDs and time zones. Learn when a guide reset helps and when the publisher must act.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-epg-not-updating",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV EPG Not Updating? Diagnose the Guide",
+        "og:description": "Fix a stale IPTV guide by checking source freshness, XMLTV dates, channel IDs and time zones. Learn when a guide reset helps and when the publisher must act.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-epg-not-updating",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-epg-not-updating.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: trace a stale programme guide — Retrieve the guide; Match channel IDs; Check schedule coverage.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV EPG Not Updating? Diagnose the Guide",
+        "twitter:description": "Fix a stale IPTV guide by checking source freshness, XMLTV dates, channel IDs and time zones. Learn when a guide reset helps and when the publisher must act.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-epg-not-updating.png",
+        "twitter:image:alt": "Conceptual diagram: trace a stale programme guide — Retrieve the guide; Match channel IDs; Check schedule coverage."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-epg-not-updating.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-epg-not-updating#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/tivimate-epg-no-information",
+        "/blog/what-is-xmltv-epg",
+        "/blog/electronic-program-guide-explained",
+        "/blog/iptv-channels-not-loading"
+      ],
+      "bodyLinks": [
+        "/blog/tivimate-epg-no-information",
+        "/blog/what-is-xmltv-epg",
+        "/blog/electronic-program-guide-explained"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-app-not-working-on-firestick",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 116915,
+      "title": "IPTV App Not Working on Firestick? Diagnose It | IPTVUS24",
+      "description": "Troubleshoot Fire TV IPTV app installation, crashes, login and playback. Check model compatibility, protect your setup and recognize explicit platform notices.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-working-on-firestick",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV App Not Working on Firestick? Diagnose It",
+        "og:description": "Troubleshoot Fire TV IPTV app installation, crashes, login and playback. Check model compatibility, protect your setup and recognize explicit platform notices.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-app-not-working-on-firestick",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-firestick.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: find where the fire tv app stops — Check app compatibility; Verify login and list; Test media playback.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV App Not Working on Firestick? Diagnose It",
+        "twitter:description": "Troubleshoot Fire TV IPTV app installation, crashes, login and playback. Check model compatibility, protect your setup and recognize explicit platform notices.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-firestick.png",
+        "twitter:image:alt": "Conceptual diagram: find where the fire tv app stops — Check app compatibility; Verify login and list; Test media playback."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-firestick.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-app-not-working-on-firestick#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/firestick-black-screen-after-logo",
+        "/blog/fire-tv-streaming-setup-checklist",
+        "/blog/tivimate-playlist-is-processed-please-wait",
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/check-device-compatibility",
+        "/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+        "/blog/iptv-app-keeps-crashing"
+      ],
+      "bodyLinks": [
+        "/blog/firestick-black-screen-after-logo",
+        "/blog/fire-tv-streaming-setup-checklist",
+        "/blog/tivimate-playlist-is-processed-please-wait",
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/check-device-compatibility"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "tivimate-epg-no-information",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 116152,
+      "title": "TiviMate No Information? Fix EPG Matching | IPTVUS24",
+      "description": "Diagnose TiviMate No information rows with source assignment, channel matching and date checks. Protect favorites and settings before rebuilding guide data.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-epg-no-information",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "TiviMate No Information? Fix EPG Matching",
+        "og:description": "Diagnose TiviMate No information rows with source assignment, channel matching and date checks. Protect favorites and settings before rebuilding guide data.",
+        "og:url": "https://www.iptvus24.com/blog/tivimate-epg-no-information",
+        "og:image": "https://www.iptvus24.com/images/guides/tivimate-epg-no-information.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: restore missing tivimate guide rows — Confirm guide source; Check one channel ID; Verify dates and time.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "TiviMate No Information? Fix EPG Matching",
+        "twitter:description": "Diagnose TiviMate No information rows with source assignment, channel matching and date checks. Protect favorites and settings before rebuilding guide data.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/tivimate-epg-no-information.png",
+        "twitter:image:alt": "Conceptual diagram: restore missing tivimate guide rows — Confirm guide source; Check one channel ID; Verify dates and time."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/tivimate-epg-no-information.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/tivimate-epg-no-information#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-epg-not-updating",
+        "/blog/tivimate-playlist-is-processed-please-wait",
+        "/blog/what-is-xmltv-epg"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-epg-not-updating",
+        "/blog/tivimate-playlist-is-processed-please-wait"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "tivimate-playlist-is-processed-please-wait",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 118885,
+      "title": "TiviMate Stuck Processing Playlist? What to Check | IPTVUS24",
+      "description": "Investigate a stalled TiviMate playlist import: verify the endpoint, compare a smaller catalogue and recover the app without losing favorites or credentials.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-playlist-is-processed-please-wait",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "TiviMate Stuck Processing Playlist? What to Check",
+        "og:description": "Investigate a stalled TiviMate playlist import: verify the endpoint, compare a smaller catalogue and recover the app without losing favorites or credentials.",
+        "og:url": "https://www.iptvus24.com/blog/tivimate-playlist-is-processed-please-wait",
+        "og:image": "https://www.iptvus24.com/images/guides/tivimate-playlist-is-processed-please-wait.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: investigate a stalled playlist import — Verify the endpoint; Compare a smaller list; Preserve the configuration.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "TiviMate Stuck Processing Playlist? What to Check",
+        "twitter:description": "Investigate a stalled TiviMate playlist import: verify the endpoint, compare a smaller catalogue and recover the app without losing favorites or credentials.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/tivimate-playlist-is-processed-please-wait.png",
+        "twitter:image:alt": "Conceptual diagram: investigate a stalled playlist import — Verify the endpoint; Compare a smaller list; Preserve the configuration."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/tivimate-playlist-is-processed-please-wait.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/tivimate-playlist-is-processed-please-wait#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/tivimate-epg-no-information",
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/iptv-channels-not-loading",
+        "/blog/android-tv-storage-space-running-out"
+      ],
+      "bodyLinks": [
+        "/blog/tivimate-epg-no-information",
+        "/blog/firestick-buffering-but-internet-is-fine"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "mag-box-portal-not-loading",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 115507,
+      "title": "MAG Box Portal Not Loading? Diagnose the Failed Stage | IPTVUS24",
+      "description": "Find why a MAG box portal will not load: check the network, exact operator URL, device authorization and safe recovery before resetting your configuration.",
+      "canonical": "https://www.iptvus24.com/blog/mag-box-portal-not-loading",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "MAG Box Portal Not Loading? Diagnose the Failed Stage",
+        "og:description": "Find why a MAG box portal will not load: check the network, exact operator URL, device authorization and safe recovery before resetting your configuration.",
+        "og:url": "https://www.iptvus24.com/blog/mag-box-portal-not-loading",
+        "og:image": "https://www.iptvus24.com/images/guides/mag-box-portal-not-loading.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: follow a mag portal connection — Check the network; Verify the portal URL; Confirm operator access.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "MAG Box Portal Not Loading? Diagnose the Failed Stage",
+        "twitter:description": "Find why a MAG box portal will not load: check the network, exact operator URL, device authorization and safe recovery before resetting your configuration.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/mag-box-portal-not-loading.png",
+        "twitter:image:alt": "Conceptual diagram: follow a mag portal connection — Check the network; Verify the portal URL; Confirm operator access."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/mag-box-portal-not-loading.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/mag-box-portal-not-loading#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-channels-not-loading",
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/streaming-buffering-but-internet-is-fine"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-channels-not-loading",
+        "/blog/iptv-player-vs-iptv-service"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-channels-not-loading",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 116953,
+      "title": "IPTV Channels Not Loading? Find the Failed Stage | IPTVUS24",
+      "description": "Diagnose missing IPTV lists and channels that will not play. Compare account access, stream errors, device compatibility and network paths before resetting.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-channels-not-loading",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV Channels Not Loading? Find the Failed Stage",
+        "og:description": "Diagnose missing IPTV lists and channels that will not play. Compare account access, stream errors, device compatibility and network paths before resetting.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-channels-not-loading",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-channels-not-loading.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: separate channel-list and stream failures — Does the list load?; Can any channel play?; Check the failed request.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV Channels Not Loading? Find the Failed Stage",
+        "twitter:description": "Diagnose missing IPTV lists and channels that will not play. Compare account access, stream errors, device compatibility and network paths before resetting.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-channels-not-loading.png",
+        "twitter:image:alt": "Conceptual diagram: separate channel-list and stream failures — Does the list load?; Can any channel play?; Check the failed request."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-channels-not-loading.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-channels-not-loading#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/mag-box-portal-not-loading",
+        "/blog/iptv-epg-not-updating"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/mag-box-portal-not-loading",
+        "/blog/iptv-epg-not-updating"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-app-keeps-crashing",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 113854,
+      "title": "IPTV App Keeps Crashing? Recover Your Setup Safely | IPTVUS24",
+      "description": "Find what triggers an IPTV app crash, check updates and storage, and compare cache, data and reinstall options without unnecessarily losing your configuration.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-keeps-crashing",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV App Keeps Crashing? Recover Your Setup Safely",
+        "og:description": "Find what triggers an IPTV app crash, check updates and storage, and compare cache, data and reinstall options without unnecessarily losing your configuration.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-app-keeps-crashing",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-app-keeps-crashing.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: identify an iptv app crash trigger — Record the trigger; Check app and device; Recover without erasing.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV App Keeps Crashing? Recover Your Setup Safely",
+        "twitter:description": "Find what triggers an IPTV app crash, check updates and storage, and compare cache, data and reinstall options without unnecessarily losing your configuration.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-app-keeps-crashing.png",
+        "twitter:image:alt": "Conceptual diagram: identify an iptv app crash trigger — Record the trigger; Check app and device; Recover without erasing."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-app-keeps-crashing.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-app-keeps-crashing#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/iptv-channels-not-loading",
+        "/blog/iptv-app-not-working-on-firestick"
+      ],
+      "bodyLinks": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/iptv-player-vs-iptv-service"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-app-not-working-on-samsung-tv",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 114985,
+      "title": "IPTV App Not Working on Samsung TV? Safe Fixes | IPTVUS24",
+      "description": "Troubleshoot an IPTV app on Samsung TV: check compatibility, cold boot, verify account access and plan a safe reinstall before considering Smart Hub reset.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-working-on-samsung-tv",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV App Not Working on Samsung TV? Safe Fixes",
+        "og:description": "Troubleshoot an IPTV app on Samsung TV: check compatibility, cold boot, verify account access and plan a safe reinstall before considering Smart Hub reset.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-app-not-working-on-samsung-tv",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-samsung-tv.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: diagnose one samsung iptv app — Compare another app; Check Tizen compatibility; Verify account and media.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV App Not Working on Samsung TV? Safe Fixes",
+        "twitter:description": "Troubleshoot an IPTV app on Samsung TV: check compatibility, cold boot, verify account access and plan a safe reinstall before considering Smart Hub reset.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-samsung-tv.png",
+        "twitter:image:alt": "Conceptual diagram: diagnose one samsung iptv app — Compare another app; Check Tizen compatibility; Verify account and media."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-samsung-tv.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-app-not-working-on-samsung-tv#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+        "/blog/iptv-app-not-available-on-lg-tv",
+        "/blog/iptv-channels-not-loading"
+      ],
+      "bodyLinks": [
+        "/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+        "/blog/iptv-app-not-available-on-lg-tv",
+        "/blog/iptv-channels-not-loading"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-app-not-available-on-lg-tv",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 114285,
+      "title": "IPTV App Not Available on LG TV? Check Support | IPTVUS24",
+      "description": "Check why an IPTV app is missing on LG TV. Verify webOS, model and regional support before troubleshooting the store or choosing a compatible alternative.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-available-on-lg-tv",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV App Not Available on LG TV? Check Support",
+        "og:description": "Check why an IPTV app is missing on LG TV. Verify webOS, model and regional support before troubleshooting the store or choosing a compatible alternative.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-app-not-available-on-lg-tv",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-app-not-available-on-lg-tv.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: check lg app availability first — Identify model and webOS; Check actual service region; Verify official app support.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV App Not Available on LG TV? Check Support",
+        "twitter:description": "Check why an IPTV app is missing on LG TV. Verify webOS, model and regional support before troubleshooting the store or choosing a compatible alternative.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-app-not-available-on-lg-tv.png",
+        "twitter:image:alt": "Conceptual diagram: check lg app availability first — Identify model and webOS; Check actual service region; Verify official app support."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-app-not-available-on-lg-tv.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-app-not-available-on-lg-tv#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/iptv-app-not-working-on-samsung-tv",
+        "/blog/tivimate-vs-iptv-smarters"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/iptv-app-keeps-crashing"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "firestick-black-screen-after-logo",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 111555,
+      "title": "Firestick Black Screen After Logo? Safe Checks | IPTVUS24",
+      "description": "Restore a Fire TV picture after the logo: check power, HDMI input, direct connections and supported display recovery before attempting a destructive reset.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-black-screen-after-logo",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Firestick Black Screen After Logo? Safe Checks",
+        "og:description": "Restore a Fire TV picture after the logo: check power, HDMI input, direct connections and supported display recovery before attempting a destructive reset.",
+        "og:url": "https://www.iptvus24.com/blog/firestick-black-screen-after-logo",
+        "og:image": "https://www.iptvus24.com/images/guides/firestick-black-screen-after-logo.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: restore the fire tv display path — Check power and input; Connect directly by HDMI; Confirm a supported mode.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Firestick Black Screen After Logo? Safe Checks",
+        "twitter:description": "Restore a Fire TV picture after the logo: check power, HDMI input, direct connections and supported display recovery before attempting a destructive reset.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/firestick-black-screen-after-logo.png",
+        "twitter:image:alt": "Conceptual diagram: restore the fire tv display path — Check power and input; Connect directly by HDMI; Confirm a supported mode."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/firestick-black-screen-after-logo.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/firestick-black-screen-after-logo#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+        "/blog/iptv-app-not-working-on-firestick",
+        "/blog/firestick-buffering-but-internet-is-fine"
+      ],
+      "bodyLinks": [
+        "/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+        "/blog/iptv-app-not-working-on-firestick"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "how-to-organize-iptv-channels",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 114572,
+      "title": "How to Organize IPTV Channels and Keep Them Useful | IPTVUS24",
+      "description": "Build a practical IPTV favorites list, hide irrelevant groups, handle duplicate feeds and preserve guide identifiers so channel organization survives updates.",
+      "canonical": "https://www.iptvus24.com/blog/how-to-organize-iptv-channels",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How to Organize IPTV Channels and Keep Them Useful",
+        "og:description": "Build a practical IPTV favorites list, hide irrelevant groups, handle duplicate feeds and preserve guide identifiers so channel organization survives updates.",
+        "og:url": "https://www.iptvus24.com/blog/how-to-organize-iptv-channels",
+        "og:image": "https://www.iptvus24.com/images/guides/how-to-organize-iptv-channels.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: build a useful channel shortlist — Hide irrelevant groups; Curate real favorites; Preserve guide identifiers.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How to Organize IPTV Channels and Keep Them Useful",
+        "twitter:description": "Build a practical IPTV favorites list, hide irrelevant groups, handle duplicate feeds and preserve guide identifiers so channel organization survives updates.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/how-to-organize-iptv-channels.png",
+        "twitter:image:alt": "Conceptual diagram: build a useful channel shortlist — Hide irrelevant groups; Curate real favorites; Preserve guide identifiers."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/how-to-organize-iptv-channels.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/how-to-organize-iptv-channels#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/what-is-xmltv-epg",
+        "/blog/tivimate-epg-no-information",
+        "/blog/tivimate-vs-iptv-smarters",
+        "/blog/iptv-player-vs-iptv-service"
+      ],
+      "bodyLinks": [
+        "/blog/what-is-xmltv-epg",
+        "/blog/tivimate-epg-no-information"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "what-is-xmltv-epg",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 120451,
+      "title": "What Is XMLTV EPG? Channels, Times and Guide Data | IPTVUS24",
+      "description": "Understand XMLTV programme guides: channel IDs, timestamps, timezone offsets, coverage and refresh. Learn why video can work while schedule rows stay empty.",
+      "canonical": "https://www.iptvus24.com/blog/what-is-xmltv-epg",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "What Is XMLTV EPG? Channels, Times and Guide Data",
+        "og:description": "Understand XMLTV programme guides: channel IDs, timestamps, timezone offsets, coverage and refresh. Learn why video can work while schedule rows stay empty.",
+        "og:url": "https://www.iptvus24.com/blog/what-is-xmltv-epg",
+        "og:image": "https://www.iptvus24.com/images/guides/what-is-xmltv-epg.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: how xmltv becomes a programme guide — Channel identifiers; Programme times and titles; Player matching and display.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "What Is XMLTV EPG? Channels, Times and Guide Data",
+        "twitter:description": "Understand XMLTV programme guides: channel IDs, timestamps, timezone offsets, coverage and refresh. Learn why video can work while schedule rows stay empty.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/what-is-xmltv-epg.png",
+        "twitter:image:alt": "Conceptual diagram: how xmltv becomes a programme guide — Channel identifiers; Programme times and titles; Player matching and display."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/what-is-xmltv-epg.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/what-is-xmltv-epg#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/how-to-organize-iptv-channels",
+        "/blog/iptv-epg-not-updating",
+        "/blog/tivimate-epg-no-information"
+      ],
+      "bodyLinks": [
+        "/blog/how-to-organize-iptv-channels",
+        "/blog/iptv-epg-not-updating"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "iptv-player-vs-iptv-service",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 117704,
+      "title": "IPTV Player vs Service: What Are You Buying? | IPTVUS24",
+      "description": "Understand the difference between an IPTV player and content service, including payments, device licences, stream limits, privacy and support responsibilities.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-player-vs-iptv-service",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "IPTV Player vs Service: What Are You Buying?",
+        "og:description": "Understand the difference between an IPTV player and content service, including payments, device licences, stream limits, privacy and support responsibilities.",
+        "og:url": "https://www.iptvus24.com/blog/iptv-player-vs-iptv-service",
+        "og:image": "https://www.iptvus24.com/images/guides/iptv-player-vs-iptv-service.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: separate software from content access — Player features; Authorized media service; Network and device.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "IPTV Player vs Service: What Are You Buying?",
+        "twitter:description": "Understand the difference between an IPTV player and content service, including payments, device licences, stream limits, privacy and support responsibilities.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/iptv-player-vs-iptv-service.png",
+        "twitter:image:alt": "Conceptual diagram: separate software from content access — Player features; Authorized media service; Network and device."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/iptv-player-vs-iptv-service.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/iptv-player-vs-iptv-service#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/tivimate-vs-iptv-smarters",
+        "/blog/how-does-iptv-work-on-firestick",
+        "/blog/iptv-channels-not-loading",
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/mag-box-portal-not-loading"
+      ],
+      "bodyLinks": [
+        "/blog/tivimate-vs-iptv-smarters",
+        "/blog/how-does-iptv-work-on-firestick",
+        "/blog/iptv-channels-not-loading",
+        "/blog/iptv-app-keeps-crashing"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "tivimate-vs-iptv-smarters",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 122691,
+      "title": "TiviMate vs IPTV Smarters: Choose by Your Device | IPTVUS24",
+      "description": "Compare TiviMate and official Smarters editions by device support, guide workflow, features, licence terms and safe migration without invented performance scores.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-vs-iptv-smarters",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "TiviMate vs IPTV Smarters: Choose by Your Device",
+        "og:description": "Compare TiviMate and official Smarters editions by device support, guide workflow, features, licence terms and safe migration without invented performance scores.",
+        "og:url": "https://www.iptvus24.com/blog/tivimate-vs-iptv-smarters",
+        "og:image": "https://www.iptvus24.com/images/guides/tivimate-vs-iptv-smarters.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: compare players by real requirements — Supported device edition; Everyday viewing tasks; Licence and recovery.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "TiviMate vs IPTV Smarters: Choose by Your Device",
+        "twitter:description": "Compare TiviMate and official Smarters editions by device support, guide workflow, features, licence terms and safe migration without invented performance scores.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/tivimate-vs-iptv-smarters.png",
+        "twitter:image:alt": "Conceptual diagram: compare players by real requirements — Supported device edition; Everyday viewing tasks; Licence and recovery."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/tivimate-vs-iptv-smarters.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/tivimate-vs-iptv-smarters#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/how-to-organize-iptv-channels",
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/iptv-app-not-available-on-lg-tv"
+      ],
+      "bodyLinks": [
+        "/blog/how-to-organize-iptv-channels",
+        "/blog/iptv-player-vs-iptv-service"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 116345,
+      "title": "Firestick Won’t Connect to Wi-Fi? Other Devices Do | IPTVUS24",
+      "description": "Find why a Fire TV Stick cannot join Wi-Fi while other devices work. Separate discovery, password, address and internet failures without weakening security.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Firestick Won’t Connect to Wi-Fi? Other Devices Do",
+        "og:description": "Find why a Fire TV Stick cannot join Wi-Fi while other devices work. Separate discovery, password, address and internet failures without weakening security.",
+        "og:url": "https://www.iptvus24.com/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+        "og:image": "https://www.iptvus24.com/images/guides/firestick-not-connecting-to-wifi-but-other-devices-will.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: locate a fire tv wi-fi failure — Discover the network; Authenticate securely; Obtain internet access.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Firestick Won’t Connect to Wi-Fi? Other Devices Do",
+        "twitter:description": "Find why a Fire TV Stick cannot join Wi-Fi while other devices work. Separate discovery, password, address and internet failures without weakening security.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/firestick-not-connecting-to-wifi-but-other-devices-will.png",
+        "twitter:image:alt": "Conceptual diagram: locate a fire tv wi-fi failure — Discover the network; Authenticate securely; Obtain internet access."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/firestick-not-connecting-to-wifi-but-other-devices-will.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/firestick-not-connecting-to-wifi-but-other-devices-will#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/iptv-app-not-working-on-firestick",
+        "/blog/firestick-black-screen-after-logo"
+      ],
+      "bodyLinks": [
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/iptv-app-not-working-on-firestick"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 116106,
+      "title": "Samsung TV Online but Apps Not Working? Diagnose It | IPTVUS24",
+      "description": "Diagnose Samsung TV apps that fail despite an internet connection. Use Network Status and Smart Hub tests before DNS changes or account-erasing resets.",
+      "canonical": "https://www.iptvus24.com/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Samsung TV Online but Apps Not Working? Diagnose It",
+        "og:description": "Diagnose Samsung TV apps that fail despite an internet connection. Use Network Status and Smart Hub tests before DNS changes or account-erasing resets.",
+        "og:url": "https://www.iptvus24.com/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+        "og:image": "https://www.iptvus24.com/images/guides/samsung-tv-apps-not-working-but-connected-to-internet.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: diagnose shared samsung app failures — Test unrelated apps; Run connection diagnostics; Check Smart Hub services.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Samsung TV Online but Apps Not Working? Diagnose It",
+        "twitter:description": "Diagnose Samsung TV apps that fail despite an internet connection. Use Network Status and Smart Hub tests before DNS changes or account-erasing resets.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/samsung-tv-apps-not-working-but-connected-to-internet.png",
+        "twitter:image:alt": "Conceptual diagram: diagnose shared samsung app failures — Test unrelated apps; Run connection diagnostics; Check Smart Hub services."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/samsung-tv-apps-not-working-but-connected-to-internet.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/samsung-tv-apps-not-working-but-connected-to-internet#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-not-working-on-samsung-tv",
+        "/blog/streaming-buffering-but-internet-is-fine",
+        "/blog/iptv-app-keeps-crashing"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-app-not-working-on-samsung-tv",
+        "/blog/streaming-buffering-but-internet-is-fine"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "android-tv-storage-space-running-out",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 115631,
+      "title": "Android TV Storage Running Out? Free Space Safely | IPTVUS24",
+      "description": "Free Android TV storage by identifying downloads, unused apps, cache and recordings. Protect account data and understand USB formatting before expanding space.",
+      "canonical": "https://www.iptvus24.com/blog/android-tv-storage-space-running-out",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Android TV Storage Running Out? Free Space Safely",
+        "og:description": "Free Android TV storage by identifying downloads, unused apps, cache and recordings. Protect account data and understand USB formatting before expanding space.",
+        "og:url": "https://www.iptvus24.com/blog/android-tv-storage-space-running-out",
+        "og:image": "https://www.iptvus24.com/images/guides/android-tv-storage-space-running-out.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: recover persistent android tv storage — Inspect actual usage; Remove recoverable files; Verify supported expansion.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Android TV Storage Running Out? Free Space Safely",
+        "twitter:description": "Free Android TV storage by identifying downloads, unused apps, cache and recordings. Protect account data and understand USB formatting before expanding space.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/android-tv-storage-space-running-out.png",
+        "twitter:image:alt": "Conceptual diagram: recover persistent android tv storage — Inspect actual usage; Remove recoverable files; Verify supported expansion."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/android-tv-storage-space-running-out.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/android-tv-storage-space-running-out#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/how-to-organize-iptv-channels",
+        "/blog/tivimate-playlist-is-processed-please-wait"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/how-to-organize-iptv-channels"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-buffering-but-internet-is-fine",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 115430,
+      "title": "Streaming Buffers but Internet Is Fine? What to Test | IPTVUS24",
+      "description": "Investigate buffering despite fast internet. Compare the actual device, media source, Wi-Fi path and decoding workload without assuming a faster plan is needed.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-buffering-but-internet-is-fine",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Streaming Buffers but Internet Is Fine? What to Test",
+        "og:description": "Investigate buffering despite fast internet. Compare the actual device, media source, Wi-Fi path and decoding workload without assuming a faster plan is needed.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-buffering-but-internet-is-fine",
+        "og:image": "https://www.iptvus24.com/images/guides/streaming-buffering-but-internet-is-fine.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: test the actual streaming path — Affected device and app; Local and upstream path; Media source and decoding.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Streaming Buffers but Internet Is Fine? What to Test",
+        "twitter:description": "Investigate buffering despite fast internet. Compare the actual device, media source, Wi-Fi path and decoding workload without assuming a faster plan is needed.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/streaming-buffering-but-internet-is-fine.png",
+        "twitter:image:alt": "Conceptual diagram: test the actual streaming path — Affected device and app; Local and upstream path; Media source and decoding."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/streaming-buffering-but-internet-is-fine.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-buffering-but-internet-is-fine#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+        "/blog/iptv-channels-not-loading"
+      ],
+      "bodyLinks": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/firestick-buffering-but-internet-is-fine"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "how-does-iptv-work-on-firestick",
+      "target": true,
+      "status": 200,
+      "htmlBytes": 121895,
+      "title": "How Does IPTV Work on Firestick? A Clear Guide | IPTVUS24",
+      "description": "Learn how IPTV works on Fire TV: compatible apps, authorized sources, playlists, media delivery and programme guides, with Fire OS and Vega OS distinctions.",
+      "canonical": "https://www.iptvus24.com/blog/how-does-iptv-work-on-firestick",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How Does IPTV Work on Firestick? A Clear Guide",
+        "og:description": "Learn how IPTV works on Fire TV: compatible apps, authorized sources, playlists, media delivery and programme guides, with Fire OS and Vega OS distinctions.",
+        "og:url": "https://www.iptvus24.com/blog/how-does-iptv-work-on-firestick",
+        "og:image": "https://www.iptvus24.com/images/guides/how-does-iptv-work-on-firestick.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Conceptual diagram: follow iptv delivery on fire tv — Compatible app and OS; Authorized media request; Decode and display.",
+        "article:published_time": "2026-11-27",
+        "article:modified_time": "2026-11-27"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How Does IPTV Work on Firestick? A Clear Guide",
+        "twitter:description": "Learn how IPTV works on Fire TV: compatible apps, authorized sources, playlists, media delivery and programme guides, with Fire OS and Vega OS distinctions.",
+        "twitter:image": "https://www.iptvus24.com/images/guides/how-does-iptv-work-on-firestick.png",
+        "twitter:image:alt": "Conceptual diagram: follow iptv delivery on fire tv — Compatible app and OS; Authorized media request; Decode and display."
+      },
+      "schemaTypes": [
+        "WebPage",
+        "Article",
+        "FAQPage",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/guides/how-does-iptv-work-on-firestick.png",
+      "questionsMatch": true,
+      "breadcrumbId": "https://www.iptvus24.com/blog/how-does-iptv-work-on-firestick#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/what-is-xmltv-epg",
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/iptv-app-not-working-on-firestick"
+      ],
+      "bodyLinks": [
+        "/blog/what-is-xmltv-epg",
+        "/blog/iptv-player-vs-iptv-service",
+        "/blog/iptv-app-not-working-on-firestick"
+      ],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "choose-an-internet-tv-service",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 59627,
+      "title": "How to evaluate an internet TV service before subscribing | IPTVUS24",
+      "description": "A practical checklist for comparing service terms, device compatibility, support, content availability, and the total cost before you sign up.",
+      "canonical": "https://www.iptvus24.com/blog/choose-an-internet-tv-service",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How to evaluate an internet TV service before subscribing",
+        "og:description": "A practical checklist for comparing service terms, device compatibility, support, content availability, and the total cost before you sign up.",
+        "og:url": "https://www.iptvus24.com/blog/choose-an-internet-tv-service",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How to evaluate an internet TV service before subscribing",
+        "twitter:description": "A practical checklist for comparing service terms, device compatibility, support, content availability, and the total cost before you sign up.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/choose-an-internet-tv-service#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/choose-a-streaming-device-for-your-tv",
+        "/blog/compare-streaming-plan-prices",
+        "/blog/lawful-live-sports-streaming-checklist"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "check-device-compatibility",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 59451,
+      "title": "A practical guide to checking streaming device compatibility | IPTVUS24",
+      "description": "Use this device-by-device checklist to confirm your operating system, app availability, connection, and account limits before ordering.",
+      "canonical": "https://www.iptvus24.com/blog/check-device-compatibility",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "A practical guide to checking streaming device compatibility",
+        "og:description": "Use this device-by-device checklist to confirm your operating system, app availability, connection, and account limits before ordering.",
+        "og:url": "https://www.iptvus24.com/blog/check-device-compatibility",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "A practical guide to checking streaming device compatibility",
+        "twitter:description": "Use this device-by-device checklist to confirm your operating system, app availability, connection, and account limits before ordering.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/check-device-compatibility#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "what-affects-streaming-quality",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 59037,
+      "title": "What affects streaming quality at home? | IPTVUS24",
+      "description": "Understand how your connection, Wi-Fi, device, stream source, and household network use can influence playback quality.",
+      "canonical": "https://www.iptvus24.com/blog/what-affects-streaming-quality",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "What affects streaming quality at home?",
+        "og:description": "Understand how your connection, Wi-Fi, device, stream source, and household network use can influence playback quality.",
+        "og:url": "https://www.iptvus24.com/blog/what-affects-streaming-quality",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "What affects streaming quality at home?",
+        "twitter:description": "Understand how your connection, Wi-Fi, device, stream source, and household network use can influence playback quality.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/what-affects-streaming-quality#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/streaming-buffering-but-internet-is-fine",
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/iptv-channels-not-loading"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "compare-streaming-plan-prices",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 58588,
+      "title": "How to compare streaming plan prices clearly | IPTVUS24",
+      "description": "Learn how to compare the amount due, plan length, monthly equivalent, renewal terms, and refund conditions without getting caught by misleading savings claims.",
+      "canonical": "https://www.iptvus24.com/blog/compare-streaming-plan-prices",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How to compare streaming plan prices clearly",
+        "og:description": "Learn how to compare the amount due, plan length, monthly equivalent, renewal terms, and refund conditions without getting caught by misleading savings claims.",
+        "og:url": "https://www.iptvus24.com/blog/compare-streaming-plan-prices",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How to compare streaming plan prices clearly",
+        "twitter:description": "Learn how to compare the amount due, plan length, monthly equivalent, renewal terms, and refund conditions without getting caught by misleading savings claims.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/compare-streaming-plan-prices#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/choose-a-streaming-device-for-your-tv",
+        "/blog/choose-an-internet-tv-service",
+        "/blog/lawful-live-sports-streaming-checklist"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-app-privacy-and-security",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 58461,
+      "title": "Protecting your privacy when using streaming apps | IPTVUS24",
+      "description": "Simple steps for safer accounts, careful app selection, privacy settings, and sharing less personal information while streaming.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-app-privacy-and-security",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Protecting your privacy when using streaming apps",
+        "og:description": "Simple steps for safer accounts, careful app selection, privacy settings, and sharing less personal information while streaming.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-app-privacy-and-security",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Protecting your privacy when using streaming apps",
+        "twitter:description": "Simple steps for safer accounts, careful app selection, privacy settings, and sharing less personal information while streaming.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-app-privacy-and-security#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/regional-content-availability-and-rights",
+        "/blog/streaming-account-privacy-and-security",
+        "/blog/streaming-parental-controls-guide"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "regional-content-availability-and-rights",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 59423,
+      "title": "Checking regional content availability and rights | IPTVUS24",
+      "description": "Why catalogues vary by location, what to ask a provider before subscribing, and how to make an informed, lawful choice.",
+      "canonical": "https://www.iptvus24.com/blog/regional-content-availability-and-rights",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Checking regional content availability and rights",
+        "og:description": "Why catalogues vary by location, what to ask a provider before subscribing, and how to make an informed, lawful choice.",
+        "og:url": "https://www.iptvus24.com/blog/regional-content-availability-and-rights",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Checking regional content availability and rights",
+        "twitter:description": "Why catalogues vary by location, what to ask a provider before subscribing, and how to make an informed, lawful choice.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/regional-content-availability-and-rights#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/streaming-account-privacy-and-security",
+        "/blog/streaming-app-privacy-and-security",
+        "/blog/streaming-parental-controls-guide"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "fire-tv-streaming-setup-checklist",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57644,
+      "title": "Fire TV streaming setup: a compatibility-first checklist | IPTVUS24",
+      "description": "Check your Fire TV model, app availability, network, and account limits before setting up a streaming service.",
+      "canonical": "https://www.iptvus24.com/blog/fire-tv-streaming-setup-checklist",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Fire TV streaming setup: a compatibility-first checklist",
+        "og:description": "Check your Fire TV model, app availability, network, and account limits before setting up a streaming service.",
+        "og:url": "https://www.iptvus24.com/blog/fire-tv-streaming-setup-checklist",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Fire TV streaming setup: a compatibility-first checklist",
+        "twitter:description": "Check your Fire TV model, app availability, network, and account limits before setting up a streaming service.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/fire-tv-streaming-setup-checklist#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/how-does-iptv-work-on-firestick",
+        "/blog/iptv-app-not-working-on-firestick",
+        "/blog/firestick-not-connecting-to-wifi-but-other-devices-will"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "samsung-smart-tv-streaming-setup",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57462,
+      "title": "Streaming on a Samsung Smart TV: what to check first | IPTVUS24",
+      "description": "A practical guide to Samsung TV model years, app availability, network setup, and safe troubleshooting.",
+      "canonical": "https://www.iptvus24.com/blog/samsung-smart-tv-streaming-setup",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Streaming on a Samsung Smart TV: what to check first",
+        "og:description": "A practical guide to Samsung TV model years, app availability, network setup, and safe troubleshooting.",
+        "og:url": "https://www.iptvus24.com/blog/samsung-smart-tv-streaming-setup",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Streaming on a Samsung Smart TV: what to check first",
+        "twitter:description": "A practical guide to Samsung TV model years, app availability, network setup, and safe troubleshooting.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/samsung-smart-tv-streaming-setup#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-not-working-on-samsung-tv",
+        "/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+        "/blog/iptv-app-not-available-on-lg-tv"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "lg-webos-streaming-app-compatibility",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57060,
+      "title": "LG webOS streaming apps: a compatibility guide | IPTVUS24",
+      "description": "Understand why LG TV model, webOS version, app-store region, and service requirements all matter.",
+      "canonical": "https://www.iptvus24.com/blog/lg-webos-streaming-app-compatibility",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "LG webOS streaming apps: a compatibility guide",
+        "og:description": "Understand why LG TV model, webOS version, app-store region, and service requirements all matter.",
+        "og:url": "https://www.iptvus24.com/blog/lg-webos-streaming-app-compatibility",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "LG webOS streaming apps: a compatibility guide",
+        "twitter:description": "Understand why LG TV model, webOS version, app-store region, and service requirements all matter.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/lg-webos-streaming-app-compatibility#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-not-available-on-lg-tv",
+        "/blog/tivimate-vs-iptv-smarters",
+        "/blog/iptv-player-vs-iptv-service"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "apple-tv-streaming-service-setup",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57011,
+      "title": "Apple TV streaming setup: apps, network, and account checks | IPTVUS24",
+      "description": "Prepare an Apple TV for a streaming app with a few safe checks on software, store region, and connectivity.",
+      "canonical": "https://www.iptvus24.com/blog/apple-tv-streaming-service-setup",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Apple TV streaming setup: apps, network, and account checks",
+        "og:description": "Prepare an Apple TV for a streaming app with a few safe checks on software, store region, and connectivity.",
+        "og:url": "https://www.iptvus24.com/blog/apple-tv-streaming-service-setup",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Apple TV streaming setup: apps, network, and account checks",
+        "twitter:description": "Prepare an Apple TV for a streaming app with a few safe checks on software, store region, and connectivity.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/apple-tv-streaming-service-setup#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/captions-and-subtitles-on-streaming"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "android-tv-streaming-player-setup",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57168,
+      "title": "Android TV streaming setup: a straightforward checklist | IPTVUS24",
+      "description": "Check Android TV software, Play Store availability, storage, and network quality before installing a player.",
+      "canonical": "https://www.iptvus24.com/blog/android-tv-streaming-player-setup",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Android TV streaming setup: a straightforward checklist",
+        "og:description": "Check Android TV software, Play Store availability, storage, and network quality before installing a player.",
+        "og:url": "https://www.iptvus24.com/blog/android-tv-streaming-player-setup",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Android TV streaming setup: a straightforward checklist",
+        "twitter:description": "Check Android TV software, Play Store availability, storage, and network quality before installing a player.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/android-tv-streaming-player-setup#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/apple-tv-streaming-service-setup",
+        "/blog/captions-and-subtitles-on-streaming"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "google-tv-streaming-app-checklist",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57071,
+      "title": "Google TV streaming apps: compatibility before installation | IPTVUS24",
+      "description": "How to check Google TV device support, Play Store availability, updates, and network readiness.",
+      "canonical": "https://www.iptvus24.com/blog/google-tv-streaming-app-checklist",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Google TV streaming apps: compatibility before installation",
+        "og:description": "How to check Google TV device support, Play Store availability, updates, and network readiness.",
+        "og:url": "https://www.iptvus24.com/blog/google-tv-streaming-app-checklist",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Google TV streaming apps: compatibility before installation",
+        "twitter:description": "How to check Google TV device support, Play Store availability, updates, and network readiness.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/google-tv-streaming-app-checklist#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-on-iphone-privacy-checklist",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57154,
+      "title": "Streaming on iPhone: app, connection, and privacy basics | IPTVUS24",
+      "description": "A compact checklist for choosing a supported iPhone app and keeping account and device data private.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-on-iphone-privacy-checklist",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Streaming on iPhone: app, connection, and privacy basics",
+        "og:description": "A compact checklist for choosing a supported iPhone app and keeping account and device data private.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-on-iphone-privacy-checklist",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Streaming on iPhone: app, connection, and privacy basics",
+        "twitter:description": "A compact checklist for choosing a supported iPhone app and keeping account and device data private.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-on-iphone-privacy-checklist#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-on-ipad-setup",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56161,
+      "title": "Streaming on iPad: prepare the app and home network | IPTVUS24",
+      "description": "Check iPadOS support, screen settings, app permissions, and Wi-Fi before watching on a tablet.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-on-ipad-setup",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Streaming on iPad: prepare the app and home network",
+        "og:description": "Check iPadOS support, screen settings, app permissions, and Wi-Fi before watching on a tablet.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-on-ipad-setup",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Streaming on iPad: prepare the app and home network",
+        "twitter:description": "Check iPadOS support, screen settings, app permissions, and Wi-Fi before watching on a tablet.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-on-ipad-setup#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-on-windows-pc",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56698,
+      "title": "Watching streams on a Windows PC: browser and network checks | IPTVUS24",
+      "description": "A safe checklist for current browsers, app compatibility, display connections, and Windows networking.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-on-windows-pc",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Watching streams on a Windows PC: browser and network checks",
+        "og:description": "A safe checklist for current browsers, app compatibility, display connections, and Windows networking.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-on-windows-pc",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Watching streams on a Windows PC: browser and network checks",
+        "twitter:description": "A safe checklist for current browsers, app compatibility, display connections, and Windows networking.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-on-windows-pc#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-on-mac-setup",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56607,
+      "title": "Streaming on Mac: compatibility, browser, and audio checks | IPTVUS24",
+      "description": "Check macOS and player support, browser permissions, network stability, and common display or audio issues.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-on-mac-setup",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Streaming on Mac: compatibility, browser, and audio checks",
+        "og:description": "Check macOS and player support, browser permissions, network stability, and common display or audio issues.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-on-mac-setup",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Streaming on Mac: compatibility, browser, and audio checks",
+        "twitter:description": "Check macOS and player support, browser permissions, network stability, and common display or audio issues.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-on-mac-setup#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "ethernet-or-wifi-for-tv-streaming",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56777,
+      "title": "Ethernet or Wi-Fi for TV streaming: how to choose | IPTVUS24",
+      "description": "Compare wired and wireless connections, and learn how to test the link that actually reaches your TV.",
+      "canonical": "https://www.iptvus24.com/blog/ethernet-or-wifi-for-tv-streaming",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Ethernet or Wi-Fi for TV streaming: how to choose",
+        "og:description": "Compare wired and wireless connections, and learn how to test the link that actually reaches your TV.",
+        "og:url": "https://www.iptvus24.com/blog/ethernet-or-wifi-for-tv-streaming",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Ethernet or Wi-Fi for TV streaming: how to choose",
+        "twitter:description": "Compare wired and wireless connections, and learn how to test the link that actually reaches your TV.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/ethernet-or-wifi-for-tv-streaming#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/electronic-program-guide-explained",
+        "/blog/home-network-bandwidth-for-streaming",
+        "/blog/how-does-iptv-work-on-firestick"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "improve-wifi-signal-for-smart-tv",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56487,
+      "title": "How to improve Wi-Fi reception for a Smart TV | IPTVUS24",
+      "description": "Practical router placement and testing steps for reducing weak Wi-Fi between your router and television.",
+      "canonical": "https://www.iptvus24.com/blog/improve-wifi-signal-for-smart-tv",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How to improve Wi-Fi reception for a Smart TV",
+        "og:description": "Practical router placement and testing steps for reducing weak Wi-Fi between your router and television.",
+        "og:url": "https://www.iptvus24.com/blog/improve-wifi-signal-for-smart-tv",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How to improve Wi-Fi reception for a Smart TV",
+        "twitter:description": "Practical router placement and testing steps for reducing weak Wi-Fi between your router and television.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/improve-wifi-signal-for-smart-tv#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/electronic-program-guide-explained",
+        "/blog/ethernet-or-wifi-for-tv-streaming",
+        "/blog/home-network-bandwidth-for-streaming"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "troubleshoot-buffering-step-by-step",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57391,
+      "title": "Buffering while streaming? Troubleshoot one layer at a time | IPTVUS24",
+      "description": "A calm diagnostic sequence to separate device, Wi-Fi, internet, app, and provider-side problems.",
+      "canonical": "https://www.iptvus24.com/blog/troubleshoot-buffering-step-by-step",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Buffering while streaming? Troubleshoot one layer at a time",
+        "og:description": "A calm diagnostic sequence to separate device, Wi-Fi, internet, app, and provider-side problems.",
+        "og:url": "https://www.iptvus24.com/blog/troubleshoot-buffering-step-by-step",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Buffering while streaming? Troubleshoot one layer at a time",
+        "twitter:description": "A calm diagnostic sequence to separate device, Wi-Fi, internet, app, and provider-side problems.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/troubleshoot-buffering-step-by-step#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/streaming-buffering-but-internet-is-fine",
+        "/blog/firestick-buffering-but-internet-is-fine",
+        "/blog/firestick-not-connecting-to-wifi-but-other-devices-will"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-app-wont-open",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56549,
+      "title": "When a streaming app will not open: a safe troubleshooting guide | IPTVUS24",
+      "description": "Check updates, storage, outages, and app compatibility before reinstalling or resetting a device.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-app-wont-open",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "When a streaming app will not open: a safe troubleshooting guide",
+        "og:description": "Check updates, storage, outages, and app compatibility before reinstalling or resetting a device.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-app-wont-open",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "When a streaming app will not open: a safe troubleshooting guide",
+        "twitter:description": "Check updates, storage, outages, and app compatibility before reinstalling or resetting a device.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-app-wont-open#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/iptv-app-not-working-on-firestick",
+        "/blog/iptv-app-not-working-on-samsung-tv"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-black-screen-with-audio",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56636,
+      "title": "Black screen with audio: isolate the streaming playback problem | IPTVUS24",
+      "description": "Work through display, player, connection, and device checks when sound plays but video does not.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-black-screen-with-audio",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Black screen with audio: isolate the streaming playback problem",
+        "og:description": "Work through display, player, connection, and device checks when sound plays but video does not.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-black-screen-with-audio",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Black screen with audio: isolate the streaming playback problem",
+        "twitter:description": "Work through display, player, connection, and device checks when sound plays but video does not.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-black-screen-with-audio#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/electronic-program-guide-explained",
+        "/blog/ethernet-or-wifi-for-tv-streaming",
+        "/blog/home-network-bandwidth-for-streaming"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "electronic-program-guide-explained",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56660,
+      "title": "What is an electronic programme guide (EPG)? | IPTVUS24",
+      "description": "Learn what programme guides display, why listings can differ, and how to troubleshoot missing schedule details.",
+      "canonical": "https://www.iptvus24.com/blog/electronic-program-guide-explained",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "What is an electronic programme guide (EPG)?",
+        "og:description": "Learn what programme guides display, why listings can differ, and how to troubleshoot missing schedule details.",
+        "og:url": "https://www.iptvus24.com/blog/electronic-program-guide-explained",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "What is an electronic programme guide (EPG)?",
+        "twitter:description": "Learn what programme guides display, why listings can differ, and how to troubleshoot missing schedule details.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/electronic-program-guide-explained#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/what-is-xmltv-epg",
+        "/blog/iptv-epg-not-updating",
+        "/blog/tivimate-epg-no-information"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "captions-and-subtitles-on-streaming",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56970,
+      "title": "Captions and subtitles on streaming apps: settings to check | IPTVUS24",
+      "description": "Find the difference between captions and subtitles and troubleshoot language, contrast, and timing settings.",
+      "canonical": "https://www.iptvus24.com/blog/captions-and-subtitles-on-streaming",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Captions and subtitles on streaming apps: settings to check",
+        "og:description": "Find the difference between captions and subtitles and troubleshoot language, contrast, and timing settings.",
+        "og:url": "https://www.iptvus24.com/blog/captions-and-subtitles-on-streaming",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Captions and subtitles on streaming apps: settings to check",
+        "twitter:description": "Find the difference between captions and subtitles and troubleshoot language, contrast, and timing settings.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/captions-and-subtitles-on-streaming#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "lawful-live-sports-streaming-checklist",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57091,
+      "title": "A checklist for choosing a live sports streaming option | IPTVUS24",
+      "description": "Compare official rights, blackout terms, supported devices, picture quality, and total cost before match day.",
+      "canonical": "https://www.iptvus24.com/blog/lawful-live-sports-streaming-checklist",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "A checklist for choosing a live sports streaming option",
+        "og:description": "Compare official rights, blackout terms, supported devices, picture quality, and total cost before match day.",
+        "og:url": "https://www.iptvus24.com/blog/lawful-live-sports-streaming-checklist",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "A checklist for choosing a live sports streaming option",
+        "twitter:description": "Compare official rights, blackout terms, supported devices, picture quality, and total cost before match day.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/lawful-live-sports-streaming-checklist#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/choose-a-streaming-device-for-your-tv",
+        "/blog/choose-an-internet-tv-service",
+        "/blog/compare-streaming-plan-prices"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-account-privacy-and-security",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56738,
+      "title": "Protect your privacy when signing up for streaming services | IPTVUS24",
+      "description": "Practical account, payment, device, and support habits for reducing unnecessary data exposure.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-account-privacy-and-security",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Protect your privacy when signing up for streaming services",
+        "og:description": "Practical account, payment, device, and support habits for reducing unnecessary data exposure.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-account-privacy-and-security",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Protect your privacy when signing up for streaming services",
+        "twitter:description": "Practical account, payment, device, and support habits for reducing unnecessary data exposure.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-account-privacy-and-security#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/regional-content-availability-and-rights",
+        "/blog/streaming-app-privacy-and-security",
+        "/blog/streaming-parental-controls-guide"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-subscription-cost-comparison",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56681,
+      "title": "How to compare streaming subscription costs fairly | IPTVUS24",
+      "description": "Look beyond an advertised monthly equivalent and compare total payment, renewal, device, and cancellation terms.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-subscription-cost-comparison",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How to compare streaming subscription costs fairly",
+        "og:description": "Look beyond an advertised monthly equivalent and compare total payment, renewal, device, and cancellation terms.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-subscription-cost-comparison",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How to compare streaming subscription costs fairly",
+        "twitter:description": "Look beyond an advertised monthly equivalent and compare total payment, renewal, device, and cancellation terms.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-subscription-cost-comparison#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/choose-a-streaming-device-for-your-tv",
+        "/blog/choose-an-internet-tv-service",
+        "/blog/compare-streaming-plan-prices"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "watching-streaming-services-while-travelling",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57184,
+      "title": "Using streaming services while travelling: check the terms first | IPTVUS24",
+      "description": "Understand account rules, regional catalogues, roaming data, and local rights before using a service abroad.",
+      "canonical": "https://www.iptvus24.com/blog/watching-streaming-services-while-travelling",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Using streaming services while travelling: check the terms first",
+        "og:description": "Understand account rules, regional catalogues, roaming data, and local rights before using a service abroad.",
+        "og:url": "https://www.iptvus24.com/blog/watching-streaming-services-while-travelling",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Using streaming services while travelling: check the terms first",
+        "twitter:description": "Understand account rules, regional catalogues, roaming data, and local rights before using a service abroad.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/watching-streaming-services-while-travelling#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/regional-content-availability-and-rights",
+        "/blog/streaming-account-privacy-and-security",
+        "/blog/streaming-app-privacy-and-security"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-parental-controls-guide",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56656,
+      "title": "Parental controls on streaming devices: a setup guide | IPTVUS24",
+      "description": "Use device, app, and profile controls together, and test that age and purchase restrictions work as intended.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-parental-controls-guide",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Parental controls on streaming devices: a setup guide",
+        "og:description": "Use device, app, and profile controls together, and test that age and purchase restrictions work as intended.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-parental-controls-guide",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Parental controls on streaming devices: a setup guide",
+        "twitter:description": "Use device, app, and profile controls together, and test that age and purchase restrictions work as intended.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-parental-controls-guide#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/regional-content-availability-and-rights",
+        "/blog/streaming-account-privacy-and-security",
+        "/blog/streaming-app-privacy-and-security"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-device-storage-and-updates",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 57077,
+      "title": "Manage storage and updates on a streaming device | IPTVUS24",
+      "description": "Keep a TV stick, set-top box, or Smart TV responsive by checking free space and using safe update practices.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-device-storage-and-updates",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Manage storage and updates on a streaming device",
+        "og:description": "Keep a TV stick, set-top box, or Smart TV responsive by checking free space and using safe update practices.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-device-storage-and-updates",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Manage storage and updates on a streaming device",
+        "twitter:description": "Keep a TV stick, set-top box, or Smart TV responsive by checking free space and using safe update practices.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-device-storage-and-updates#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/iptv-app-keeps-crashing",
+        "/blog/tivimate-playlist-is-processed-please-wait"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "home-network-bandwidth-for-streaming",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56741,
+      "title": "How household internet use affects streaming | IPTVUS24",
+      "description": "Understand shared bandwidth, Wi-Fi contention, and why a single speed test does not predict every stream.",
+      "canonical": "https://www.iptvus24.com/blog/home-network-bandwidth-for-streaming",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "How household internet use affects streaming",
+        "og:description": "Understand shared bandwidth, Wi-Fi contention, and why a single speed test does not predict every stream.",
+        "og:url": "https://www.iptvus24.com/blog/home-network-bandwidth-for-streaming",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "How household internet use affects streaming",
+        "twitter:description": "Understand shared bandwidth, Wi-Fi contention, and why a single speed test does not predict every stream.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/home-network-bandwidth-for-streaming#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/electronic-program-guide-explained",
+        "/blog/ethernet-or-wifi-for-tv-streaming",
+        "/blog/how-does-iptv-work-on-firestick"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-audio-language-and-track-issues",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56359,
+      "title": "Fix audio language or track issues in a streaming player | IPTVUS24",
+      "description": "Check track selection, device output, app settings, and source limitations when audio is missing or unexpected.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-audio-language-and-track-issues",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Fix audio language or track issues in a streaming player",
+        "og:description": "Check track selection, device output, app settings, and source limitations when audio is missing or unexpected.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-audio-language-and-track-issues",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Fix audio language or track issues in a streaming player",
+        "twitter:description": "Check track selection, device output, app settings, and source limitations when audio is missing or unexpected.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-audio-language-and-track-issues#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/electronic-program-guide-explained",
+        "/blog/ethernet-or-wifi-for-tv-streaming",
+        "/blog/home-network-bandwidth-for-streaming"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-device-remote-not-responding",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56922,
+      "title": "A streaming remote is not responding: quick checks | IPTVUS24",
+      "description": "Check batteries, pairing, line of sight, HDMI control, and device status before replacing a remote.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-device-remote-not-responding",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "A streaming remote is not responding: quick checks",
+        "og:description": "Check batteries, pairing, line of sight, HDMI control, and device status before replacing a remote.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-device-remote-not-responding",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "A streaming remote is not responding: quick checks",
+        "twitter:description": "Check batteries, pairing, line of sight, HDMI control, and device status before replacing a remote.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-device-remote-not-responding#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "choose-a-streaming-device-for-your-tv",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56762,
+      "title": "Choosing a streaming device for your television | IPTVUS24",
+      "description": "Compare app availability, software support, connection options, accessibility, and total ownership cost.",
+      "canonical": "https://www.iptvus24.com/blog/choose-a-streaming-device-for-your-tv",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Choosing a streaming device for your television",
+        "og:description": "Compare app availability, software support, connection options, accessibility, and total ownership cost.",
+        "og:url": "https://www.iptvus24.com/blog/choose-a-streaming-device-for-your-tv",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Choosing a streaming device for your television",
+        "twitter:description": "Compare app availability, software support, connection options, accessibility, and total ownership cost.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/choose-a-streaming-device-for-your-tv#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/choose-an-internet-tv-service",
+        "/blog/compare-streaming-plan-prices",
+        "/blog/lawful-live-sports-streaming-checklist"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "reduce-streaming-data-use",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56114,
+      "title": "Ways to reduce mobile data use while streaming | IPTVUS24",
+      "description": "Adjust playback quality, download only when allowed, and monitor roaming or mobile-plan limits.",
+      "canonical": "https://www.iptvus24.com/blog/reduce-streaming-data-use",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Ways to reduce mobile data use while streaming",
+        "og:description": "Adjust playback quality, download only when allowed, and monitor roaming or mobile-plan limits.",
+        "og:url": "https://www.iptvus24.com/blog/reduce-streaming-data-use",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Ways to reduce mobile data use while streaming",
+        "twitter:description": "Adjust playback quality, download only when allowed, and monitor roaming or mobile-plan limits.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/reduce-streaming-data-use#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/electronic-program-guide-explained",
+        "/blog/ethernet-or-wifi-for-tv-streaming",
+        "/blog/home-network-bandwidth-for-streaming"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-accessibility-features",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56817,
+      "title": "Streaming accessibility settings worth checking | IPTVUS24",
+      "description": "Explore captions, audio descriptions, contrast, text size, remote controls, and device-level accessibility options.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-accessibility-features",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Streaming accessibility settings worth checking",
+        "og:description": "Explore captions, audio descriptions, contrast, text size, remote controls, and device-level accessibility options.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-accessibility-features",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Streaming accessibility settings worth checking",
+        "twitter:description": "Explore captions, audio descriptions, contrast, text size, remote controls, and device-level accessibility options.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-accessibility-features#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/android-tv-storage-space-running-out",
+        "/blog/android-tv-streaming-player-setup",
+        "/blog/apple-tv-streaming-service-setup"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    },
+    {
+      "missingSocialFields": [],
+      "duplicatePageTags": [],
+      "slug": "streaming-service-refund-and-cancellation-checks",
+      "target": false,
+      "status": 200,
+      "htmlBytes": 56968,
+      "title": "Refunds and cancellations: questions to answer before subscribing | IPTVUS24",
+      "description": "Find the written refund window, exclusions, renewal rules, and support path before paying for a service.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-service-refund-and-cancellation-checks",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "og": {
+        "og:type": "article",
+        "og:title": "Refunds and cancellations: questions to answer before subscribing",
+        "og:description": "Find the written refund window, exclusions, renewal rules, and support path before paying for a service.",
+        "og:url": "https://www.iptvus24.com/blog/streaming-service-refund-and-cancellation-checks",
+        "og:image": "https://www.iptvus24.com/images/og-image.png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "IPTVUS24 streaming guides and device advice",
+        "article:published_time": "2026-11-26",
+        "article:modified_time": "2026-11-26"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Refunds and cancellations: questions to answer before subscribing",
+        "twitter:description": "Find the written refund window, exclusions, renewal rules, and support path before paying for a service.",
+        "twitter:image": "https://www.iptvus24.com/images/og-image.png",
+        "twitter:image:alt": "IPTVUS24 streaming guides and device advice"
+      },
+      "schemaTypes": [
+        "WebPage",
+        "BlogPosting",
+        "BreadcrumbList",
+        "Organization",
+        "WebSite"
+      ],
+      "schemaIssues": [],
+      "articleImage": "https://www.iptvus24.com/images/og-image.png",
+      "questionsMatch": null,
+      "breadcrumbId": "https://www.iptvus24.com/blog/streaming-service-refund-and-cancellation-checks#breadcrumb",
+      "webPageGraph": true,
+      "fontPreloads": [
+        "/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2",
+        "/_next/static/media/sora_latin_wght_normal-s.p.2o7d_x-bmx02y.woff2"
+      ],
+      "links": [
+        "/blog/choose-a-streaming-device-for-your-tv",
+        "/blog/choose-an-internet-tv-service",
+        "/blog/compare-streaming-plan-prices"
+      ],
+      "bodyLinks": [],
+      "sitemapOccurrences": 1
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Short-section and lexical-overlap flags require editorial judgment.",
+    "Schema checks validate supported structure and visible content, not Google eligibility.",
+    "Social images are original conceptual diagrams, not screenshots or hands-on evidence."
+  ]
+}

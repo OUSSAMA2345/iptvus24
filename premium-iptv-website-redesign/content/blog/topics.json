@@ -1,0 +1,362 @@
+{
+  "firestick-buffering-but-internet-is-fine": {
+    "primaryKeyword": "firestick buffering but internet is fine",
+    "intent": "Fire TV playback pauses after the app and network connection work; not Wi-Fi association or app launch.",
+    "relatedSlugs": [
+      "streaming-buffering-but-internet-is-fine",
+      "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "iptv-app-not-working-on-firestick"
+    ],
+    "diagram": {
+      "title": "Find the Fire TV playback bottleneck",
+      "stages": [
+        "Compare apps",
+        "Compare the local link",
+        "Check source and decoding"
+      ],
+      "alt": "Conceptual diagram: find the fire tv playback bottleneck — Compare apps; Compare the local link; Check source and decoding."
+    }
+  },
+  "iptv-epg-not-updating": {
+    "primaryKeyword": "iptv epg not updating",
+    "intent": "A cross-player guide that is stale, missing coverage or failing retrieval; not an XMLTV definition or TiviMate-only mapping.",
+    "relatedSlugs": [
+      "what-is-xmltv-epg",
+      "tivimate-epg-no-information",
+      "iptv-channels-not-loading"
+    ],
+    "diagram": {
+      "title": "Trace a stale programme guide",
+      "stages": [
+        "Retrieve the guide",
+        "Match channel IDs",
+        "Check schedule coverage"
+      ],
+      "alt": "Conceptual diagram: trace a stale programme guide — Retrieve the guide; Match channel IDs; Check schedule coverage."
+    }
+  },
+  "iptv-app-not-working-on-firestick": {
+    "primaryKeyword": "iptv app not working on firestick",
+    "intent": "One compatible Fire TV app fails at installation, launch, login or playback; not a missing device display.",
+    "relatedSlugs": [
+      "firestick-black-screen-after-logo",
+      "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "iptv-app-keeps-crashing"
+    ],
+    "diagram": {
+      "title": "Find where the Fire TV app stops",
+      "stages": [
+        "Check app compatibility",
+        "Verify login and list",
+        "Test media playback"
+      ],
+      "alt": "Conceptual diagram: find where the fire tv app stops — Check app compatibility; Verify login and list; Test media playback."
+    }
+  },
+  "tivimate-epg-no-information": {
+    "primaryKeyword": "tivimate epg no information",
+    "intent": "TiviMate guide rows are blank or mapped incorrectly while the playlist exists; not a general XMLTV explainer.",
+    "relatedSlugs": [
+      "iptv-epg-not-updating",
+      "what-is-xmltv-epg",
+      "tivimate-playlist-is-processed-please-wait"
+    ],
+    "diagram": {
+      "title": "Restore missing TiviMate guide rows",
+      "stages": [
+        "Confirm guide source",
+        "Check one channel ID",
+        "Verify dates and time"
+      ],
+      "alt": "Conceptual diagram: restore missing tivimate guide rows — Confirm guide source; Check one channel ID; Verify dates and time."
+    }
+  },
+  "tivimate-playlist-is-processed-please-wait": {
+    "primaryKeyword": "tivimate playlist is processed please wait",
+    "intent": "TiviMate stalls while importing a catalogue, before channel or guide troubleshooting.",
+    "relatedSlugs": [
+      "iptv-channels-not-loading",
+      "tivimate-epg-no-information",
+      "android-tv-storage-space-running-out"
+    ],
+    "diagram": {
+      "title": "Investigate a stalled playlist import",
+      "stages": [
+        "Verify the endpoint",
+        "Compare a smaller list",
+        "Preserve the configuration"
+      ],
+      "alt": "Conceptual diagram: investigate a stalled playlist import — Verify the endpoint; Compare a smaller list; Preserve the configuration."
+    }
+  },
+  "mag-box-portal-not-loading": {
+    "primaryKeyword": "mag box portal not loading",
+    "intent": "Linux MAG embedded portal cannot load the operator interface; not an Android player or an individual failed stream.",
+    "relatedSlugs": [
+      "iptv-channels-not-loading",
+      "iptv-player-vs-iptv-service",
+      "streaming-buffering-but-internet-is-fine"
+    ],
+    "diagram": {
+      "title": "Follow a MAG portal connection",
+      "stages": [
+        "Check the network",
+        "Verify the portal URL",
+        "Confirm operator access"
+      ],
+      "alt": "Conceptual diagram: follow a mag portal connection — Check the network; Verify the portal URL; Confirm operator access."
+    }
+  },
+  "iptv-channels-not-loading": {
+    "primaryKeyword": "iptv channels not loading",
+    "intent": "Distinguish missing catalogue from failing media requests in a player that opens.",
+    "relatedSlugs": [
+      "mag-box-portal-not-loading",
+      "iptv-app-keeps-crashing",
+      "iptv-epg-not-updating"
+    ],
+    "diagram": {
+      "title": "Separate channel-list and stream failures",
+      "stages": [
+        "Does the list load?",
+        "Can any channel play?",
+        "Check the failed request"
+      ],
+      "alt": "Conceptual diagram: separate channel-list and stream failures — Does the list load?; Can any channel play?; Check the failed request."
+    }
+  },
+  "iptv-app-keeps-crashing": {
+    "primaryKeyword": "iptv app keeps crashing",
+    "intent": "Process exits or a device reboots; distinguish runtime failures from buffering and unavailable channels.",
+    "relatedSlugs": [
+      "android-tv-storage-space-running-out",
+      "iptv-channels-not-loading",
+      "iptv-app-not-working-on-firestick"
+    ],
+    "diagram": {
+      "title": "Identify an IPTV app crash trigger",
+      "stages": [
+        "Record the trigger",
+        "Check app and device",
+        "Recover without erasing"
+      ],
+      "alt": "Conceptual diagram: identify an iptv app crash trigger — Record the trigger; Check app and device; Recover without erasing."
+    }
+  },
+  "iptv-app-not-working-on-samsung-tv": {
+    "primaryKeyword": "iptv app not working on samsung tv",
+    "intent": "A single IPTV app on Samsung Tizen fails; unrelated apps may work.",
+    "relatedSlugs": [
+      "samsung-tv-apps-not-working-but-connected-to-internet",
+      "iptv-app-not-available-on-lg-tv",
+      "iptv-channels-not-loading"
+    ],
+    "diagram": {
+      "title": "Diagnose one Samsung IPTV app",
+      "stages": [
+        "Compare another app",
+        "Check Tizen compatibility",
+        "Verify account and media"
+      ],
+      "alt": "Conceptual diagram: diagnose one samsung iptv app — Compare another app; Check Tizen compatibility; Verify account and media."
+    }
+  },
+  "iptv-app-not-available-on-lg-tv": {
+    "primaryKeyword": "iptv app not available on lg tv",
+    "intent": "LG webOS listing or installation eligibility by exact model, region and publisher; not generic runtime troubleshooting.",
+    "relatedSlugs": [
+      "iptv-app-not-working-on-samsung-tv",
+      "iptv-player-vs-iptv-service",
+      "tivimate-vs-iptv-smarters"
+    ],
+    "diagram": {
+      "title": "Check LG app availability first",
+      "stages": [
+        "Identify model and webOS",
+        "Check actual service region",
+        "Verify official app support"
+      ],
+      "alt": "Conceptual diagram: check lg app availability first — Identify model and webOS; Check actual service region; Verify official app support."
+    }
+  },
+  "firestick-black-screen-after-logo": {
+    "primaryKeyword": "firestick black screen after logo",
+    "intent": "Fire TV startup/display path disappears before the home screen; not black video inside a working app.",
+    "relatedSlugs": [
+      "iptv-app-not-working-on-firestick",
+      "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "firestick-buffering-but-internet-is-fine"
+    ],
+    "diagram": {
+      "title": "Restore the Fire TV display path",
+      "stages": [
+        "Check power and input",
+        "Connect directly by HDMI",
+        "Confirm a supported mode"
+      ],
+      "alt": "Conceptual diagram: restore the fire tv display path — Check power and input; Connect directly by HDMI; Confirm a supported mode."
+    }
+  },
+  "how-to-organize-iptv-channels": {
+    "primaryKeyword": "how to organize iptv channels",
+    "intent": "Curate favorites, hide groups and preserve identifiers across refreshes; not player purchasing or EPG transport.",
+    "relatedSlugs": [
+      "what-is-xmltv-epg",
+      "tivimate-vs-iptv-smarters",
+      "iptv-player-vs-iptv-service"
+    ],
+    "diagram": {
+      "title": "Build a useful channel shortlist",
+      "stages": [
+        "Hide irrelevant groups",
+        "Curate real favorites",
+        "Preserve guide identifiers"
+      ],
+      "alt": "Conceptual diagram: build a useful channel shortlist — Hide irrelevant groups; Curate real favorites; Preserve guide identifiers."
+    }
+  },
+  "what-is-xmltv-epg": {
+    "primaryKeyword": "what is xmltv epg",
+    "intent": "Understand schedule format, channel identifiers and timestamps; not a generic stale-guide repair checklist.",
+    "relatedSlugs": [
+      "iptv-epg-not-updating",
+      "tivimate-epg-no-information",
+      "how-to-organize-iptv-channels"
+    ],
+    "diagram": {
+      "title": "How XMLTV becomes a programme guide",
+      "stages": [
+        "Channel identifiers",
+        "Programme times and titles",
+        "Player matching and display"
+      ],
+      "alt": "Conceptual diagram: how xmltv becomes a programme guide — Channel identifiers; Programme times and titles; Player matching and display."
+    }
+  },
+  "iptv-player-vs-iptv-service": {
+    "primaryKeyword": "iptv player vs iptv service",
+    "intent": "Separate software features, media entitlement, payments and support responsibilities; not a brand-versus-brand review.",
+    "relatedSlugs": [
+      "tivimate-vs-iptv-smarters",
+      "how-does-iptv-work-on-firestick",
+      "mag-box-portal-not-loading"
+    ],
+    "diagram": {
+      "title": "Separate software from content access",
+      "stages": [
+        "Player features",
+        "Authorized media service",
+        "Network and device"
+      ],
+      "alt": "Conceptual diagram: separate software from content access — Player features; Authorized media service; Network and device."
+    }
+  },
+  "tivimate-vs-iptv-smarters": {
+    "primaryKeyword": "tivimate vs iptv smarters",
+    "intent": "Compare exact official player editions by platform and household tasks; no invented ratings or provider recommendations.",
+    "relatedSlugs": [
+      "iptv-player-vs-iptv-service",
+      "how-to-organize-iptv-channels",
+      "iptv-app-not-available-on-lg-tv"
+    ],
+    "diagram": {
+      "title": "Compare players by real requirements",
+      "stages": [
+        "Supported device edition",
+        "Everyday viewing tasks",
+        "Licence and recovery"
+      ],
+      "alt": "Conceptual diagram: compare players by real requirements — Supported device edition; Everyday viewing tasks; Licence and recovery."
+    }
+  },
+  "firestick-not-connecting-to-wifi-but-other-devices-will": {
+    "primaryKeyword": "firestick not connecting to wifi but other devices will",
+    "intent": "Fire TV fails discovery, authentication, addressing or basic connectivity; not buffering after connection.",
+    "relatedSlugs": [
+      "firestick-buffering-but-internet-is-fine",
+      "iptv-app-not-working-on-firestick",
+      "firestick-black-screen-after-logo"
+    ],
+    "diagram": {
+      "title": "Locate a Fire TV Wi-Fi failure",
+      "stages": [
+        "Discover the network",
+        "Authenticate securely",
+        "Obtain internet access"
+      ],
+      "alt": "Conceptual diagram: locate a fire tv wi-fi failure — Discover the network; Authenticate securely; Obtain internet access."
+    }
+  },
+  "samsung-tv-apps-not-working-but-connected-to-internet": {
+    "primaryKeyword": "samsung tv apps not working but connected to internet",
+    "intent": "Multiple unrelated Samsung apps fail on a seemingly connected TV; shared Smart Hub and network diagnostics.",
+    "relatedSlugs": [
+      "iptv-app-not-working-on-samsung-tv",
+      "streaming-buffering-but-internet-is-fine",
+      "iptv-app-keeps-crashing"
+    ],
+    "diagram": {
+      "title": "Diagnose shared Samsung app failures",
+      "stages": [
+        "Test unrelated apps",
+        "Run connection diagnostics",
+        "Check Smart Hub services"
+      ],
+      "alt": "Conceptual diagram: diagnose shared samsung app failures — Test unrelated apps; Run connection diagnostics; Check Smart Hub services."
+    }
+  },
+  "android-tv-storage-space-running-out": {
+    "primaryKeyword": "android tv storage space running out",
+    "intent": "Persistent capacity cleanup, cache/data distinction and supported USB storage; not RAM or every app crash.",
+    "relatedSlugs": [
+      "iptv-app-keeps-crashing",
+      "tivimate-playlist-is-processed-please-wait",
+      "how-to-organize-iptv-channels"
+    ],
+    "diagram": {
+      "title": "Recover persistent Android TV storage",
+      "stages": [
+        "Inspect actual usage",
+        "Remove recoverable files",
+        "Verify supported expansion"
+      ],
+      "alt": "Conceptual diagram: recover persistent android tv storage — Inspect actual usage; Remove recoverable files; Verify supported expansion."
+    }
+  },
+  "streaming-buffering-but-internet-is-fine": {
+    "primaryKeyword": "streaming buffering but internet is fine",
+    "intent": "Cross-device sustained delivery, source and decoding comparisons despite a fast speed test; Fire TV specifics live elsewhere.",
+    "relatedSlugs": [
+      "firestick-buffering-but-internet-is-fine",
+      "samsung-tv-apps-not-working-but-connected-to-internet",
+      "iptv-channels-not-loading"
+    ],
+    "diagram": {
+      "title": "Test the actual streaming path",
+      "stages": [
+        "Affected device and app",
+        "Local and upstream path",
+        "Media source and decoding"
+      ],
+      "alt": "Conceptual diagram: test the actual streaming path — Affected device and app; Local and upstream path; Media source and decoding."
+    }
+  },
+  "how-does-iptv-work-on-firestick": {
+    "primaryKeyword": "how does iptv work on firestick",
+    "intent": "Conceptual device-app-service request chain and Fire OS/Vega compatibility; not a repetitive installation recipe.",
+    "relatedSlugs": [
+      "iptv-player-vs-iptv-service",
+      "iptv-app-not-working-on-firestick",
+      "what-is-xmltv-epg"
+    ],
+    "diagram": {
+      "title": "Follow IPTV delivery on Fire TV",
+      "stages": [
+        "Compatible app and OS",
+        "Authorized media request",
+        "Decode and display"
+      ],
+      "alt": "Conceptual diagram: follow iptv delivery on fire tv — Compatible app and OS; Authorized media request; Decode and display."
+    }
+  }
+}

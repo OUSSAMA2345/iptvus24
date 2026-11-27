@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "iptv channels not loading",
-    "IPTV"
+    "IPTV channel playback error",
+    "IPTV empty channel list"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -21,6 +22,7 @@
   ],
   "internalLinkOpportunities": [
     "/blog/iptv-app-keeps-crashing",
+    "/blog/mag-box-portal-not-loading",
     "/blog/iptv-epg-not-updating"
   ],
   "articleJsonLd": {
@@ -50,7 +52,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "iptv channels not loading, IPTV"
+    "keywords": "iptv channels not loading, IPTV channel playback error, IPTV empty channel list",
+    "url": "https://www.iptvus24.com/blog/iptv-channels-not-loading",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/iptv-channels-not-loading.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",
@@ -167,6 +178,8 @@ A brief comparison is more useful than cycling through hundreds of channels. Rap
 ### Establish the boundaries of the failure
 
 Record the device, app version, account method, and approximate start time. Note whether a provider announcement or an app update coincided with the problem. This is not proof of causation, but it gives support a useful window to inspect. “All live channels fail since this morning; on-demand still plays” is an actionable report.
+
+If you use a Linux MAG box and cannot reach the operator interface at all, start with the [MAG portal loading checks](/blog/mag-box-portal-not-loading). A missing portal comes before the channel-list and media tests below.
 
 ## If the list itself is empty
 

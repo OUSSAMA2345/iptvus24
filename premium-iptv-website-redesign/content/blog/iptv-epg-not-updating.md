@@ -11,10 +11,9 @@
   "publishedAt": "2026-11-27",
   "reviewedAt": "2026-11-27",
   "keywords": [
-    "EPG",
-    "XMLTV",
-    "programme guide",
-    "channel identifiers"
+    "iptv epg not updating",
+    "EPG refresh",
+    "stale programme guide"
   ],
   "editorialMethod": "Documentation-based diagnostic guide; no hands-on device testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -23,8 +22,8 @@
   ],
   "internalLinkOpportunities": [
     "/blog/tivimate-epg-no-information",
-    "/blog/electronic-program-guide-explained",
-    "/contact"
+    "/blog/what-is-xmltv-epg",
+    "/blog/electronic-program-guide-explained"
   ],
   "articleJsonLd": {
     "@context": "https://schema.org",
@@ -53,7 +52,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "EPG, XMLTV, programme guide, channel identifiers"
+    "keywords": "iptv epg not updating, EPG refresh, stale programme guide",
+    "url": "https://www.iptvus24.com/blog/iptv-epg-not-updating",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/iptv-epg-not-updating.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",
@@ -136,6 +144,8 @@ The channels play, but the guide still describes yesterday's programmes. Pressin
 **To fix an IPTV EPG that is not updating, check the last update result, confirm that the guide contains current programme dates, verify channel identifiers, and only then rebuild the player's stored guide.** A successful download and a useful schedule are different things.
 
 This article covers electronic programme guide troubleshooting across compatible players. Specific menus depend on the application and version. For the TiviMate-specific “No information” display, use the separate [TiviMate guide](/blog/tivimate-epg-no-information).
+
+For the underlying file structure and timestamp rules, read [what XMLTV EPG data contains](/blog/what-is-xmltv-epg). The workflow below is for diagnosing a guide that has stopped updating, rather than learning the format from scratch.
 
 ## Table of contents
 

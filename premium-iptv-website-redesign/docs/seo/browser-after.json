@@ -1,0 +1,1566 @@
+{
+  "checkedAt": "2026-11-27",
+  "mode": "Local production build; not a production deployment check",
+  "articlesChecked": 20,
+  "themeChecks": 40,
+  "accessibilityScope": "Full pages after rejecting optional cookies; initial existing banner findings recorded separately",
+  "existingConsentFindings": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "html": "<a class=\"ml-1 font-bold text-brand underline\" href=\"/cookies\">Read the Cookie Policy</a>",
+          "target": [
+            ".ml-1"
+          ],
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #0a84ff, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button type=\"button\" class=\"min-h-11 rounded-xl bg-brand px-4 py-2 text-sm font-bold text-white hover:bg-brand-deep\">Accept optional</button>",
+          "target": [
+            ".bg-brand"
+          ],
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #ffffff, background color: #0a84ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ],
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "reports": [
+    {
+      "h1": 1,
+      "title": "Firestick Buffering? Find the Weak Link | IPTVUS24",
+      "description": "Diagnose Firestick buffering despite fast internet. Compare apps, Wi-Fi, stream quality and device behavior before clearing data or buying faster broadband.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-buffering-but-internet-is-fine",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "firestick-buffering-but-internet-is-fine",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV EPG Not Updating? Diagnose the Guide | IPTVUS24",
+      "description": "Fix a stale IPTV guide by checking source freshness, XMLTV dates, channel IDs and time zones. Learn when a guide reset helps and when the publisher must act.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-epg-not-updating",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-epg-not-updating",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Not Working on Firestick? Diagnose It | IPTVUS24",
+      "description": "Troubleshoot Fire TV IPTV app installation, crashes, login and playback. Check model compatibility, protect your setup and recognize explicit platform notices.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-working-on-firestick",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-app-not-working-on-firestick",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "TiviMate No Information? Fix EPG Matching | IPTVUS24",
+      "description": "Diagnose TiviMate No information rows with source assignment, channel matching and date checks. Protect favorites and settings before rebuilding guide data.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-epg-no-information",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "tivimate-epg-no-information",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "TiviMate Stuck Processing Playlist? What to Check | IPTVUS24",
+      "description": "Investigate a stalled TiviMate playlist import: verify the endpoint, compare a smaller catalogue and recover the app without losing favorites or credentials.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-playlist-is-processed-please-wait",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "tivimate-playlist-is-processed-please-wait",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "MAG Box Portal Not Loading? Diagnose the Failed Stage | IPTVUS24",
+      "description": "Find why a MAG box portal will not load: check the network, exact operator URL, device authorization and safe recovery before resetting your configuration.",
+      "canonical": "https://www.iptvus24.com/blog/mag-box-portal-not-loading",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "mag-box-portal-not-loading",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV Channels Not Loading? Find the Failed Stage | IPTVUS24",
+      "description": "Diagnose missing IPTV lists and channels that will not play. Compare account access, stream errors, device compatibility and network paths before resetting.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-channels-not-loading",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 2,
+      "slug": "iptv-channels-not-loading",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Keeps Crashing? Recover Your Setup Safely | IPTVUS24",
+      "description": "Find what triggers an IPTV app crash, check updates and storage, and compare cache, data and reinstall options without unnecessarily losing your configuration.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-keeps-crashing",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 2,
+      "slug": "iptv-app-keeps-crashing",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Not Working on Samsung TV? Safe Fixes | IPTVUS24",
+      "description": "Troubleshoot an IPTV app on Samsung TV: check compatibility, cold boot, verify account access and plan a safe reinstall before considering Smart Hub reset.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-working-on-samsung-tv",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-app-not-working-on-samsung-tv",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Not Available on LG TV? Check Support | IPTVUS24",
+      "description": "Check why an IPTV app is missing on LG TV. Verify webOS, model and regional support before troubleshooting the store or choosing a compatible alternative.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-available-on-lg-tv",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-app-not-available-on-lg-tv",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Firestick Black Screen After Logo? Safe Checks | IPTVUS24",
+      "description": "Restore a Fire TV picture after the logo: check power, HDMI input, direct connections and supported display recovery before attempting a destructive reset.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-black-screen-after-logo",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "firestick-black-screen-after-logo",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "How to Organize IPTV Channels and Keep Them Useful | IPTVUS24",
+      "description": "Build a practical IPTV favorites list, hide irrelevant groups, handle duplicate feeds and preserve guide identifiers so channel organization survives updates.",
+      "canonical": "https://www.iptvus24.com/blog/how-to-organize-iptv-channels",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "how-to-organize-iptv-channels",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "What Is XMLTV EPG? Channels, Times and Guide Data | IPTVUS24",
+      "description": "Understand XMLTV programme guides: channel IDs, timestamps, timezone offsets, coverage and refresh. Learn why video can work while schedule rows stay empty.",
+      "canonical": "https://www.iptvus24.com/blog/what-is-xmltv-epg",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "what-is-xmltv-epg",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV Player vs Service: What Are You Buying? | IPTVUS24",
+      "description": "Understand the difference between an IPTV player and content service, including payments, device licences, stream limits, privacy and support responsibilities.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-player-vs-iptv-service",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 2,
+      "slug": "iptv-player-vs-iptv-service",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "TiviMate vs IPTV Smarters: Choose by Your Device | IPTVUS24",
+      "description": "Compare TiviMate and official Smarters editions by device support, guide workflow, features, licence terms and safe migration without invented performance scores.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-vs-iptv-smarters",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "tivimate-vs-iptv-smarters",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Firestick Won’t Connect to Wi-Fi? Other Devices Do | IPTVUS24",
+      "description": "Find why a Fire TV Stick cannot join Wi-Fi while other devices work. Separate discovery, password, address and internet failures without weakening security.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Samsung TV Online but Apps Not Working? Diagnose It | IPTVUS24",
+      "description": "Diagnose Samsung TV apps that fail despite an internet connection. Use Network Status and Smart Hub tests before DNS changes or account-erasing resets.",
+      "canonical": "https://www.iptvus24.com/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Android TV Storage Running Out? Free Space Safely | IPTVUS24",
+      "description": "Free Android TV storage by identifying downloads, unused apps, cache and recordings. Protect account data and understand USB formatting before expanding space.",
+      "canonical": "https://www.iptvus24.com/blog/android-tv-storage-space-running-out",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "android-tv-storage-space-running-out",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Streaming Buffers but Internet Is Fine? What to Test | IPTVUS24",
+      "description": "Investigate buffering despite fast internet. Compare the actual device, media source, Wi-Fi path and decoding workload without assuming a faster plan is needed.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-buffering-but-internet-is-fine",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "streaming-buffering-but-internet-is-fine",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "How Does IPTV Work on Firestick? A Clear Guide | IPTVUS24",
+      "description": "Learn how IPTV works on Fire TV: compatible apps, authorized sources, playlists, media delivery and programme guides, with Fire OS and Vega OS distinctions.",
+      "canonical": "https://www.iptvus24.com/blog/how-does-iptv-work-on-firestick",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "day",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "how-does-iptv-work-on-firestick",
+      "status": 200,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Firestick Buffering? Find the Weak Link | IPTVUS24",
+      "description": "Diagnose Firestick buffering despite fast internet. Compare apps, Wi-Fi, stream quality and device behavior before clearing data or buying faster broadband.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-buffering-but-internet-is-fine",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "firestick-buffering-but-internet-is-fine",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV EPG Not Updating? Diagnose the Guide | IPTVUS24",
+      "description": "Fix a stale IPTV guide by checking source freshness, XMLTV dates, channel IDs and time zones. Learn when a guide reset helps and when the publisher must act.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-epg-not-updating",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-epg-not-updating",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Not Working on Firestick? Diagnose It | IPTVUS24",
+      "description": "Troubleshoot Fire TV IPTV app installation, crashes, login and playback. Check model compatibility, protect your setup and recognize explicit platform notices.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-working-on-firestick",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-app-not-working-on-firestick",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "TiviMate No Information? Fix EPG Matching | IPTVUS24",
+      "description": "Diagnose TiviMate No information rows with source assignment, channel matching and date checks. Protect favorites and settings before rebuilding guide data.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-epg-no-information",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "tivimate-epg-no-information",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "TiviMate Stuck Processing Playlist? What to Check | IPTVUS24",
+      "description": "Investigate a stalled TiviMate playlist import: verify the endpoint, compare a smaller catalogue and recover the app without losing favorites or credentials.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-playlist-is-processed-please-wait",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "tivimate-playlist-is-processed-please-wait",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "MAG Box Portal Not Loading? Diagnose the Failed Stage | IPTVUS24",
+      "description": "Find why a MAG box portal will not load: check the network, exact operator URL, device authorization and safe recovery before resetting your configuration.",
+      "canonical": "https://www.iptvus24.com/blog/mag-box-portal-not-loading",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "mag-box-portal-not-loading",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV Channels Not Loading? Find the Failed Stage | IPTVUS24",
+      "description": "Diagnose missing IPTV lists and channels that will not play. Compare account access, stream errors, device compatibility and network paths before resetting.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-channels-not-loading",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 2,
+      "slug": "iptv-channels-not-loading",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Keeps Crashing? Recover Your Setup Safely | IPTVUS24",
+      "description": "Find what triggers an IPTV app crash, check updates and storage, and compare cache, data and reinstall options without unnecessarily losing your configuration.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-keeps-crashing",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 2,
+      "slug": "iptv-app-keeps-crashing",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Not Working on Samsung TV? Safe Fixes | IPTVUS24",
+      "description": "Troubleshoot an IPTV app on Samsung TV: check compatibility, cold boot, verify account access and plan a safe reinstall before considering Smart Hub reset.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-working-on-samsung-tv",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-app-not-working-on-samsung-tv",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV App Not Available on LG TV? Check Support | IPTVUS24",
+      "description": "Check why an IPTV app is missing on LG TV. Verify webOS, model and regional support before troubleshooting the store or choosing a compatible alternative.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-app-not-available-on-lg-tv",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "iptv-app-not-available-on-lg-tv",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Firestick Black Screen After Logo? Safe Checks | IPTVUS24",
+      "description": "Restore a Fire TV picture after the logo: check power, HDMI input, direct connections and supported display recovery before attempting a destructive reset.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-black-screen-after-logo",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "firestick-black-screen-after-logo",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "How to Organize IPTV Channels and Keep Them Useful | IPTVUS24",
+      "description": "Build a practical IPTV favorites list, hide irrelevant groups, handle duplicate feeds and preserve guide identifiers so channel organization survives updates.",
+      "canonical": "https://www.iptvus24.com/blog/how-to-organize-iptv-channels",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "how-to-organize-iptv-channels",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "What Is XMLTV EPG? Channels, Times and Guide Data | IPTVUS24",
+      "description": "Understand XMLTV programme guides: channel IDs, timestamps, timezone offsets, coverage and refresh. Learn why video can work while schedule rows stay empty.",
+      "canonical": "https://www.iptvus24.com/blog/what-is-xmltv-epg",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "what-is-xmltv-epg",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "IPTV Player vs Service: What Are You Buying? | IPTVUS24",
+      "description": "Understand the difference between an IPTV player and content service, including payments, device licences, stream limits, privacy and support responsibilities.",
+      "canonical": "https://www.iptvus24.com/blog/iptv-player-vs-iptv-service",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 2,
+      "slug": "iptv-player-vs-iptv-service",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "TiviMate vs IPTV Smarters: Choose by Your Device | IPTVUS24",
+      "description": "Compare TiviMate and official Smarters editions by device support, guide workflow, features, licence terms and safe migration without invented performance scores.",
+      "canonical": "https://www.iptvus24.com/blog/tivimate-vs-iptv-smarters",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "tivimate-vs-iptv-smarters",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Firestick Won’t Connect to Wi-Fi? Other Devices Do | IPTVUS24",
+      "description": "Find why a Fire TV Stick cannot join Wi-Fi while other devices work. Separate discovery, password, address and internet failures without weakening security.",
+      "canonical": "https://www.iptvus24.com/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Samsung TV Online but Apps Not Working? Diagnose It | IPTVUS24",
+      "description": "Diagnose Samsung TV apps that fail despite an internet connection. Use Network Status and Smart Hub tests before DNS changes or account-erasing resets.",
+      "canonical": "https://www.iptvus24.com/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Android TV Storage Running Out? Free Space Safely | IPTVUS24",
+      "description": "Free Android TV storage by identifying downloads, unused apps, cache and recordings. Protect account data and understand USB formatting before expanding space.",
+      "canonical": "https://www.iptvus24.com/blog/android-tv-storage-space-running-out",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "android-tv-storage-space-running-out",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "Streaming Buffers but Internet Is Fine? What to Test | IPTVUS24",
+      "description": "Investigate buffering despite fast internet. Compare the actual device, media source, Wi-Fi path and decoding workload without assuming a faster plan is needed.",
+      "canonical": "https://www.iptvus24.com/blog/streaming-buffering-but-internet-is-fine",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "streaming-buffering-but-internet-is-fine",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    },
+    {
+      "h1": 1,
+      "title": "How Does IPTV Work on Firestick? A Clear Guide | IPTVUS24",
+      "description": "Learn how IPTV works on Fire TV: compatible apps, authorized sources, playlists, media delivery and programme guides, with Fire OS and Vega OS distinctions.",
+      "canonical": "https://www.iptvus24.com/blog/how-does-iptv-work-on-firestick",
+      "articles": 1,
+      "faqPages": 1,
+      "faqItems": 8,
+      "theme": "night",
+      "brokenAnchors": [],
+      "visibleQuestionsMatch": true,
+      "tables": 1,
+      "slug": "how-does-iptv-work-on-firestick",
+      "status": 304,
+      "widths": [
+        {
+          "client": 320,
+          "scroll": 320
+        },
+        {
+          "client": 390,
+          "scroll": 390
+        },
+        {
+          "client": 768,
+          "scroll": 768
+        },
+        {
+          "client": 1440,
+          "scroll": 1440
+        },
+        {
+          "client": 1920,
+          "scroll": 1920
+        }
+      ],
+      "accessibilityViolations": []
+    }
+  ],
+  "sitemapMissing": [],
+  "listingMissing": [],
+  "unknownStatus": 404,
+  "pageErrors": [],
+  "errors": [],
+  "limitations": [
+    "Automated accessibility checks are not a complete manual accessibility audit.",
+    "Browser rendering does not verify external device behavior, content rights or search performance."
+  ]
+}

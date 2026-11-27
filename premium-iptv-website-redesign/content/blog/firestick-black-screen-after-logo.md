@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "firestick black screen after logo",
-    "streaming devices"
+    "Fire TV startup black screen",
+    "Firestick HDMI display"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "firestick black screen after logo, streaming devices"
+    "keywords": "firestick black screen after logo, Fire TV startup black screen, Firestick HDMI display",
+    "url": "https://www.iptvus24.com/blog/firestick-black-screen-after-logo",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/firestick-black-screen-after-logo.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

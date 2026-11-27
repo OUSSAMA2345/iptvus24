@@ -74,13 +74,14 @@ export default function BlogListing({ posts }: { posts: BlogPostSummary[] }) {
                 <time dateTime={post.publishedAt} className="text-xs text-slate-soft">{formatDate(post.publishedAt)}</time>
               </div>
               <h2 className="font-display mt-4 text-xl font-extrabold leading-snug text-ink">
-                <Link href={`/blog/${post.slug}`} className="rounded-sm hover:text-brand">
+                <Link href={`/blog/${post.slug}`} prefetch={false} className="rounded-sm hover:text-brand">
                   {post.title}
                 </Link>
               </h2>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-soft">{post.excerpt}</p>
               <Link
                 href={`/blog/${post.slug}`}
+                prefetch={false}
                 className="mt-5 inline-flex min-h-11 w-fit items-center gap-2 text-sm font-bold text-brand hover:text-brand-deep"
               >
                 Read article <span aria-hidden="true">→</span>

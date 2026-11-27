@@ -1,0 +1,148 @@
+{
+  "scope": "One cold Lighthouse mobile simulation per route on a local production server; directional lab evidence, not field Core Web Vitals or an INP measurement.",
+  "consent": "Fresh visit; optional analytics not accepted",
+  "fieldData": {
+    "lcp": null,
+    "inp": null,
+    "cls": null,
+    "reason": "No CrUX/Search Console/RUM dataset available to this session; no new tracking added."
+  },
+  "reports": [
+    {
+      "route": "/blog",
+      "lighthouseVersion": "13.0.1",
+      "fetchTime": "2026-11-27T19:47:07.174Z",
+      "performanceScore": 0.96,
+      "lcpMs": 2634.6910000000007,
+      "cls": 0,
+      "totalBlockingTimeMs": 126,
+      "fcpMs": 932.691,
+      "speedIndexMs": 1478.8128800000782,
+      "transferBytes": 364025,
+      "mainThreadMs": 1246.4400000000019,
+      "diagnostics": {
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 82 KiB",
+          "savings": 84112
+        },
+        "unused-css-rules": {
+          "score": 1,
+          "displayValue": "",
+          "savings": 0
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 120 ms"
+        },
+        "font-display-insight": {
+          "score": 1
+        }
+      },
+      "runtimeError": null,
+      "warnings": []
+    },
+    {
+      "route": "/blog/firestick-buffering-but-internet-is-fine",
+      "lighthouseVersion": "13.0.1",
+      "fetchTime": "2026-11-27T19:47:14.879Z",
+      "performanceScore": 0.96,
+      "lcpMs": 2661.4760000000006,
+      "cls": 0,
+      "totalBlockingTimeMs": 119.26200000000017,
+      "fcpMs": 925.4760000000001,
+      "speedIndexMs": 925.4760000000001,
+      "transferBytes": 381984,
+      "mainThreadMs": 1391.932000000001,
+      "diagnostics": {
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 82 KiB",
+          "savings": 84402
+        },
+        "unused-css-rules": {
+          "score": 1,
+          "displayValue": "",
+          "savings": 0
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 160 ms"
+        },
+        "font-display-insight": {
+          "score": 1
+        }
+      },
+      "runtimeError": null,
+      "warnings": []
+    },
+    {
+      "route": "/blog/what-is-xmltv-epg",
+      "lighthouseVersion": "13.0.1",
+      "fetchTime": "2026-11-27T19:47:22.304Z",
+      "performanceScore": 0.97,
+      "lcpMs": 2652.4081000000006,
+      "cls": 0,
+      "totalBlockingTimeMs": 63.50000000000023,
+      "fcpMs": 936.4081000000001,
+      "speedIndexMs": 936.4081000000001,
+      "transferBytes": 383668,
+      "mainThreadMs": 1258.1240000000028,
+      "diagnostics": {
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 82 KiB",
+          "savings": 84402
+        },
+        "unused-css-rules": {
+          "score": 1,
+          "displayValue": "",
+          "savings": 0
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 150 ms"
+        },
+        "font-display-insight": {
+          "score": 1
+        }
+      },
+      "runtimeError": null,
+      "warnings": []
+    },
+    {
+      "route": "/blog/how-does-iptv-work-on-firestick",
+      "lighthouseVersion": "13.0.1",
+      "fetchTime": "2026-11-27T19:47:29.484Z",
+      "performanceScore": 0.96,
+      "lcpMs": 2664.9351,
+      "cls": 0,
+      "totalBlockingTimeMs": 90.5,
+      "fcpMs": 929.9350999999999,
+      "speedIndexMs": 929.9350999999999,
+      "transferBytes": 384471,
+      "mainThreadMs": 1354.9760000000015,
+      "diagnostics": {
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 82 KiB",
+          "savings": 84402
+        },
+        "unused-css-rules": {
+          "score": 1,
+          "displayValue": "",
+          "savings": 0
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 130 ms"
+        },
+        "font-display-insight": {
+          "score": 1
+        }
+      },
+      "runtimeError": null,
+      "warnings": []
+    }
+  ]
+}

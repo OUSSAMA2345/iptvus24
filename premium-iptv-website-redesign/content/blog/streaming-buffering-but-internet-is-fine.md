@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "streaming buffering but internet is fine",
-    "IPTV"
+    "streaming on fast internet",
+    "streaming delivery diagnostics"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "streaming buffering but internet is fine, IPTV"
+    "keywords": "streaming buffering but internet is fine, streaming on fast internet, streaming delivery diagnostics",
+    "url": "https://www.iptvus24.com/blog/streaming-buffering-but-internet-is-fine",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/streaming-buffering-but-internet-is-fine.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Streaming basics"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

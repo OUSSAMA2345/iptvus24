@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "tivimate vs iptv smarters",
-    "IPTV"
+    "TiviMate Smarters comparison",
+    "IPTV player comparison"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "tivimate vs iptv smarters, IPTV"
+    "keywords": "tivimate vs iptv smarters, TiviMate Smarters comparison, IPTV player comparison",
+    "url": "https://www.iptvus24.com/blog/tivimate-vs-iptv-smarters",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/tivimate-vs-iptv-smarters.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",
