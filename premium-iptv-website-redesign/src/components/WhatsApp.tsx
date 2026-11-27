@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { footerCtaCinema } from "../assets";
 
 export const WHATSAPP_URL = "https://wa.me/447473970663";
 export const WHATSAPP_NUMBER = "+44 7473 970663";
@@ -25,37 +27,57 @@ export function WhatsAppContactSection() {
       aria-labelledby="whatsapp-contact-title"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-5 lg:grid-cols-[1fr_0.85fr]">
-          <div className="flex flex-col items-start justify-center gap-6 rounded-2xl border border-line bg-mist p-6 sm:p-8">
-            <div className="max-w-xl">
-              <p className="text-sm font-bold text-brand">Questions before you order?</p>
-              <h2 id="whatsapp-contact-title" className="font-display mt-2 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-                Get the details directly on WhatsApp.
-              </h2>
-              <p className="mt-2 text-sm text-slate-soft">
-                {WHATSAPP_NUMBER} · WhatsApp support · Response times may vary
+        <div className="relative isolate overflow-hidden rounded-3xl border border-line bg-[#07111f] shadow-[0_28px_80px_rgba(7,17,31,0.28)]">
+          <Image
+            src={footerCtaCinema}
+            alt="Luxury private home cinema room with dark wood acoustic walls and an abstract blue horizon on screen"
+            fill
+            quality={84}
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="-z-20 object-cover object-center opacity-50"
+          />
+          <div
+            aria-hidden="true"
+            className="-z-10 pointer-events-none absolute inset-0 bg-gradient-to-r from-[#07111f]/95 via-[#07111f]/82 to-[#07111f]/75"
+          />
+
+          <div className="grid gap-6 p-6 sm:p-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-10 lg:p-12">
+            <div className="flex flex-col items-start justify-center gap-6">
+              <div className="max-w-xl">
+                <p className="text-sm font-bold text-cyan">Questions before you order?</p>
+                <h2 id="whatsapp-contact-title" className="font-display mt-2 text-2xl font-extrabold tracking-tight text-white sm:text-3xl lg:text-4xl">
+                  Get the details directly on WhatsApp.
+                </h2>
+                <p className="mt-3 text-sm text-white/75">
+                  {WHATSAPP_NUMBER} · WhatsApp support · Response times may vary
+                </p>
+              </div>
+              <div className="w-full sm:w-auto sm:min-w-56">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-6 py-3.5 text-sm font-extrabold text-white shadow-[0_10px_28px_rgba(37,211,102,0.35)] transition-colors hover:bg-[#20bd5a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
+                >
+                  <WhatsAppIcon className="h-5 w-5" />
+                  Ask on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/15 bg-[#0b192e]/80 p-5 text-white backdrop-blur-md sm:p-7">
+              <p className="text-sm font-extrabold text-white">Before you pay</p>
+              <p className="mt-2.5 text-sm leading-relaxed text-white/80">
+                Confirm the seller, payment options, current activation estimate, and trial availability with us on WhatsApp. Your order should state its term and renewal conditions; the first-plan refund policy and exclusions are in the published policy.
               </p>
-            </div>
-            <div className="w-full sm:w-auto sm:min-w-52">
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25d366] px-5 py-3 text-sm font-extrabold text-white transition-colors hover:bg-[#20bd5a] focus-visible:outline-[#075e54] sm:w-auto"
-              >
-                <WhatsAppIcon className="h-5 w-5" />
-                Ask on WhatsApp
-              </a>
-            </div>
-          </div>
-          <div className="rounded-2xl border border-line bg-white p-5 sm:p-6">
-            <p className="text-sm font-extrabold text-ink">Before you pay</p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-soft">
-              Confirm the seller, payment options, current activation estimate, and trial availability with us on WhatsApp. Your order should state its term and renewal conditions; the first-plan refund policy and exclusions are in the published policy.
-            </p>
-            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm font-bold">
-              <Link href="/terms" className="text-brand underline underline-offset-4">Read service terms</Link>
-              <Link href="/refund" className="text-brand underline underline-offset-4">Read refund policy</Link>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold">
+                <Link href="/terms" className="text-cyan underline underline-offset-4 hover:text-white">
+                  Read service terms
+                </Link>
+                <Link href="/refund" className="text-cyan underline underline-offset-4 hover:text-white">
+                  Read refund policy
+                </Link>
+              </div>
             </div>
           </div>
         </div>

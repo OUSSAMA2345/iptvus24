@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { pricingSportsLounge } from "../assets";
 import { Icon, SectionHead } from "./ui";
 import { plans } from "../data";
 import { cn } from "../utils/cn";
@@ -15,15 +17,28 @@ export default function Plans() {
           title={<>Choose the term <span className="text-brand">that suits you.</span></>}
           sub="Compare the total price and duration. Confirm availability, payment details, and service terms with support before ordering."
         />
-        <div className="mt-10 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div className="relative mt-10 overflow-hidden rounded-3xl border border-line bg-[#07111f] shadow-card">
+          <Image
+            src={pricingSportsLounge}
+            alt="Home cinema lounge displaying an original, unbranded football stadium scene"
+            width={1408}
+            height={768}
+            quality={84}
+            sizes="(max-width: 1280px) 100vw, 1232px"
+            className="h-56 w-full object-cover object-center sm:h-80 lg:h-96"
+          />
+        </div>
+
+        <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan, index) => (
             <Reveal key={plan.name} delay={index * 0.06} className="h-full">
-            <article
-              className={cn(
-                "relative flex h-full flex-col rounded-2xl border bg-white p-5 shadow-card sm:p-6",
-                plan.best ? "border-brand ring-1 ring-brand/20" : "border-line",
-              )}
-            >
+              <article
+                className={cn(
+                  "relative flex h-full flex-col rounded-2xl border bg-white p-5 shadow-card sm:p-6",
+                  plan.best ? "border-brand ring-1 ring-brand/20" : "border-line",
+                )}
+              >
                 {plan.best && (
                   <span className="mb-4 w-fit rounded-full bg-haze px-3 py-1 text-[11px] font-bold text-brand">
                     Lowest monthly equivalent
@@ -47,7 +62,7 @@ export default function Plans() {
                 <div className="mt-6">
                   <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
                 </div>
-            </article>
+              </article>
             </Reveal>
           ))}
         </div>

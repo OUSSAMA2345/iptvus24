@@ -242,23 +242,45 @@ export function SectionHead({
   title,
   sub,
   align = "center",
+  tone = "light",
 }: {
   eyebrow: string;
   title: ReactNode;
   sub?: string;
   align?: "center" | "left";
+  tone?: "light" | "dark";
 }) {
+  const isDark = tone === "dark";
+
   return (
     <div className={cn("max-w-3xl", align === "center" ? "mx-auto text-center" : "text-left")}>
-      <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-brand shadow-sm">
+      <span
+        className={cn(
+          "inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.18em] shadow-sm",
+          isDark
+            ? "border-white/15 bg-white/10 text-cyan backdrop-blur-sm"
+            : "border-line bg-white text-brand",
+        )}
+      >
         <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-brand to-cyan" />
         {eyebrow}
       </span>
-      <h2 className="font-display mt-5 text-3xl font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
+      <h2
+        className={cn(
+          "font-display mt-5 text-3xl font-extrabold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.75rem]",
+          isDark ? "text-white" : "text-ink",
+        )}
+      >
         {title}
       </h2>
       {sub && (
-        <p className={cn("mt-4 text-base leading-relaxed text-slate-soft sm:text-lg", align === "center" && "mx-auto")}>
+        <p
+          className={cn(
+            "mt-4 text-base leading-relaxed sm:text-lg",
+            isDark ? "text-white/75" : "text-slate-soft",
+            align === "center" && "mx-auto",
+          )}
+        >
           {sub}
         </p>
       )}

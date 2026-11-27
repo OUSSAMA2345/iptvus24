@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
+import { reviewsStadiumAtmosphere } from "../assets";
 import { SectionHead } from "./ui";
 import { isReviewTextLengthValid } from "@/lib/review-validation";
 import { cleanFormText, isCodePointLengthBetween } from "@/lib/form-validation";
@@ -175,13 +177,14 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
     <>
       {!embedded && (
         <SectionHead
+          tone="dark"
           eyebrow="Community reviews"
-          title={<>Read experiences <span className="text-brand">shared by visitors.</span></>}
+          title={<>Read experiences <span className="text-cyan">shared by visitors.</span></>}
           sub="Published reviews are user-submitted and moderated. Purchases are not independently verified, and no sample testimonials are shown."
         />
       )}
 
-      <div className={`${embedded ? "" : "mx-auto mt-8 max-w-2xl"} flex flex-col items-center justify-between gap-4 rounded-2xl border border-line bg-white p-5 text-center sm:flex-row sm:text-left`}>
+      <div className={`${embedded ? "" : "mx-auto mt-8 max-w-2xl shadow-[0_20px_50px_rgba(4,12,28,0.35)]"} flex flex-col items-center justify-between gap-4 rounded-2xl border border-line bg-white p-5 text-center sm:flex-row sm:text-left`}>
         {data && data.reviewCount > 0 ? (
           <div>
             <p className="font-display text-3xl font-extrabold text-ink">
@@ -207,7 +210,7 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
       {data && data.reviews.length > 0 && (
         <div className={`mt-6 grid gap-4 md:grid-cols-2 ${embedded ? "" : "lg:grid-cols-3"}`}>
           {data.reviews.map((review) => (
-            <article key={review.id} className="flex h-full flex-col rounded-2xl border border-line bg-white p-5">
+            <article key={review.id} className="flex h-full flex-col rounded-2xl border border-line bg-white p-5 shadow-sm">
               <p className="text-base tracking-widest text-amber-500" aria-label={`${review.rating} out of 5 stars`}>
                 <span aria-hidden="true">{"★".repeat(review.rating)}<span className="text-slate-200">{"★".repeat(5 - review.rating)}</span></span>
               </p>
@@ -223,7 +226,7 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
         </div>
       )}
 
-      <div id="review-form" className={`${embedded ? "mt-8" : "mx-auto mt-8 max-w-2xl"} scroll-mt-28 rounded-2xl border border-line bg-white p-6 sm:p-8`}>
+      <div id="review-form" className={`${embedded ? "mt-8" : "mx-auto mt-8 max-w-2xl shadow-[0_24px_60px_rgba(4,12,28,0.4)]"} scroll-mt-28 rounded-2xl border border-line bg-white p-6 sm:p-8`}>
         {embedded ? (
           <h2 className="font-display text-xl font-extrabold text-ink">Share your experience</h2>
         ) : (
@@ -338,8 +341,21 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
   }
 
   return (
-    <section id="reviews" className="scroll-mt-28 bg-mist py-16 sm:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">{content}</div>
+    <section id="reviews" className="relative isolate scroll-mt-28 overflow-hidden bg-[#07111f] py-20 sm:py-24">
+      <Image
+        src={reviewsStadiumAtmosphere}
+        alt=""
+        aria-hidden="true"
+        fill
+        quality={82}
+        sizes="100vw"
+        className="-z-20 object-cover object-top opacity-55"
+      />
+      <div
+        aria-hidden="true"
+        className="-z-10 pointer-events-none absolute inset-0 bg-gradient-to-b from-[#07111f]/75 via-[#07111f]/82 to-[#07111f]/95"
+      />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">{content}</div>
     </section>
   );
 }
