@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./premium.css";
 @import "./spatial.css";
+@import "./realism.css";
 
 @theme {
   --color-surface: #ffffff;

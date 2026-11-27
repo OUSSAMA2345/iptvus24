@@ -1,0 +1,282 @@
+[
+  {
+    "theme": "night",
+    "device": "desktop",
+    "state": {
+      "theme": "night",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=640&q=65",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=256&q=75",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fphone-landscape.jpg&w=128&q=85",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fdevices-ecosystem.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fpricing-sports-lounge.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Ffooter-cta-cinema.jpg&w=1920&q=84",
+          "loaded": true
+        }
+      ],
+      "reflection": "block"
+    },
+    "dimensions": [
+      {
+        "width": 320,
+        "scroll": 320
+      },
+      {
+        "width": 390,
+        "scroll": 390
+      },
+      {
+        "width": 768,
+        "scroll": 768
+      },
+      {
+        "width": 1024,
+        "scroll": 1024
+      },
+      {
+        "width": 1440,
+        "scroll": 1440
+      },
+      {
+        "width": 1920,
+        "scroll": 1920
+      }
+    ],
+    "errors": [],
+    "axe": []
+  },
+  {
+    "theme": "night",
+    "device": "mobile",
+    "state": {
+      "theme": "night",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=640&q=65",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=256&q=75",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fphone-landscape.jpg&w=128&q=85",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fdevices-ecosystem.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fpricing-sports-lounge.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Ffooter-cta-cinema.jpg&w=1920&q=84",
+          "loaded": true
+        }
+      ],
+      "reflection": "block"
+    },
+    "dimensions": [
+      {
+        "width": 320,
+        "scroll": 320
+      },
+      {
+        "width": 390,
+        "scroll": 390
+      },
+      {
+        "width": 768,
+        "scroll": 768
+      },
+      {
+        "width": 1024,
+        "scroll": 1024
+      },
+      {
+        "width": 1440,
+        "scroll": 1440
+      },
+      {
+        "width": 1920,
+        "scroll": 1920
+      }
+    ],
+    "errors": [],
+    "axe": []
+  },
+  {
+    "theme": "day",
+    "device": "desktop",
+    "state": {
+      "theme": "day",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=640&q=65",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=256&q=75",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fphone-landscape.jpg&w=128&q=85",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fdevices-ecosystem.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fpricing-sports-lounge.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Ffooter-cta-cinema.jpg&w=1920&q=84",
+          "loaded": true
+        }
+      ],
+      "reflection": "block"
+    },
+    "dimensions": [
+      {
+        "width": 320,
+        "scroll": 320
+      },
+      {
+        "width": 390,
+        "scroll": 390
+      },
+      {
+        "width": 768,
+        "scroll": 768
+      },
+      {
+        "width": 1024,
+        "scroll": 1024
+      },
+      {
+        "width": 1440,
+        "scroll": 1440
+      },
+      {
+        "width": 1920,
+        "scroll": 1920
+      }
+    ],
+    "errors": [],
+    "axe": []
+  },
+  {
+    "theme": "day",
+    "device": "mobile",
+    "state": {
+      "theme": "day",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fhero-cinema-living.jpg&w=640&q=65",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=256&q=75",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fphone-landscape.jpg&w=128&q=85",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fdevices-ecosystem.jpg&w=1080&q=90",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fpricing-sports-lounge.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Freviews-stadium-atmosphere.jpg&w=1920&q=84",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Ffooter-cta-cinema.jpg&w=1920&q=84",
+          "loaded": true
+        }
+      ],
+      "reflection": "block"
+    },
+    "dimensions": [
+      {
+        "width": 320,
+        "scroll": 320
+      },
+      {
+        "width": 390,
+        "scroll": 390
+      },
+      {
+        "width": 768,
+        "scroll": 768
+      },
+      {
+        "width": 1024,
+        "scroll": 1024
+      },
+      {
+        "width": 1440,
+        "scroll": 1440
+      },
+      {
+        "width": 1920,
+        "scroll": 1920
+      }
+    ],
+    "errors": [],
+    "axe": []
+  }
+]

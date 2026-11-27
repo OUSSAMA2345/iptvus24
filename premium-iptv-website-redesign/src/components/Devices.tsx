@@ -6,14 +6,15 @@ import { cn } from "../utils/cn";
 import { SectionHead } from "./ui";
 import { devices } from "../data";
 
-/* Consistent, premium flat-gradient device renders */
+/* Original miniature hardware with photographic screens and metallic edge light. */
 function DeviceArt({ id }: { id: string }) {
   const g = `d${id}`;
   const screen = (x: number, y: number, w: number, h: number, rx = 3) => (
     <g>
-      <rect x={x} y={y} width={w} height={h} rx={rx} fill={`url(#${g})`} />
-      <rect x={x + 2} y={y + 2} width={w * 0.42} height={h - 4} rx={rx - 1} fill="#fff" opacity="0.28" />
-      <path d={`M${x + w * 0.55} ${y + h * 0.32} v${h * 0.36} l${w * 0.22} -${h * 0.18} z`} fill="#fff" opacity="0.9" />
+      <defs><clipPath id={`${g}-screen`}><rect x={x} y={y} width={w} height={h} rx={rx} /></clipPath></defs>
+      <image href="/images/phone-landscape.jpg" x={x} y={y} width={w} height={h} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${g}-screen)`} />
+      <rect x={x} y={y} width={w} height={h} rx={rx} fill="none" stroke="#d3e4f8" strokeOpacity="0.55" strokeWidth="0.7" />
+      <path d={`M${x + 2} ${y + 2} h${w * .75} L${x + 2} ${y + h - 2}Z`} fill="#fff" opacity="0.1" />
     </g>
   );
 
@@ -24,8 +25,8 @@ function DeviceArt({ id }: { id: string }) {
         <stop offset="1" stopColor="#00C2FF" />
       </linearGradient>
       <linearGradient id={`${g}-body`} x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stopColor="#16233c" />
-        <stop offset="1" stopColor="#0c1526" />
+        <stop offset="0" stopColor="#8294ad" />
+        <stop offset="1" stopColor="#121d30" />
       </linearGradient>
       <radialGradient id={`${g}-glow`} cx="0.5" cy="0.5" r="0.5">
         <stop offset="0" stopColor="#0A84FF" stopOpacity="0.22" />
@@ -125,10 +126,10 @@ export default function Devices() {
         <div className="device-stage mx-auto mt-10 max-w-4xl rounded-3xl border border-line bg-[#081325] shadow-card">
           <Image
             src={devicesEcosystem}
-            alt="Unbranded smart TV, streaming media box, remote, tablet, and smartphone with abstract blue interfaces"
-            width={1408}
-            height={768}
-            quality={84}
+            alt="Photorealistic illustration of an unbranded TV, tablet, phone, media box and remote with mountain landscapes on the screens"
+            width={1264}
+            height={848}
+            quality={90}
             sizes="(max-width: 895px) 100vw, 896px"
             className="h-auto w-full"
           />

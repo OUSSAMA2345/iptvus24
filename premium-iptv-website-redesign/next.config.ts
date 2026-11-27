@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  images: {
+    // Explicit qualities prevent Next's default allowlist from downgrading key artwork.
+    qualities: [65, 75, 84, 85, 90],
+  },
   async headers() {
     return [
       {

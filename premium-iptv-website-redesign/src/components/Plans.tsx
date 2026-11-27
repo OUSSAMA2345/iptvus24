@@ -22,8 +22,8 @@ export default function Plans() {
         <div className="pricing-cinema relative mt-10 overflow-hidden rounded-3xl border border-line bg-[#07111f] shadow-card">
           <Image
             src={pricingSportsLounge}
-            alt="Home cinema lounge displaying an original, unbranded football stadium scene"
-            width={1408}
+            alt="Photorealistic illustration of a walnut-lined media lounge with an alpine landscape on the television"
+            width={1376}
             height={768}
             quality={84}
             sizes="(max-width: 1280px) 100vw, 1232px"

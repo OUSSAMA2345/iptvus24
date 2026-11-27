@@ -40,11 +40,11 @@ export default function Hero() {
           <div className="hero-image relative overflow-hidden rounded-[28px] border border-white/15 bg-[#091526] shadow-[0_28px_80px_rgba(0,0,0,0.45)]">
             <Image
               src={heroCinemaLiving}
-              alt="Modern twilight living room with a wall-mounted smart TV displaying an abstract streaming interface"
-              width={1408}
-              height={768}
+              alt="Photorealistic illustration of a coastal living room with a wall-mounted TV showing a mountain coastline"
+              width={1264}
+              height={848}
               priority
-              quality={85}
+              quality={90}
               sizes="(max-width: 1023px) 100vw, 54vw"
               className="aspect-[16/10] w-full object-cover"
             />

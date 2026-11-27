@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, type ReactNode } from "react";
 import { motion, useAnimationControls } from "framer-motion";
-import { reviewsStadiumAtmosphere } from "../assets";
+import { heroCinemaLiving, reviewsStadiumAtmosphere } from "../assets";
 import { useMotionPreference } from "./useMotionPreference";
 
 /** A bounded, offscreen-paused float. Perspective is on the parent, not animated blur. */
@@ -39,7 +39,11 @@ export function FloatLayer({ children, className, reverse = false }: {
 export function HeroDepthLayers() {
   return (
     <div className="depth-layers" aria-hidden="true">
+      <div className="scene-reflection">
+        <Image src={heroCinemaLiving} alt="" aria-hidden="true" width={1264} height={848} quality={65} sizes="(max-width: 639px) 1px, 600px" />
+      </div>
       <div className="scene-backplate" />
+      <div className="scene-contact-shadow" />
       <div className="scene-floor" />
       <div className="scene-light-beam scene-light-beam-one" />
       <div className="scene-light-beam scene-light-beam-two" />
@@ -53,7 +57,8 @@ export function HeroDepthLayers() {
         <div className="device-phone">
           <div className="phone-camera" />
           <div className="phone-screen">
-            <div className="abstract-wave" />
+            <Image src="/images/phone-landscape.jpg" alt="" aria-hidden="true" fill sizes="120px" quality={85} className="phone-landscape" />
+            <div className="phone-screen-shade" />
             <div className="abstract-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="m9 6 9 6-9 6Z" /></svg></div>
             <div className="phone-tiles"><i /><i /><i /><i /></div>
           </div>
