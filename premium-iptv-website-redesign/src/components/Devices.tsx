@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { devicesEcosystem } from "../assets";
 import { cn } from "../utils/cn";
 import { SectionHead } from "./ui";
 import { devices } from "../data";
@@ -119,8 +121,20 @@ export default function Devices() {
           sub="Common device types are listed below. Availability depends on your model, software, player app, and region; ask support to confirm compatibility."
         />
 
+        <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl border border-line bg-[#081325] shadow-card">
+          <Image
+            src={devicesEcosystem}
+            alt="Unbranded smart TV, streaming media box, remote, tablet, and smartphone with abstract blue interfaces"
+            width={1408}
+            height={768}
+            quality={84}
+            sizes="(max-width: 895px) 100vw, 896px"
+            className="h-auto w-full"
+          />
+        </div>
+
         {/* Device cards */}
-        <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+        <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {devices.map((d) => (
             <li key={d.id}>
               <article className="flex h-full items-center gap-4 rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-5">
@@ -136,12 +150,12 @@ export default function Devices() {
           ))}
         </ul>
 
-          <p className="mt-6 text-center text-sm font-semibold text-slate-soft">
-            Need help checking a specific model?{" "}
-            <Link href="/contact" className="font-bold text-brand underline decoration-cyan/50 underline-offset-4 hover:text-brand-deep">
-              Contact support before ordering
-            </Link>
-          </p>
+        <p className="mt-6 text-center text-sm font-semibold text-slate-soft">
+          Need help checking a specific model?{" "}
+          <Link href="/contact" className="font-bold text-brand underline decoration-cyan/50 underline-offset-4 hover:text-brand-deep">
+            Contact support before ordering
+          </Link>
+        </p>
       </div>
     </section>
   );
