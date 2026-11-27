@@ -29,8 +29,8 @@ for (const file of files) {
   const faq = body.split('## Frequently asked questions\n')[1]?.split('\n## Conclusion')[0] ?? '';
   const questions = [...faq.matchAll(/### (.+)\n\n([\s\S]*?)(?=\n### |$)/g)].map(m => ({ question: m[1], answer: m[2].trim() }));
   const canonical = `https://www.iptvus24.com/blog/${data.slug}`;
-  if (count < 2000) fail(`only ${count} prose words (code, metadata and TOC excluded)`);
-  if (count > 3500) fail(`more than preferred maximum: ${count}`);
+  if (count < 2500) fail(`only ${count} prose words (minimum 2500; code, metadata and TOC excluded)`);
+  if (count > 4000) fail(`more than preferred maximum: ${count}`);
   if (file !== `${data.slug}.md` || legacy.includes(data.slug)) fail('duplicate or mismatched slug');
   if (plan.find(item => item.priority === data.priority)?.slug !== data.slug) fail('priority mismatch');
   if (!body.startsWith(`# ${data.h1}\n`) || [...body.matchAll(/^# /gm)].length !== 1) fail('H1 mismatch');
@@ -48,6 +48,7 @@ for (const file of files) {
   if (article?.datePublished !== data.publishedAt || article?.dateModified !== data.reviewedAt) fail('schema date mismatch');
   if (data.faqJsonLd?.['@type'] !== 'FAQPage' || schemaFaqs.length !== questions.length) fail('FAQ schema missing or wrong length');
   questions.forEach((q, i) => {
+    if (/\[[^\]]+\]\(|[*_`]/.test(q.answer)) fail(`FAQ answer ${i + 1} must be plain text for visible/schema agreement`);
     if (schemaFaqs[i]?.name !== q.question || schemaFaqs[i]?.acceptedAnswer?.text !== q.answer) fail(`FAQ schema differs from visible answer ${i + 1}`);
   });
   const links = [...body.matchAll(/\]\(([^)]+)\)/g)].map(m => m[1]);
@@ -60,7 +61,11 @@ for (const file of files) {
   if (internalLinks.length < 2) fail('insufficient contextual internal links');
   if (!Array.isArray(data.imageRecommendations) || data.imageRecommendations.length < 2) fail('image recommendations missing');
   if (!data.internalLinkOpportunities?.every(link => internalLinks.includes(link))) fail('suggested link absent from article');
-  if (!links.some(link => /^https:\/\/(www\.amazon\.com|developer\.amazon\.com|tivimate\.com|raw\.githubusercontent\.com)/.test(link))) fail('primary source absent');
+  const primaryHosts = new Set(['www.amazon.com', 'developer.amazon.com', 'tivimate.com', 'raw.githubusercontent.com', 'wiki.infomir.eu', 'support.google.com', 'www.samsung.com', 'www.lg.com', 'developer.mozilla.org', 'help.netflix.com', 'developer.apple.com', 'www.iptvsmarters.com']);
+  if (!links.some(link => { try { const url = new URL(link); return url.protocol === 'https:' && primaryHosts.has(url.hostname); } catch { return false; } })) fail('primary source absent');
+  if (data.priority >= 6 && !/^## Common mistakes/m.test(body)) fail('common mistakes section missing');
+  if (data.priority >= 6 && !/troubleshoot|diagnos|recovery|recover|failure/i.test(body)) fail('troubleshooting guidance missing');
+  if (!data.editorialMethod || !/^\d{4}-\d{2}-\d{2}$/.test(data.reviewedAt)) fail('review method or date missing');
   for (const paragraph of prose.split(/\n\n+/)) {
     const normalized = text(paragraph).toLowerCase().replace(/\s+/g, ' ').trim();
     if (words(normalized).length < 35 || paragraph.startsWith('#') || paragraph.startsWith('|')) continue;

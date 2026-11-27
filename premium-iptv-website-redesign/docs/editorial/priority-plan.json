@@ -1,22 +1,102 @@
 [
-  { "priority": 1, "slug": "firestick-buffering-but-internet-is-fine", "status": "ready-for-review" },
-  { "priority": 2, "slug": "iptv-epg-not-updating", "status": "ready-for-review" },
-  { "priority": 3, "slug": "iptv-app-not-working-on-firestick", "status": "ready-for-review" },
-  { "priority": 4, "slug": "tivimate-epg-no-information", "status": "ready-for-review" },
-  { "priority": 5, "slug": "tivimate-playlist-is-processed-please-wait", "status": "ready-for-review" },
-  { "priority": 6, "slug": "mag-box-portal-not-loading", "status": "pending-research" },
-  { "priority": 7, "slug": "iptv-channels-not-loading", "status": "pending-research" },
-  { "priority": 8, "slug": "iptv-app-keeps-crashing", "status": "pending-research" },
-  { "priority": 9, "slug": "iptv-app-not-working-on-samsung-tv", "status": "pending-research" },
-  { "priority": 10, "slug": "iptv-app-not-available-on-lg-tv", "status": "pending-research" },
-  { "priority": 11, "slug": "firestick-black-screen-after-logo", "status": "pending-research" },
-  { "priority": 12, "slug": "how-to-organize-iptv-channels", "status": "pending-research" },
-  { "priority": 13, "slug": "what-is-xmltv-epg", "status": "pending-research" },
-  { "priority": 14, "slug": "iptv-player-vs-iptv-service", "status": "pending-research" },
-  { "priority": 15, "slug": "tivimate-vs-iptv-smarters", "status": "pending-research" },
-  { "priority": 16, "slug": "firestick-not-connecting-to-wifi-but-other-devices-will", "status": "pending-research" },
-  { "priority": 17, "slug": "samsung-tv-apps-not-working-but-connected-to-internet", "status": "pending-research" },
-  { "priority": 18, "slug": "android-tv-storage-space-running-out", "status": "pending-research" },
-  { "priority": 19, "slug": "streaming-buffering-but-internet-is-fine", "status": "pending-research" },
-  { "priority": 20, "slug": "how-does-iptv-work-on-firestick", "status": "pending-research" }
+  {
+    "priority": 1,
+    "slug": "firestick-buffering-but-internet-is-fine",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 2,
+    "slug": "iptv-epg-not-updating",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 3,
+    "slug": "iptv-app-not-working-on-firestick",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 4,
+    "slug": "tivimate-epg-no-information",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 5,
+    "slug": "tivimate-playlist-is-processed-please-wait",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 6,
+    "slug": "mag-box-portal-not-loading",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 7,
+    "slug": "iptv-channels-not-loading",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 8,
+    "slug": "iptv-app-keeps-crashing",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 9,
+    "slug": "iptv-app-not-working-on-samsung-tv",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 10,
+    "slug": "iptv-app-not-available-on-lg-tv",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 11,
+    "slug": "firestick-black-screen-after-logo",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 12,
+    "slug": "how-to-organize-iptv-channels",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 13,
+    "slug": "what-is-xmltv-epg",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 14,
+    "slug": "iptv-player-vs-iptv-service",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 15,
+    "slug": "tivimate-vs-iptv-smarters",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 16,
+    "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 17,
+    "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 18,
+    "slug": "android-tv-storage-space-running-out",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 19,
+    "slug": "streaming-buffering-but-internet-is-fine",
+    "status": "ready-for-review"
+  },
+  {
+    "priority": 20,
+    "slug": "how-does-iptv-work-on-firestick",
+    "status": "ready-for-review"
+  }
 ]
