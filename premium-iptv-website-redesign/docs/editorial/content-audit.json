@@ -1,8 +1,8 @@
 {
   "totalRequested": 20,
-  "readyArticles": 5,
-  "batchComplete": false,
-  "totalProseWords": 12932,
+  "readyArticles": 20,
+  "batchComplete": true,
+  "totalProseWords": 53431,
   "articles": [
     {
       "priority": 1,
@@ -48,9 +48,354 @@
       "internalLinks": 2,
       "metaTitleCharactersWithBrand": 60,
       "metaDescriptionCharacters": 157
+    },
+    {
+      "priority": 6,
+      "slug": "mag-box-portal-not-loading",
+      "words": 2770,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 64,
+      "metaDescriptionCharacters": 155
+    },
+    {
+      "priority": 7,
+      "slug": "iptv-channels-not-loading",
+      "words": 2747,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 59,
+      "metaDescriptionCharacters": 156
+    },
+    {
+      "priority": 8,
+      "slug": "iptv-app-keeps-crashing",
+      "words": 2577,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 61,
+      "metaDescriptionCharacters": 159
+    },
+    {
+      "priority": 9,
+      "slug": "iptv-app-not-working-on-samsung-tv",
+      "words": 2603,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 57,
+      "metaDescriptionCharacters": 155
+    },
+    {
+      "priority": 10,
+      "slug": "iptv-app-not-available-on-lg-tv",
+      "words": 2572,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 57,
+      "metaDescriptionCharacters": 154
+    },
+    {
+      "priority": 11,
+      "slug": "firestick-black-screen-after-logo",
+      "words": 2538,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 57,
+      "metaDescriptionCharacters": 155
+    },
+    {
+      "priority": 12,
+      "slug": "how-to-organize-iptv-channels",
+      "words": 2627,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 61,
+      "metaDescriptionCharacters": 158
+    },
+    {
+      "priority": 13,
+      "slug": "what-is-xmltv-epg",
+      "words": 2992,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 60,
+      "metaDescriptionCharacters": 156
+    },
+    {
+      "priority": 14,
+      "slug": "iptv-player-vs-iptv-service",
+      "words": 2614,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 55,
+      "metaDescriptionCharacters": 159
+    },
+    {
+      "priority": 15,
+      "slug": "tivimate-vs-iptv-smarters",
+      "words": 3035,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 59,
+      "metaDescriptionCharacters": 162
+    },
+    {
+      "priority": 16,
+      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "words": 2622,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 61,
+      "metaDescriptionCharacters": 156
+    },
+    {
+      "priority": 17,
+      "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "words": 2553,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 62,
+      "metaDescriptionCharacters": 151
+    },
+    {
+      "priority": 18,
+      "slug": "android-tv-storage-space-running-out",
+      "words": 2632,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 60,
+      "metaDescriptionCharacters": 159
+    },
+    {
+      "priority": 19,
+      "slug": "streaming-buffering-but-internet-is-fine",
+      "words": 2633,
+      "faqs": 8,
+      "internalLinks": 2,
+      "metaTitleCharactersWithBrand": 63,
+      "metaDescriptionCharacters": 160
+    },
+    {
+      "priority": 20,
+      "slug": "how-does-iptv-work-on-firestick",
+      "words": 2984,
+      "faqs": 8,
+      "internalLinks": 3,
+      "metaTitleCharactersWithBrand": 57,
+      "metaDescriptionCharacters": 156
     }
   ],
   "repeatedPhrasing": [
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "firestick-black-screen-after-logo.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "firestick-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "how-does-iptv-work-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "how-to-organize-iptv-channels.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-app-keeps-crashing.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "android-tv-storage-space-running-out.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "firestick-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "how-does-iptv-work-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "how-to-organize-iptv-channels.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-app-keeps-crashing.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-black-screen-after-logo.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "how-does-iptv-work-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "how-to-organize-iptv-channels.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "iptv-app-keeps-crashing.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
     {
       "a": "firestick-buffering-but-internet-is-fine.md",
       "b": "iptv-app-not-working-on-firestick.md",
@@ -58,7 +403,37 @@
     },
     {
       "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
       "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
       "twelveWordShingleOverlapPercent": 0
     },
     {
@@ -72,12 +447,402 @@
       "twelveWordShingleOverlapPercent": 0
     },
     {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-buffering-but-internet-is-fine.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "how-does-iptv-work-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "how-to-organize-iptv-channels.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-app-keeps-crashing.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "firestick-not-connecting-to-wifi-but-other-devices-will.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "how-to-organize-iptv-channels.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-app-keeps-crashing.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-does-iptv-work-on-firestick.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-app-keeps-crashing.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "how-to-organize-iptv-channels.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "iptv-app-not-available-on-lg-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-keeps-crashing.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "iptv-app-not-working-on-firestick.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0.12
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0.12
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0.16
+    },
+    {
+      "a": "iptv-app-not-available-on-lg-tv.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "iptv-app-not-working-on-samsung-tv.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
       "a": "iptv-app-not-working-on-firestick.md",
       "b": "iptv-epg-not-updating.md",
       "twelveWordShingleOverlapPercent": 0
     },
     {
       "a": "iptv-app-not-working-on-firestick.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
       "b": "tivimate-epg-no-information.md",
       "twelveWordShingleOverlapPercent": 0
     },
@@ -87,6 +852,131 @@
       "twelveWordShingleOverlapPercent": 0
     },
     {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-firestick.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "iptv-channels-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-app-not-working-on-samsung-tv.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "iptv-epg-not-updating.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-channels-not-loading.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-epg-not-updating.md",
+      "b": "iptv-player-vs-iptv-service.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-epg-not-updating.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-epg-not-updating.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-epg-not-updating.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
       "a": "iptv-epg-not-updating.md",
       "b": "tivimate-epg-no-information.md",
       "twelveWordShingleOverlapPercent": 0
@@ -94,76 +984,160 @@
     {
       "a": "iptv-epg-not-updating.md",
       "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-epg-not-updating.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-epg-not-updating.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "mag-box-portal-not-loading.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "iptv-player-vs-iptv-service.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "mag-box-portal-not-loading.md",
+      "b": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "mag-box-portal-not-loading.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "mag-box-portal-not-loading.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "mag-box-portal-not-loading.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "mag-box-portal-not-loading.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "mag-box-portal-not-loading.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "b": "streaming-buffering-but-internet-is-fine.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "samsung-tv-apps-not-working-but-connected-to-internet.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "streaming-buffering-but-internet-is-fine.md",
+      "b": "tivimate-epg-no-information.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "streaming-buffering-but-internet-is-fine.md",
+      "b": "tivimate-playlist-is-processed-please-wait.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "streaming-buffering-but-internet-is-fine.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "streaming-buffering-but-internet-is-fine.md",
+      "b": "what-is-xmltv-epg.md",
       "twelveWordShingleOverlapPercent": 0
     },
     {
       "a": "tivimate-epg-no-information.md",
       "b": "tivimate-playlist-is-processed-please-wait.md",
       "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "tivimate-epg-no-information.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "tivimate-epg-no-information.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "tivimate-playlist-is-processed-please-wait.md",
+      "b": "tivimate-vs-iptv-smarters.md",
+      "twelveWordShingleOverlapPercent": 0.11
+    },
+    {
+      "a": "tivimate-playlist-is-processed-please-wait.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
+    },
+    {
+      "a": "tivimate-vs-iptv-smarters.md",
+      "b": "what-is-xmltv-epg.md",
+      "twelveWordShingleOverlapPercent": 0
     }
   ],
-  "pending": [
-    {
-      "priority": 6,
-      "slug": "mag-box-portal-not-loading"
-    },
-    {
-      "priority": 7,
-      "slug": "iptv-channels-not-loading"
-    },
-    {
-      "priority": 8,
-      "slug": "iptv-app-keeps-crashing"
-    },
-    {
-      "priority": 9,
-      "slug": "iptv-app-not-working-on-samsung-tv"
-    },
-    {
-      "priority": 10,
-      "slug": "iptv-app-not-available-on-lg-tv"
-    },
-    {
-      "priority": 11,
-      "slug": "firestick-black-screen-after-logo"
-    },
-    {
-      "priority": 12,
-      "slug": "how-to-organize-iptv-channels"
-    },
-    {
-      "priority": 13,
-      "slug": "what-is-xmltv-epg"
-    },
-    {
-      "priority": 14,
-      "slug": "iptv-player-vs-iptv-service"
-    },
-    {
-      "priority": 15,
-      "slug": "tivimate-vs-iptv-smarters"
-    },
-    {
-      "priority": 16,
-      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will"
-    },
-    {
-      "priority": 17,
-      "slug": "samsung-tv-apps-not-working-but-connected-to-internet"
-    },
-    {
-      "priority": 18,
-      "slug": "android-tv-storage-space-running-out"
-    },
-    {
-      "priority": 19,
-      "slug": "streaming-buffering-but-internet-is-fine"
-    },
-    {
-      "priority": 20,
-      "slug": "how-does-iptv-work-on-firestick"
-    }
-  ],
+  "pending": [],
   "errors": [],
   "limitations": [
     "Local repetition checks are not a web-wide plagiarism scan.",
