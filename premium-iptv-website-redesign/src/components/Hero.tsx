@@ -2,6 +2,7 @@ import Image from "next/image";
 import { heroCinemaLiving } from "../assets";
 import { AmbientLight, CinemaArtwork } from "./PremiumMotion";
 import Reveal from "./Reveal";
+import { HeroDepthLayers } from "./SpatialScene";
 import { WhatsAppButton } from "./WhatsApp";
 
 export default function Hero() {
@@ -52,6 +53,7 @@ export default function Hero() {
               className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#07111f]/80 via-[#07111f]/25 to-transparent"
             />
           </div>
+          <HeroDepthLayers />
         </CinemaArtwork>
       </div>
     </section>

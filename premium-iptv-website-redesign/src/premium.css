@@ -1,5 +1,5 @@
 /* Midnight cinema system. Scoped so documents and application routes keep their palette. */
-.premium-site, .premium-nav, .premium-footer {
+.premium-site, .premium-nav, .premium-footer, .document-site {
   --color-mist: #070b12;
   --color-surface: #101723;
   --color-haze: #14223b;

@@ -34,7 +34,7 @@ export default function Plans() {
         <div className="pricing-deck mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan, index) => (
             <Reveal key={plan.name} delay={index * 0.06} className="h-full">
-              <MotionSurface className={plan.best ? "plan-surface plan-featured" : "plan-surface"}>
+              <MotionSurface tilt className={plan.best ? "plan-surface plan-featured" : "plan-surface"}>
                 <article
                   className={cn(
                     "plan-card relative flex h-full flex-col rounded-2xl border bg-surface p-5 shadow-card sm:p-6",
