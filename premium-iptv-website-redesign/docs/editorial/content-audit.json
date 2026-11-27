@@ -2,32 +2,32 @@
   "totalRequested": 20,
   "readyArticles": 20,
   "batchComplete": true,
-  "totalProseWords": 53431,
+  "totalProseWords": 53676,
   "articles": [
     {
       "priority": 1,
       "slug": "firestick-buffering-but-internet-is-fine",
-      "words": 2501,
+      "words": 2584,
       "faqs": 8,
-      "internalLinks": 2,
+      "internalLinks": 3,
       "metaTitleCharactersWithBrand": 50,
       "metaDescriptionCharacters": 156
     },
     {
       "priority": 2,
       "slug": "iptv-epg-not-updating",
-      "words": 2532,
+      "words": 2565,
       "faqs": 8,
-      "internalLinks": 3,
+      "internalLinks": 4,
       "metaTitleCharactersWithBrand": 52,
       "metaDescriptionCharacters": 157
     },
     {
       "priority": 3,
       "slug": "iptv-app-not-working-on-firestick",
-      "words": 2566,
+      "words": 2593,
       "faqs": 8,
-      "internalLinks": 4,
+      "internalLinks": 5,
       "metaTitleCharactersWithBrand": 57,
       "metaDescriptionCharacters": 159
     },
@@ -61,9 +61,9 @@
     {
       "priority": 7,
       "slug": "iptv-channels-not-loading",
-      "words": 2747,
+      "words": 2780,
       "faqs": 8,
-      "internalLinks": 2,
+      "internalLinks": 3,
       "metaTitleCharactersWithBrand": 59,
       "metaDescriptionCharacters": 156
     },
@@ -79,9 +79,9 @@
     {
       "priority": 9,
       "slug": "iptv-app-not-working-on-samsung-tv",
-      "words": 2603,
+      "words": 2631,
       "faqs": 8,
-      "internalLinks": 2,
+      "internalLinks": 3,
       "metaTitleCharactersWithBrand": 57,
       "metaDescriptionCharacters": 155
     },
@@ -124,9 +124,9 @@
     {
       "priority": 14,
       "slug": "iptv-player-vs-iptv-service",
-      "words": 2614,
+      "words": 2655,
       "faqs": 8,
-      "internalLinks": 2,
+      "internalLinks": 4,
       "metaTitleCharactersWithBrand": 55,
       "metaDescriptionCharacters": 159
     },

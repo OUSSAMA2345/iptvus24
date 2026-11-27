@@ -11,10 +11,9 @@
   "publishedAt": "2026-11-27",
   "reviewedAt": "2026-11-27",
   "keywords": [
-    "Fire TV",
-    "app troubleshooting",
-    "Fire OS",
-    "Vega OS"
+    "iptv app not working on firestick",
+    "Fire TV app troubleshooting",
+    "Fire OS app setup"
   ],
   "editorialMethod": "Documentation-based diagnostic guide; no hands-on device testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -22,6 +21,7 @@
     "Capture the relevant app management screen on a supported test device with permission; show Clear Cache separately from Clear Data and redact account details."
   ],
   "internalLinkOpportunities": [
+    "/blog/firestick-black-screen-after-logo",
     "/blog/fire-tv-streaming-setup-checklist",
     "/blog/tivimate-playlist-is-processed-please-wait",
     "/blog/firestick-buffering-but-internet-is-fine",
@@ -54,7 +54,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "Fire TV, app troubleshooting, Fire OS, Vega OS"
+    "keywords": "iptv app not working on firestick, Fire TV app troubleshooting, Fire OS app setup",
+    "url": "https://www.iptvus24.com/blog/iptv-app-not-working-on-firestick",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/iptv-app-not-working-on-firestick.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",
@@ -137,6 +146,8 @@
 **Start by identifying the last successful stage: installation, launch, sign-in, playlist loading or playback. Then test only the component responsible for the next stage.** This guide helps you do that without immediately deleting a carefully configured player.
 
 It applies to legitimate IPTV players and content you are authorized to access. Fire TV model, operating system, country and app version affect compatibility. There is no single installation procedure that is correct for every device sold as a Firestick.
+
+If the Fire TV home screen never appears and the display goes dark after startup, use the [black-screen-after-logo checks](/blog/firestick-black-screen-after-logo) first. App recovery requires a working device interface.
 
 ## Table of contents
 

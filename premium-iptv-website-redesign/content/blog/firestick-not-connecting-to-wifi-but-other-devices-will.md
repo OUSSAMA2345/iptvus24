@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "firestick not connecting to wifi but other devices will",
-    "streaming devices"
+    "Fire TV Wi-Fi connection",
+    "Firestick network diagnostics"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "firestick not connecting to wifi but other devices will, streaming devices"
+    "keywords": "firestick not connecting to wifi but other devices will, Fire TV Wi-Fi connection, Firestick network diagnostics",
+    "url": "https://www.iptvus24.com/blog/firestick-not-connecting-to-wifi-but-other-devices-will",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/firestick-not-connecting-to-wifi-but-other-devices-will.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

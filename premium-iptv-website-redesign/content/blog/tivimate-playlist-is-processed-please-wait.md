@@ -11,10 +11,9 @@
   "publishedAt": "2026-11-27",
   "reviewedAt": "2026-11-27",
   "keywords": [
-    "TiviMate",
-    "playlist processing",
-    "M3U",
-    "catalogue import"
+    "tivimate playlist is processed please wait",
+    "TiviMate playlist import",
+    "TiviMate processing stuck"
   ],
   "editorialMethod": "Documentation-based diagnostic guide; no hands-on device testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -52,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "TiviMate, playlist processing, M3U, catalogue import"
+    "keywords": "tivimate playlist is processed please wait, TiviMate playlist import, TiviMate processing stuck",
+    "url": "https://www.iptvus24.com/blog/tivimate-playlist-is-processed-please-wait",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/tivimate-playlist-is-processed-please-wait.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

@@ -16,6 +16,8 @@
     "test:watch": "vitest",
     "audit:content": "node scripts/audit-content.mjs",
     "audit:content:complete": "node scripts/audit-content.mjs --complete",
+    "audit:seo": "node scripts/audit-seo.mjs --strict --report docs/seo/after.json",
+    "audit:seo:performance": "node scripts/measure-seo-performance.mjs --report docs/seo/performance-after.json",
     "prebuild": "npm run audit:content"
   },
   "dependencies": {

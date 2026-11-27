@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "samsung tv apps not working but connected to internet",
-    "streaming devices"
+    "Samsung Smart Hub connection",
+    "Samsung multiple app failures"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "samsung tv apps not working but connected to internet, streaming devices"
+    "keywords": "samsung tv apps not working but connected to internet, Samsung Smart Hub connection, Samsung multiple app failures",
+    "url": "https://www.iptvus24.com/blog/samsung-tv-apps-not-working-but-connected-to-internet",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/samsung-tv-apps-not-working-but-connected-to-internet.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Devices & setup"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

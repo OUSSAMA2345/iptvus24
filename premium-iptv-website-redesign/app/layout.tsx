@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { SITE_URL, SITE_NAME } from "./metadata";
+import { bodyFont, displayFont } from "./fonts";
 import CookieConsent from "./ui/CookieConsent";
 import GoogleTags from "./ui/GoogleTags";
 import { FloatingWhatsAppButton } from "../src/components/WhatsApp";
@@ -77,7 +78,7 @@ const siteStructuredData = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${bodyFont.variable} ${displayFont.variable}`}>
       <body>
         <a href="#main-content" className="sr-only z-[100] rounded-lg bg-white px-4 py-3 font-bold text-ink focus:not-sr-only focus:fixed focus:left-4 focus:top-4">
           Skip to content

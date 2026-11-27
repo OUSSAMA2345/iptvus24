@@ -12,7 +12,8 @@
   "reviewedAt": "2026-11-27",
   "keywords": [
     "how to organize iptv channels",
-    "IPTV"
+    "IPTV favorites",
+    "IPTV channel groups"
   ],
   "editorialMethod": "Documentation-based editorial guide, researched against official documentation and competing search results. No hands-on testing or independent expert review is claimed.",
   "imageRecommendations": [
@@ -50,7 +51,16 @@
         "url": "https://www.iptvus24.com/brand/icon-1024.png"
       }
     },
-    "keywords": "how to organize iptv channels, IPTV"
+    "keywords": "how to organize iptv channels, IPTV favorites, IPTV channel groups",
+    "url": "https://www.iptvus24.com/blog/how-to-organize-iptv-channels",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.iptvus24.com/images/guides/how-to-organize-iptv-channels.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "IPTVUS24 streaming guides and device advice"
+    },
+    "articleSection": "Streaming basics"
   },
   "faqJsonLd": {
     "@context": "https://schema.org",

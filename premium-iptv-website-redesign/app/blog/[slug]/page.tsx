@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import SitePage, { SiteProse } from "../../ui/SitePage";
-import { SITE_NAME, SITE_URL } from "../../metadata";
+import { SITE_NAME } from "../../metadata";
 import { blogPosts, getBlogPost } from "../posts";
 import MarkdownArticle from "../MarkdownArticle";
+import { editorialTopics, getArticleMetadata, getArticleStructuredData, getRelatedPosts } from "../seo";
 
 export const dynamicParams = false;
 
@@ -30,34 +32,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const post = getBlogPost(slug);
   if (!post) return {};
 
-  const canonical = `/blog/${post.slug}`;
-  const image = "/images/og-image.png";
-
-  return {
-    title: post.markdown ? { absolute: `${post.markdown.metaTitle} | ${SITE_NAME}` } : post.title,
-    description: post.excerpt,
-    keywords: post.keywords,
-    alternates: { canonical },
-    openGraph: {
-      type: "article",
-      url: canonical,
-      siteName: SITE_NAME,
-      title: post.title,
-      description: post.excerpt,
-      publishedTime: post.publishedAt,
-      modifiedTime: post.markdown?.reviewedAt ?? post.publishedAt,
-      authors: [`${SITE_URL}/about`],
-      section: post.category,
-      tags: post.keywords,
-      images: [{ url: image, width: 1200, height: 630, alt: post.title }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
-      images: [image],
-    },
-  };
+  return getArticleMetadata(post);
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -65,54 +40,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  const categoryPosts = blogPosts.filter((item) => item.category === post.category);
-  const currentCategoryIndex = categoryPosts.findIndex((item) => item.slug === post.slug);
-  const relatedPosts = Array.from(
-    { length: Math.min(3, categoryPosts.length - 1) },
-    (_, index) => categoryPosts[(currentCategoryIndex + index + 1) % categoryPosts.length],
-  );
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      ...(post.markdown ? [post.markdown.articleJsonLd, post.markdown.faqJsonLd] : [{
-        "@type": "BlogPosting",
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": `${SITE_URL}/blog/${post.slug}`,
-        },
-        headline: post.title,
-        description: post.excerpt,
-        image: `${SITE_URL}/images/og-image.png`,
-        datePublished: post.publishedAt,
-        dateModified: post.publishedAt,
-        author: {
-          "@type": "Organization",
-          name: `${SITE_NAME} Editorial`,
-          url: `${SITE_URL}/about`,
-        },
-        publisher: {
-          "@type": "Organization",
-          name: SITE_NAME,
-          url: SITE_URL,
-          logo: {
-            "@type": "ImageObject",
-            url: `${SITE_URL}/brand/icon-1024.png`,
-          },
-        },
-        articleSection: post.category,
-        keywords: post.keywords.join(", "),
-      }]),
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-          { "@type": "ListItem", position: 2, name: "Guides", item: `${SITE_URL}/blog` },
-          { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` },
-        ],
-      },
-    ],
-  };
+  const relatedPosts = getRelatedPosts(post, blogPosts);
+  const structuredData = getArticleStructuredData(post);
 
   return (
     <>
@@ -124,7 +53,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <li aria-hidden="true">/</li>
               <li><Link href="/blog" className="rounded hover:text-brand">Guides</Link></li>
               <li aria-hidden="true">/</li>
-              <li aria-current="page" className="break-words font-semibold text-ink">{post.title}</li>
+              <li aria-current="page" className="break-words font-semibold text-ink">{post.markdown?.h1 ?? post.title}</li>
             </ol>
           </nav>
 
@@ -159,6 +88,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             ))}
           </SiteProse>
 
+          {editorialTopics[post.slug]?.diagram && (
+            <figure className="mt-8">
+              <Image src={`/images/guides/${post.slug}.png`} alt={editorialTopics[post.slug].diagram.alt} width={1200} height={630} sizes="(max-width: 768px) 100vw, 900px" className="h-auto w-full rounded-xl" />
+              <figcaption className="mt-2 text-xs text-slate-soft">Original conceptual overview · Not a device screenshot or test result.</figcaption>
+            </figure>
+          )}
+
           <nav aria-label="Article navigation" className="mt-10 border-t border-line pt-5">
             <Link href="/blog" className="inline-flex min-h-11 items-center gap-2 text-sm font-bold text-brand hover:text-brand-deep">
               <span aria-hidden="true">←</span> All articles
@@ -175,7 +111,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <li key={related.slug} className="rounded-xl border border-line bg-mist p-4">
                     <span className="text-xs font-bold text-brand">{related.category}</span>
                     <h3 className="mt-2 font-display text-base font-bold text-ink">
-                      <Link href={`/blog/${related.slug}`} className="rounded hover:text-brand">
+                      <Link href={`/blog/${related.slug}`} prefetch={false} className="rounded hover:text-brand">
                         {related.title}
                       </Link>
                     </h3>

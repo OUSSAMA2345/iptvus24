@@ -18,7 +18,7 @@ export default function MarkdownArticle({ body }: { body: string }) {
           h2: ({ children }) => <h2 id={headingId(String(children))}>{children}</h2>,
           h3: ({ children }) => <h3 id={headingId(String(children))}>{children}</h3>,
           a: ({ href, children }) => href?.startsWith("/")
-            ? <Link href={href}>{children}</Link>
+            ? <Link href={href} prefetch={false}>{children}</Link>
             : <a href={href}>{children}</a>,
           table: ({ children }) => (
             <div className="blog-table-scroll" role="region" aria-label="Comparison table" tabIndex={0}>
