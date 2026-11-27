@@ -184,7 +184,7 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
         />
       )}
 
-      <div className={`${embedded ? "" : "mx-auto mt-8 max-w-2xl shadow-[0_20px_50px_rgba(4,12,28,0.35)]"} flex flex-col items-center justify-between gap-4 rounded-2xl border border-line bg-white p-5 text-center sm:flex-row sm:text-left`}>
+      <div className={`${embedded ? "" : "mx-auto mt-8 max-w-2xl shadow-[0_20px_50px_rgba(4,12,28,0.35)]"} flex flex-col items-center justify-between gap-4 rounded-2xl border border-line bg-surface p-5 text-center sm:flex-row sm:text-left`}>
         {data && data.reviewCount > 0 ? (
           <div>
             <p className="font-display text-3xl font-extrabold text-ink">
@@ -210,7 +210,7 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
       {data && data.reviews.length > 0 && (
         <div className={`mt-6 grid gap-4 md:grid-cols-2 ${embedded ? "" : "lg:grid-cols-3"}`}>
           {data.reviews.map((review) => (
-            <article key={review.id} className="flex h-full flex-col rounded-2xl border border-line bg-white p-5 shadow-sm">
+            <article key={review.id} className="flex h-full flex-col rounded-2xl border border-line bg-surface p-5 shadow-sm">
               <p className="text-base tracking-widest text-amber-500" aria-label={`${review.rating} out of 5 stars`}>
                 <span aria-hidden="true">{"★".repeat(review.rating)}<span className="text-slate-200">{"★".repeat(5 - review.rating)}</span></span>
               </p>
@@ -226,7 +226,7 @@ export default function Reviews({ embedded = false }: { embedded?: boolean }) {
         </div>
       )}
 
-      <div id="review-form" className={`${embedded ? "mt-8" : "mx-auto mt-8 max-w-2xl shadow-[0_24px_60px_rgba(4,12,28,0.4)]"} scroll-mt-28 rounded-2xl border border-line bg-white p-6 sm:p-8`}>
+      <div id="review-form" className={`${embedded ? "mt-8" : "mx-auto mt-8 max-w-2xl shadow-[0_24px_60px_rgba(4,12,28,0.4)]"} scroll-mt-28 rounded-2xl border border-line bg-surface p-6 sm:p-8`}>
         {embedded ? (
           <h2 className="font-display text-xl font-extrabold text-ink">Share your experience</h2>
         ) : (

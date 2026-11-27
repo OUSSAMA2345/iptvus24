@@ -34,7 +34,7 @@ const orderDetails = [
 
 export function PricingTrustDetails() {
   return (
-    <section aria-labelledby="order-details-title" className="mt-10 rounded-3xl border border-line bg-white p-5 shadow-card sm:p-8">
+    <section aria-labelledby="order-details-title" className="mt-10 rounded-3xl border border-line bg-surface p-5 shadow-card sm:p-8">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-bold text-brand">Clear terms before ordering</p>
         <h3 id="order-details-title" className="font-display mt-2 text-2xl font-extrabold tracking-tight text-ink">

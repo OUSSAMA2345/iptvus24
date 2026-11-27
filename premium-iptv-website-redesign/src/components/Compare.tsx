@@ -9,7 +9,7 @@ const rows = [
 
 export default function Compare() {
   return (
-    <section id="compare-plans" className="scroll-mt-28 bg-white py-16 sm:py-20">
+    <section id="compare-plans" className="scroll-mt-28 bg-surface py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHead
           eyebrow="Compare plans"
@@ -18,7 +18,7 @@ export default function Compare() {
         />
         <div className="mt-8 grid gap-3 sm:hidden">
             {plans.map((plan) => (
-              <article key={plan.name} className="rounded-2xl border border-line bg-white p-4">
+              <article key={plan.name} className="rounded-2xl border border-line bg-surface p-4">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="font-display font-extrabold text-ink">{plan.name}</h3>
@@ -35,7 +35,7 @@ export default function Compare() {
               </article>
             ))}
         </div>
-        <div className="mt-10 hidden overflow-x-auto rounded-2xl border border-line bg-white shadow-card sm:block">
+        <div className="mt-10 hidden overflow-x-auto rounded-2xl border border-line bg-surface shadow-card sm:block">
             <table className="w-full min-w-[640px] border-collapse text-left">
               <caption className="sr-only">Plan duration and pricing comparison</caption>
               <thead>

@@ -1,6 +1,8 @@
 @import "tailwindcss";
+@import "./premium.css";
 
 @theme {
+  --color-surface: #ffffff;
   --color-brand: #0a84ff;
   --color-brand-deep: #0060d8;
   --color-cyan: #00c2ff;
