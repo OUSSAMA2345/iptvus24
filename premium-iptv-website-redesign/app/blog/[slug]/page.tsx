@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import SitePage, { SiteProse } from "../../ui/SitePage";
 import { SITE_NAME, SITE_URL } from "../../metadata";
 import { blogPosts, getBlogPost } from "../posts";
+import MarkdownArticle from "../MarkdownArticle";
+
+export const dynamicParams = false;
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -31,7 +34,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const image = "/images/og-image.png";
 
   return {
-    title: post.title,
+    title: post.markdown ? { absolute: `${post.markdown.metaTitle} | ${SITE_NAME}` } : post.title,
     description: post.excerpt,
     keywords: post.keywords,
     alternates: { canonical },
@@ -42,7 +45,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       title: post.title,
       description: post.excerpt,
       publishedTime: post.publishedAt,
-      modifiedTime: post.publishedAt,
+      modifiedTime: post.markdown?.reviewedAt ?? post.publishedAt,
       authors: [`${SITE_URL}/about`],
       section: post.category,
       tags: post.keywords,
@@ -72,7 +75,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
-      {
+      ...(post.markdown ? [post.markdown.articleJsonLd, post.markdown.faqJsonLd] : [{
         "@type": "BlogPosting",
         mainEntityOfPage: {
           "@type": "WebPage",
@@ -99,7 +102,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         },
         articleSection: post.category,
         keywords: post.keywords.join(", "),
-      },
+      }]),
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -113,7 +116,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
-      <SitePage title={post.title} description={post.excerpt}>
+      <SitePage title={post.markdown?.h1 ?? post.title} description={post.excerpt}>
         <article>
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-soft">
@@ -133,8 +136,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
 
+          {post.markdown && (
+            <p className="mt-5 text-xs leading-6 text-slate-soft">
+              Documentation-based diagnostic guide · Reviewed {formatDate(post.markdown.reviewedAt)}.
+              No hands-on device testing is claimed. Menu labels and supported features vary by version.
+            </p>
+          )}
+
           <SiteProse className="mt-8">
-            {post.sections.map((section, index) => (
+            {post.markdown ? <MarkdownArticle body={post.markdown.body} /> : post.sections.map((section, index) => (
               <section key={section.heading} aria-labelledby={`article-section-${index + 1}`}>
                 <h2 id={`article-section-${index + 1}`}>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => (

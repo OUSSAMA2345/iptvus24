@@ -24,7 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const latestArticleDate = blogPosts.reduce(
-    (latest, post) => (post.publishedAt > latest ? post.publishedAt : latest),
+    (latest, post) => {
+      const modified = post.markdown?.reviewedAt ?? post.publishedAt;
+      return modified > latest ? modified : latest;
+    },
     blogPosts[0]?.publishedAt ?? "2026-11-26",
   );
 
@@ -37,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...blogPosts.map((post) => ({
       url: `${SITE_URL}/blog/${post.slug}`,
-      lastModified: new Date(`${post.publishedAt}T00:00:00Z`),
+      lastModified: new Date(`${post.markdown?.reviewedAt ?? post.publishedAt}T00:00:00Z`),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

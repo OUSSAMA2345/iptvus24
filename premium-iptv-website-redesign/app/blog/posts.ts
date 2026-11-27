@@ -1,4 +1,5 @@
 import { additionalBlogPosts } from "./additional-posts";
+import { loadMarkdownPosts, type MarkdownDetails } from "./markdown-posts";
 import type { BlogCategory } from "./categories";
 
 export { blogCategories, type BlogCategory } from "./categories";
@@ -17,6 +18,7 @@ export type BlogPost = {
   publishedAt: string;
   keywords: string[];
   sections: BlogSection[];
+  markdown?: MarkdownDetails;
 };
 
 export type BlogPostSummary = Pick<
@@ -239,7 +241,7 @@ const originalBlogPosts: BlogPost[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = [...originalBlogPosts, ...additionalBlogPosts];
+export const blogPosts: BlogPost[] = [...loadMarkdownPosts(), ...originalBlogPosts, ...additionalBlogPosts];
 
 if (new Set(blogPosts.map((post) => post.slug)).size !== blogPosts.length) {
   throw new Error("Blog post slugs must be unique.");

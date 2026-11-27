@@ -2,6 +2,7 @@
 @import "./premium.css";
 @import "./spatial.css";
 @import "./realism.css";
+@import "./blog.css";
 
 @theme {
   --color-surface: #ffffff;
