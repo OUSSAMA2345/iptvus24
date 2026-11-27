@@ -1,0 +1,118 @@
+/* Photographic materials: crisp images, restrained reflections, and separate depth planes. */
+.cinema-frame { transform-style: preserve-3d; }
+.premium-hero .hero-image {
+  border: 5px solid #111a26;
+  outline: 1px solid #d1dfee66;
+  box-shadow: 1px 1px 0 #e0f1ffb3, 7px 9px 0 -2px #172233,
+    8px 10px 0 -2px #7b94b073, 18px 25px 0 -6px #080e19,
+    0 46px 65px -24px #000e, 0 0 95px -35px #357dff66;
+}
+.premium-hero .hero-image img { aspect-ratio: 1.49; object-position: 62% 50%; }
+.premium-hero .hero-image::after {
+  background: linear-gradient(118deg,#e7f3ff0d,transparent 32%,transparent 76%,#d7e7ff0a);
+  box-shadow: inset 0 1px 1px #f0f7ff6b, inset 0 -2px 2px #0009;
+}
+/* A reflected copy, not a blurred overlay on the primary photograph. */
+.scene-reflection {
+  position: absolute; z-index: -1; left: 5%; right: 1%; top: calc(100% + 28px);
+  height: 115px; overflow: hidden; opacity: .24; pointer-events: none;
+  transform: perspective(600px) rotateX(42deg) skewX(-8deg);
+  transform-origin: center top;
+  mask-image: linear-gradient(#0009,transparent 88%);
+}
+.scene-reflection img { width: 100%; height: auto; transform: scaleY(-1); }
+.scene-contact-shadow {
+  position: absolute; z-index: -1; left: 7%; right: 4%; bottom: -33px; height: 35px;
+  border-radius: 50%; background: #000a; filter: blur(14px);
+}
+.scene-floor { bottom: -107px; width: 119%; left: -9%; height: 170px; opacity: .7; }
+.scene-backplate {
+  inset: -20px -8px 6px 21px; transform: rotate(4deg);
+  border: 1px solid #cbddff3b;
+  background: linear-gradient(125deg,#a4c7ff13,transparent 40%,#9e90ff0d);
+  box-shadow: inset 0 1px 0 #fff2, 2px 2px 0 #111e35, 3px 3px 0 #a0b9ed26, 0 0 60px #5c92ff0d;
+}
+.film-panel-glass {
+  padding: 6px; border-color: #d4e7ff99;
+  background: linear-gradient(135deg,#c0d8f04d,#152339ed 45%,#23334dd9);
+  box-shadow: inset 0 1px 0 #fff9, inset 1px 0 0 #fff3, 3px 4px 0 -1px #243750,
+    4px 5px 0 -1px #d8eaff70, 0 24px 36px -10px #000a;
+}
+.depth-film-image { height: 99px; }
+.depth-phone-panel { width: 117px; bottom: -67px; }
+.device-phone {
+  position: relative; border: 2px solid #becbd8; padding: 5px; border-radius: 25px;
+  background: linear-gradient(140deg,#9aacc0,#131d2b 22%,#45576b 60%,#080d17);
+  transform: rotate(10deg) rotateY(-16deg) rotateX(5deg);
+  box-shadow: inset 0 0 0 1px #050810, 2px 1px 0 #e4f3ff, 5px 4px 0 #334355,
+    6px 5px 0 #a2b4c9, 9px 8px 0 -1px #142235, -16px 25px 30px -8px #000a, 0 0 40px #5f9cff17;
+}
+.device-phone::before, .device-phone::after {
+  content: ''; position: absolute; left: -4px; width: 2px; border-radius: 2px;
+  background: linear-gradient(#dfebf7,#71849c 30%,#35465c 80%,#d8e8f8);
+}
+.device-phone::before { top: 39px; height: 13px; }
+.device-phone::after { top: 61px; height: 27px; }
+.phone-screen { height: 210px; background: #0a101c; isolation: isolate; }
+.phone-landscape { object-fit: cover; object-position: 65% center; }
+.phone-screen-shade { position: absolute; inset: 0; background: linear-gradient(165deg,#a8d7ff0d,transparent 40%,#010b20dd); }
+.phone-screen::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(115deg,#fff3,transparent 30%,transparent 58%,#fff1 59%,transparent 60%);
+  box-shadow: inset 0 0 0 1px #d7e6ff4d, inset 0 1px 4px #fff4;
+}
+.phone-camera { top: 10px; height: 8px; width: 31%; left: 35%; box-shadow: 0 1px 0 #cadfff33; }
+.phone-tiles i { background: linear-gradient(135deg,#d6e9ff2e,#9bbdea13); backdrop-filter: blur(4px); border-color: #d9edff3b; }
+.glass-control {
+  background: linear-gradient(115deg,#a7c8e836,#15243cdb 40%,#26374edb);
+  border-color: #c0dbff77;
+  box-shadow: inset 0 1px 0 #fff9, inset 0 -1px 0 #0008,
+    2px 3px 0 -1px #1f344d, 3px 4px 0 -1px #8dacc16b, 0 24px 40px -14px #000c;
+}
+.device-stage { padding: 9px; background: linear-gradient(125deg,#657b9938,#0e1725 35%,#293950); }
+.device-stage > img { mix-blend-mode: normal; border: 1px solid #b1c9e633; }
+.device-stage::after {
+  content: ''; position: absolute; z-index: 1; inset: 10px; pointer-events: none;
+  border-radius: 16px; background: linear-gradient(120deg,#dcecff08,transparent 32%);
+  box-shadow: inset 0 1px 0 #ecf7ff40;
+}
+.device-satellite { box-shadow: inset 0 1px 0 #fff9, 2px 3px 0 -1px #344d70, 3px 4px 0 -1px #9ab8e570, 0 18px 28px -6px #0009; }
+.device-card svg { transform: perspective(300px) rotateY(-14deg) rotateX(8deg); filter: drop-shadow(3px 6px 3px #0006); }
+.premium-site .pricing-cinema { opacity: 1; }
+.premium-site .pricing-cinema img { height: 340px; object-position: 50% 48%; }
+.premium-site .pricing-cinema::after { background: linear-gradient(0deg,#070b12 0%,#070b1214 70%,transparent); }
+.premium-site .plan-surface { border-top-color: #c8dfff66; box-shadow: inset 0 1px 0 #fff4, 3px 5px 0 -2px #36537880, 0 30px 50px -20px #000b; }
+.premium-site .plan-featured { box-shadow: inset 0 1px 0 #fff6, 4px 6px 0 -2px #7798c888, 0 35px 60px -20px #000c, 0 0 70px -30px #5b91ff65; }
+html[data-visual-theme="day"] .premium-hero .hero-image {
+  border-color: #e1e8f0; outline-color: #fff;
+  box-shadow: 1px 1px 0 #fff, 7px 9px 0 -2px #879ab2, 8px 10px 0 -2px #fff,
+    18px 25px 0 -6px #c1cede, 0 46px 65px -24px #29436688, 0 0 85px -30px #81aeed55;
+}
+html[data-visual-theme="day"] .scene-contact-shadow { background: #314e7877; }
+html[data-visual-theme="day"] .scene-backplate { box-shadow: inset 0 1px 0 #fff, 2px 2px 0 #c8d8e9, 3px 3px 0 #fff, 0 0 60px #7aa2d31c; }
+html[data-visual-theme="day"] .film-panel-glass,
+html[data-visual-theme="day"] .glass-control {
+  background: linear-gradient(125deg,#fffffff2,#eaf1fbe6 45%,#d2e0f1db);
+  box-shadow: inset 0 1px 0 #fff, 3px 4px 0 -1px #c3d2e6, 4px 5px 0 -1px #fff, 0 24px 36px -12px #36547877;
+}
+html[data-visual-theme="day"] .device-card svg { filter: drop-shadow(3px 6px 3px #31547840); }
+html[data-visual-theme="day"] .premium-site .pricing-cinema::after { background: linear-gradient(0deg,#f8fbff,transparent 85%); }
+html[data-visual-theme="day"] .premium-site .plan-surface { box-shadow: inset 0 1px 0 #fff, 3px 5px 0 -2px #bccde4, 0 30px 50px -20px #345b8b44; }
+html[data-visual-theme="day"] .premium-site .plan-featured { box-shadow: inset 0 1px 0 #fff, 4px 6px 0 -2px #a5bdde, 0 35px 60px -20px #345b8b66, 0 0 70px -30px #89aaff55; }
+@media(max-width:639px) {
+  .premium-hero .hero-image { border-width: 3px; }
+  .premium-hero .hero-image img { aspect-ratio: 1.18; object-position: 69% center; }
+  .depth-film-image { height: 63px; }
+  .depth-phone-panel { width: 80px; bottom: -28px; }
+  .device-phone { border-radius: 18px; padding: 3px; }
+  .phone-screen { height: 145px; }
+  .phone-camera { top: 6px; height: 5px; }
+  .device-phone::before { top: 26px; height: 10px; }
+  .device-phone::after { top: 42px; height: 18px; }
+  .scene-reflection { display: none; }
+  .scene-contact-shadow { height: 20px; bottom: -26px; filter: blur(9px); }
+  .scene-floor { bottom: -75px; height: 120px; }
+  .device-stage { padding: 5px; }
+  .device-stage::after { inset: 6px; }
+  .premium-site .pricing-cinema img { height: 250px; }
+}

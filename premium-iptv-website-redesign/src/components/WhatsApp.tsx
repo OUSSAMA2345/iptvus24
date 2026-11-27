@@ -30,7 +30,7 @@ export function WhatsAppContactSection() {
         <div className="closing-cinema relative isolate overflow-hidden rounded-3xl border border-line bg-[#07111f] shadow-[0_28px_80px_rgba(7,17,31,0.28)]">
           <Image
             src={footerCtaCinema}
-            alt="Luxury private home cinema room with dark wood acoustic walls and an abstract blue horizon on screen"
+            alt="Photorealistic illustration of a private cinema with leather seating, walnut acoustic walls and a mountain lake on screen"
             fill
             quality={84}
             sizes="(max-width: 1280px) 100vw, 1280px"
