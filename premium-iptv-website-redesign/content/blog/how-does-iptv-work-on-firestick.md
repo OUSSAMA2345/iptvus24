@@ -73,7 +73,7 @@
         "name": "Does a Firestick come with IPTV channels?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The device provides an app platform, not automatic access to every television channel. Some legitimate apps offer included or ad-supported content, while paid services require their own entitlement. Independent players generally need a separate authorized source. Read the actual service and app terms rather than assuming that installing software or buying hardware includes the catalogue shown in promotional screenshots."
+          "text": "The device provides an app platform, not automatic access to every television channel. Some legitimate apps offer included or ad-supported content, while paid services require their own entitlement. Independent players generally need a separate authorized source. Read the actual service and app terms rather than assuming that installing software or buying hardware includes the catalogue shown in promotional screenshots. To confirm which setup applies to your model, message support before you subscribe."
         }
       },
       {
@@ -145,6 +145,8 @@ A Fire TV Stick does not turn an ordinary television into a source of free chann
 
 Before following an installation tutorial, check the exact Fire TV model and operating system. Fire OS and Vega OS are different platforms. This explanation begins with that distinction and follows the request from account login to displayed picture, without treating sideloading or a paid player upgrade as content access.
 
+Ready to apply this to your own device? [IPTV service for Fire TV Stick](/iptv-for-firestick) shows the model checks and plans in one place.
+
 ## Table of contents
 
 - [The five components in the room](#the-five-components-in-the-room)
@@ -192,6 +194,8 @@ For ordinary setup, prefer an approved app offered for the device through its le
 
 Record the exact device model, software version, intended app publisher, and the service's supported devices. Confirm that the app can actually be installed on that combination today. This small check prevents the common mistake of buying hardware based only on the word Firestick and discovering that the desired application targets a different operating system.
 
+Our [Fire TV setup checklist](/blog/fire-tv-streaming-setup-checklist) turns these checks into a short list.
+
 ## Choose between an official service app and a neutral player
 
 An official service app usually handles its own catalogue, account login, playback requirements, and guide presentation. It may rely on DRM, device certification, or service-specific interfaces. A generic player is not necessarily an authorized replacement even if the service delivers media over the internet.
@@ -203,6 +207,8 @@ Use only sources you are entitled to access. A very large promised catalogue, a 
 ### One word, several technical arrangements
 
 People often use IPTV broadly for television over internet protocols. Managed operator television and consumer streaming over the open internet can have different network and application designs. For a Fire TV user, the practical question is the documented supported app-and-service combination, not whether every source fits one simplified architecture diagram.
+
+For a neutral comparison of two popular players, see [TiviMate versus IPTV Smarters](/blog/tivimate-vs-iptv-smarters).
 
 ## What happens when you add a playlist
 
@@ -294,11 +300,13 @@ Keep the setup understandable to the household: one clear starting app, a manage
 
 The device boots visibly, joins the intended network, opens the verified app, authenticates to an authorized source, plays representative media, and displays useful guide data where provided. Those are separate acceptance checks. Passing all of them once is a useful baseline, not a promise that remote services or future updates can never introduce problems.
 
+When playback stutters despite a fast connection, use [the Firestick buffering diagnosis](/blog/firestick-buffering-but-internet-is-fine). To see how plan terms compare, [weigh plan lengths side by side](/#compare-plans).
+
 ## Frequently asked questions
 
 ### Does a Firestick come with IPTV channels?
 
-The device provides an app platform, not automatic access to every television channel. Some legitimate apps offer included or ad-supported content, while paid services require their own entitlement. Independent players generally need a separate authorized source. Read the actual service and app terms rather than assuming that installing software or buying hardware includes the catalogue shown in promotional screenshots.
+The device provides an app platform, not automatic access to every television channel. Some legitimate apps offer included or ad-supported content, while paid services require their own entitlement. Independent players generally need a separate authorized source. Read the actual service and app terms rather than assuming that installing software or buying hardware includes the catalogue shown in promotional screenshots. To confirm which setup applies to your model, [message support before you subscribe](/contact).
 
 ### Do I need a separate player for every service?
 

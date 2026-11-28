@@ -144,6 +144,8 @@ XMLTV describes television schedules in a structured text format. It tells a com
 
 Understanding that sequence explains a familiar situation: a live channel plays normally, but its guide row says “No information.” The media path works while the schedule path does not. This article explains the format before the repair steps, with a small fictional example and clear limits on what XMLTV can provide.
 
+Guide data is one part of a complete setup; [see current IPTV plans](/#plans) for the guide features described for each plan.
+
 ## Table of contents
 
 - [EPG, XMLTV, and playlists describe different things](#epg-xmltv-and-playlists-describe-different-things)
@@ -176,6 +178,8 @@ A channel playlist commonly identifies viewing choices and the addresses used to
 ### Why this separation is useful
 
 It lets a service update schedules without changing every stream address, and it lets a player display a guide from a supported schedule source. It also creates integration work: channel keys, coverage, time interpretation, refresh policy, and metadata support must align. A guide is not healthy merely because a URL downloads successfully.
+
+For a non-technical overview, start with [electronic programme guides explained](/blog/electronic-program-guide-explained); [the Firestick IPTV request chain](/blog/how-does-iptv-work-on-firestick) shows where the guide fits.
 
 ## Read the format through a small example
 
@@ -216,6 +220,8 @@ Begin with one known channel. Find its schedule identifier and confirm that prog
 ### Keep organization separate from identity
 
 Renaming a channel for household convenience should ideally change only its display label. Editing its technical identifier can break guide matching. If you are reorganizing a playlist, preserve a private original and test one entry before making broad changes. The [channel-organization guide](/blog/how-to-organize-iptv-channels) explains that distinction in a practical workflow.
+
+In TiviMate, a failed match appears as [No information in the guide](/blog/tivimate-epg-no-information).
 
 ## Understand timestamps and timezone offsets
 
@@ -304,6 +310,8 @@ Keep a small known-good sample for comparison: one channel identifier, a current
 Use the XMLTV project's maintained specification and validate with trusted local tooling. Keep identifiers stable, express time unambiguously, escape XML text correctly, and verify representative dates around timezone changes. Structural validation is only one check; also inspect overlapping events, missing coverage, and the actual data shown in your target player.
 
 For untrusted XML, use parsers configured securely and avoid automatically resolving arbitrary external resources. A consumer guide app should handle this safely, but custom scripts need their own safeguards. Do not fetch a remote DTD or follow embedded references without understanding the parser's behavior and trust boundary.
+
+Players refresh XMLTV differently on each platform: [LG webOS player options](/iptv-for-lg-smart-tv) and [Google TV and Android TV plan options](/iptv-for-android-tv) include device notes worth reading before you choose.
 
 ## Frequently asked questions
 

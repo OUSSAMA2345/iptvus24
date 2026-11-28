@@ -144,6 +144,8 @@ Your phone can be online while a Fire TV Stick cannot even join the same wireles
 
 The goal is restoring a supported secure connection, not disabling router protection until something works. Router menus and Fire TV capabilities vary by model. On managed, workplace, hotel, or shared networks, involve the administrator instead of changing security policy without permission.
 
+Setting up a new stick? [Streaming IPTV on a Firestick](/iptv-for-firestick) starts with the model and network checks covered here.
+
 ## Table of contents
 
 - [Locate the failed connection stage](#locate-the-failed-connection-stage)
@@ -237,6 +239,8 @@ If the stick cannot discover or join any supported nearby network, record that b
 
 Where the model supports an appropriate Ethernet adapter, a wired comparison can be informative. Success over Ethernet points toward differences in the wireless path or policy, not necessarily the internet connection as a whole. Verify adapter compatibility before buying; not every USB accessory works with every streaming device.
 
+If signal strength is the weak point, [improve Wi-Fi reception for a Smart TV](/blog/improve-wifi-signal-for-smart-tv) applies to sticks behind televisions too, and [Ethernet or Wi-Fi](/blog/ethernet-or-wifi-for-tv-streaming) explains when a wired adapter is worth it.
+
 ## DNS changes belong later in the investigation
 
 DNS translates service names into network destinations. It is relevant after the stick has joined the network and obtained usable configuration. It cannot make an undiscoverable SSID appear or correct a rejected Wi-Fi password.
@@ -274,6 +278,8 @@ For a failure isolated to one player, use the [Fire TV app troubleshooting guide
 Send the Fire TV model, software version, router model, exact message, and whether the SSID appears. State whether the stick joins but lacks internet, whether other networks work, and whether Ethernet was tested with a supported adapter. Include the diagnostic result with personal network details redacted.
 
 If the issue affects a whole household network, the router manufacturer or administrator may be the right next contact. If the stick fails across known-supported networks while other clients work, Amazon support can assess device-specific recovery. The evidence should determine the handoff, not the assumption that every connection failure has the same owner.
+
+If the stick shows no picture at all, use [the black-screen-after-logo guide](/blog/firestick-black-screen-after-logo). Once it is online, [check the current packages](/#plans) or [ask about trial options](/contact) before committing to a plan.
 
 ## Frequently asked questions
 

@@ -144,6 +144,8 @@ A large channel catalogue is useful only if the people watching can find what th
 
 This is a player-independent workflow. Exact menus differ, and some functions require a particular edition or paid feature. The official [TiviMate site](https://tivimate.com/) lists favorites, multiple playlists, search, parental controls, and personalization, but that does not establish identical controls in every other application.
 
+Organizing a list for several people? [Choose an IPTV plan](/#plans) with enough device connections for the screens you are organizing for.
+
 ## Table of contents
 
 - [Design around viewing decisions](#design-around-viewing-decisions)
@@ -202,6 +204,8 @@ Keep occasional-use categories accessible through the full list if the applicati
 
 Hiding an adult category from the sidebar may not stop search, direct-number entry, recent-history access, or playback through another profile. Use documented parental locks and account controls for actual restrictions. Test the protected path deliberately without exposing inappropriate content to children during setup.
 
+Hiding a group is not parental protection; use the controls described in [the streaming parental controls guide](/blog/streaming-parental-controls-guide).
+
 ## Build a favorites list that earns its place
 
 Add the channels people actually use, then stop. A shortlist with dozens of speculative additions can become as frustrating as the original catalogue. There is no universal ideal count; the useful size is the one people can navigate without repeated scrolling or searching.
@@ -213,6 +217,8 @@ If your app supports multiple named favorite groups, use a few meaningful labels
 ### Test with the remote, not just the settings screen
 
 Close configuration and complete ordinary tasks: open the guide, move to a favorite, return from playback, and find a less-used channel. Count unnecessary steps informally. A layout that looks elegant in a phone screenshot may be awkward across the room with directional buttons and no keyboard.
+
+Favorite handling differs by player; [our TiviMate and IPTV Smarters comparison](/blog/tivimate-vs-iptv-smarters) looks at how each manages groups and favorites.
 
 ## Handle duplicates as distinct choices
 
@@ -277,6 +283,8 @@ Document the recovery process in ordinary language: how to open favorites, where
 Ask another household member to find a daily channel, an occasional channel, and the programme guide without coaching. Observe where they hesitate and simplify that step. This is a suggested usability exercise, not a claim that any particular layout has been independently tested or proven best for every household.
 
 After the changes survive a refresh, save a new supported backup and label it with the date and app version. Retain an earlier known-working copy if storage permits. Organization is most valuable when it remains easy to explain, easy to use, and possible to recover.
+
+If channels vanish after a refresh rather than being hidden, see [IPTV channels not loading](/blog/iptv-channels-not-loading). Group and favorite tools vary by platform — see [IPTV on Samsung Tizen TVs](/iptv-for-samsung-smart-tv) or [set up IPTV on Android TV](/iptv-for-android-tv) for device notes.
 
 ## Frequently asked questions
 

@@ -128,7 +128,7 @@
         "name": "How much free space should I keep?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "There is no universal figure that guarantees every device and application will work. Leave practical room for updates, temporary installation files, and database rebuilding, and follow any explicit manufacturer or app requirements. Measure your actual usage rather than treating a fixed percentage as a performance promise. If warnings persist despite apparently ample space, report the exact storage destination and error to support."
+          "text": "There is no universal figure that guarantees every device and application will work. Leave practical room for updates, temporary installation files, and database rebuilding, and follow any explicit manufacturer or app requirements. Measure your actual usage rather than treating a fixed percentage as a performance promise. If warnings persist despite apparently ample space, report the exact storage destination and error to support. If you are unsure what your player and guide need, reach our setup team with the device model."
         }
       }
     ]
@@ -143,6 +143,8 @@ A storage warning is not an instruction to erase every application. The useful q
 **When Android TV storage is running out, inspect the storage breakdown, remove files you recognize, uninstall unused apps through settings, and clear temporary cache where supported. Preserve credentials and backups before clearing app data. Consider USB expansion only after checking the exact device's support and formatting consequences.**
 
 This guide covers Android TV and related Google TV devices, whose menus vary by manufacturer and software generation. It does not assume that every television supports removable storage, movable apps, a global cache button, or the same amount of usable internal capacity.
+
+Buying a box or stick with more headroom? [IPTV plans for Android TV users](/iptv-for-android-tv) include the device checks to make first.
 
 ## Table of contents
 
@@ -189,6 +191,8 @@ Inspect storage by category and then by application where possible. An IPTV play
 ### If Settings is slow or unstable
 
 Restart normally and try again before adding another utility. Avoid repeated power cuts during system work. If the device cannot open ordinary settings or reports inconsistent capacity after a restart, record the state and consult the manufacturer. A storage warning can require software investigation rather than indiscriminate deletion.
+
+Menu paths differ between Android TV and Google TV; [the Google TV app checklist](/blog/google-tv-streaming-app-checklist) and [storage and updates on streaming devices](/blog/streaming-device-storage-and-updates) cover both.
 
 ## Remove obvious user files first
 
@@ -238,6 +242,8 @@ If the player stores many artwork assets or unused catalogues, use its own docum
 
 Some cache growth is expected. The important question is whether storage stabilizes under ordinary use or grows without a reasonable bound. Record sizes after a restart and after a typical viewing session. If one app expands unusually, send the version, settings, and observed size changes to its developer without claiming a memory leak you have not verified.
 
+Large imports can also stall a player; see [TiviMate stuck processing a playlist](/blog/tivimate-playlist-is-processed-please-wait).
+
 ## Understand USB storage before formatting
 
 Google describes internal and removable storage modes on supported Android TV devices. Internal storage can support additional app data in the device's managed arrangement; removable storage is intended for moving content between devices and does not provide the same app-moving behavior in its documented workflow.
@@ -278,6 +284,8 @@ If a player continues to exit despite reclaimed space, follow the [app-crash wor
 
 For support, provide the model, OS version, initial and final available space, largest app categories, exact error, and whether external storage is attached. Describe what was removed and whether space returned after normal use. That report is more useful than saying the TV was “cleaned” without identifying which data changed.
 
+When you do replace the device, [flexible IPTV plan lengths](/#plans) let you match the subscription term to the hardware you plan to keep.
+
 ## Frequently asked questions
 
 ### Is Android TV storage the same as RAM?
@@ -310,7 +318,7 @@ Not necessarily. It can erase accounts and apps, but the same workload, recurrin
 
 ### How much free space should I keep?
 
-There is no universal figure that guarantees every device and application will work. Leave practical room for updates, temporary installation files, and database rebuilding, and follow any explicit manufacturer or app requirements. Measure your actual usage rather than treating a fixed percentage as a performance promise. If warnings persist despite apparently ample space, report the exact storage destination and error to support.
+There is no universal figure that guarantees every device and application will work. Leave practical room for updates, temporary installation files, and database rebuilding, and follow any explicit manufacturer or app requirements. Measure your actual usage rather than treating a fixed percentage as a performance promise. If warnings persist despite apparently ample space, report the exact storage destination and error to support. If you are unsure what your player and guide need, [reach our setup team](/contact) with the device model.
 
 ## Conclusion
 

@@ -129,7 +129,7 @@
         "name": "Does buying a premium player guarantee a complete EPG?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Paid player features can improve guide handling, but they do not create missing schedule data or guarantee a provider's coverage. Check what the app purchase includes and what the content or guide provider supplies. These may be separate products with separate support responsibilities."
+          "text": "No. Paid player features can improve guide handling, but they do not create missing schedule data or guarantee a provider's coverage. Check what the app purchase includes and what the content or guide provider supplies. These may be separate products with separate support responsibilities. If you are unsure which part of your setup supplies the guide, ask which player suits your device before buying anything."
         }
       }
     ]
@@ -146,6 +146,8 @@ The channels play, but the guide still describes yesterday's programmes. Pressin
 This article covers electronic programme guide troubleshooting across compatible players. Specific menus depend on the application and version. For the TiviMate-specific “No information” display, use the separate [TiviMate guide](/blog/tivimate-epg-no-information).
 
 For the underlying file structure and timestamp rules, read [what XMLTV EPG data contains](/blog/what-is-xmltv-epg). The workflow below is for diagnosing a guide that has stopped updating, rather than learning the format from scratch.
+
+If you are comparing services because the guide matters to your household, [see what each plan includes](/#plans) — guide features can depend on the channel and device.
 
 ## Table of contents
 
@@ -267,6 +269,8 @@ If that row now works, mapping deserves further attention. It does not mean ever
 
 For many mismatches, ask the playlist provider to align its channel identifiers with the documented guide. Maintaining hundreds of personal overrides can become fragile when a lineup changes. Keep a backup before making bulk adjustments.
 
+Renaming or regrouping channels can break these matches, so read [how to organize IPTV channels without losing guide data](/blog/how-to-organize-iptv-channels) before tidying the list. If the channels themselves stop opening, switch to [the channels-not-loading checklist](/blog/iptv-channels-not-loading).
+
 ## Handle time zones without double correction
 
 A guide with titles in the wrong time slots is not the same problem as a guide with no titles. Repeated downloads will not correct a consistent interpretation error.
@@ -284,6 +288,8 @@ Suppose the source already includes the correct offset and the player converts i
 Use a known programme on a known regional feed as a reference. If every source is wrong, investigate the device and global player settings. If one source alone is consistently displaced after those checks, investigate that source or a documented source-specific offset.
 
 Do not change the system clock merely to make one channel's schedule line up. It can make other apps, certificate checks and programme reminders incorrect.
+
+Players on Android TV and Google TV usually expose the offset setting next to the EPG source; our [Android TV IPTV setup](/iptv-for-android-tv) page lists what to share with support when the guide still looks shifted.
 
 ## Rebuild local guide data safely
 
@@ -332,6 +338,8 @@ Keep the working source, its intended region and a short mapping note. After a l
 
 A useful report includes the player/version, source label, last update result, two affected channels, requested date range and a description of what still works. Redact the full URL, query string and account credentials. If you provide an XML excerpt, limit it to the relevant channel and programme with private identifiers removed where practical.
 
+Before switching services over a guide problem, [compare plan features](/#compare-plans) and ask what EPG coverage is described for the channels you actually watch.
+
 ## Frequently asked questions
 
 ### Why does my IPTV guide show yesterday after a successful update?
@@ -364,7 +372,7 @@ Only if you have permission to use it and it covers the correct stations, region
 
 ### Does buying a premium player guarantee a complete EPG?
 
-No. Paid player features can improve guide handling, but they do not create missing schedule data or guarantee a provider's coverage. Check what the app purchase includes and what the content or guide provider supplies. These may be separate products with separate support responsibilities.
+No. Paid player features can improve guide handling, but they do not create missing schedule data or guarantee a provider's coverage. Check what the app purchase includes and what the content or guide provider supplies. These may be separate products with separate support responsibilities. If you are unsure which part of your setup supplies the guide, [ask which player suits your device](/contact) before buying anything.
 
 ## Conclusion
 

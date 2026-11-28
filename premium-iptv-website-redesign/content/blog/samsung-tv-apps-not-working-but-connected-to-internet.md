@@ -120,7 +120,7 @@
         "name": "What if only one IPTV player fails?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Use an app-specific workflow rather than assuming Smart Hub is broken. Record whether the failure occurs at launch, activation, provider login, catalogue, guide, or playback. Another app playing successfully narrows the scope but does not prove that the player's destination is reachable. Preserve the working television configuration while the developer or content service investigates the selective failure."
+          "text": "Use an app-specific workflow rather than assuming Smart Hub is broken. Record whether the failure occurs at launch, activation, provider login, catalogue, guide, or playback. Another app playing successfully narrows the scope but does not prove that the player's destination is reachable. Preserve the working television configuration while the developer or content service investigates the selective failure. Before replacing the player, ask a compatibility question about your TV model."
         }
       },
       {
@@ -143,6 +143,8 @@ The connection icon on a Samsung television answers a narrower question than mos
 **When Samsung TV apps fail despite an internet connection, test two unrelated apps, cold boot the television, run Network Status and the Smart Hub Connection Test, and check official software updates. Investigate the failed service layer before changing DNS, resetting network settings, or resetting Smart Hub.**
 
 This is a shared-platform guide. If only one IPTV player fails while other apps play normally, use the [Samsung IPTV app guide](/blog/iptv-app-not-working-on-samsung-tv) for the narrower account, compatibility, and playback workflow. Keeping those scopes separate prevents a single service outage from becoming a household-wide reset.
+
+Planning to [watch IPTV on a Samsung TV](/iptv-for-samsung-smart-tv)? Fix the shared Smart Hub problem first; our setup page covers app availability and plans.
 
 ## Table of contents
 
@@ -233,6 +235,8 @@ Review parental controls, security filters, and device-specific schedules with t
 
 A router restart affects everyone using it. A DNS or security change may affect work devices and household protections. Document original settings and obtain permission. Managed networks may require specific resolvers or device registration, so an apparently helpful consumer workaround can break the intended access process.
 
+For signal problems, [improving Wi-Fi reception for a Smart TV](/blog/improve-wifi-signal-for-smart-tv) covers placement and band choice; if one app never opens, try [the app-won't-open checklist](/blog/streaming-app-wont-open).
+
 ## Use DNS as a reversible comparison, not a ritual
 
 Name resolution can fail while basic network connectivity appears present. Samsung includes manual DNS configuration among some support procedures, but it should remain a targeted comparison. Record the existing setting, use an appropriate trusted resolver where permitted, and retest the same apps.
@@ -273,6 +277,8 @@ Send Samsung the model, software version, exact errors, time with timezone, two-
 
 For the network administrator, emphasize which destinations or app categories fail and whether another path works. For an individual streaming service, emphasize its own launch, login, catalogue, or playback stage. Routing the same clear evidence to the correct owner avoids another cycle of generic resets.
 
+Once apps load again, [streaming on Samsung Smart TVs](/blog/samsung-smart-tv-streaming-setup) covers first-time app checks. For a second room with an LG television, see [IPTV service for LG TVs](/iptv-for-lg-smart-tv).
+
 ## Frequently asked questions
 
 ### Why can my Samsung TV be online while apps fail?
@@ -301,7 +307,7 @@ Not before investigating the shared platform and connection. Simultaneous indepe
 
 ### What if only one IPTV player fails?
 
-Use an app-specific workflow rather than assuming Smart Hub is broken. Record whether the failure occurs at launch, activation, provider login, catalogue, guide, or playback. Another app playing successfully narrows the scope but does not prove that the player's destination is reachable. Preserve the working television configuration while the developer or content service investigates the selective failure.
+Use an app-specific workflow rather than assuming Smart Hub is broken. Record whether the failure occurs at launch, activation, provider login, catalogue, guide, or playback. Another app playing successfully narrows the scope but does not prove that the player's destination is reachable. Preserve the working television configuration while the developer or content service investigates the selective failure. Before replacing the player, [ask a compatibility question](/contact) about your TV model.
 
 ### When should I contact Samsung rather than my provider?
 

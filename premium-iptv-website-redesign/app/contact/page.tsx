@@ -4,10 +4,13 @@ import SitePage from "../ui/SitePage";
 import ContactForm from "./ContactForm";
 import { pageMetadata } from "../metadata";
 import { WHATSAPP_NUMBER, WhatsAppButton } from "../../src/components/WhatsApp";
+import { getSupportingArticles } from "../commercial/supporting-articles";
 
 export const metadata: Metadata = pageMetadata("Contact Support", "Contact IPTVUS24 on WhatsApp or save a contact request through the support form.", "/contact");
 
 export default function ContactPage() {
+  // Commercial page → related articles: guides that send readers here for a pre-order check.
+  const guides = getSupportingArticles("/contact", 4);
   return (
     <SitePage title="Contact IPTVUS24" description="WhatsApp is our primary contact method. You can also save a contact request through the support form.">
       <div className="grid gap-8 text-sm leading-7 text-slate-soft lg:grid-cols-[0.8fr_1.4fr]">
@@ -27,6 +30,17 @@ export default function ContactPage() {
           <div>
             <h2 className="font-display text-xl font-extrabold leading-tight text-ink">Frequently asked questions</h2>
             <p className="mt-3">See the <Link className="font-bold text-brand underline" href="/#faq">FAQ section</Link> for setup, compatible devices, service, and billing information.</p>
+          </div>
+          <div>
+            <h2 className="font-display text-xl font-extrabold leading-tight text-ink">Device setup pages</h2>
+            <p className="mt-3">Check the notes for <Link className="font-bold text-brand underline" href="/iptv-for-firestick">Firestick</Link>, <Link className="font-bold text-brand underline" href="/iptv-for-android-tv">Android TV</Link>, <Link className="font-bold text-brand underline" href="/iptv-for-samsung-smart-tv">Samsung</Link> or <Link className="font-bold text-brand underline" href="/iptv-for-lg-smart-tv">LG</Link> before you message us.</p>
+            {guides.length > 0 && (
+              <ul className="mt-3 list-disc space-y-1 pl-5">
+                {guides.map((post) => (
+                  <li key={post.slug}><Link className="font-semibold text-brand underline" href={`/blog/${post.slug}`} prefetch={false}>{post.markdown?.h1 ?? post.title}</Link></li>
+                ))}
+              </ul>
+            )}
           </div>
           <div>
             <h2 className="font-display text-xl font-extrabold leading-tight text-ink">Service updates</h2>

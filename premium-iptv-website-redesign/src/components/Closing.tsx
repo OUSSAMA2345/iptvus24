@@ -21,7 +21,7 @@ export function Footer() {
             </div>
             <p className="mt-2 text-xs text-slate-soft">{WHATSAPP_NUMBER} · Response times may vary</p>
           </div>
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
             {footerCols.map((column) => (
               <nav key={column.title} aria-label={`${column.title} links`}>
                 <h2 className="text-xs font-extrabold uppercase tracking-wide text-ink">{column.title}</h2>

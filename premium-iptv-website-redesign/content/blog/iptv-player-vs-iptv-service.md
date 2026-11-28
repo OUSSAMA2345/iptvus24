@@ -82,7 +82,7 @@
         "name": "Is a player subscription the same as a provider subscription?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. One can pay for application functionality while the other pays for content access. They may have different merchants, renewal dates, licences, and refund processes. Keep receipts separately and identify which entitlement has failed before paying again. A player that still opens normally can coexist with an expired content account, and renewing the wrong product will not restore the missing entitlement."
+          "text": "No. One can pay for application functionality while the other pays for content access. They may have different merchants, renewal dates, licences, and refund processes. Keep receipts separately and identify which entitlement has failed before paying again. A player that still opens normally can coexist with an expired content account, and renewing the wrong product will not restore the missing entitlement. If you are unsure which one a quote covers, get help choosing a setup."
         }
       },
       {
@@ -145,6 +145,8 @@ A payment receipt for an IPTV player does not necessarily buy a single televisio
 **An IPTV player is software that presents and plays compatible media sources. An IPTV service supplies authorized content access and the account or delivery system behind it.** Some legitimate services bundle their own app with content, while independent players require a separate source. Check the actual product terms instead of treating every use of “IPTV” as the same offer.
 
 This explanation is not an endorsement of a particular provider or a certification that a catalogue is licensed. It gives you a practical way to read product pages, compare costs, protect credentials, and identify which company can fix a problem.
+
+If you are comparing services now, our [side-by-side plan comparison](/#compare-plans) lists every term and price before you contact anyone.
 
 ## Table of contents
 
@@ -222,6 +224,8 @@ Do not assume the same company processes every payment. The app store may handle
 
 Imagine paying once for a player's enhanced guide, then separately subscribing to a licensed channel package. If the channel account expires, the guide interface may still open while playback fails. Paying the player developer again will not renew the media account. The receipt boundaries tell you which purchase needs attention.
 
+A worked method is in [how to compare streaming plan prices](/blog/compare-streaming-plan-prices), and [how to evaluate an internet TV service](/blog/choose-an-internet-tv-service) covers seller identity and terms.
+
 ## Device licences and simultaneous streams are different limits
 
 A player can permit installation on several devices while a content account allows only a smaller number of concurrent streams. Conversely, a service may allow several streams but the player licence may cover only certain installations or platforms. Read both sets of terms.
@@ -233,6 +237,8 @@ A household comparing two players should usually stop one before starting the ot
 ### A paid feature is not extra entitlement
 
 Unlocking four-view display capability in an app does not necessarily authorize four media sessions. Likewise, a recording button does not create an archive or legal permission. Treat software capability, service entitlement, and user rights as separate checks before relying on advanced features.
+
+Device-specific activation rules are summarised on [IPTV for Samsung televisions](/iptv-for-samsung-smart-tv) and [IPTV for LG televisions](/iptv-for-lg-smart-tv).
 
 ## Installation and login should follow the correct trust chain
 
@@ -288,7 +294,7 @@ Not necessarily, and independent players commonly require you to provide your ow
 
 ### Is a player subscription the same as a provider subscription?
 
-No. One can pay for application functionality while the other pays for content access. They may have different merchants, renewal dates, licences, and refund processes. Keep receipts separately and identify which entitlement has failed before paying again. A player that still opens normally can coexist with an expired content account, and renewing the wrong product will not restore the missing entitlement.
+No. One can pay for application functionality while the other pays for content access. They may have different merchants, renewal dates, licences, and refund processes. Keep receipts separately and identify which entitlement has failed before paying again. A player that still opens normally can coexist with an expired content account, and renewing the wrong product will not restore the missing entitlement. If you are unsure which one a quote covers, [get help choosing a setup](/contact).
 
 ### Can I use any IPTV service with any player?
 

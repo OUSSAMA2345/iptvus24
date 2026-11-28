@@ -112,7 +112,7 @@
         "name": "Can I use both players with one content account?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Only if the service permits the clients and usage pattern. Close one stream before opening another unless your account explicitly allows concurrent use. Installed-device allowances and active-stream limits are different concepts. Recording or multiview may also consume sessions. Check provider terms rather than assuming that buying either player increases the media account's entitlement."
+          "text": "Only if the service permits the clients and usage pattern. Close one stream before opening another unless your account explicitly allows concurrent use. Installed-device allowances and active-stream limits are different concepts. Recording or multiview may also consume sessions. Check provider terms rather than assuming that buying either player increases the media account's entitlement. Simultaneous-connection allowances vary, so check the plan-by-plan comparison."
         }
       },
       {
@@ -143,6 +143,8 @@ The useful comparison between TiviMate and IPTV Smarters is not a universal winn
 **Choose TiviMate as a candidate for remote-first Android TV viewing when its guide and playlist tools match your needs. Consider the appropriate official Smarters edition when its supported platform and library workflow fit your devices. Verify current publisher listings and required features before paying or migrating. Neither player supplies channels by itself.**
 
 This is a documentation-based comparison, not a hands-on speed test or a measured ranking. It avoids fixed prices, universal device counts, and claims that one app has better “servers.” Media quality and availability depend heavily on the separate content source, network, device, and actual app build.
+
+Both players are commonly used on Android-based devices; [IPTV for Android TV](/iptv-for-android-tv) covers device checks and plans if you have not chosen hardware yet.
 
 ## Table of contents
 
@@ -179,6 +181,8 @@ Smarters uses related product names and editions across its ecosystem. Start fro
 
 Do not equate the Fire TV brand with a single Android-based operating system. Amazon introduced Vega OS on the Fire TV Stick 4K Select while continuing Fire OS devices. Its [Vega announcement](https://developer.amazon.com/apps-and-games/blogs/2025/09/announcing-vega-os) makes that distinction explicit. An Android APK is not a universal installation method for every current Fire TV model.
 
+TiviMate is not a native LG or Samsung app — see [IPTV app not available on LG TV](/blog/iptv-app-not-available-on-lg-tv) — while [the Android TV player setup checklist](/blog/android-tv-streaming-player-setup) covers installation basics.
+
 ## Define three real viewing tasks
 
 Write down what you actually do: browse a live grid, find a movie or series, switch between authorized sources, use captions, or resume a programme. Then decide which tasks are essential and which are optional. A long feature checklist can obscure the two actions that determine daily usability.
@@ -202,6 +206,8 @@ For either app, inspect how a source refresh affects favorites and ordering. Try
 ### Test a small organization change
 
 Add a few genuine favorites, hide one irrelevant category if supported, and run a normal refresh. Check whether the arrangement survives. This reveals practical maintenance behavior without reorganizing the entire catalogue twice. The [channel-organization workflow](/blog/how-to-organize-iptv-channels) helps structure that test without damaging technical identifiers.
+
+Guide-mapping problems specific to TiviMate are covered in [TiviMate EPG no information](/blog/tivimate-epg-no-information).
 
 ## Recording, multiview, and catch-up need prerequisites
 
@@ -295,6 +301,8 @@ It is reasonable for different devices to use different players when the service
 
 Write a brief conclusion in your own terms: this edition works on this device, supports this source method, and makes these three tasks easy. Add the date and version. That note is more useful after an update or device replacement than a generic winner badge whose assumptions you cannot reconstruct.
 
+Once you know which player suits your device, [look at the plan options](/#plans); on Fire TV, [IPTV for Fire TV Cube and sticks](/iptv-for-firestick) adds Fire OS and Vega OS notes.
+
 ## Frequently asked questions
 
 ### Is TiviMate better than IPTV Smarters?
@@ -319,7 +327,7 @@ This article has not independently measured buffering rates. Delivery depends on
 
 ### Can I use both players with one content account?
 
-Only if the service permits the clients and usage pattern. Close one stream before opening another unless your account explicitly allows concurrent use. Installed-device allowances and active-stream limits are different concepts. Recording or multiview may also consume sessions. Check provider terms rather than assuming that buying either player increases the media account's entitlement.
+Only if the service permits the clients and usage pattern. Close one stream before opening another unless your account explicitly allows concurrent use. Installed-device allowances and active-stream limits are different concepts. Recording or multiview may also consume sessions. Check provider terms rather than assuming that buying either player increases the media account's entitlement. Simultaneous-connection allowances vary, so check the [plan-by-plan comparison](/#compare-plans).
 
 ### Should I trust comparison pages quoting fixed prices?
 

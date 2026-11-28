@@ -144,6 +144,8 @@ A MAG box can finish booting and still fail to reach its television service. Tha
 
 This documentation-based guide concerns Linux MAG models with an embedded portal. MAG-branded Android devices and operator-customized firmware can have different menus. Follow the manual for the exact model on the underside of your device, and use only services authorized to distribute the content you watch.
 
+Comparing set-top boxes with app-based setups? [Browse IPTV packages](/#plans) and ask support which devices apply before ordering.
+
 ## Table of contents
 
 - [Identify what has actually loaded](#identify-what-has-actually-loaded)
@@ -223,6 +225,8 @@ Close any other active session before testing if the service restricts simultane
 
 If the operator confirms a suspension or rights-related restriction, resolve that through the account process. DNS changes, firmware modifications, and alternate identities cannot create legitimate entitlement. Keep the troubleshooting focused on restoring authorized access rather than avoiding enforcement.
 
+Before replacing a MAG box, [check device compatibility](/blog/check-device-compatibility) for the alternative you have in mind; app-based options such as [Android TV IPTV setup help](/iptv-for-android-tv) follow a different setup path.
+
 ## When the portal responds only on another network
 
 A controlled second-network test can help, provided the box and operator support it and you understand mobile-data charges. Use the same device, same saved portal, and same account. Change the network alone, then record whether the failure occurs before the interface, during login, or when playback starts.
@@ -236,6 +240,8 @@ Return to the original network and review recent changes with its administrator.
 A wildly wrong device clock can interfere with time-sensitive connections or authentication. Use the model's documented date, time, and network-time controls. The correct time server and menu depend on firmware and operator configuration; copying an unfamiliar server address from a forum is unnecessary.
 
 Do not assume that every loading failure involves certificates. Older middleware, redirected addresses, and operator-controlled software may fail in different ways. Report the actual message and clock state rather than presenting an unverified technical explanation as a diagnosis.
+
+If the portal loads but streams stall, the method in [streaming buffering when your internet is fine](/blog/streaming-buffering-but-internet-is-fine) separates network capacity from source problems.
 
 ## Recovery without destroying the configuration
 
@@ -272,6 +278,8 @@ After recovery, test more than the home screen. Open the channel list, play an a
 Send the model, firmware, exact error, approximate failure time with timezone, and whether embedded settings open. Add the active connection type, whether the box has a usable address, and the result of one permitted alternate-network comparison. Confirm privately that the saved portal matches the latest operator instructions.
 
 Ask one specific question: is the failure at endpoint availability, device authorization, middleware compatibility, or stream delivery? That gives support something to verify. “Nothing works” plus five unrelated changes is harder to investigate than a short sequence with observable outcomes.
+
+If the portal loads but the programme guide is stale, see [IPTV EPG not updating](/blog/iptv-epg-not-updating). For questions about using a MAG device with our service, [talk to support about setup](/contact).
 
 ## Frequently asked questions
 

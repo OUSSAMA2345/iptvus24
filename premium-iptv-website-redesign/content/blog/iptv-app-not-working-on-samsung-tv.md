@@ -145,6 +145,8 @@ A Samsung television can display its home screen perfectly while one IPTV applic
 
 This guide focuses on a specific IPTV player or service app on Samsung Tizen televisions. If several unrelated applications fail despite an apparently working connection, the [Samsung connected-but-apps-fail guide](/blog/samsung-tv-apps-not-working-but-connected-to-internet) provides the broader network and Smart Hub investigation. Menu labels vary by model year and region.
 
+Still choosing a setup for this television? [IPTV for Samsung Smart TV](/iptv-for-samsung-smart-tv) explains Tizen app availability and plans.
+
 ## Table of contents
 
 - [Decide which of four failures you have](#decide-which-of-four-failures-you-have)
@@ -193,6 +195,8 @@ After the restart, open the same app and repeat the original failing action. If 
 
 Do not simultaneously reboot the router, change DNS, clear app settings, and renew the account. You may regain access without learning which condition mattered. A short written sequence is enough: original symptom, cold boot, result. Only proceed when you know whether that first intervention changed the behavior.
 
+For first-time checks on the same TV, see [streaming on a Samsung Smart TV](/blog/samsung-smart-tv-streaming-setup); if the app closes by itself, [IPTV app keeps crashing](/blog/iptv-app-keeps-crashing) covers the recovery order.
+
 ## Update the television and inspect the app listing
 
 Samsung documents software updates under Settings, All Settings, Support, Software Update, and Update Now on supported televisions. Its [software-update guide](https://www.samsung.com/us/support/answer/ANS10002051/) also explains that an update option can be unavailable while a streaming application is running. Switch out of the app and consult the model's instructions.
@@ -218,6 +222,8 @@ Check credentials privately against the service's current instructions. A dashbo
 ### Avoid paying the wrong party twice
 
 Before making another payment, establish what the original purchase covered and whether the account has been provisioned. Keep receipts and official contact details. A stranger offering “Samsung activation” in response to a public complaint may have no connection to the app or the provider. Technical failure is not sufficient evidence that a new subscription is required.
+
+That distinction is explained in depth in [IPTV player vs IPTV service](/blog/iptv-player-vs-iptv-service). If you are unsure which activation your setup needs, [confirm setup steps before paying](/contact).
 
 ## When the app opens but channels do not play
 
@@ -272,6 +278,8 @@ Enable supported automatic app updates where appropriate and leave the televisio
 Provide the model code, software version, app version, exact symptom, time with timezone, and whether another app can play video. Add the result of cold booting and any reinstall attempt. For service support, list a few affected channels privately; for developer support, describe the precise navigation or playback action that fails.
 
 A useful report also identifies what is still working. If Samsung's store loads and another app plays but this player exits after sign-in, say so. That boundary directs attention toward the app or account rather than prompting another generic router reset.
+
+Households with a Samsung TV in one room and an LG in another can check [IPTV for LG Smart TV](/iptv-for-lg-smart-tv) as well, then [pick a plan that fits your household](/#plans).
 
 ## Frequently asked questions
 

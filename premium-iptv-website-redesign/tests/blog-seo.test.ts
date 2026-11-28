@@ -54,7 +54,9 @@ describe("priority-article SEO contracts", () => {
       const graph = getArticleStructuredData(post)["@graph"];
       const faq = graph.find(g => g["@type"] === "FAQPage") as unknown as { mainEntity: { "@type": string; name: string; acceptedAnswer: { "@type": string; text: string } }[] };
       expect(faq.mainEntity).toHaveLength(8);
-      const faqBody = post.markdown!.body.split("## Frequently asked questions\n")[1].split("\n## Conclusion")[0];
+      // Visible answers may contain plain internal links; schema text is the same answer without link markup.
+      const faqBody = post.markdown!.body.split("## Frequently asked questions\n")[1].split("\n## Conclusion")[0]
+        .replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, "$1");
       for (const q of faq.mainEntity) {
         expect(q["@type"]).toBe("Question");
         expect(q.acceptedAnswer["@type"]).toBe("Answer");

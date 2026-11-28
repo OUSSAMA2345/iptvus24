@@ -144,6 +144,8 @@ A fast speed test and a buffering video can both be accurate observations. The t
 
 This guide covers streaming generally, including authorized live television and on-demand services. It distinguishes true delivery buffering from dropped frames, app freezes, and display changes. Those symptoms can look similar from the sofa but call for different evidence.
 
+Choosing a plan for a busy household? [IPTV subscription plans](/#plans) list device-connection allowances, which are a separate limit from your home bandwidth.
+
 ## Table of contents
 
 - [First decide whether it is actually buffering](#first-decide-whether-it-is-actually-buffering)
@@ -225,6 +227,8 @@ Consider the total simultaneous workload, not just the stream being watched. Mul
 
 Do not silently disable other household devices to improve one television. Explain the comparison and choose a convenient interval. A useful diagnosis should lead to a sustainable arrangement, not a setup that works only when nobody else uses the network.
 
+[Home network bandwidth for streaming](/blog/home-network-bandwidth-for-streaming) shows how to estimate household load, and [what affects streaming quality](/blog/what-affects-streaming-quality) summarises the other factors.
+
 ## Determine whether the source is selective
 
 Compare another title or channel within the same service, then another legitimate service on the same device. Record the result of each. If only one item fails, ask the service about that resource. If one service fails across devices while others work, its delivery path or account becomes a more relevant investigation.
@@ -244,6 +248,8 @@ High-resolution or demanding media can expose device limitations even on a good 
 Use a provider-supported lower-quality variant as a comparison where available. If the app offers a documented decoder option, record the original value and change only one setting. Software decoding can increase CPU load; it is not a universal cure. A generic player may not support protected services that require an approved client.
 
 Check official app and system updates and available storage. If the app exits or freezes, follow the [crash guide](/blog/iptv-app-keeps-crashing). If the device specifically is a Fire TV Stick, the [Fire TV buffering article](/blog/firestick-buffering-but-internet-is-fine) adds placement and model-specific considerations without assuming all Fire TV models share an operating system.
+
+If an older device struggles to decode, the [Fire TV IPTV guide and plans](/iptv-for-firestick) and [Android TV and Google TV setup notes](/iptv-for-android-tv) pages list what to check before replacing it.
 
 ## DNS and VPN comparisons need careful interpretation
 
@@ -272,6 +278,8 @@ Keep the supported setup simple, current, and recoverable. Preserve credentials 
 Provide the device and app versions, affected title or channel, exact time with timezone, symptom, and whether controls remain responsive. Add same-device alternate-service results, wired-versus-wireless results where available, and the relevant speed-test endpoint and timing. Remove private URLs and tokens.
 
 Ask the provider to inspect the specific media interval, the ISP to investigate a demonstrated shared-path issue, or the device developer to investigate reproducible format-specific failure. That evidence makes the next conversation more productive than insisting that a single speed result proves nobody else can be responsible.
+
+For a shorter version of this method, see [the step-by-step buffering checklist](/blog/troubleshoot-buffering-step-by-step). If buffering persists across devices, [send your comparison results to support](/contact).
 
 ## Frequently asked questions
 

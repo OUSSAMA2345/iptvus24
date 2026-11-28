@@ -144,6 +144,8 @@ Seeing the Amazon logo and then losing the picture is useful evidence. The telev
 
 This guide concerns the display before you reach the Fire TV home screen. If the home screen works and only one video is black, investigate that application's media and protection requirements instead. A black screen during a brief format transition is not the same as an indefinitely missing interface.
 
+Choosing or replacing a Fire TV device? [Fire TV Stick IPTV options](/iptv-for-firestick) covers model and software checks before ordering.
+
 ## Table of contents
 
 - [Classify the screen before changing anything](#classify-the-screen-before-changing-anything)
@@ -234,6 +236,8 @@ A display chain can also encounter content-protection compatibility during playb
 
 If a receiver is involved, check its selected input and current firmware through the manufacturer's process. A receiver displaying its own menu does not prove it successfully passes the Fire TV signal. Reintroducing components individually provides much clearer evidence than toggling every HDMI option simultaneously.
 
+If the home screen appears but a video shows black with sound, follow [the black-screen-with-audio checklist](/blog/streaming-black-screen-with-audio) instead.
+
 ## Test another display before buying a replacement
 
 If available, connect the same Fire TV and supported power equipment directly to another compatible television. Keep other variables minimal. If it works there, the original display chain deserves attention. If it fails on both, the device, power setup, or system state remains a stronger area to investigate.
@@ -245,6 +249,8 @@ If you cannot access another display, provide support with the comparisons you c
 ### Where networking fits
 
 Network trouble can affect home-screen services and application loading, but it does not explain every lost HDMI picture. Do not start by changing DNS when the television reports no signal. Once the interface is visible, follow the [Fire TV Wi-Fi guide](/blog/firestick-not-connecting-to-wifi-but-other-devices-will) if connection diagnostics actually show a network failure.
+
+If you do replace the device, [speak with the setup team](/contact) about which models suit the player you use.
 
 ## Common mistakes after a black screen
 
@@ -265,6 +271,8 @@ Check official Fire TV and television updates when the interface and power are s
 Send the Fire TV model, TV model, power arrangement, HDMI chain, exact logo behavior, and whether another port or direct connection worked. Mention any update warning and whether audio or remote navigation remained active. Explain the resolution-cycling result if attempted through the official method.
 
 Ask whether the next supported step concerns display negotiation, power, recovery, or hardware service. If factory reset is recommended, confirm its consequences and what you will need to set up again. A supported escalation is safer than a succession of blind resets that leave both the fault and the configuration unknown.
+
+Once the picture is back, [how IPTV works on Fire TV](/blog/how-does-iptv-work-on-firestick) explains the app and stream chain, and the [Firestick buffering guide](/blog/firestick-buffering-but-internet-is-fine) helps if playback then stutters. If you are setting the stick up for a new service, review [monthly and annual IPTV plans](/#plans) after the display is stable.
 
 ## Frequently asked questions
 
