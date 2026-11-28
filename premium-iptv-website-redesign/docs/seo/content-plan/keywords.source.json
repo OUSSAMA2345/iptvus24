@@ -9,8 +9,8 @@
     "A": { "name": "Android TV & Google TV", "pillar": "android-tv-box-setup-guide" },
     "P": { "name": "IPTV players", "pillar": "iptv-players-for-firestick-compared" },
     "E": { "name": "EPG, M3U & XMLTV", "pillar": "what-is-an-m3u-playlist" },
-    "V": { "name": "VPN & streaming optimization", "pillar": "iptv-buffering-fix" },
-    "T": { "name": "Streaming troubleshooting", "pillar": "iptv-buffering-fix" }
+    "V": { "name": "VPN & streaming optimization", "pillar": "troubleshoot-buffering-step-by-step" },
+    "T": { "name": "Streaming troubleshooting", "pillar": "troubleshoot-buffering-step-by-step" }
   },
   "keywords": [
     { "k": "downloader codes", "c": "D", "v": 22000, "kd": 28, "i": "definition", "s": "definition", "t": false, "d": "firestick", "title": "Downloader Codes Explained: How Shortcodes Work and Stay Safe", "slug": "downloader-codes-explained", "w": 1800, "scope": "How AFTVnews numeric shortcodes resolve to URLs, how to preview a destination before opening it, and why codes break. No code lists for third-party APKs." },
@@ -111,7 +111,7 @@
 
     { "k": "what internet speed for 4k streaming", "c": "V", "v": 6600, "kd": 32, "i": "definition", "s": "table", "t": false, "d": "generic", "title": "What Internet Speed Do You Need for 4K Streaming?", "slug": "internet-speed-for-4k-streaming", "w": 1800, "scope": "Published service recommendations (cited), household concurrency maths and why sustained throughput matters." },
     { "k": "how to install a vpn on firestick", "c": "V", "v": 4400, "kd": 34, "i": "howto", "s": "steps", "t": false, "d": "firestick", "title": "How to Install a VPN on Firestick for Privacy", "slug": "how-to-install-a-vpn-on-firestick", "w": 2000, "scope": "Appstore VPN apps, protocol choice, kill switch and split tunnelling. Lawful privacy uses only; no geo-unblocking claims." },
-    { "k": "iptv buffering fix", "c": "V", "v": 4400, "kd": 30, "i": "troubleshoot", "s": "list", "t": false, "d": "generic", "title": "IPTV Buffering Fix: A Step-by-Step Diagnostic Guide", "slug": "iptv-buffering-fix", "w": 2400, "scope": "Pillar hub: routes readers to device-specific buffering guides; source vs network vs decoder isolation." },
+    { "k": "iptv buffering fix", "c": "V", "v": 4400, "kd": 30, "i": "troubleshoot", "s": "list", "t": false, "d": "generic", "action": "upgrade", "title": "IPTV Buffering Fix: A Step-by-Step Diagnostic Guide", "slug": "troubleshoot-buffering-step-by-step", "w": 2400, "scope": "Upgrade the existing short legacy buffering guide into the pillar hub instead of a competing URL: device-agnostic source vs network vs decoder isolation that routes to the device-specific buffering guides (Firestick, general streaming, Kodi, Android TV)." },
     { "k": "is my isp throttling streaming", "c": "V", "v": 3600, "kd": 25, "i": "troubleshoot", "s": "steps", "t": false, "d": "generic", "title": "Is Your ISP Throttling Streaming? How to Test It", "slug": "is-my-isp-throttling-streaming", "w": 1800, "scope": "Controlled comparisons, published traffic-management policies and what evidence to send your ISP." },
     { "k": "dns for streaming", "c": "V", "v": 2900, "kd": 22, "i": "howto", "s": "steps", "t": false, "d": "generic", "title": "DNS Settings for Streaming: When Changing DNS Helps", "slug": "dns-settings-for-streaming", "w": 1600, "scope": "What DNS affects (lookup, CDN mapping) and does not (throughput); reversible testing method." },
     { "k": "does a vpn slow down streaming", "c": "V", "v": 1900, "kd": 14, "i": "definition", "s": "paragraph", "t": false, "d": "generic", "title": "Does a VPN Slow Down Streaming? Speed Factors Explained", "slug": "does-a-vpn-slow-down-streaming", "w": 1500, "scope": "Encryption overhead, server distance, protocol and device CPU; how to measure the difference." },

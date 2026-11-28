@@ -38,11 +38,11 @@
     },
     "V": {
       "name": "VPN & streaming optimization",
-      "pillar": "iptv-buffering-fix"
+      "pillar": "troubleshoot-buffering-step-by-step"
     },
     "T": {
       "name": "Streaming troubleshooting",
-      "pillar": "iptv-buffering-fix"
+      "pillar": "troubleshoot-buffering-step-by-step"
     }
   },
   "excluded": [
@@ -2592,9 +2592,9 @@
           "suggestedAnchor": "firestick not connecting to wifi but other devices will"
         },
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "IPTV Buffering Fix"
         },
         {
@@ -5179,9 +5179,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -5601,9 +5601,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -5754,11 +5754,11 @@
       "snippetScore": 74,
       "longTail": false,
       "seoTitle": "IPTV Buffering Fix: A Step-by-Step Diagnostic Guide",
-      "slug": "iptv-buffering-fix",
-      "url": "/blog/iptv-buffering-fix",
+      "slug": "troubleshoot-buffering-step-by-step",
+      "url": "/blog/troubleshoot-buffering-step-by-step",
       "recommendedWords": 2400,
-      "action": "new",
-      "scope": "Pillar hub: routes readers to device-specific buffering guides; source vs network vs decoder isolation.",
+      "action": "upgrade",
+      "scope": "Upgrade the existing short legacy buffering guide into the pillar hub instead of a competing URL: device-agnostic source vs network vs decoder isolation that routes to the device-specific buffering guides (Firestick, general streaming, Kodi, Android TV).",
       "isPillar": true,
       "rank": 61,
       "commercialLinks": [
@@ -5908,9 +5908,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -5932,10 +5932,10 @@
           "suggestedAnchor": "Streaming Buffers but Your Internet Is Fine"
         },
         {
-          "slug": "troubleshoot-buffering-step-by-step",
-          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "slug": "what-affects-streaming-quality",
+          "url": "/blog/what-affects-streaming-quality",
           "status": "published",
-          "suggestedAnchor": "Buffering while streaming? Troubleshoot one layer at a time"
+          "suggestedAnchor": "What affects streaming quality at home?"
         },
         {
           "slug": "firestick-keeps-restarting",
@@ -6004,9 +6004,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -6028,10 +6028,10 @@
           "suggestedAnchor": "Streaming Buffers but Your Internet Is Fine"
         },
         {
-          "slug": "what-affects-streaming-quality",
-          "url": "/blog/what-affects-streaming-quality",
+          "slug": "ethernet-or-wifi-for-tv-streaming",
+          "url": "/blog/ethernet-or-wifi-for-tv-streaming",
           "status": "published",
-          "suggestedAnchor": "What affects streaming quality at home?"
+          "suggestedAnchor": "Ethernet or Wi-Fi for TV streaming: how to choose"
         }
       ],
       "plannedInboundFromArticles": 3
@@ -6727,9 +6727,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -7430,9 +7430,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -7454,10 +7454,10 @@
           "suggestedAnchor": "Streaming Buffers but Your Internet Is Fine"
         },
         {
-          "slug": "ethernet-or-wifi-for-tv-streaming",
-          "url": "/blog/ethernet-or-wifi-for-tv-streaming",
+          "slug": "home-network-bandwidth-for-streaming",
+          "url": "/blog/home-network-bandwidth-for-streaming",
           "status": "published",
-          "suggestedAnchor": "Ethernet or Wi-Fi for TV streaming: how to choose"
+          "suggestedAnchor": "How household internet use affects streaming"
         }
       ],
       "plannedInboundFromArticles": 3
@@ -7897,9 +7897,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -8293,9 +8293,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -8317,10 +8317,10 @@
           "suggestedAnchor": "Streaming Buffers but Your Internet Is Fine"
         },
         {
-          "slug": "home-network-bandwidth-for-streaming",
-          "url": "/blog/home-network-bandwidth-for-streaming",
+          "slug": "improve-wifi-signal-for-smart-tv",
+          "url": "/blog/improve-wifi-signal-for-smart-tv",
           "status": "published",
-          "suggestedAnchor": "How household internet use affects streaming"
+          "suggestedAnchor": "How to improve Wi-Fi reception for a Smart TV"
         }
       ],
       "plannedInboundFromArticles": 3
@@ -8779,9 +8779,9 @@
       ],
       "supportingLinks": [
         {
-          "slug": "iptv-buffering-fix",
-          "url": "/blog/iptv-buffering-fix",
-          "status": "planned",
+          "slug": "troubleshoot-buffering-step-by-step",
+          "url": "/blog/troubleshoot-buffering-step-by-step",
+          "status": "published",
           "suggestedAnchor": "iptv buffering fix"
         },
         {
@@ -8803,10 +8803,10 @@
           "suggestedAnchor": "Streaming Buffers but Your Internet Is Fine"
         },
         {
-          "slug": "improve-wifi-signal-for-smart-tv",
-          "url": "/blog/improve-wifi-signal-for-smart-tv",
+          "slug": "what-affects-streaming-quality",
+          "url": "/blog/what-affects-streaming-quality",
           "status": "published",
-          "suggestedAnchor": "How to improve Wi-Fi reception for a Smart TV"
+          "suggestedAnchor": "What affects streaming quality at home?"
         }
       ],
       "plannedInboundFromArticles": 3
@@ -9981,7 +9981,7 @@
       "addLinksTo": [
         "iptv-freezing-every-few-seconds",
         "internet-speed-for-4k-streaming",
-        "iptv-buffering-fix"
+        "is-my-isp-throttling-streaming"
       ]
     },
     {

@@ -8,7 +8,7 @@
 
 - **100 informational keywords** across 8 topic clusters (Downloader, Kodi, Fire TV, Android TV, IPTV players, EPG/M3U/XMLTV, VPN & optimization, troubleshooting), with a combined modelled demand of about **421,280 searches/month** and a median KD of **14**.
 - **Fastest openings for a newer site:** the Fire TV **Vega OS** transition (new Fire TV Sticks are Appstore-only, so Downloader and sideloading guides written for Fire OS no longer apply) and device-specific player troubleshooting (IBO Player, XCIPTV, Televizo, SmartOne) where SERPs are thin and dominated by forums or reseller pages.
-- **Cannibalization guard:** every new slug is checked against the 56 published URLs; the one overlapping topic (`what is epg on tv`) is planned as an **upgrade** of the existing `electronic-program-guide-explained` guide, not a competing URL.
+- **Cannibalization guard:** every new slug is checked against the 56 published URLs; the two overlapping topics are planned as **upgrades** of existing guides, not competing URLs: `what is epg on tv` → `electronic-program-guide-explained`, and the buffering pillar `iptv buffering fix` → `troubleshoot-buffering-step-by-step` (the hub routes to the narrower Firestick, "internet is fine", Kodi and Android TV buffering guides, each keeping its own primary query).
 - **Compliance:** piracy-led queries are excluded (section 9). Every brief is scoped to device, application, setup, compatibility, optimization and troubleshooting topics; no code lists, unofficial add-ons or circumvention steps.
 - **Internal linking:** every planned article carries 3–5 commercial links (at least one above the fold) and 5–10 supporting article links; the live site has been retrofitted and audited — see [INTERNAL-LINKING-AUDIT.md](./INTERNAL-LINKING-AUDIT.md) and the per-article link briefs in [ARTICLE-LINK-BRIEFS.md](./ARTICLE-LINK-BRIEFS.md).
 
@@ -34,8 +34,8 @@ KD bands: Low ≤ 14 · Low–medium 15–29 · Medium 30–39 · Medium–high 
 | A | Android TV & Google TV | 9 | 25,600 | 18 | `android-tv-box-setup-guide` |
 | P | IPTV players | 22 | 66,860 | 15 | `iptv-players-for-firestick-compared` |
 | E | EPG, M3U & XMLTV | 10 | 29,320 | 13 | `what-is-an-m3u-playlist` |
-| V | VPN & streaming optimization | 9 | 27,400 | 21 | `iptv-buffering-fix` |
-| T | Streaming troubleshooting | 1 | 1,000 | 6 | `iptv-buffering-fix` |
+| V | VPN & streaming optimization | 9 | 27,400 | 21 | `troubleshoot-buffering-step-by-step` |
+| T | Streaming troubleshooting | 1 | 1,000 | 6 | `troubleshoot-buffering-step-by-step` |
 
 ## 4. All 100 keywords ranked by SEO opportunity
 
@@ -101,7 +101,7 @@ KD bands: Low ≤ 14 · Low–medium 15–29 · Medium 30–39 · Medium–high 
 | 58 | xciptv not working | P | 880 (500–1K) | 5 (Low) | Informational — troubleshooting | 75 | XCIPTV Not Working? Fix Login, EPG and Playback Errors | `/blog/xciptv-not-working` | 1,400 |
 | 59 | what internet speed for 4k streaming | V | 6,600 (5K–10K) | 32 (Medium) | Informational — definition | 74 | What Internet Speed Do You Need for 4K Streaming? | `/blog/internet-speed-for-4k-streaming` | 1,800 |
 | 60 | how to install kodi on android tv | K | 4,400 (2K–5K) | 22 (Low–medium) | Informational — how-to | 74 | How to Install Kodi on Android TV and Google TV | `/blog/how-to-install-kodi-on-android-tv` | 1,800 |
-| 61 | iptv buffering fix | V | 4,400 (2K–5K) | 30 (Medium) | Informational — troubleshooting | 74 | IPTV Buffering Fix: A Step-by-Step Diagnostic Guide | `/blog/iptv-buffering-fix` | 2,400 |
+| 61 | iptv buffering fix (upgrade) | V | 4,400 (2K–5K) | 30 (Medium) | Informational — troubleshooting | 74 | IPTV Buffering Fix: A Step-by-Step Diagnostic Guide | `/blog/troubleshoot-buffering-step-by-step` | 2,400 |
 | 62 | is my isp throttling streaming | V | 3,600 (2K–5K) | 25 (Low–medium) | Informational — troubleshooting | 74 | Is Your ISP Throttling Streaming? How to Test It | `/blog/is-my-isp-throttling-streaming` | 1,800 |
 | 63 | dns for streaming | V | 2,900 (2K–5K) | 22 (Low–medium) | Informational — how-to | 74 | DNS Settings for Streaming: When Changing DNS Helps | `/blog/dns-settings-for-streaming` | 1,600 |
 | 64 | kodi not working on firestick | K | 2,900 (2K–5K) | 16 (Low–medium) | Informational — troubleshooting | 74 | Kodi Not Working on Firestick? Fix Launch and Playback | `/blog/kodi-not-working-on-firestick` | 2,000 |
@@ -351,7 +351,7 @@ When a planned article goes live, add a contextual link to it from these existin
 | `iptv-player-vs-iptv-service` | `how-to-set-up-iptv-smarters-pro`, `iptv-smarters-not-working`, `ibo-player-activation-explained` |
 | `mag-box-portal-not-loading` | `iptv-audio-out-of-sync` |
 | `samsung-tv-apps-not-working-but-connected-to-internet` | `iptv-audio-out-of-sync` |
-| `streaming-buffering-but-internet-is-fine` | `iptv-freezing-every-few-seconds`, `internet-speed-for-4k-streaming`, `iptv-buffering-fix` |
+| `streaming-buffering-but-internet-is-fine` | `iptv-freezing-every-few-seconds`, `internet-speed-for-4k-streaming`, `is-my-isp-throttling-streaming` |
 | `tivimate-epg-no-information` | `how-to-set-up-tivimate`, `xciptv-player-setup-guide`, `tivimate-companion-app-explained` |
 | `tivimate-playlist-is-processed-please-wait` | `how-to-set-up-tivimate`, `xciptv-player-setup-guide`, `tivimate-companion-app-explained` |
 | `tivimate-vs-iptv-smarters` | `how-to-set-up-tivimate`, `xciptv-player-setup-guide`, `tivimate-companion-app-explained` |
