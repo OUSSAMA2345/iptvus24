@@ -7,6 +7,7 @@ import { SITE_NAME } from "../../metadata";
 import { blogPosts, getBlogPost } from "../posts";
 import MarkdownArticle from "../MarkdownArticle";
 import { editorialTopics, getArticleMetadata, getArticleStructuredData, getRelatedPosts } from "../seo";
+import { getLegacyNextStep } from "../../commercial/supporting-articles";
 
 export const dynamicParams = false;
 
@@ -42,6 +43,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const relatedPosts = getRelatedPosts(post, blogPosts);
   const structuredData = getArticleStructuredData(post);
+  // Markdown guides carry contextual commercial links in the body; legacy guides get one curated next step.
+  const nextStep = post.markdown ? null : getLegacyNextStep(post.slug);
 
   return (
     <>
@@ -87,6 +90,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </section>
             ))}
           </SiteProse>
+
+          {nextStep && (
+            <aside aria-label="Next step" className="mt-8 rounded-2xl border border-line bg-mist p-5 text-sm leading-7 text-slate-soft">
+              <p>
+                <strong className="text-ink">Next step: </strong>
+                {nextStep.lead}{" "}
+                <Link href={nextStep.href} prefetch={false} className="font-bold text-brand underline underline-offset-4">{nextStep.anchor}</Link>
+                {/^[.,;:!?]/.test(nextStep.trail) ? nextStep.trail : ` ${nextStep.trail}`}
+              </p>
+            </aside>
+          )}
 
           {editorialTopics[post.slug]?.diagram && (
             <figure className="mt-8">

@@ -7,7 +7,7 @@ const directory = path.join(root, 'content/blog');
 const legacy = ['posts.ts', 'additional-posts.ts'].flatMap(file => [...fs.readFileSync(path.join(root, 'app/blog', file), 'utf8').matchAll(/slug: "([^"]+)"/g)].map(match => match[1]));
 const files = fs.readdirSync(directory).filter(file => file.endsWith('.md'));
 const slugs = new Set([...legacy, ...files.map(file => file.slice(0, -3))]);
-const pageRoutes = new Set(['/', '/blog', '/contact', '/about', '/privacy', '/terms', '/refund', '/status', '/reviews', '/cookies']);
+const pageRoutes = new Set(['/', '/blog', '/contact', '/about', '/privacy', '/terms', '/refund', '/status', '/reviews', '/cookies', '/iptv-for-firestick', '/iptv-for-android-tv', '/iptv-for-samsung-smart-tv', '/iptv-for-lg-smart-tv']);
 const errors = [];
 const reports = [];
 const paragraphs = new Map();
@@ -48,8 +48,10 @@ for (const file of files) {
   if (article?.datePublished !== data.publishedAt || article?.dateModified !== data.reviewedAt) fail('schema date mismatch');
   if (data.faqJsonLd?.['@type'] !== 'FAQPage' || schemaFaqs.length !== questions.length) fail('FAQ schema missing or wrong length');
   questions.forEach((q, i) => {
-    if (/\[[^\]]+\]\(|[*_`]/.test(q.answer)) fail(`FAQ answer ${i + 1} must be plain text for visible/schema agreement`);
-    if (schemaFaqs[i]?.name !== q.question || schemaFaqs[i]?.acceptedAnswer?.text !== q.answer) fail(`FAQ schema differs from visible answer ${i + 1}`);
+    // Plain internal links (e.g. to a commercial or related page) are allowed; schema carries the same text without link markup.
+    const plain = q.answer.replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '$1');
+    if (/\[[^\]]+\]\(|[*_`]/.test(plain)) fail(`FAQ answer ${i + 1} must be plain text for visible/schema agreement (only internal links are allowed)`);
+    if (schemaFaqs[i]?.name !== q.question || schemaFaqs[i]?.acceptedAnswer?.text !== plain) fail(`FAQ schema differs from visible answer ${i + 1}`);
   });
   const links = [...body.matchAll(/\]\(([^)]+)\)/g)].map(m => m[1]);
   for (const link of links) {

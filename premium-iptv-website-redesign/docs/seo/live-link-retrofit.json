@@ -1,0 +1,130 @@
+{
+  "_note": "Contextual internal-link retrofit for the 20 published Markdown guides. Applied by scripts/seo/apply-link-retrofit.mjs; verified by scripts/seo/audit-internal-links.mjs. Placements: aboveFold = above the fold; section = after a compatibility explanation, setup guide or troubleshooting solution; beforeFaq = final best-practices paragraph before the conclusion; faq = inside a relevant FAQ answer.",
+  "articles": {
+    "firestick-buffering-but-internet-is-fine": [
+      { "type": "aboveFold", "text": "Setting up a new Fire TV device as well? Our page on [IPTV for Firestick](/iptv-for-firestick) explains how to check Fire OS and Vega OS models before choosing a plan." },
+      { "type": "section", "heading": "Improve the connection at the television", "text": "If you are deciding between a wired adapter and better Wi-Fi placement, [Ethernet or Wi-Fi for TV streaming](/blog/ethernet-or-wifi-for-tv-streaming) compares the trade-offs, while [the steps for a Firestick that will not join Wi-Fi](/blog/firestick-not-connecting-to-wifi-but-other-devices-will) cover association failures." },
+      { "type": "section", "heading": "Decide who should investigate next", "text": "When the evidence points beyond your home network, [ask support about your device](/contact) and share your comparison results; that is faster than changing plans or hardware blindly. A shorter [step-by-step buffering checklist](/blog/troubleshoot-buffering-step-by-step) is also available." },
+      { "type": "beforeFaq", "text": "If several screens in the house stream at the same time, [compare connection limits](/#compare-plans) as well as bandwidth, because a plan's connection allowance and your network capacity are separate limits." }
+    ],
+    "iptv-epg-not-updating": [
+      { "type": "aboveFold", "text": "If you are comparing services because the guide matters to your household, [see what each plan includes](/#plans) — guide features can depend on the channel and device." },
+      { "type": "section", "heading": "Repair channel matching", "text": "Renaming or regrouping channels can break these matches, so read [how to organize IPTV channels without losing guide data](/blog/how-to-organize-iptv-channels) before tidying the list. If the channels themselves stop opening, switch to [the channels-not-loading checklist](/blog/iptv-channels-not-loading)." },
+      { "type": "section", "heading": "Handle time zones without double correction", "text": "Players on Android TV and Google TV usually expose the offset setting next to the EPG source; our [Android TV IPTV setup](/iptv-for-android-tv) page lists what to share with support when the guide still looks shifted." },
+      { "type": "beforeFaq", "text": "Before switching services over a guide problem, [compare plan features](/#compare-plans) and ask what EPG coverage is described for the channels you actually watch." },
+      { "type": "faq", "question": "Does buying a premium player guarantee a complete EPG?", "text": "If you are unsure which part of your setup supplies the guide, [ask which player suits your device](/contact) before buying anything." }
+    ],
+    "iptv-app-not-working-on-firestick": [
+      { "type": "aboveFold", "text": "New to Fire TV setups? [Set up IPTV on your Fire TV](/iptv-for-firestick) with our model-by-model compatibility notes before you install anything." },
+      { "type": "section", "heading": "Check the exact Fire TV model and operating system", "text": "For background on how the device, player and service fit together, read [how IPTV works on a Firestick](/blog/how-does-iptv-work-on-firestick). If you are unsure which player your model supports, [get setup instructions for your device](/contact) rather than trying several installers." },
+      { "type": "section", "heading": "If the app crashes or will not open", "text": "If the player closes on every device you try, the broader guide to [an IPTV app that keeps crashing](/blog/iptv-app-keeps-crashing) covers storage, data and the safest reinstall order." },
+      { "type": "beforeFaq", "text": "If you are replacing the device, [IPTV on Google TV devices](/iptv-for-android-tv) may suit households whose Fire TV model cannot install the player they need." }
+    ],
+    "tivimate-epg-no-information": [
+      { "type": "aboveFold", "text": "TiviMate runs on Android TV and Google TV devices; our [Android TV player options](/iptv-for-android-tv) page covers device checks and plans if you are still choosing hardware." },
+      { "type": "section", "heading": "Match one channel to the correct EPG entry", "text": "The [XMLTV channel-ID explainer](/blog/what-is-xmltv-epg) shows what the matched identifier looks like inside a guide file, and [our channel organization guide](/blog/how-to-organize-iptv-channels) explains how to rename channels without breaking that match." },
+      { "type": "section", "heading": "Use multiple sources without creating confusion", "text": "If you are weighing a change of player instead, [TiviMate vs IPTV Smarters](/blog/tivimate-vs-iptv-smarters) compares guide handling without invented ratings." },
+      { "type": "beforeFaq", "text": "When the guide still has gaps after these checks, [check your setup with our team](/contact) and include the channel name, source and update time you recorded." },
+      { "type": "faq", "question": "Can TiviMate Premium supply the missing schedule?", "text": "Guide features are described per plan, so [compare what each package includes](/#compare-plans) rather than buying a licence to fix missing data." }
+    ],
+    "tivimate-playlist-is-processed-please-wait": [
+      { "type": "aboveFold", "text": "Choosing a device for a large catalogue? [IPTV for Android TV boxes](/iptv-for-android-tv) covers storage and player considerations before you order." },
+      { "type": "section", "heading": "Verify the setup method and endpoint", "text": "The difference between the player and the account that supplies the playlist is covered in [IPTV player vs IPTV service](/blog/iptv-player-vs-iptv-service). If you are unsure which login method applies to you, [request device-specific setup help](/contact) rather than guessing." },
+      { "type": "section", "heading": "Recover the app in a controlled order", "text": "Low free space can stall an import on compact sticks; [Android TV storage running out](/blog/android-tv-storage-space-running-out) explains safe cleanup. If the import finishes but nothing plays, continue with [IPTV channels not loading](/blog/iptv-channels-not-loading)." },
+      { "type": "beforeFaq", "text": "If you are planning a second screen for the same household, [see how the plans differ](/#compare-plans) in device connections before adding another playlist." }
+    ],
+    "mag-box-portal-not-loading": [
+      { "type": "aboveFold", "text": "Comparing set-top boxes with app-based setups? [Browse IPTV packages](/#plans) and ask support which devices apply before ordering." },
+      { "type": "section", "heading": "Separate account authorization from network reachability", "text": "Before replacing a MAG box, [check device compatibility](/blog/check-device-compatibility) for the alternative you have in mind; app-based options such as [Android TV IPTV setup help](/iptv-for-android-tv) follow a different setup path." },
+      { "type": "section", "heading": "When the portal responds only on another network", "text": "If the portal loads but streams stall, the method in [streaming buffering when your internet is fine](/blog/streaming-buffering-but-internet-is-fine) separates network capacity from source problems." },
+      { "type": "beforeFaq", "text": "If the portal loads but the programme guide is stale, see [IPTV EPG not updating](/blog/iptv-epg-not-updating). For questions about using a MAG device with our service, [talk to support about setup](/contact)." }
+    ],
+    "iptv-channels-not-loading": [
+      { "type": "aboveFold", "text": "If you are evaluating a new service rather than repairing an existing one, [compare IPTV packages](/#compare-plans) and confirm device support first." },
+      { "type": "section", "heading": "If the list itself is empty", "text": "In TiviMate, an import that never finishes has its own checklist: [playlist is processed, please wait](/blog/tivimate-playlist-is-processed-please-wait)." },
+      { "type": "section", "heading": "Test the device's path to the service", "text": "When channels open but pause repeatedly, use [streaming buffering but internet is fine](/blog/streaming-buffering-but-internet-is-fine), or the [Firestick-specific buffering guide](/blog/firestick-buffering-but-internet-is-fine) on Fire TV." },
+      { "type": "beforeFaq", "text": "Setting up on a television app instead? [Samsung TV IPTV setup](/iptv-for-samsung-smart-tv) and [LG TV IPTV setup](/iptv-for-lg-smart-tv) explain the store and activation checks for each platform." },
+      { "type": "faq", "question": "Will a premium player subscription unlock channels?", "text": "To see what a content plan itself includes, [review IPTVUS24 packages](/#plans)." }
+    ],
+    "iptv-app-keeps-crashing": [
+      { "type": "aboveFold", "text": "Replacing an unreliable device? Our [Firestick IPTV setup help](/iptv-for-firestick) page lists the model checks to make before ordering." },
+      { "type": "section", "heading": "Follow the platform's supported first steps", "text": "Device-specific branches are covered in [IPTV app not working on Firestick](/blog/iptv-app-not-working-on-firestick) and [IPTV app not working on Samsung TV](/blog/iptv-app-not-working-on-samsung-tv). If the app never opens at all, start with [a streaming app that won't open](/blog/streaming-app-wont-open)." },
+      { "type": "beforeFaq", "text": "Planning to move the setup to an Android TV box with more storage? [IPTV service for Android TV](/iptv-for-android-tv) lists what to check first." },
+      { "type": "faq", "question": "Can a large playlist make a player crash?", "text": "If you only need part of a catalogue, [ask support about the setup options](/contact) available for your device." }
+    ],
+    "iptv-app-not-working-on-samsung-tv": [
+      { "type": "aboveFold", "text": "Still choosing a setup for this television? [IPTV for Samsung Smart TV](/iptv-for-samsung-smart-tv) explains Tizen app availability and plans." },
+      { "type": "section", "heading": "Cold boot is different from standby", "text": "For first-time checks on the same TV, see [streaming on a Samsung Smart TV](/blog/samsung-smart-tv-streaming-setup); if the app closes by itself, [IPTV app keeps crashing](/blog/iptv-app-keeps-crashing) covers the recovery order." },
+      { "type": "section", "heading": "Separate player activation from content login", "text": "That distinction is explained in depth in [IPTV player vs IPTV service](/blog/iptv-player-vs-iptv-service). If you are unsure which activation your setup needs, [confirm setup steps before paying](/contact)." },
+      { "type": "beforeFaq", "text": "Households with a Samsung TV in one room and an LG in another can check [IPTV for LG Smart TV](/iptv-for-lg-smart-tv) as well, then [pick a plan that fits your household](/#plans)." }
+    ],
+    "iptv-app-not-available-on-lg-tv": [
+      { "type": "aboveFold", "text": "If you are choosing a setup for an LG television, [IPTV on LG webOS TVs](/iptv-for-lg-smart-tv) summarises Content Store checks and plans." },
+      { "type": "section", "heading": "Understand LG Services Country", "text": "Our [LG webOS compatibility guide](/blog/lg-webos-streaming-app-compatibility) covers the model and store checks as a shorter checklist." },
+      { "type": "section", "heading": "Compare legitimate alternatives by function", "text": "When the TV cannot list a suitable app, an external device is often simpler: compare [IPTV with a Fire TV Stick](/iptv-for-firestick) or [watch IPTV on Google TV](/iptv-for-android-tv), and see [TiviMate vs IPTV Smarters](/blog/tivimate-vs-iptv-smarters) for the player trade-offs." },
+      { "type": "beforeFaq", "text": "Samsung owners facing a similar problem should read [IPTV app not working on Samsung TV](/blog/iptv-app-not-working-on-samsung-tv). Before ordering for any television, [confirm compatibility with support before ordering](/contact)." }
+    ],
+    "firestick-black-screen-after-logo": [
+      { "type": "aboveFold", "text": "Choosing or replacing a Fire TV device? [Fire TV Stick IPTV options](/iptv-for-firestick) covers model and software checks before ordering." },
+      { "type": "section", "heading": "When HDMI control or protection is involved", "text": "If the home screen appears but a video shows black with sound, follow [the black-screen-with-audio checklist](/blog/streaming-black-screen-with-audio) instead." },
+      { "type": "section", "heading": "Test another display before buying a replacement", "text": "If you do replace the device, [speak with the setup team](/contact) about which models suit the player you use." },
+      { "type": "beforeFaq", "text": "Once the picture is back, [how IPTV works on Fire TV](/blog/how-does-iptv-work-on-firestick) explains the app and stream chain, and the [Firestick buffering guide](/blog/firestick-buffering-but-internet-is-fine) helps if playback then stutters. If you are setting the stick up for a new service, review [monthly and annual IPTV plans](/#plans) after the display is stable." }
+    ],
+    "how-to-organize-iptv-channels": [
+      { "type": "aboveFold", "text": "Organizing a list for several people? [Choose an IPTV plan](/#plans) with enough device connections for the screens you are organizing for." },
+      { "type": "section", "heading": "Hide broad groups before editing individual channels", "text": "Hiding a group is not parental protection; use the controls described in [the streaming parental controls guide](/blog/streaming-parental-controls-guide)." },
+      { "type": "section", "heading": "Build a favorites list that earns its place", "text": "Favorite handling differs by player; [our TiviMate and IPTV Smarters comparison](/blog/tivimate-vs-iptv-smarters) looks at how each manages groups and favorites." },
+      { "type": "beforeFaq", "text": "If channels vanish after a refresh rather than being hidden, see [IPTV channels not loading](/blog/iptv-channels-not-loading). Group and favorite tools vary by platform — see [IPTV on Samsung Tizen TVs](/iptv-for-samsung-smart-tv) or [set up IPTV on Android TV](/iptv-for-android-tv) for device notes." }
+    ],
+    "what-is-xmltv-epg": [
+      { "type": "aboveFold", "text": "Guide data is one part of a complete setup; [see current IPTV plans](/#plans) for the guide features described for each plan." },
+      { "type": "section", "heading": "EPG, XMLTV, and playlists describe different things", "text": "For a non-technical overview, start with [electronic programme guides explained](/blog/electronic-program-guide-explained); [the Firestick IPTV request chain](/blog/how-does-iptv-work-on-firestick) shows where the guide fits." },
+      { "type": "section", "heading": "How channel matching works", "text": "In TiviMate, a failed match appears as [No information in the guide](/blog/tivimate-epg-no-information)." },
+      { "type": "beforeFaq", "text": "Players refresh XMLTV differently on each platform: [LG webOS player options](/iptv-for-lg-smart-tv) and [Google TV and Android TV plan options](/iptv-for-android-tv) include device notes worth reading before you choose." }
+    ],
+    "iptv-player-vs-iptv-service": [
+      { "type": "aboveFold", "text": "If you are comparing services now, our [side-by-side plan comparison](/#compare-plans) lists every term and price before you contact anyone." },
+      { "type": "section", "heading": "Compare the total cost, not one advertised price", "text": "A worked method is in [how to compare streaming plan prices](/blog/compare-streaming-plan-prices), and [how to evaluate an internet TV service](/blog/choose-an-internet-tv-service) covers seller identity and terms." },
+      { "type": "section", "heading": "Device licences and simultaneous streams are different limits", "text": "Device-specific activation rules are summarised on [IPTV for Samsung televisions](/iptv-for-samsung-smart-tv) and [IPTV for LG televisions](/iptv-for-lg-smart-tv)." },
+      { "type": "faq", "question": "Is a player subscription the same as a provider subscription?", "text": "If you are unsure which one a quote covers, [get help choosing a setup](/contact)." }
+    ],
+    "tivimate-vs-iptv-smarters": [
+      { "type": "aboveFold", "text": "Both players are commonly used on Android-based devices; [IPTV for Android TV](/iptv-for-android-tv) covers device checks and plans if you have not chosen hardware yet." },
+      { "type": "section", "heading": "Begin with the device, not the feature chart", "text": "TiviMate is not a native LG or Samsung app — see [IPTV app not available on LG TV](/blog/iptv-app-not-available-on-lg-tv) — while [the Android TV player setup checklist](/blog/android-tv-streaming-player-setup) covers installation basics." },
+      { "type": "section", "heading": "Compare guide and channel management carefully", "text": "Guide-mapping problems specific to TiviMate are covered in [TiviMate EPG no information](/blog/tivimate-epg-no-information)." },
+      { "type": "beforeFaq", "text": "Once you know which player suits your device, [look at the plan options](/#plans); on Fire TV, [IPTV for Fire TV Cube and sticks](/iptv-for-firestick) adds Fire OS and Vega OS notes." },
+      { "type": "faq", "question": "Can I use both players with one content account?", "text": "Simultaneous-connection allowances vary, so check the [plan-by-plan comparison](/#compare-plans)." }
+    ],
+    "firestick-not-connecting-to-wifi-but-other-devices-will": [
+      { "type": "aboveFold", "text": "Setting up a new stick? [Streaming IPTV on a Firestick](/iptv-for-firestick) starts with the model and network checks covered here." },
+      { "type": "section", "heading": "Make one permitted alternate-network comparison", "text": "If signal strength is the weak point, [improve Wi-Fi reception for a Smart TV](/blog/improve-wifi-signal-for-smart-tv) applies to sticks behind televisions too, and [Ethernet or Wi-Fi](/blog/ethernet-or-wifi-for-tv-streaming) explains when a wired adapter is worth it." },
+      { "type": "beforeFaq", "text": "If the stick shows no picture at all, use [the black-screen-after-logo guide](/blog/firestick-black-screen-after-logo). Once it is online, [check the current packages](/#plans) or [ask about trial options](/contact) before committing to a plan." }
+    ],
+    "samsung-tv-apps-not-working-but-connected-to-internet": [
+      { "type": "aboveFold", "text": "Planning to [watch IPTV on a Samsung TV](/iptv-for-samsung-smart-tv)? Fix the shared Smart Hub problem first; our setup page covers app availability and plans." },
+      { "type": "section", "heading": "Compare network paths without weakening security", "text": "For signal problems, [improving Wi-Fi reception for a Smart TV](/blog/improve-wifi-signal-for-smart-tv) covers placement and band choice; if one app never opens, try [the app-won't-open checklist](/blog/streaming-app-wont-open)." },
+      { "type": "beforeFaq", "text": "Once apps load again, [streaming on Samsung Smart TVs](/blog/samsung-smart-tv-streaming-setup) covers first-time app checks. For a second room with an LG television, see [IPTV service for LG TVs](/iptv-for-lg-smart-tv)." },
+      { "type": "faq", "question": "What if only one IPTV player fails?", "text": "Before replacing the player, [ask a compatibility question](/contact) about your TV model." }
+    ],
+    "android-tv-storage-space-running-out": [
+      { "type": "aboveFold", "text": "Buying a box or stick with more headroom? [IPTV plans for Android TV users](/iptv-for-android-tv) include the device checks to make first." },
+      { "type": "section", "heading": "Find the storage controls your device actually has", "text": "Menu paths differ between Android TV and Google TV; [the Google TV app checklist](/blog/google-tv-streaming-app-checklist) and [storage and updates on streaming devices](/blog/streaming-device-storage-and-updates) cover both." },
+      { "type": "section", "heading": "Control guide, artwork, and recording growth", "text": "Large imports can also stall a player; see [TiviMate stuck processing a playlist](/blog/tivimate-playlist-is-processed-please-wait)." },
+      { "type": "beforeFaq", "text": "When you do replace the device, [flexible IPTV plan lengths](/#plans) let you match the subscription term to the hardware you plan to keep." },
+      { "type": "faq", "question": "How much free space should I keep?", "text": "If you are unsure what your player and guide need, [reach our setup team](/contact) with the device model." }
+    ],
+    "streaming-buffering-but-internet-is-fine": [
+      { "type": "aboveFold", "text": "Choosing a plan for a busy household? [IPTV subscription plans](/#plans) list device-connection allowances, which are a separate limit from your home bandwidth." },
+      { "type": "section", "heading": "Compare ordinary household load", "text": "[Home network bandwidth for streaming](/blog/home-network-bandwidth-for-streaming) shows how to estimate household load, and [what affects streaming quality](/blog/what-affects-streaming-quality) summarises the other factors." },
+      { "type": "section", "heading": "Check decoding and device pressure", "text": "If an older device struggles to decode, the [Fire TV IPTV guide and plans](/iptv-for-firestick) and [Android TV and Google TV setup notes](/iptv-for-android-tv) pages list what to check before replacing it." },
+      { "type": "beforeFaq", "text": "For a shorter version of this method, see [the step-by-step buffering checklist](/blog/troubleshoot-buffering-step-by-step). If buffering persists across devices, [send your comparison results to support](/contact)." }
+    ],
+    "how-does-iptv-work-on-firestick": [
+      { "type": "aboveFold", "text": "Ready to apply this to your own device? [IPTV service for Fire TV Stick](/iptv-for-firestick) shows the model checks and plans in one place." },
+      { "type": "section", "heading": "Check Fire OS versus Vega OS first", "text": "Our [Fire TV setup checklist](/blog/fire-tv-streaming-setup-checklist) turns these checks into a short list." },
+      { "type": "section", "heading": "Choose between an official service app and a neutral player", "text": "For a neutral comparison of two popular players, see [TiviMate versus IPTV Smarters](/blog/tivimate-vs-iptv-smarters)." },
+      { "type": "beforeFaq", "text": "When playback stutters despite a fast connection, use [the Firestick buffering diagnosis](/blog/firestick-buffering-but-internet-is-fine). To see how plan terms compare, [weigh plan lengths side by side](/#compare-plans)." },
+      { "type": "faq", "question": "Does a Firestick come with IPTV channels?", "text": "To confirm which setup applies to your model, [message support before you subscribe](/contact)." }
+    ]
+  }
+}

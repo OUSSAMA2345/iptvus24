@@ -112,7 +112,7 @@
         "name": "Can TiviMate Premium supply the missing schedule?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A player upgrade unlocks application features, not a guaranteed third-party schedule. TiviMate explicitly says it does not provide content. Check the current feature list for your version, but ask the guide publisher about absent channels, incomplete dates or stale listings."
+          "text": "A player upgrade unlocks application features, not a guaranteed third-party schedule. TiviMate explicitly says it does not provide content. Check the current feature list for your version, but ask the guide publisher about absent channels, incomplete dates or stale listings. Guide features are described per plan, so compare what each package includes rather than buying a licence to fix missing data."
         }
       },
       {
@@ -143,6 +143,8 @@ A TiviMate channel can play immediately while its programme row says “No infor
 **Start with one affected channel: verify the current date, check the EPG update result, confirm the playlist's guide source, and test a correct channel-to-guide assignment.** If an update succeeds but the row remains empty, investigate matching and schedule coverage rather than repeatedly downloading the same file.
 
 TiviMate is a player, not a channel or guide subscription. Its official site makes clear that paid features do not include media content. The same practical boundary applies here: a player cannot display schedule data that its configured source does not supply. See the [official TiviMate explanation](https://tivimate.com/).
+
+TiviMate runs on Android TV and Google TV devices; our [Android TV player options](/iptv-for-android-tv) page covers device checks and plans if you are still choosing hardware.
 
 ## Table of contents
 
@@ -247,6 +249,8 @@ An empty search does not prove the app's search is broken. Confirm that the inte
 
 If the source lacks the station, ask for coverage or a supported alternative guide. You cannot repair an absent schedule by assigning a vaguely similar channel. For a large affected group, a provider-side identifier correction may be more maintainable than manual overrides.
 
+The [XMLTV channel-ID explainer](/blog/what-is-xmltv-epg) shows what the matched identifier looks like inside a guide file, and [our channel organization guide](/blog/how-to-organize-iptv-channels) explains how to rename channels without breaking that match.
+
 ## Distinguish missing coverage from wrong times
 
 ### Move through the guide before changing the clock
@@ -288,6 +292,8 @@ Adding overlapping sources can make it harder to determine where an incorrect ti
 Hiding groups can make the guide easier to browse, but does not necessarily reduce the underlying XMLTV download. A provider-supplied smaller feed is different from an on-screen filter.
 
 Similarly, reducing stored guide history may help local storage without changing the source's transfer size. Ask what a setting controls before expecting it to solve a slow download.
+
+If you are weighing a change of player instead, [TiviMate vs IPTV Smarters](/blog/tivimate-vs-iptv-smarters) compares guide handling without invented ratings.
 
 ## Clear guide data only when the evidence supports it
 
@@ -340,6 +346,8 @@ Use an update frequency aligned with the publisher's schedule. Constant retries 
 
 For a different class of failure—TiviMate cannot finish adding the playlist at all—use [the playlist processing guide](/blog/tivimate-playlist-is-processed-please-wait). That happens earlier in setup than a missing programme row.
 
+When the guide still has gaps after these checks, [check your setup with our team](/contact) and include the channel name, source and update time you recorded.
+
 ## Frequently asked questions
 
 ### Does No information mean the channel is offline?
@@ -364,7 +372,7 @@ Only after checking what the source, device and player already do. A correct aut
 
 ### Can TiviMate Premium supply the missing schedule?
 
-A player upgrade unlocks application features, not a guaranteed third-party schedule. TiviMate explicitly says it does not provide content. Check the current feature list for your version, but ask the guide publisher about absent channels, incomplete dates or stale listings.
+A player upgrade unlocks application features, not a guaranteed third-party schedule. TiviMate explicitly says it does not provide content. Check the current feature list for your version, but ask the guide publisher about absent channels, incomplete dates or stale listings. Guide features are described per plan, so [compare what each package includes](/#compare-plans) rather than buying a licence to fix missing data.
 
 ### Is it safe to share my EPG URL for troubleshooting?
 

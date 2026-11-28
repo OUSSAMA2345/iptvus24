@@ -205,6 +205,15 @@ export const footerCols: { title: string; links: { label: string; href: string }
     ],
   },
   {
+    title: "Devices",
+    links: [
+      { label: "IPTV for Firestick", href: "/iptv-for-firestick" },
+      { label: "IPTV for Android TV", href: "/iptv-for-android-tv" },
+      { label: "IPTV for Samsung TV", href: "/iptv-for-samsung-smart-tv" },
+      { label: "IPTV for LG TV", href: "/iptv-for-lg-smart-tv" },
+    ],
+  },
+  {
     title: "Company",
     links: [
       { label: "About IPTVUS24", href: "/about" },

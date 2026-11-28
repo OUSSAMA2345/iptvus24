@@ -12,15 +12,20 @@ const STATIC_PAGE_LAST_MODIFIED: Record<string, string> = {
   "/about": "2026-11-26",
   "/reviews": "2026-11-26",
   "/status": "2026-11-26",
+  "/iptv-for-firestick": "2026-11-28",
+  "/iptv-for-android-tv": "2026-11-28",
+  "/iptv-for-samsung-smart-tv": "2026-11-28",
+  "/iptv-for-lg-smart-tv": "2026-11-28",
 };
+const COMMERCIAL_PAGES = new Set(["/iptv-for-firestick", "/iptv-for-android-tv", "/iptv-for-samsung-smart-tv", "/iptv-for-lg-smart-tv"]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", "/privacy", "/terms", "/refund", "/cookies", "/contact", "/about", "/reviews", "/status"];
+  const pages = ["", ...COMMERCIAL_PAGES, "/privacy", "/terms", "/refund", "/cookies", "/contact", "/about", "/reviews", "/status"];
   const staticPages = pages.map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: new Date(`${STATIC_PAGE_LAST_MODIFIED[path]}T00:00:00Z`),
     changeFrequency: path === "" ? ("weekly" as const) : ("monthly" as const),
-    priority: path === "" ? 1 : 0.6,
+    priority: path === "" ? 1 : COMMERCIAL_PAGES.has(path) ? 0.8 : 0.6,
   }));
 
   const latestArticleDate = blogPosts.reduce(

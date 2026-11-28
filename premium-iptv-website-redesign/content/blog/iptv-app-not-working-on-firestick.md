@@ -149,6 +149,8 @@ It applies to legitimate IPTV players and content you are authorized to access. 
 
 If the Fire TV home screen never appears and the display goes dark after startup, use the [black-screen-after-logo checks](/blog/firestick-black-screen-after-logo) first. App recovery requires a working device interface.
 
+New to Fire TV setups? [Set up IPTV on your Fire TV](/iptv-for-firestick) with our model-by-model compatibility notes before you install anything.
+
 ## Table of contents
 
 - [Choose the right troubleshooting branch](#choose-the-right-troubleshooting-branch)
@@ -201,6 +203,8 @@ For example, TiviMate's official site says its premium upgrade unlocks applicati
 
 That distinction saves time when an app opens but claims that a playlist subscription has expired. The player developer generally cannot renew a third-party content account for you.
 
+For background on how the device, player and service fit together, read [how IPTV works on a Firestick](/blog/how-does-iptv-work-on-firestick). If you are unsure which player your model supports, [get setup instructions for your device](/contact) rather than trying several installers.
+
 ## If the app will not install
 
 ### Check availability before finding another download
@@ -246,6 +250,8 @@ If another player or app behaves normally, retain that as a comparison. If all a
 Check the app's legitimate distribution channel and the device's system update screen. Write down the installed versions first, especially if the problem began immediately after an update.
 
 Do not install an old APK from a random archive because a comment says “the latest version is broken.” A rollback can introduce security or database-compatibility problems. Use an older version only if the developer explicitly supplies and supports that recovery path.
+
+If the player closes on every device you try, the broader guide to [an IPTV app that keeps crashing](/blog/iptv-app-keeps-crashing) covers storage, data and the safest reinstall order.
 
 ## If login or playlist loading fails
 
@@ -325,6 +331,8 @@ Keep a private record of the model, operating system, app version and installati
 When escalating, send the exact failure stage and comparison results. An illustrative report might say: “The app launches, but playlist import returns an authorization error. Another supported player gives the same error. The account page shows active. No other sessions were running.”
 
 Send that report to the provider rather than the television manufacturer. Conversely, a reproducible app crash without any playlist configured is valuable evidence for the app developer. Choosing the right recipient can be more useful than trying another ten settings.
+
+If you are replacing the device, [IPTV on Google TV devices](/iptv-for-android-tv) may suit households whose Fire TV model cannot install the player they need.
 
 ## Frequently asked questions
 

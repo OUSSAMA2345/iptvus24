@@ -144,6 +144,8 @@ Searching the LG app catalogue repeatedly will not make an Android-only player a
 
 This guide distinguishes a missing listing from a failed installation or an installed application that cannot play media. Those problems overlap at the store screen but require different decisions. It does not claim that any named player is available on every LG television or in every country.
 
+If you are choosing a setup for an LG television, [IPTV on LG webOS TVs](/iptv-for-lg-smart-tv) summarises Content Store checks and plans.
+
 ## Table of contents
 
 - [Build a compatibility record first](#build-a-compatibility-record-first)
@@ -204,6 +206,8 @@ Changing to an unrelated country can alter service availability without granting
 
 A VPN does not convert a television into another hardware model or guarantee store eligibility. It can introduce its own compatibility and network issues. Store region, device support, account region, and content licensing are separate questions; a single location tool does not resolve all of them.
 
+Our [LG webOS compatibility guide](/blog/lg-webos-streaming-app-compatibility) covers the model and store checks as a shorter checklist.
+
 ## If the app should be available but the store misbehaves
 
 Test whether other app listings load and whether a different compatible app can be installed. This establishes whether you have a single missing product or a broader store problem. Note any error wording rather than repeatedly pressing Install without reading the response.
@@ -248,6 +252,8 @@ An external HDMI device is another route. Compare its operating system, app avai
 
 Suppose the developer confirms no webOS version exists but supports a named Android TV device. The rational choices are a supported webOS alternative or that compatible external platform. Resetting the LG repeatedly does not create a third choice. If the developer instead confirms your exact model is supported, investigate the store error before buying anything.
 
+When the TV cannot list a suitable app, an external device is often simpler: compare [IPTV with a Fire TV Stick](/iptv-for-firestick) or [watch IPTV on Google TV](/iptv-for-android-tv), and see [TiviMate vs IPTV Smarters](/blog/tivimate-vs-iptv-smarters) for the player trade-offs.
+
 ## Common mistakes when an LG app is missing
 
 The first mistake is accepting an unverified explanation that a named app was “banned everywhere.” Availability may differ by country, model, publisher, and date. Unless LG or the developer confirms the reason, describe the observable fact: the listing is absent for this configuration.
@@ -267,6 +273,8 @@ Keep a private record of activation and service credentials, but do not store un
 Send support the model, software version, actual services country, exact app name and publisher, and whether it appears in the online catalogue for that configuration. Include a screenshot of the error with personal information removed. State whether other apps can be found and installed.
 
 If the app installs but later fails, change the support question accordingly. Report the stage—launch, login, catalogue, guide, or video—rather than continuing to call it “not available.” For a player that exits unexpectedly, the [app-crash guide](/blog/iptv-app-keeps-crashing) provides the next investigation without repeating store compatibility checks.
+
+Samsung owners facing a similar problem should read [IPTV app not working on Samsung TV](/blog/iptv-app-not-working-on-samsung-tv). Before ordering for any television, [confirm compatibility with support before ordering](/contact).
 
 ## Frequently asked questions
 

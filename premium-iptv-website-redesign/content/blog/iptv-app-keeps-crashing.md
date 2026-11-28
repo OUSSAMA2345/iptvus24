@@ -88,7 +88,7 @@
         "name": "Can a large playlist make a player crash?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A large catalogue can increase parsing, database, artwork, and memory work, particularly on limited hardware. That does not prove size is the only cause or that a particular number of channels is universally unsafe. Compare a provider-supported smaller catalogue and record the result. A reproducible difference is useful evidence for both the service and the app developer."
+          "text": "A large catalogue can increase parsing, database, artwork, and memory work, particularly on limited hardware. That does not prove size is the only cause or that a particular number of channels is universally unsafe. Compare a provider-supported smaller catalogue and record the result. A reproducible difference is useful evidence for both the service and the app developer. If you only need part of a catalogue, ask support about the setup options available for your device."
         }
       },
       {
@@ -144,6 +144,8 @@ An app that returns you to the home screen has a different problem from a channe
 
 The instructions below are documentation-based, not a claim of testing every player. Android TV, Google TV, Fire TV, Samsung Tizen, and LG webOS expose different recovery controls. Use your manufacturer's instructions where the example menu does not match, and restrict testing to media you have permission to access.
 
+Replacing an unreliable device? Our [Firestick IPTV setup help](/iptv-for-firestick) page lists the model checks to make before ordering.
+
 ## Table of contents
 
 - [Describe the failure in observable terms](#describe-the-failure-in-observable-terms)
@@ -190,6 +192,8 @@ Then perform a normal device restart. A short press of a television power button
 Install updates only from the platform store or the developer's verified distribution route. Check the operating system as well as the player. An app may rely on media or system components supplied by the device, but an update is not guaranteed to fix a particular crash.
 
 If the problem began after an update, report that history rather than downloading a random older APK. Unofficial downgrades can introduce security issues, break database compatibility, or replace the real app with an imitation. Ask the developer whether a known issue or supported recovery path exists for the exact version.
+
+Device-specific branches are covered in [IPTV app not working on Firestick](/blog/iptv-app-not-working-on-firestick) and [IPTV app not working on Samsung TV](/blog/iptv-app-not-working-on-samsung-tv). If the app never opens at all, start with [a streaming app that won't open](/blog/streaming-app-wont-open).
 
 ## Check storage and memory separately
 
@@ -271,6 +275,8 @@ Include the device model, OS version, player version, free storage, exact steps,
 
 Only send logs through a verified support channel, and check whether they contain account URLs, tokens, identifiers, or viewing details. Ask what data is necessary before sending a full backup. A short reproducible report with private details removed is usually more useful than a long video exposing every setting in your account.
 
+Planning to move the setup to an Android TV box with more storage? [IPTV service for Android TV](/iptv-for-android-tv) lists what to check first.
+
 ## Frequently asked questions
 
 ### Is buffering the same as an app crash?
@@ -283,7 +289,7 @@ Use the less disruptive cache action first where the platform provides it. App d
 
 ### Can a large playlist make a player crash?
 
-A large catalogue can increase parsing, database, artwork, and memory work, particularly on limited hardware. That does not prove size is the only cause or that a particular number of channels is universally unsafe. Compare a provider-supported smaller catalogue and record the result. A reproducible difference is useful evidence for both the service and the app developer.
+A large catalogue can increase parsing, database, artwork, and memory work, particularly on limited hardware. That does not prove size is the only cause or that a particular number of channels is universally unsafe. Compare a provider-supported smaller catalogue and record the result. A reproducible difference is useful evidence for both the service and the app developer. If you only need part of a catalogue, [ask support about the setup options](/contact) available for your device.
 
 ### Why does the app crash on one channel only?
 

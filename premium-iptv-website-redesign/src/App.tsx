@@ -12,7 +12,9 @@ import { WhatsAppContactSection } from "./components/WhatsApp";
 import SetupGuide from "./components/SetupGuide";
 import Reveal from "./components/Reveal";
 
-export default function App() {
+export type GuideLink = { href: string; title: string };
+
+export default function App({ guides = [] }: { guides?: GuideLink[] }) {
   return (
     <div className="premium-site min-h-screen bg-mist font-body text-ink antialiased">
       <Navbar />
@@ -23,7 +25,7 @@ export default function App() {
         <Reveal><Features /></Reveal>
         <Plans />
         <Reveal><Compare /></Reveal>
-        <Reveal><SetupGuide /></Reveal>
+        <Reveal><SetupGuide guides={guides} /></Reveal>
         <Reveal><Reviews /></Reveal>
         <Reveal><Faq /></Reveal>
         <Reveal><WhatsAppContactSection /></Reveal>

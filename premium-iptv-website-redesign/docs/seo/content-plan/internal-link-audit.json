@@ -1,0 +1,2382 @@
+{
+  "auditedAt": "2026-11-28",
+  "rules": {
+    "minRelated": 3,
+    "minSupporting": 5,
+    "maxSupporting": 10,
+    "minCommercial": 3,
+    "maxCommercial": 5,
+    "minCommercialAny": 1,
+    "anchorCap": 4,
+    "minCommercialInbound": 3,
+    "minLinkBack": 3,
+    "minInbound": 3
+  },
+  "summary": {
+    "liveArticles": 56,
+    "markdownArticles": 20,
+    "legacyArticles": 36,
+    "liveCommercialLinks": 104,
+    "liveContextualArticleLinks": 107,
+    "liveDistinctCommercialAnchors": 104,
+    "liveMaxAnchorReuse": 1,
+    "articlesWithAboveFoldLink": 20,
+    "orphans": 0,
+    "plannedArticles": 100,
+    "errors": 0,
+    "warnings": 0
+  },
+  "commercialPages": [
+    {
+      "id": "firestick",
+      "url": "/iptv-for-firestick",
+      "label": "IPTV for Firestick",
+      "supportingArticles": 13,
+      "contextual": 9,
+      "routeExists": true,
+      "linksBackTo": 8
+    },
+    {
+      "id": "samsung",
+      "url": "/iptv-for-samsung-smart-tv",
+      "label": "IPTV for Samsung Smart TV",
+      "supportingArticles": 8,
+      "contextual": 5,
+      "routeExists": true,
+      "linksBackTo": 8
+    },
+    {
+      "id": "lg",
+      "url": "/iptv-for-lg-smart-tv",
+      "label": "IPTV for LG Smart TV",
+      "supportingArticles": 9,
+      "contextual": 6,
+      "routeExists": true,
+      "linksBackTo": 8
+    },
+    {
+      "id": "androidtv",
+      "url": "/iptv-for-android-tv",
+      "label": "IPTV for Android TV",
+      "supportingArticles": 16,
+      "contextual": 12,
+      "routeExists": true,
+      "linksBackTo": 8
+    },
+    {
+      "id": "plans",
+      "url": "/#plans",
+      "label": "Plans & pricing",
+      "supportingArticles": 18,
+      "contextual": 11,
+      "routeExists": true,
+      "linksBackTo": 6
+    },
+    {
+      "id": "compare",
+      "url": "/#compare-plans",
+      "label": "Compare plans",
+      "supportingArticles": 15,
+      "contextual": 8,
+      "routeExists": true,
+      "linksBackTo": 6
+    },
+    {
+      "id": "support",
+      "url": "/contact",
+      "label": "Pre-sales support",
+      "supportingArticles": 24,
+      "contextual": 16,
+      "routeExists": true,
+      "linksBackTo": 4
+    }
+  ],
+  "liveArticles": [
+    {
+      "slug": "android-tv-storage-space-running-out",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-keeps-crashing",
+        "tivimate-playlist-is-processed-please-wait",
+        "how-to-organize-iptv-channels"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV plans for Android TV users",
+          "url": "/iptv-for-android-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "flexible IPTV plan lengths",
+          "url": "/#plans",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "reach our setup team",
+          "url": "/contact",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 2,
+      "inboundTotal": 12
+    },
+    {
+      "slug": "firestick-black-screen-after-logo",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-not-working-on-firestick",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "firestick-buffering-but-internet-is-fine"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "Fire TV Stick IPTV options",
+          "url": "/iptv-for-firestick",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "speak with the setup team",
+          "url": "/contact",
+          "placement": "body"
+        },
+        {
+          "anchor": "monthly and annual IPTV plans",
+          "url": "/#plans",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 2,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "firestick-buffering-but-internet-is-fine",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "streaming-buffering-but-internet-is-fine",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "iptv-app-not-working-on-firestick"
+      ],
+      "contextualRelated": 6,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV for Firestick",
+          "url": "/iptv-for-firestick",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "ask support about your device",
+          "url": "/contact",
+          "placement": "body"
+        },
+        {
+          "anchor": "compare connection limits",
+          "url": "/#compare-plans",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 7,
+      "inboundTotal": 9
+    },
+    {
+      "slug": "firestick-not-connecting-to-wifi-but-other-devices-will",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "firestick-buffering-but-internet-is-fine",
+        "iptv-app-not-working-on-firestick",
+        "firestick-black-screen-after-logo"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "Streaming IPTV on a Firestick",
+          "url": "/iptv-for-firestick",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "check the current packages",
+          "url": "/#plans",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "ask about trial options",
+          "url": "/contact",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 2,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "how-does-iptv-work-on-firestick",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-player-vs-iptv-service",
+        "iptv-app-not-working-on-firestick",
+        "what-is-xmltv-epg"
+      ],
+      "contextualRelated": 6,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV service for Fire TV Stick",
+          "url": "/iptv-for-firestick",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "weigh plan lengths side by side",
+          "url": "/#compare-plans",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "message support before you subscribe",
+          "url": "/contact",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 4,
+      "inboundTotal": 6
+    },
+    {
+      "slug": "how-to-organize-iptv-channels",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "what-is-xmltv-epg",
+        "tivimate-vs-iptv-smarters",
+        "iptv-player-vs-iptv-service"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "Choose an IPTV plan",
+          "url": "/#plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "IPTV on Samsung Tizen TVs",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "set up IPTV on Android TV",
+          "url": "/iptv-for-android-tv",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 5,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "iptv-app-keeps-crashing",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "iptv-channels-not-loading",
+        "iptv-app-not-working-on-firestick"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "Firestick IPTV setup help",
+          "url": "/iptv-for-firestick",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "IPTV service for Android TV",
+          "url": "/iptv-for-android-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "ask support about the setup options",
+          "url": "/contact",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 7,
+      "inboundTotal": 10
+    },
+    {
+      "slug": "iptv-app-not-available-on-lg-tv",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-not-working-on-samsung-tv",
+        "iptv-player-vs-iptv-service",
+        "tivimate-vs-iptv-smarters"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV on LG webOS TVs",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "IPTV with a Fire TV Stick",
+          "url": "/iptv-for-firestick",
+          "placement": "body"
+        },
+        {
+          "anchor": "watch IPTV on Google TV",
+          "url": "/iptv-for-android-tv",
+          "placement": "body"
+        },
+        {
+          "anchor": "confirm compatibility with support before ordering",
+          "url": "/contact",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 2,
+      "inboundTotal": 4
+    },
+    {
+      "slug": "iptv-app-not-working-on-firestick",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "firestick-black-screen-after-logo",
+        "firestick-not-connecting-to-wifi-but-other-devices-will",
+        "iptv-app-keeps-crashing"
+      ],
+      "contextualRelated": 7,
+      "totalRelated": 8,
+      "commercialLinks": [
+        {
+          "anchor": "Set up IPTV on your Fire TV",
+          "url": "/iptv-for-firestick",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "get setup instructions for your device",
+          "url": "/contact",
+          "placement": "body"
+        },
+        {
+          "anchor": "IPTV on Google TV devices",
+          "url": "/iptv-for-android-tv",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 5,
+      "inboundTotal": 7
+    },
+    {
+      "slug": "iptv-app-not-working-on-samsung-tv",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "samsung-tv-apps-not-working-but-connected-to-internet",
+        "iptv-app-not-available-on-lg-tv",
+        "iptv-channels-not-loading"
+      ],
+      "contextualRelated": 6,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV for Samsung Smart TV",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "confirm setup steps before paying",
+          "url": "/contact",
+          "placement": "body"
+        },
+        {
+          "anchor": "IPTV for LG Smart TV",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "pick a plan that fits your household",
+          "url": "/#plans",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 3,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "iptv-channels-not-loading",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "mag-box-portal-not-loading",
+        "iptv-app-keeps-crashing",
+        "iptv-epg-not-updating"
+      ],
+      "contextualRelated": 6,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "compare IPTV packages",
+          "url": "/#compare-plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "Samsung TV IPTV setup",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "LG TV IPTV setup",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "review IPTVUS24 packages",
+          "url": "/#plans",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 6,
+      "inboundTotal": 9
+    },
+    {
+      "slug": "iptv-epg-not-updating",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "what-is-xmltv-epg",
+        "tivimate-epg-no-information",
+        "iptv-channels-not-loading"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "see what each plan includes",
+          "url": "/#plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "Android TV IPTV setup",
+          "url": "/iptv-for-android-tv",
+          "placement": "body"
+        },
+        {
+          "anchor": "verified support contact details",
+          "url": "/contact",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "compare plan features",
+          "url": "/#compare-plans",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "ask which player suits your device",
+          "url": "/contact",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 4,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "iptv-player-vs-iptv-service",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "tivimate-vs-iptv-smarters",
+        "how-does-iptv-work-on-firestick",
+        "mag-box-portal-not-loading"
+      ],
+      "contextualRelated": 6,
+      "totalRelated": 7,
+      "commercialLinks": [
+        {
+          "anchor": "side-by-side plan comparison",
+          "url": "/#compare-plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "IPTV for Samsung televisions",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "body"
+        },
+        {
+          "anchor": "IPTV for LG televisions",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "body"
+        },
+        {
+          "anchor": "get help choosing a setup",
+          "url": "/contact",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 7,
+      "inboundTotal": 9
+    },
+    {
+      "slug": "mag-box-portal-not-loading",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-channels-not-loading",
+        "iptv-player-vs-iptv-service",
+        "streaming-buffering-but-internet-is-fine"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "Browse IPTV packages",
+          "url": "/#plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "Android TV IPTV setup help",
+          "url": "/iptv-for-android-tv",
+          "placement": "body"
+        },
+        {
+          "anchor": "talk to support about setup",
+          "url": "/contact",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 1,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "samsung-tv-apps-not-working-but-connected-to-internet",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-not-working-on-samsung-tv",
+        "streaming-buffering-but-internet-is-fine",
+        "iptv-app-keeps-crashing"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 6,
+      "commercialLinks": [
+        {
+          "anchor": "watch IPTV on a Samsung TV",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "IPTV service for LG TVs",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "ask a compatibility question",
+          "url": "/contact",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 1,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "streaming-buffering-but-internet-is-fine",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "firestick-buffering-but-internet-is-fine",
+        "samsung-tv-apps-not-working-but-connected-to-internet",
+        "iptv-channels-not-loading"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 7,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV subscription plans",
+          "url": "/#plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "Fire TV IPTV guide and plans",
+          "url": "/iptv-for-firestick",
+          "placement": "body"
+        },
+        {
+          "anchor": "Android TV and Google TV setup notes",
+          "url": "/iptv-for-android-tv",
+          "placement": "body"
+        },
+        {
+          "anchor": "send your comparison results to support",
+          "url": "/contact",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 4,
+      "inboundTotal": 7
+    },
+    {
+      "slug": "tivimate-epg-no-information",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-epg-not-updating",
+        "what-is-xmltv-epg",
+        "tivimate-playlist-is-processed-please-wait"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "Android TV player options",
+          "url": "/iptv-for-android-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "check your setup with our team",
+          "url": "/contact",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "compare what each package includes",
+          "url": "/#compare-plans",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 5,
+      "inboundTotal": 6
+    },
+    {
+      "slug": "tivimate-playlist-is-processed-please-wait",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-channels-not-loading",
+        "tivimate-epg-no-information",
+        "android-tv-storage-space-running-out"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV for Android TV boxes",
+          "url": "/iptv-for-android-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "request device-specific setup help",
+          "url": "/contact",
+          "placement": "body"
+        },
+        {
+          "anchor": "see how the plans differ",
+          "url": "/#compare-plans",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 4,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "tivimate-vs-iptv-smarters",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-player-vs-iptv-service",
+        "how-to-organize-iptv-channels",
+        "iptv-app-not-available-on-lg-tv"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV for Android TV",
+          "url": "/iptv-for-android-tv",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "look at the plan options",
+          "url": "/#plans",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "IPTV for Fire TV Cube and sticks",
+          "url": "/iptv-for-firestick",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "plan-by-plan comparison",
+          "url": "/#compare-plans",
+          "placement": "faq"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 5,
+      "inboundTotal": 6
+    },
+    {
+      "slug": "what-is-xmltv-epg",
+      "kind": "markdown",
+      "problems": [],
+      "templateRelated": [
+        "iptv-epg-not-updating",
+        "tivimate-epg-no-information",
+        "how-to-organize-iptv-channels"
+      ],
+      "contextualRelated": 5,
+      "totalRelated": 5,
+      "commercialLinks": [
+        {
+          "anchor": "see current IPTV plans",
+          "url": "/#plans",
+          "placement": "above-fold"
+        },
+        {
+          "anchor": "LG webOS player options",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "before-conclusion"
+        },
+        {
+          "anchor": "Google TV and Android TV plan options",
+          "url": "/iptv-for-android-tv",
+          "placement": "before-conclusion"
+        }
+      ],
+      "aboveFold": true,
+      "inboundContextual": 4,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "choose-an-internet-tv-service",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "choose-a-streaming-device-for-your-tv",
+        "compare-streaming-plan-prices",
+        "lawful-live-sports-streaming-checklist"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "compare IPTV subscription options",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 6
+    },
+    {
+      "slug": "check-device-compatibility",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-on-windows-pc",
+        "streaming-on-mac-setup",
+        "choose-a-streaming-device-for-your-tv"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "a compatibility question for our team",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "what-affects-streaming-quality",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-buffering-but-internet-is-fine",
+        "firestick-buffering-but-internet-is-fine",
+        "iptv-channels-not-loading"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "plan durations and device allowances",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "compare-streaming-plan-prices",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-subscription-cost-comparison",
+        "streaming-service-refund-and-cancellation-checks",
+        "choose-an-internet-tv-service"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "plan comparison overview",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "streaming-app-privacy-and-security",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-on-iphone-privacy-checklist",
+        "streaming-account-privacy-and-security",
+        "streaming-on-ipad-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "reach support on WhatsApp or the form",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "regional-content-availability-and-rights",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "watching-streaming-services-while-travelling",
+        "lawful-live-sports-streaming-checklist",
+        "choose-an-internet-tv-service"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "get pre-order answers",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "fire-tv-streaming-setup-checklist",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "how-does-iptv-work-on-firestick",
+        "iptv-app-not-working-on-firestick",
+        "firestick-not-connecting-to-wifi-but-other-devices-will"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Fire TV IPTV compatibility checklist",
+          "url": "/iptv-for-firestick",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "samsung-smart-tv-streaming-setup",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-not-working-on-samsung-tv",
+        "samsung-tv-apps-not-working-but-connected-to-internet",
+        "iptv-app-not-available-on-lg-tv"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Samsung Smart TV IPTV guide",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "lg-webos-streaming-app-compatibility",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-not-available-on-lg-tv",
+        "tivimate-vs-iptv-smarters",
+        "iptv-player-vs-iptv-service"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "LG Smart TV IPTV guide",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "apple-tv-streaming-service-setup",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "captions-and-subtitles-on-streaming"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "check device support with our team",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 8
+    },
+    {
+      "slug": "android-tv-streaming-player-setup",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "apple-tv-streaming-service-setup",
+        "captions-and-subtitles-on-streaming"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Android TV IPTV guide and plans",
+          "url": "/iptv-for-android-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 9
+    },
+    {
+      "slug": "google-tv-streaming-app-checklist",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Google TV IPTV compatibility",
+          "url": "/iptv-for-android-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-on-iphone-privacy-checklist",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Ask our team before ordering",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-on-ipad-setup",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Find a plan for your devices",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-on-windows-pc",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "see plan details",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-on-mac-setup",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "request setup guidance",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "ethernet-or-wifi-for-tv-streaming",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "electronic-program-guide-explained",
+        "home-network-bandwidth-for-streaming",
+        "how-does-iptv-work-on-firestick"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Fire TV plan and setup overview",
+          "url": "/iptv-for-firestick",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 7
+    },
+    {
+      "slug": "improve-wifi-signal-for-smart-tv",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "electronic-program-guide-explained",
+        "ethernet-or-wifi-for-tv-streaming",
+        "home-network-bandwidth-for-streaming"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Samsung TV IPTV compatibility",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "troubleshoot-buffering-step-by-step",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-buffering-but-internet-is-fine",
+        "firestick-buffering-but-internet-is-fine",
+        "firestick-not-connecting-to-wifi-but-other-devices-will"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Android TV compatibility and plans",
+          "url": "/iptv-for-android-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "streaming-app-wont-open",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "iptv-app-keeps-crashing",
+        "iptv-app-not-working-on-firestick",
+        "iptv-app-not-working-on-samsung-tv"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "LG TV IPTV compatibility",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "streaming-black-screen-with-audio",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "electronic-program-guide-explained",
+        "ethernet-or-wifi-for-tv-streaming",
+        "home-network-bandwidth-for-streaming"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Firestick IPTV service page",
+          "url": "/iptv-for-firestick",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "electronic-program-guide-explained",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "what-is-xmltv-epg",
+        "iptv-epg-not-updating",
+        "tivimate-epg-no-information"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "subscription plans for live TV",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 2,
+      "inboundTotal": 7
+    },
+    {
+      "slug": "captions-and-subtitles-on-streaming",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-accessibility-features",
+        "streaming-audio-language-and-track-issues",
+        "streaming-parental-controls-guide"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "compare plans at a glance",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "lawful-live-sports-streaming-checklist",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "choose-a-streaming-device-for-your-tv",
+        "choose-an-internet-tv-service",
+        "compare-streaming-plan-prices"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "compare subscription terms",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 2
+    },
+    {
+      "slug": "streaming-account-privacy-and-security",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "regional-content-availability-and-rights",
+        "streaming-app-privacy-and-security",
+        "streaming-parental-controls-guide"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Send a pre-sales question",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "streaming-subscription-cost-comparison",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "choose-a-streaming-device-for-your-tv",
+        "choose-an-internet-tv-service",
+        "compare-streaming-plan-prices"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "compare value across plan terms",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "watching-streaming-services-while-travelling",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "regional-content-availability-and-rights",
+        "streaming-account-privacy-and-security",
+        "streaming-app-privacy-and-security"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Get a compatibility answer first",
+          "url": "/contact",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-parental-controls-guide",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "regional-content-availability-and-rights",
+        "streaming-account-privacy-and-security",
+        "streaming-app-privacy-and-security"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Review plan options",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 3
+    },
+    {
+      "slug": "streaming-device-storage-and-updates",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "iptv-app-keeps-crashing",
+        "tivimate-playlist-is-processed-please-wait"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Android TV box IPTV options",
+          "url": "/iptv-for-android-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "home-network-bandwidth-for-streaming",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "reduce-streaming-data-use",
+        "ethernet-or-wifi-for-tv-streaming",
+        "streaming-buffering-but-internet-is-fine"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "plans with two device connections",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 1,
+      "inboundTotal": 6
+    },
+    {
+      "slug": "streaming-audio-language-and-track-issues",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "electronic-program-guide-explained",
+        "ethernet-or-wifi-for-tv-streaming",
+        "home-network-bandwidth-for-streaming"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Samsung IPTV setup help",
+          "url": "/iptv-for-samsung-smart-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-device-remote-not-responding",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Firestick setup and plan options",
+          "url": "/iptv-for-firestick",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "choose-a-streaming-device-for-your-tv",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "streaming-device-remote-not-responding",
+        "check-device-compatibility",
+        "fire-tv-streaming-setup-checklist"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "Compare device allowances by plan",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 5
+    },
+    {
+      "slug": "reduce-streaming-data-use",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "electronic-program-guide-explained",
+        "ethernet-or-wifi-for-tv-streaming",
+        "home-network-bandwidth-for-streaming"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "IPTV plan pricing",
+          "url": "/#plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-accessibility-features",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "android-tv-storage-space-running-out",
+        "android-tv-streaming-player-setup",
+        "apple-tv-streaming-service-setup"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "LG IPTV setup help",
+          "url": "/iptv-for-lg-smart-tv",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    },
+    {
+      "slug": "streaming-service-refund-and-cancellation-checks",
+      "kind": "legacy",
+      "problems": [],
+      "templateRelated": [
+        "choose-a-streaming-device-for-your-tv",
+        "choose-an-internet-tv-service",
+        "compare-streaming-plan-prices"
+      ],
+      "contextualRelated": 0,
+      "totalRelated": 3,
+      "commercialLinks": [
+        {
+          "anchor": "compare packages before ordering",
+          "url": "/#compare-plans",
+          "placement": "after-article next step"
+        }
+      ],
+      "aboveFold": false,
+      "note": "Legacy short guide: related links come from the curated/template module; one commercial next step follows the body. Migrate to Markdown to add contextual links.",
+      "inboundContextual": 0,
+      "inboundTotal": 1
+    }
+  ],
+  "plan": {
+    "articles": 100,
+    "problems": [],
+    "commercialInbound": {
+      "firestick": 59,
+      "samsung": 34,
+      "lg": 33,
+      "androidtv": 49,
+      "plans": 83,
+      "compare": 72,
+      "support": 61
+    },
+    "minPlannedInbound": 3
+  },
+  "anchors": [
+    {
+      "anchor": "android tv box iptv options",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "android tv iptv setup",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "android tv iptv setup help",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "android tv player options",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "ask support about your device",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "ask whether a trial is currently available",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "ask which player suits your device",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "browse iptv packages",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "check differences between plans",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "check iptv free trial availability",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "check plan pricing",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "choose an iptv plan",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare device allowances by plan",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare iptv packages",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare monthly and annual options",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "compare packages before ordering",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare plan features",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare subscription terms",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare the iptvus24 plans",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "compare value across plan terms",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare what each package includes",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "confirm compatibility with support before ordering",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "contact pre-sales support",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "current subscription options",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "explore subscription options",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "fire os and vega os compatibility notes",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "fire tv iptv guide and plans",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "fire tv stick iptv options",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "firestick compatibility and plans",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "firestick iptv setup help",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "get setup instructions for your device",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for android tv",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for android tv boxes",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for fire tv stick 4k models",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv for firestick",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv on fire tv devices",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv on google tv devices",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv plan pricing",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv plans for android tv users",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv plans for fire tv users",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv service for android tv",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv service for fire tv stick",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv subscription plans",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptvus24 plans and pricing",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "message support before you subscribe",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "monthly and annual iptv plans",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "pick a plan that fits your household",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "plan comparison table",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "plan durations and device allowances",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "plan-by-plan comparison",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "premium iptv packages",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "review plan options",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "see current iptv plans",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "see how the plans differ",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "see what each plan includes",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "set up iptv on your fire tv",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "side-by-side plan comparison",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "start watching today",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "streaming iptv on a firestick",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "talk to support about setup",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "view available plans",
+      "uses": 4,
+      "liveUses": 0
+    },
+    {
+      "anchor": "watch iptv on google tv",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "weigh plan lengths side by side",
+      "uses": 4,
+      "liveUses": 1
+    },
+    {
+      "anchor": "android tv compatibility and plans",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "android tv iptv guide and plans",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "ask a compatibility question",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "ask about activation timing",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "ask about trial options",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "ask our team before ordering",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "available iptv subscriptions",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "check device support with our team",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "check the current packages",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "check your setup with our team",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare connection limits",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare iptv subscription options",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "compare package lengths",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "compare plans at a glance",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "confirm setup steps before paying",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "evaluate packages side by side",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "find a plan for your devices",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "fire tv iptv compatibility checklist",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "fire tv plan and setup overview",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "firestick iptv service page",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "firestick setup and plan options",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "flexible iptv plan lengths",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "get a compatibility answer first",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "get help choosing a setup",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "get pre-order answers",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "google tv and android tv plan options",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "google tv iptv compatibility",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for fire tv cube and sticks",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for lg smart tv",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for lg televisions",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for nvidia shield and android boxes",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv for samsung smart tv",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv for samsung televisions",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv on lg webos tvs",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv on samsung tizen tvs",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv packages and pricing",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv plans for lg owners",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv plans for samsung owners",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv plans from one to twelve months",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv service for lg tvs",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv service for samsung tvs",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv with a fire tv stick",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "iptv with an android tv player",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "lg iptv setup help",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "lg smart tv compatibility and plans",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "lg tv iptv setup",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "lg webos player options",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "line up the plans",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "look at the plan options",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "our android tv setup page",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "our fire tv setup page",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "package comparison chart",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "plan comparison overview",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "plans with two device connections",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "reach support on whatsapp or the form",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "request device-specific setup help",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "request setup guidance",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "review iptvus24 packages",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "samsung iptv setup help",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "samsung smart tv compatibility and plans",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "samsung tizen player options",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "samsung tv iptv setup",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "see plan details",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "see the package comparison",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "send a pre-sales question",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "set up iptv on android tv",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "speak with the setup team",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "subscription plans for live tv",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "watch iptv on a samsung tv",
+      "uses": 3,
+      "liveUses": 1
+    },
+    {
+      "anchor": "watch iptv on an lg tv",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "watching iptv on amazon fire tv",
+      "uses": 3,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv with lg content store apps",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "iptv with samsung smart hub apps",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "lg iptv plan options",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "lg smart tv iptv guide",
+      "uses": 2,
+      "liveUses": 1
+    },
+    {
+      "anchor": "lg tv iptv compatibility",
+      "uses": 2,
+      "liveUses": 1
+    },
+    {
+      "anchor": "our lg tv setup page",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "our samsung tv setup page",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "samsung iptv plan options",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "samsung smart tv iptv guide",
+      "uses": 2,
+      "liveUses": 1
+    },
+    {
+      "anchor": "samsung tv iptv compatibility",
+      "uses": 2,
+      "liveUses": 1
+    },
+    {
+      "anchor": "set up iptv on a samsung tv",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "set up iptv on an lg tv",
+      "uses": 2,
+      "liveUses": 0
+    },
+    {
+      "anchor": "a compatibility question for our team",
+      "uses": 1,
+      "liveUses": 1
+    },
+    {
+      "anchor": "android tv and google tv setup notes",
+      "uses": 1,
+      "liveUses": 1
+    },
+    {
+      "anchor": "ask support about the setup options",
+      "uses": 1,
+      "liveUses": 1
+    },
+    {
+      "anchor": "reach our setup team",
+      "uses": 1,
+      "liveUses": 1
+    },
+    {
+      "anchor": "send your comparison results to support",
+      "uses": 1,
+      "liveUses": 1
+    },
+    {
+      "anchor": "verified support contact details",
+      "uses": 1,
+      "liveUses": 1
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

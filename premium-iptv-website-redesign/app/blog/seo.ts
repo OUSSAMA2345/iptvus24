@@ -92,6 +92,14 @@ const supportingRelatedSlugs: Record<string, string[]> = {
   "samsung-smart-tv-streaming-setup": ["iptv-app-not-working-on-samsung-tv", "samsung-tv-apps-not-working-but-connected-to-internet", "iptv-app-not-available-on-lg-tv"],
   "streaming-device-storage-and-updates": ["android-tv-storage-space-running-out", "iptv-app-keeps-crashing", "tivimate-playlist-is-processed-please-wait"],
   "what-affects-streaming-quality": ["streaming-buffering-but-internet-is-fine", "firestick-buffering-but-internet-is-fine", "iptv-channels-not-loading"],
+  // Give every legacy guide at least one inbound article link (no orphans; see docs/seo/content-plan/INTERNAL-LINKING-AUDIT.md).
+  "streaming-app-privacy-and-security": ["streaming-on-iphone-privacy-checklist", "streaming-account-privacy-and-security", "streaming-on-ipad-setup"],
+  "check-device-compatibility": ["streaming-on-windows-pc", "streaming-on-mac-setup", "choose-a-streaming-device-for-your-tv"],
+  "compare-streaming-plan-prices": ["streaming-subscription-cost-comparison", "streaming-service-refund-and-cancellation-checks", "choose-an-internet-tv-service"],
+  "regional-content-availability-and-rights": ["watching-streaming-services-while-travelling", "lawful-live-sports-streaming-checklist", "choose-an-internet-tv-service"],
+  "captions-and-subtitles-on-streaming": ["streaming-accessibility-features", "streaming-audio-language-and-track-issues", "streaming-parental-controls-guide"],
+  "home-network-bandwidth-for-streaming": ["reduce-streaming-data-use", "ethernet-or-wifi-for-tv-streaming", "streaming-buffering-but-internet-is-fine"],
+  "choose-a-streaming-device-for-your-tv": ["streaming-device-remote-not-responding", "check-device-compatibility", "fire-tv-streaming-setup-checklist"],
 };
 
 export function getRelatedPosts(post: BlogPost, posts: BlogPost[]): BlogPost[] {

@@ -144,6 +144,8 @@ A playlist import that never finishes leaves you in an awkward position: you can
 
 The wording of the processing message varies across versions and setup methods. This guide addresses the import stage—not a channel buffering during playback and not an EPG row saying “No information.”
 
+Choosing a device for a large catalogue? [IPTV for Android TV boxes](/iptv-for-android-tv) covers storage and player considerations before you order.
+
 ## Table of contents
 
 - [What happens while a playlist is processed](#what-happens-while-a-playlist-is-processed)
@@ -224,6 +226,8 @@ An account can be active while one catalogue endpoint is under maintenance. Ask 
 Record your device model, operating system and TiviMate version. TiviMate states that it is intended for Android TV devices and is not optimized for phones and tablets on its [official download page](https://tivimate.com/).
 
 For Fire TV, verify the developer's support for your exact software platform. Amazon supports different Fire TV operating-system targets, including Vega and Fire OS; a model name alone is insufficient. Amazon explains that split in its [Vega announcement](https://developer.amazon.com/apps-and-games/blogs/2025/09/announcing-vega-os).
+
+The difference between the player and the account that supplies the playlist is covered in [IPTV player vs IPTV service](/blog/iptv-player-vs-iptv-service). If you are unsure which login method applies to you, [request device-specific setup help](/contact) rather than guessing.
 
 ## Reduce the import without destroying the original
 
@@ -307,6 +311,8 @@ Use TiviMate's legitimate distribution channel and check developer guidance for 
 
 Before a reinstall, confirm that the supported installer remains available, export a backup where possible, record provider setup details and understand what will not be restored. Avoid random older packages or modified premium builds. Reinstallation cannot repair a server response that remains invalid or inaccessible.
 
+Low free space can stall an import on compact sticks; [Android TV storage running out](/blog/android-tv-storage-space-running-out) explains safe cleanup. If the import finishes but nothing plays, continue with [IPTV channels not loading](/blog/iptv-channels-not-loading).
+
 ## Interpret comparison tests correctly
 
 ### Another player works
@@ -344,6 +350,8 @@ A useful support request can follow this invented example:
 > Device and operating system recorded; TiviMate version recorded. The documented account method stalls before a channel count appears. A smaller live-only import completes. The full catalogue stalls on two attempts after a restart. Other sessions were closed. The issue began after the provider's catalogue update.
 
 Add approximate elapsed time and the exact visible wording. Ask whether support wants a redacted sample or a specific diagnostic log. Do not post your password, complete endpoint query string or backup publicly.
+
+If you are planning a second screen for the same household, [see how the plans differ](/#compare-plans) in device connections before adding another playlist.
 
 ## Frequently asked questions
 

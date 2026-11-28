@@ -147,6 +147,8 @@ This guide is a diagnostic workflow, not a claim that every pause has the same c
 
 If the same symptom affects several devices or services, use the [cross-device buffering comparison](/blog/streaming-buffering-but-internet-is-fine). This guide keeps its focus on the Fire TV device and its immediate playback path.
 
+Setting up a new Fire TV device as well? Our page on [IPTV for Firestick](/iptv-for-firestick) explains how to check Fire OS and Vega OS models before choosing a plan.
+
 ## Table of contents
 
 - [What a good speed test does and does not prove](#what-a-good-speed-test-does-and-does-not-prove)
@@ -253,6 +255,8 @@ Observe whether large downloads, cloud backups or another household stream coinc
 
 If the problem appears only in the evening, note whether all services are affected or one source deteriorates. Evening congestion can occur within the home, along the internet path or at the service. The clock alone does not identify the responsible company.
 
+If you are deciding between a wired adapter and better Wi-Fi placement, [Ethernet or Wi-Fi for TV streaming](/blog/ethernet-or-wifi-for-tv-streaming) compares the trade-offs, while [the steps for a Firestick that will not join Wi-Fi](/blog/firestick-not-connecting-to-wifi-but-other-devices-will) cover association failures.
+
 ## Repair the affected app without losing settings
 
 When other apps work normally on the same stick, move to app-specific checks. Amazon recommends restarting, managing app cache/data, checking system updates and reinstalling where necessary in its [app troubleshooting documentation](https://www.amazon.com/gp/help/customer/display.html?nodeId=GYANE8DXAEUXTTFX).
@@ -299,6 +303,8 @@ This is an illustrative report, not a real customer case. It helps support decid
 
 Contact the app developer for reproducible app-only crashes or format failures. Contact the provider for a channel failing across supported players. Contact your router or internet provider when multiple services and devices fail on the home connection but work elsewhere. Send device identifiers and account details only through verified private support channels, and never include playlist passwords in public screenshots.
 
+When the evidence points beyond your home network, [ask support about your device](/contact) and share your comparison results; that is faster than changing plans or hardware blindly. A shorter [step-by-step buffering checklist](/blog/troubleshoot-buffering-step-by-step) is also available.
+
 ## Best practices
 
 Keep a small change log with the date, software version and result of each adjustment. Retain backups before destructive changes. Leave automatic updates enabled where supported unless the manufacturer gives a specific reason not to.
@@ -306,6 +312,8 @@ Keep a small change log with the date, software version and result of each adjus
 Avoid weekly factory resets, indiscriminate cache-cleaner apps and large “performance” checklists. Maintenance should address an observed problem, not become a ritual that repeatedly erases useful evidence. For a broader purchasing decision, review [what affects streaming quality](/blog/what-affects-streaming-quality) before buying a faster plan or replacing hardware.
 
 Before replacing equipment, retest the successful configuration in the usual viewing location during normal household use. Keep a temporary workaround, such as a lower-quality source, clearly distinguished from a confirmed repair. If the symptom returns, record what changed rather than repeating every previous adjustment; the comparison may identify a recurring network or source condition.
+
+If several screens in the house stream at the same time, [compare connection limits](/#compare-plans) as well as bandwidth, because a plan's connection allowance and your network capacity are separate limits.
 
 ## Frequently asked questions
 

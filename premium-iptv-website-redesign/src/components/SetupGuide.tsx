@@ -1,5 +1,13 @@
 import { Icon, SectionHead } from "./ui";
+import Link from "next/link";
 import { WHATSAPP_URL } from "./WhatsApp";
+
+const devicePages = [
+  { href: "/iptv-for-firestick", label: "IPTV for Firestick" },
+  { href: "/iptv-for-android-tv", label: "IPTV for Android TV" },
+  { href: "/iptv-for-samsung-smart-tv", label: "IPTV for Samsung Smart TV" },
+  { href: "/iptv-for-lg-smart-tv", label: "IPTV for LG Smart TV" },
+];
 
 const steps = [
   {
@@ -22,7 +30,7 @@ const steps = [
   },
 ];
 
-export default function SetupGuide() {
+export default function SetupGuide({ guides = [] }: { guides?: { href: string; title: string }[] }) {
   return (
     <section id="setup" className="scroll-mt-28 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -49,6 +57,26 @@ export default function SetupGuide() {
             Ask support what’s available for your device.
           </a>
         </p>
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
+          <nav aria-labelledby="device-setup-pages" className="rounded-2xl border border-line bg-surface p-6 shadow-card">
+            <h3 id="device-setup-pages" className="font-display text-lg font-extrabold text-ink">Device setup pages</h3>
+            <ul className="mt-3 space-y-2 text-sm">
+              {devicePages.map((page) => (
+                <li key={page.href}><Link href={page.href} className="font-semibold text-brand hover:text-brand-deep">{page.label}</Link></li>
+              ))}
+            </ul>
+          </nav>
+          {guides.length > 0 && (
+            <nav aria-labelledby="setup-guides-heading" className="rounded-2xl border border-line bg-surface p-6 shadow-card">
+              <h3 id="setup-guides-heading" className="font-display text-lg font-extrabold text-ink">Helpful setup and troubleshooting guides</h3>
+              <ul className="mt-3 space-y-2 text-sm">
+                {guides.map((guide) => (
+                  <li key={guide.href}><Link href={guide.href} prefetch={false} className="font-semibold text-brand hover:text-brand-deep">{guide.title}</Link></li>
+                ))}
+              </ul>
+            </nav>
+          )}
+        </div>
       </div>
     </section>
   );

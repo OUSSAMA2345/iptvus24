@@ -105,7 +105,7 @@
         "name": "Will a premium player subscription unlock channels?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not by itself. A player upgrade generally unlocks application features, while content access comes from a separate authorized source. TiviMate explicitly states that it provides no channels or media. Check the terms of the exact product before paying. If a particular service bundles an app and content, confirm that arrangement with the service rather than assuming it applies to every player."
+          "text": "Not by itself. A player upgrade generally unlocks application features, while content access comes from a separate authorized source. TiviMate explicitly states that it provides no channels or media. Check the terms of the exact product before paying. If a particular service bundles an app and content, confirm that arrangement with the service rather than assuming it applies to every player. To see what a content plan itself includes, review IPTVUS24 packages."
         }
       },
       {
@@ -144,6 +144,8 @@ An IPTV player can show hundreds of channel names while failing to play a single
 **When IPTV channels are not loading, first determine whether the channel list is missing or whether listed channels fail during playback. Then compare a few authorized channels, check account status and connection limits, and record any actual error.** Preserve the playlist before clearing data or reinstalling the player.
 
 This guide uses a small set of controlled comparisons rather than a long list of speculative settings. It does not assume that your provider is down, that your ISP is blocking traffic, or that a different application will repair an unavailable stream. Use it with licensed services, personal media, and other sources you are entitled to access.
+
+If you are evaluating a new service rather than repairing an existing one, [compare IPTV packages](/#compare-plans) and confirm device support first.
 
 ## Table of contents
 
@@ -195,6 +197,8 @@ Treat a private playlist address as a password. It may include a username, token
 
 If you suspect exposure, ask the service how to rotate credentials or revoke sessions. Merely deleting the public comment may not invalidate the copied link. Local troubleshooting should not create a second problem by distributing the account details to strangers.
 
+In TiviMate, an import that never finishes has its own checklist: [playlist is processed, please wait](/blog/tivimate-playlist-is-processed-please-wait).
+
 ## If the list loads but playback does not
 
 A catalogue is an index, not a health certificate for every stream. The server can return a valid list containing entries that are temporarily offline, no longer entitled, incorrectly generated, or incompatible with the current playback environment. Check the selected channel's error and compare the small test set.
@@ -239,6 +243,8 @@ A network-dependent result narrows the investigation to differences such as loca
 
 Do not turn off the router firewall, place a streaming device in a DMZ, or open broad inbound ports to make ordinary outbound playback work. If a content filter blocks a legitimate destination, verify the domain and change only the relevant authorized rule. Managed networks require administrator involvement, not a workaround that violates their policy.
 
+When channels open but pause repeatedly, use [streaming buffering but internet is fine](/blog/streaming-buffering-but-internet-is-fine), or the [Firestick-specific buffering guide](/blog/firestick-buffering-but-internet-is-fine) on Fire TV.
+
 ## Distinguish incompatible video from missing video
 
 If one channel has audio but no picture, or fails while lower-resolution alternatives play, compare format and decoder compatibility. A player must support the actual codec, profile, resolution, audio format, and any required protection. A file extension or a channel label alone does not establish those properties.
@@ -281,6 +287,8 @@ Send the three tested channel names privately, their outcomes, the time with tim
 
 State what you have not changed as well as what you have. Preserving the same endpoint and network makes a comparison interpretable. Ask support to check the account and stream logs before repeating destructive local recovery. That can save both sides a lengthy cycle of reinstalling an application that is already functioning.
 
+Setting up on a television app instead? [Samsung TV IPTV setup](/iptv-for-samsung-smart-tv) and [LG TV IPTV setup](/iptv-for-lg-smart-tv) explain the store and activation checks for each platform.
+
 ## Frequently asked questions
 
 ### Why can I see channels but not watch them?
@@ -301,7 +309,7 @@ Yes, severe delivery problems can prevent playback from starting, but they are n
 
 ### Will a premium player subscription unlock channels?
 
-Not by itself. A player upgrade generally unlocks application features, while content access comes from a separate authorized source. TiviMate explicitly states that it provides no channels or media. Check the terms of the exact product before paying. If a particular service bundles an app and content, confirm that arrangement with the service rather than assuming it applies to every player.
+Not by itself. A player upgrade generally unlocks application features, while content access comes from a separate authorized source. TiviMate explicitly states that it provides no channels or media. Check the terms of the exact product before paying. If a particular service bundles an app and content, confirm that arrangement with the service rather than assuming it applies to every player. To see what a content plan itself includes, [review IPTVUS24 packages](/#plans).
 
 ### Why do only some channels fail?
 
